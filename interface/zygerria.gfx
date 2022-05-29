@@ -1,0 +1,17 @@
+#spriteTypes = {	
+#
+#	###Warrior
+#
+#	spriteType = {
+#		name = "GFX_slaves"
+#		texturefile = "gfx/interface/zygerria_slaves/slaves.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_zyg_button"
+#		texturefile = "gfx/interface/zygerria_slaves/zyg_button.dds"
+#	}
+#	spriteType = {
+#		name = "GFX_zyg_button_open"  
+#		texturefile = "gfx/interface/zygerria_slaves/zyg_button_open.dds"
+#	}
+#}

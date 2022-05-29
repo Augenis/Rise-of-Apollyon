@@ -1,0 +1,16 @@
+country = {
+    food_exports = {
+        allowed = {
+            always = no
+        }
+
+        removal_cost = -1
+
+        picture = unknown
+
+        modifier = {
+            political_power_factor = 0.01
+            political_power_gain = 0.02
+        }
+    }
+}

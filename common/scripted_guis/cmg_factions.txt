@@ -1,0 +1,15 @@
+#scripted_gui = {
+#	cmg_factions = {
+#		context_type = decision_category
+#
+#		window_name = "cmg_factions"
+#		visible = {
+#
+#		}
+#
+#		effects = {
+#		}
+#		triggers = {
+#		}
+#	}
+#}

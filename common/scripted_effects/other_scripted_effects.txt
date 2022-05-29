@@ -1,0 +1,5 @@
+ibc_nerf_1 = {
+    political_power_gain = -0.02
+    political_power_factor = -0.002
+    stabilty_weekly_factor = -0.02
+}

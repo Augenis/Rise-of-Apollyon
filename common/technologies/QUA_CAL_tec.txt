@@ -1,0 +1,94 @@
+technologies = {
+	aqua_droid_tech = {
+
+			enable_equipments = {
+				aqua_droid_equip
+			}
+
+			enable_subunits = {
+				aqua_droid_unit
+			}
+			
+
+			research_cost = 1.0
+			start_year = 975
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	booma_tech = {
+			enable_equipments = {
+				booma_equip
+			}
+			enable_subunits = {
+				booma_unit
+			}
+			research_cost = 1.0
+			start_year = 975
+		
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	militia_CAL = {
+
+		enable_subunits = {
+			moncal_warrior  
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hydroid_medusases_tech = {
+
+		enable_equipments = {
+			hydroid_medusases_equip
+		}
+
+		enable_subunits = {
+			hydroid_medusases_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Karkarodon_tech = {
+
+		enable_equipments = {
+			Karkarodon_equip
+		}
+
+		enable_subunits = {
+			Karkarodon_unit
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1918
+	
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

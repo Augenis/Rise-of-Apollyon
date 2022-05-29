@@ -1,0 +1,464 @@
+ideas = {
+    country = {
+        CMG_The_Great_Financial_Crisis_Of_33 = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                custom_modifier_tooltip = cost_20day_tt
+            }
+        }
+
+	    CMG_Fund_Our_Own_Armies = {
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                production_factory_efficiency_gain_factor = 1
+            }
+        }
+	    CMG_Techno_Union_Engineers = {
+            picture = unknown
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                research_speed_factor = 0.5
+            }
+        }
+	    CMG_CIS_Streamlined_Methods = {
+            picture = unknown
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+            production_factory_efficiency_gain_factor = 0.1
+            }
+        }
+	    CMG_Conglomerate = {
+            picture = unknown
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                political_power_gain = 1
+            }
+        }
+	    CMG_The_Crescent_Moons = {
+            picture = unknown
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+               	political_power_gain = 2
+		        production_speed_industrial_complex_factor = 0.25
+		        production_speed_infrastructure_factor = 0.15
+		        production_speed_arms_factory_factor = 0.15
+		        production_speed_dockyard_factor = 0.15
+		        amphibious_invasion = 0.5
+            }
+        }
+        CMG_The_Corporate_Alliance = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+               	industrial_capacity_dockyard = 0.3
+                stability_weekly = 0.01
+                trade_opinion_factor = 1
+            }
+        }
+        CMG_Active_Recruiting = {
+            picture = unknown
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+               	weekly_manpower = 1000
+            }
+        }
+        CMG_Total_War_Economy = {
+            picture = unknown
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+               	offensive_war_stability_factor = 1
+                political_power_gain = 0.3
+                war_support_factor = 0.05
+                faction_trade_opinion_factor = 1.5
+            }
+        }
+        CMG_Diverted_Funds = {
+            picture = unknown
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+            }
+        }
+        CMG_First_Council_Meeting = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+               	political_power_gain = 0.5
+            }
+        }
+        CMG_Sundari_Fire = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+  
+            modifier = {
+            }
+        }
+        CMG_Terrorism = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                war_support_weekly = 1
+                offensive_war_stability_factor = 0.7
+                offence = 0.1
+            }
+        }
+        CMG_Faction_Infighting = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_factor = -0.5
+                political_power_gain = -1
+                monthly_population = -0.01
+                max_command_power = -90
+            }
+        }
+        CMG_Smarter_Battle = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                recon_factor = 0.5
+                no_supply_grace = 150
+                out_of_supply_factor = 0.2
+                convoy_escort_efficiency = 0.5
+                experience_gain_navy_factor = 0.3
+                fighter_sortie_efficiency = 0.3
+                fighter_sortie_efficiency = 0.3
+            }
+        }
+        CMG_Working_Conditions = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                stability_weekly_factor = 0.5
+				production_factory_start_efficiency_factor = -0.1
+            }
+        }
+        CMG_ace_hole = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                air_ace_generation_chance_factor = 0.5
+            }
+        }
+        CMG_navy_academy = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                experience_gain_navy_factor = 0.3
+            }
+        }
+        CMG_mercenaries = {
+
+            picture = unknown
+
+            allowed = {
+		        always = yes
+            }
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+            removal_cost = -1
+
+            modifier = {
+				army_morale_factor = -0.05
+				army_infantry_attack_factor = 0.05
+            }
+        }
+        CMG_internal_factions = {
+        
+            picture = unknown
+        
+            allowed = {
+                always = yes
+            }
+        
+            available = {
+            }
+        
+            cancel = {
+            }
+        
+            removal_cost = -1
+        
+            modifier = {
+                stability_weekly = -0.02
+                war_support_weekly = -0.02
+                political_power_gain = -0.5
+                production_factory_efficiency_gain_factor = -0.2
+            }
+        }
+        CMG_internal_factions_3 = {
+        
+            picture = unknown
+        
+            allowed = {
+                always = yes
+            }
+        
+            available = {
+            }
+        
+            cancel = {
+            }
+        
+            removal_cost = -1
+        
+            modifier = {
+                stability_weekly = -0.03
+                war_support_weekly = -0.04
+                political_power_gain = -0.6
+                production_factory_efficiency_gain_factor = -0.4
+            }
+        }
+        CMG_internal_factions_2 = {
+        
+            picture = unknown
+        
+            allowed = {
+                always = yes
+            }
+        
+            available = {
+            }
+        
+            cancel = {
+            }
+        
+            removal_cost = -1
+        
+            modifier = {
+                stability_weekly = -0.025
+                war_support_weekly = -0.03
+                political_power_gain = -0.55
+                production_factory_efficiency_gain_factor = -0.3
+            }
+        }
+    }
+}

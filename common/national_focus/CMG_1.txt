@@ -1,0 +1,498 @@
+focus_tree = {
+	id = CMG
+		country =  {
+			factor = 0
+			modifier = {
+				add = 0
+				tag = CMG
+			}
+		}
+		continuous_focus_position = { x = 400 y = 2800 }
+		   default = no
+
+		focus = {
+			     id = The_Rise_Of_Mai
+			     icon = GFX_CMG_basicicon
+			     x = 5
+			     y = 2
+			     cost = 10
+			     available_if_capitulated = yes
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					add_political_power = 100
+					}
+		}
+		focus = {
+			     id = Promote_Mai_To_Presidente
+			     icon = GFX_CMG_basicicon
+			     x = 5
+			     y = 3
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = The_Rise_Of_Mai }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					add_political_power = 150
+					}
+		}
+		focus = {
+			     id = Invest_In_The_Four_Point_Plan
+			     icon = GFX_CMG_basicicon
+			     x = 6
+			     y = 4
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Promote_Mai_To_Presidente }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					subtract_from_variable = { dx = 100 }
+					custom_effect_tooltip = "This will cost 100 m Credits"
+					}
+		}
+
+		focus = {
+			     id = Build_Up_Our_Homeworld
+			     icon = GFX_CMG_basicicon
+			     x = 6
+			     y = 5
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Invest_In_The_Four_Point_Plan }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					add_offsite_building = { type = industrial_complex level = 3 }
+					}
+		}
+
+		focus = {
+			     id = Loophole_Arms_Facilities
+			     icon = GFX_CMG_basicicon
+			     x = 8
+			     y = 5
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Invest_In_The_Four_Point_Plan }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					add_offsite_building = { type = arms_factory level = 2 }
+					}
+		}
+		focus = {
+			     id = Deep_Space_Shipyards
+			     icon = GFX_CMG_basicicon
+			     x = 10
+			     y = 5
+			     cost = 10
+			     available_if_capitulated = yes
+			     
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					add_offsite_building = { type = dockyard level = 2 }
+				}
+				prerequisite = { focus = Invest_In_The_Four_Point_Plan }
+		}
+
+
+		focus = {
+			     id = Request_Funding_From_Our_Subsidiaries
+			     icon = GFX_CMG_basicicon
+			     x = 12
+			     y = 5
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Invest_In_The_Four_Point_Plan }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					Add_to_variable = { dx = 100 }
+					custom_effect_tooltip = "This will give us 100 m Credits"
+					}
+		}
+		focus = {
+			     id = Financial_Recovery
+			     icon = GFX_CMG_basicicon
+			     x = 7
+			     y = 6
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Request_Funding_From_Our_Subsidiaries }
+				prerequisite = { focus = Deep_Space_Shipyards }
+				prerequisite = { focus = Loophole_Arms_Facilities }
+ 				prerequisite = { focus = Build_Up_Our_Homeworld }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					Add_to_variable = { dx = 150 }
+					custom_effect_tooltip = "This will give us 150 m Credits"
+					remove_ideas = CMG_The_Great_Financial_Crisis_Of_33
+					}
+		}
+
+		focus = {
+			     id = Amass_Funding_For_Project_22
+			     icon = GFX_CMG_basicicon
+			     x = 7
+			     y = 7
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Financial_Recovery }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					unlock_decision_category_tooltip = shareholding_initiative
+				}
+		}
+
+		focus = {
+			     id = Begin_Military_Buildup
+			     icon = GFX_CMG_basicicon
+			     x = 4
+			     y = 4
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Promote_Mai_To_Presidente }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					army_experience = 10
+					add_ideas = CMG_Fund_Our_Own_Armies
+					}
+		}
+
+		focus = {
+			     id = Early_Droid_Designs
+			     icon = GFX_CMG_basicicon
+			     x = 4
+			     y = 5
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Begin_Military_Buildup }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					add_research_slot = 1
+					}
+		}
+
+		focus = {
+			     id = Techno_Union_Engineers
+			     icon = GFX_CMG_basicicon
+			     x = 2
+			     y = 5
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Begin_Military_Buildup }
+			     ai_will_do = {
+					factor = 1
+			     }
+				 completion_reward = {
+					add_ideas = CMG_Techno_Union_Engineers
+				 }
+			     
+		}
+
+		focus = {
+			     id = B1_Prototype_Testing
+			     icon = GFX_CMG_basicicon
+			     x = 4
+			     y = 6
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Techno_Union_Engineers }
+				 prerequisite = { focus = Early_Droid_Designs }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+					add_equipment_to_stockpile = {
+    					type = b1_droid_equip
+    					amount = 5000
+    					producer = TEC
+				}
+				}
+		}
+
+		focus = {
+			     id = Superior_CIS_Production_Line
+			     icon = GFX_CMG_basicicon
+			     x = 5
+			     y = 7
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = B1_Prototype_Testing }
+			     ai_will_do = {
+					factor = 1
+			     }
+				 completion_reward = {
+					add_ideas = CMG_CIS_Streamlined_Methods
+				 }
+		}
+		focus = {
+			     id = Garrison_Battalions
+			     icon = GFX_CMG_basicicon
+			     x = 3
+			     y = 7
+			     cost = 10
+			     available_if_capitulated = no
+			     prerequisite = { focus = B1_Prototype_Testing }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = {
+
+				 }
+		}
+					
+		focus = {
+			     id = Prepare_For_Our_Assault
+			     icon = GFX_CMG_basicicon
+			     x = 3
+			     y = 8
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Garrison_Battalions }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = { add_political_power = 150 }
+		}
+
+		focus = {
+			     id = War_Funding
+			     icon = GFX_CMG_basicicon
+			     x = 3
+			     y = 9
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Prepare_For_Our_Assault }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = { 
+					 add_to_variable = { dx = 100 } 
+					 custom_effect_tooltip = "This will give us 100 m Credits"
+				}
+		}
+		focus = {
+			id = Oro_Dassaynes_Proposal
+			icon = GFX_CMG_basicicon
+			x = 2
+			y = 10
+			cost = 10
+			available_if_capitulated = yes
+			prerequisite = { focus = War_Funding }
+			ai_will_do = {
+			   factor = 1
+			}
+			completion_reward = { 
+				create_field_marshal = {
+					name = "Oro Dassayne"
+					portrait_path = "gfx/leaders/CMG/Oro_Dassayne.dds"
+					traits = {}
+					skill = 7
+					attack_skill = 5
+					defense_skill = 5
+					planning_skill = 5
+					logistics_skill = 9
+					}	
+		 }
+   }
+		focus = {
+			     id = Our_Own_Endeavours
+			     icon = GFX_CMG_basicicon
+			     x = 4
+			     y = 10
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = War_Funding }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = { add_political_power = 250 }
+		}
+
+		focus = {
+			     id = Industrial_Development
+			     icon = GFX_CMG_basicicon
+			     x = 7
+			     y = 8
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Amass_Funding_For_Project_22 }
+			     ai_will_do = {
+					factor = 1
+			     }
+			     completion_reward = { 
+						random_owned_state = {
+						add_building_construction = {
+							type = corporate_factory
+							level = 1
+							instant_build = yes
+					}
+				}
+				}
+		}
+		focus = {
+			     id = Intercompany_Meetings
+			     icon = GFX_CMG_basicicon
+			     x = 9
+			     y = 8
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Amass_Funding_For_Project_22 }
+			     ai_will_do = {
+					factor = 1
+			     }
+				completion_reward = { add_political_power = 200 }
+		}
+
+		focus = {
+			     id = Approach_IBC_Advisors
+			     icon = GFX_CMG_basicicon
+			     x = 9
+			     y = 9
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Intercompany_Meetings }
+			     ai_will_do = {
+					factor = 1
+			     }
+				completion_reward = { add_political_power = 100 }
+		}
+
+		focus = {
+			     id = Civilian_Administration
+			     icon = GFX_CMG_basicicon
+			     x = 7
+			     y = 9
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Industrial_Development }
+			     ai_will_do = {
+					factor = 1
+			     }
+				completion_reward = { add_offsite_building = { type = industrial_complex level = 2 }  }
+		}
+
+		focus = {
+			     id = Hunt_Corrupt_Officials
+			     icon = GFX_CMG_basicicon
+			     x = 11
+			     y = 10
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Approach_IBC_Advisors }
+			     ai_will_do = {
+					factor = 1
+			     }
+				completion_reward = { add_political_power = 50 }
+		}
+
+
+		focus = {
+			     id = Bribe_The_Senate
+			     icon = GFX_CMG_basicicon
+			     x = 7
+			     y = 10
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Civilian_Administration }
+			     ai_will_do = {
+					factor = 1
+			     }
+				completion_reward = {
+					subtract_from_variable = { dx = 50 } 
+					custom_effect_tooltip = "This will cost us 50 m Credits"
+				}
+		}
+
+		focus = {
+			     id = Set_Up_The_Illegal_Podrace
+			     icon = GFX_CMG_basicicon
+			     x = 9
+			     y = 10
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Civilian_Administration }
+			     ai_will_do = {
+					factor = 1
+			     }
+				completion_reward = { 
+					subtract_from_variable = { dx = 100 } 
+					custom_effect_tooltip = "This will cost us 100 m Credits"
+				}
+		}
+
+
+		focus = {
+			     id = Blame_The_Senate_For_The_Crash
+			     icon = GFX_CMG_basicicon
+			     x = 7
+			     y = 11
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Bribe_The_Senate }
+			     prerequisite = { focus = Set_Up_The_Illegal_Podrace }
+			     ai_will_do = {
+					factor = 1
+			     }
+				completion_reward = { add_political_power = 250 }
+		}
+
+
+
+		focus = {
+			     id = Monopolise_On_Galaxywide_Cruiser_Shortage
+			     icon = GFX_CMG_basicicon
+			     x = 9
+			     y = 11
+			     cost = 10
+			     available_if_capitulated = yes
+			     prerequisite = { focus = Hunt_Corrupt_Officials }
+			     ai_will_do = {
+					factor = 1
+			     }
+				completion_reward = { 
+					add_to_variable = { dx = 200 } 
+					custom_effect_tooltip = "This will give us 200 m Credits"
+				}
+		}
+		focus = {
+			     id = The_Crescent_Moons
+			     icon = GFX_CMG_basicicon
+			     x = 5
+			     y = 12
+			     cost = 10
+			     available_if_capitulated = yes
+				 prerequisite = {
+					  	focus = Our_Own_Endeavours
+						focus = Blame_The_Senate_For_The_Crash
+						focus = Monopolise_On_Galaxywide_Cruiser_Shortage }
+			     ai_will_do = {
+					factor = 5
+			     }
+				completion_reward = { 
+					add_political_power = 250
+					add_ideas = CMG_The_Crescent_Moons
+					#load_focus_tree = CMGB
+					custom_effect_tooltip = "This will unlock the 'fun' focus tree. "
+				 }
+			}
+		}

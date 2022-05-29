@@ -1,0 +1,220 @@
+ideas = {
+    #############
+    country = {
+
+        UMB_idea_hostile_environment = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		always = no
+                original_tag = UMB
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                MONTHLY_POPULATION = -0.30
+                production_speed_buildings_factor = -0.50
+
+            }
+
+        }
+        UMB_idea_adapting_hostile_environment = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		always = no
+                original_tag = UMB
+            }
+
+            available = {
+            }
+
+            modifier = {
+
+                MONTHLY_POPULATION = -0.20
+                production_speed_buildings_factor = -0.40
+
+            }
+
+        }
+
+
+
+        UMB_idea_modern_umbara = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		always = no
+                original_tag = UMB
+            }
+
+            available = {
+            }
+
+            modifier = {
+                production_speed_buildings_factor = 0.20
+            }
+
+        }
+
+        UMB_guerilla = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		always = no
+                original_tag = UMB
+            }
+
+            available = {
+            }
+
+            modifier = {
+                army_core_defence_factor = 0.20
+                army_core_attack_factor = 0.20
+                
+            }
+
+        }
+        UMB_Research = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		always = no
+                original_tag = UMB
+            }
+
+            available = {
+            }
+
+            modifier = {
+                research_speed_factor = 0.1
+                
+            }
+
+        }
+        UMB_defense = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		always = no
+                original_tag = UMB
+            }
+
+            available = {
+            }
+
+            modifier = {
+                army_core_defence_factor = 0.10
+                
+            }
+
+        }
+        UMB_buildup = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		always = no
+                original_tag = UMB
+            }
+
+            available = {
+            }
+
+            modifier = {
+                training_time_factor = -0.20
+                
+            }
+
+        }
+    }
+	    political_advisor = {
+        aZaenteld_Brarenga = {
+			allowed = {
+				original_tag = UMB
+			}
+			traits = { Adventurous_daredevil }
+        }
+	aSorc_Tormo = {
+			allowed = {
+				original_tag = UMB
+			}
+			traits = { War_Profiteer }		
+		}
+	aFarr_Nees = {
+			allowed = {
+				original_tag = UMB
+			}
+			traits = { Education_Reformer }
+		}
+    }
+
+			theorist = {
+		tZaenteld_Brarenga = {
+			ledger = Army
+			allowed = {
+				original_tag = UMB
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			traits = { Military_theorist }
+		}
+	}
+	army_chief = {
+	Zaenteld_Brarenga = {
+			allowed = {
+				original_tag = UMB
+			}
+		traits = { army_chief_offensive_2 }
+		}
+		}
+		air_chief = {
+			Phan_Moore = {
+			allowed = {
+				original_tag = UMB
+			}
+			traits = { air_chief_ground_support_2 }
+		}	
+	}
+	navy_chief  = {
+		Sorc_Tormo = {
+			allowed = {
+				original_tag = UMB
+			}
+			traits = { navy_chief_decisive_battle_2 }
+		}
+	}
+	high_command = {
+			Farr_Nees = {
+			ledger = army
+			allowed = {
+				original_tag = UMB
+			}
+			traits = { Army_Logistics_2 }
+		}
+			Vhaen_Tecash = {
+			ledger = army
+			allowed = {
+				original_tag = UMB
+			}
+			traits = { army_infantry_2 }
+		}	
+		Wyrd_Lega = {
+			ledger = army
+			allowed = {
+				original_tag = UMB
+			}
+			traits = { army_armored_2 }
+		}
+	}
+}

@@ -1,0 +1,30 @@
+scripted_gui = {
+	tax_rate_window = {
+		context_type = player_context
+		
+		window_name = "tax_rate_window"
+		parent_window_name = countrypoliticsview
+		
+		visible = {
+		}
+		
+		effects = {
+			raise_tax_rate_button_click = {
+				set_country_flag = raise_tax_decision
+			}
+			lower_tax_rate_button_click = {
+				set_country_flag = lower_tax_decision
+			}
+		}
+		triggers = {
+			raise_tax_rate_button_click_enabled = {
+		        NOT = {has_country_flag = raise_tax_decision
+		        	   has_country_flag = lower_tax_decision}
+	        }
+	        lower_tax_rate_button_click_enabled = {
+		        NOT = {has_country_flag = raise_tax_decision
+		        	   has_country_flag = lower_tax_decision}
+	        }
+        }
+	}
+}

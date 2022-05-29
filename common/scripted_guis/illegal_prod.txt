@@ -1,0 +1,242 @@
+scripted_gui = {
+
+	illegal_prod_container = {
+		context_type = player_context
+		
+		window_name = "illegal_prod_container"
+		parent_window_name = countrypoliticsview
+		
+		visible = { 
+			OR = {
+				has_government = syndicate
+				has_government = communism
+			}
+			always = no
+		}
+		effects = {
+			trophy_open_button_click = {
+				if = {
+					limit = {
+						has_country_flag = illegal_prod_open
+					}
+					clr_country_flag = illegal_prod_open
+				}
+				else = {
+					set_country_flag = illegal_prod_open
+				}
+			}
+		}
+    }
+	illegal_prod_window = {
+			context_type = player_context
+			window_name = "illegal_prod_window"
+		
+		visible = {
+			has_country_flag = illegal_prod_open
+		}
+
+	effects = {
+		right_arrow_click = {
+			if = {
+				limit = {
+					has_country_flag = deathsticks_selected
+				}
+				add_to_variable = { totalillegalfactoriesused_deathsticks = 1}
+			}
+			if = {
+				limit = {
+					has_country_flag = spice_selected
+				}
+				add_to_variable = { totalillegalfactoriesused_spice = 1}
+			}
+			if = {
+				limit = {
+					has_country_flag = illegalweapons_selected
+				}
+				add_to_variable = { totalillegalfactoriesused_illegalweapons = 1}
+			}
+			subtract_from_variable = { totalillegalfactories = 1}
+		}
+		left_arrow_click = {
+			add_to_variable = { totalillegalfactories = 1}
+			if = {
+				limit = {
+					has_country_flag = deathsticks_selected
+				}
+				subtract_from_variable = { totalillegalfactoriesused_deathsticks = 1}
+			}
+			if = {
+				limit = {
+					has_country_flag = spice_selected
+				}
+				subtract_from_variable = { totalillegalfactoriesused_spice = 1}
+			}
+			if = {
+				limit = {
+					has_country_flag = illegalweapons_selected
+				}
+				subtract_from_variable = { totalillegalfactoriesused_illegalweapons = 1}
+			}
+		}
+		deathsticks_click = { 
+			set_country_flag = deathsticks_selected
+			clr_country_flag = spice_selected
+			clr_country_flag = illegalweapons_selected
+		}
+		spice_click = {
+			clr_country_flag = deathsticks_selected
+			set_country_flag = spice_selected
+			clr_country_flag = illegalweapons_selected
+		}
+		illegalweapons_click = { 
+			clr_country_flag = deathsticks_selected
+			clr_country_flag = spice_selected
+			set_country_flag = illegalweapons_selected
+		}
+
+		close_button_click = {
+			clr_country_flag = illegal_prod_open
+			}
+
+		}
+	triggers = {
+			right_arrow_click_enabled = {
+				check_variable = { totalillegalfactories > 0 }
+			}
+			left_arrow_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = deathsticks_selected
+					}
+					check_variable = { totalillegalfactoriesused_deathsticks > 0}
+				}
+				if = {
+					limit = {
+						has_country_flag = spice_selected
+					}
+					check_variable = { totalillegalfactoriesused_spice > 0}
+				}
+				if = {
+					limit = {
+						has_country_flag = illegalweapons_selected
+					}
+					check_variable = { totalillegalfactoriesused_illegalweapons > 0}
+				}
+			}
+			deathsticks_click_enabled = { 
+				NOT = {
+					has_country_flag = deathsticks_selected
+				}
+			}
+			spice_click_enabled = {
+				NOT = {
+					has_country_flag = spice_selected
+				}
+			}
+			illegalweapons_click_enabled = {
+				NOT = {
+					has_country_flag = illegalweapons_selected
+				}
+			}
+			factoriesdeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			factoriesspice_visible = {
+				has_country_flag = spice_selected
+			}
+			factoriesillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+			productiondeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			productionspice_visible = {
+				has_country_flag = spice_selected
+			}
+			productionillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+			profitsdeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			profitsspice_visible = {
+				has_country_flag = spice_selected
+			}
+			profitsillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+			bes_productiondeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			bes_productionspice_visible = {
+				has_country_flag = spice_selected
+			}
+			bes_productionillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+			bla_productiondeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			bla_productionspice_visible = {
+				has_country_flag = spice_selected
+			}
+			bla_productionillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+			gor_productiondeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			gor_productionspice_visible = {
+				has_country_flag = spice_selected
+			}
+			gor_productionillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+			hon_productiondeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			hon_productionspice_visible = {
+				has_country_flag = spice_selected
+			}
+			hon_productionillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+			jht_productiondeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			jht_productionspice_visible = {
+				has_country_flag = spice_selected
+			}
+			jht_productionillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+			kes_productiondeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			kes_productionspice_visible = {
+				has_country_flag = spice_selected
+			}
+			kes_productionillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+			qun_productiondeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			qun_productionspice_visible = {
+				has_country_flag = spice_selected
+			}
+			qun_productionillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+			dea_productiondeathsticks_visible = {
+				has_country_flag = deathsticks_selected
+			}
+			dea_productionspice_visible = {
+				has_country_flag = spice_selected
+			}
+			dea_productionillegalweapons_visible = {
+				has_country_flag = illegalweapons_selected
+			}
+		}
+	}
+}

@@ -1,0 +1,238 @@
+guiTypes = {
+	containerWindowType = {
+		name = "black_market_open_container"
+		position = { x = 1100 y = 2 }
+
+		buttonType ={
+			name ="open_black_market_button"
+			spriteType = "GFX_market_button"
+			position = { x=35 y=7 }
+			shortcut = "ctrl+b"
+		}
+		
+		instantTextBoxType = {
+			name ="black_market_text"
+			position = { x= 50 y = 8 }
+			font = "hoi_18mbs"
+			text = "Notoriety"
+			format = left
+			maxWidth = 60
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "Opens Black Market panel"
+		}
+	}
+    containerWindowType = {
+        name = "black_market_window"
+        orientation = center
+		position = {x=-400 y=-400}
+        size = { width=936 height=800 }
+		moveable = yes
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+
+        background = {
+            name = "Background"
+            quadTextureSprite ="GFX_black_market"
+		}
+			buttonType = {
+				name = "notoriety_1"
+				position = {x=92 y=14}
+				spriteType = "GFX_NOT1"
+				}
+			buttonType = {
+				name = "notoriety_2"
+				position = {x=232 y=14}
+				spriteType = "GFX_NOT2"
+				}
+			buttonType = {
+				name = "notoriety_3"
+				position = {x=371 y=14}
+				spriteType = "GFX_NOT3"
+				}
+			buttonType = {
+				name = "notoriety_4"
+				position = {x=510 y=14}
+				spriteType = "GFX_NOT4"
+				}
+			buttonType = {
+				name = "notoriety_5"
+				position = {x=648 y=14}
+				spriteType = "GFX_NOT5"
+				}
+			buttonType = {
+				name = "notoriety_6"
+				position = {x=786 y=14}
+				spriteType = "GFX_NOT6"
+			}
+###################### Mercenaries ###################################
+			buttonType = {
+				name = "human_mercs"
+				position = {x=50 y=540}
+				spriteType = "GFX_Human_mercs"
+			}
+			buttonType = {
+				name = "zabrak_mercs"
+				position = {x=50 y=540}
+				spriteType = "GFX_Zabrak_mercs"
+			}
+			buttonType = {
+				name = "weequay_mercs"
+				position = {x=35 y=360}
+				spriteType = "GFX_Wequay_mercs"
+			}
+			buttonType = {
+				name = "Trandoshans_mercs"
+				position = {x=50 y=130}
+				spriteType = "GFX_Trandoshans_mercs"
+			}
+			buttonType = {
+				name = "Kaleesh_mercs"
+				position = {x=50 y=130}
+				spriteType = "GFX_Kaleesh_mercs"
+			}
+			buttonType = {
+				name = "Mandalorians_mercs"
+				position = {x=330 y=130}
+				spriteType = "GFX_Mandalorians_mercs"
+			}
+			buttonType = {
+				name = "Gen_dai_mercs"
+				position = {x=330 y=130}
+				spriteType = "GFX_GenDai_mercs"
+			}
+################# Vehicles #########################
+			buttonType = {
+				name = "aurore_freighter"
+				position = {x=490 y=140}
+				spriteType = "GFX_aurore_freighter"
+			}
+			buttonType = {
+				name = "starhawk-speeder"
+				position = {x=400 y=545}
+				spriteType = "GFX_starhawk-speeder"
+			}
+			buttonType = {
+				name = "moogan"
+				position = {x=605 y=125}
+				spriteType = "GFX_moogan"
+			}
+			buttonType = {
+				name = "speeder_tank"
+				position = {x=40 y=120}
+				spriteType = "GFX_WLO-5-Speeder-Tank"
+			}
+			buttonType = {
+				name = "Flarestar-class"
+				position = {x=490 y=120}
+				spriteType = "GFX_flarestar-class"
+			}
+			buttonType = {
+				name = "Bantha"
+				position = {x=40 y=590}
+				spriteType = "GFX_Bantha-Cargo-Skiff"
+			}
+			buttonType = { 
+				name = "ATAP"
+				position = {x=50 y=500}
+				spriteType = "GFX_atap"
+			}
+			buttonType = {
+				name = "Interceptor-class-frigate"
+				position = {x=450 y=548}
+				spriteType = "GFX_Interceptor-class-frigate"
+			}
+			buttonType = {
+				name = "StarHopper"
+				position = {x=340 y=133}
+				spriteType = "GFX_StarHopper"
+			}
+			buttonType = {
+				name = "Marauder-Corvette"
+				position = {x=590 y=140}
+				spriteType = "GFX_Marauder-Corvette"
+			}
+			buttonType = {
+				name = "khetanna"
+				position = {x=55 y=490}
+				spriteType = "GFX_khetanna"
+			}
+			buttonType = {
+				name = "skipray"
+				position = {x=540 y=470}
+				spriteType = "GFX_skipray"
+			}
+			buttonType = {
+				name = "mobile-pulse-cannon"
+				position = {x=40 y=490}
+				spriteType = "GFX_mobile-pulse-cannon"
+			}
+			buttonType = {
+				name = "aggressor-class-star"
+				position = {x=470 y=490}
+				spriteType = "GFX_aggressor-class-star"
+			}
+################## Weapons #############################
+			buttonType = {
+				name = "SlugThrower"
+				position = {x=40 y=120}
+				spriteType = "GFX_SlugThrower"
+			}
+			buttonType = {
+				name = "repeating-blaster-rifle"
+				position = {x=70 y=140}
+				spriteType = "GFX_repeating-blaster-rifle"
+			}
+			buttonType = {
+				name = "disruptor-rifle"
+				position = {x=260 y=400}
+				spriteType = "GFX_disruptor-rifle"
+			}
+			buttonType = {
+				name = "flechette_launcher"
+				position = {x=40 y=352}
+				spriteType = "GFX_Side-Throttle"
+			}
+			buttonType = {
+				name = "ZygerrianBow"
+				position = {x=40 y=352}
+				spriteType = "GFX_ZygerrianBow"
+			}
+			buttonType = {
+				name = "Carbonite-missile"
+				position = {x=40 y=126}
+				spriteType = "GFX_Carbonite-missile"
+			}
+			buttonType = {
+				name = "Cloaking-Device"
+				position = {x=40 y=232}
+				spriteType = "GFX_Cloaking-Device"
+			}
+#################### Resource Stuff ############################
+			buttonType = {
+				name = "spice"
+				position = {x=663 y=519}
+				spriteType = "GFX_Spice"
+			}
+			buttonType = {
+				name = "weapons"
+				position = {x=540 y=592}
+				spriteType = "GFX_Guns"
+			}
+			buttonType = {
+				name = "slaves"
+				position = {x=540 y=450}
+				spriteType = "GFX_Slaves"
+			}
+			buttonType = {
+				name = "deathsticks"
+				position = {x=418 y=519}
+				spriteType = "GFX_DeathSticks"
+			}
+
+
+		}
+	}
+}

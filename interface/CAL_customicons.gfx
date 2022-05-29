@@ -1,0 +1,317 @@
+SpriteTypes = {
+	spriteType = { # "Home 1"
+		name = "GFX_navalcombat_ship_icon_home1_entity_unit"
+		texturefile = "gfx/interface/navalcombat/ships/Venator.dds"
+		noOfFrames = 2
+	}
+	###ideas
+	spriteType =  {
+		name = "GFX_idea_ships_are_our_art"
+		texturefile = "gfx/interface/ideas/mon_cal_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bubba"
+		texturefile = "gfx/interface/ideas/Bubba.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_broil"
+		texturefile = "gfx/interface/ideas/Broil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ackbar"
+		texturefile = "gfx/interface/ideas/Gial_Ackbar.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_raddus"
+		texturefile = "gfx/interface/ideas/raddus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_herpies"
+		texturefile = "gfx/interface/ideas/Herpies.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shallan"
+		texturefile = "gfx/interface/ideas/Shallan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tills"
+		texturefile = "gfx/interface/ideas/Meena_Tills.dds"
+	}
+	###units
+  ###Booma
+  spriteType = { 
+     name = "GFX_unit_booma_unit_icon_medium"           
+     textureFile = "gfx/interface/counters/divisions_large/booma.dds" 
+     noOfFrames = 2
+  }
+  spriteType = { 
+     name = "GFX_unit_booma_unit_icon_medium_white"           
+     textureFile = "gfx/interface/counters/divisions_small/Standard.dds" 
+     noOfFrames = 2
+  }
+  spriteType = { 
+     name = "GFX_unit_booma_unit_icon_small"           
+     textureFile = "gfx/interface/counters/divisions_small/Standard.dds" 
+     noOfFrames = 2
+  }
+	###ships
+	SpriteType = {
+    	name = "GFX_mc80_tech_medium"
+    	texturefile = "gfx/interface/technologies/CAL/MC80_tech.dds"
+  	}
+  	SpriteType = {
+    	name = "GFX_mc75_tech_medium"
+    	texturefile = "gfx/interface/technologies/CAL/MC75_tech.dds"
+  	}
+  	SpriteType = {
+    	name = "GFX_mc25_tech_medium"
+    	texturefile = "gfx/interface/technologies/CAL/MC25_tech.dds"
+  	}
+	### CAL SPRITES##
+	SpriteType = { 
+		name = "GFX_yos_kolina"
+		texturefile = "gfx/interface/goals/CAL/yos_kolina.dds"
+	}
+	SpriteType = {
+		name = "GFX_yos_kolina_shine"
+		texturefile = "gfx/interface/goals/CAL/yos_kolina.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CAL/yos_kolina.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CAL/yos_kolina.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_Padme"
+		texturefile = "gfx/interface/goals/CAL/ask_rep_for_med.dds"
+	}
+	SpriteType = {
+		name = "GFX_Padme_shine"
+		texturefile = "gfx/interface/goals/CAL/ask_rep_for_med.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CAL/ask_rep_for_med.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CAL/ask_rep_for_med.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_learn_from_ggs"
+		texturefile = "gfx/interface/goals/CAL/learn_from_ggs.dds"
+	}
+	SpriteType = {
+		name = "GFX_learn_from_ggs_shine"
+		texturefile = "gfx/interface/goals/CAL/learn_from_ggs.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CAL/learn_from_ggs.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CAL/learn_from_ggs.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = { 
+		name = "GFX_ggs_arrive"
+		texturefile = "gfx/interface/goals/CAL/ggs_arrive.dds"
+	}
+	SpriteType = {
+		name = "GFX_ggs_arrive_shine"
+		texturefile = "gfx/interface/goals/CAL/ggs_arrive.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CAL/ggs_arrive.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CAL/ggs_arrive.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = { 
+		name = "GFX_clone_scuba_trooper_focus"
+		texturefile = "gfx/interface/goals/CAL/clone_scuba_trooper.dds"
+	}
+	SpriteType = {
+		name = "GFX_clone_scuba_trooper_focus_shine"
+		texturefile = "gfx/interface/goals/CAL/clone_scuba_trooper.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CAL/clone_scuba_trooper.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/CAL/clone_scuba_trooper.dds"			
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	###TECHNOLOGY###
+	spriteType = {
+		name = "GFX_technology_cal_folder_small_unavailable_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_unavailable_item_bg.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_technology_cal_folder_small_available_item_bg"
+		textureFile = "gfx//interface//techtree//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_cal_folder_small_researched_item_bg"
+		textureFile = "gfx//interface//techtree//tech_landdoctrine_researched_item_bg.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_technology_cal_folder_small_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
+	}
+	#####DECISIONS #####
+	spriteType = {
+		name = "GFX_riff_tamson_decision"
+		textureFile = "gfx/interface/decisions/riff_tamson_large.dds"
+	}
+	spriteType = {
+		name = "GFX_first_base"
+		textureFile = "gfx/interface/decisions/H1_pt_1.dds"
+	}
+	spriteType = {
+		name = "GFX_second_base"
+		textureFile = "gfx/interface/decisions/H1_pt_2.dds"
+	}
+	spriteType = {
+		name = "GFX_third_base"
+		textureFile = "gfx/interface/decisions/H1_pt_3.dds"
+	}
+	spriteType = {
+		name = "GFX_fourth_base"
+		textureFile = "gfx/interface/decisions/H1_pt_4.dds"
+	}
+	spriteType = {
+		name = "GFX_fifth_base"
+		textureFile = "gfx/interface/decisions/H1_pt_5.dds"
+	}
+	spriteType = {
+		name = "GFX_first_base_done"
+		textureFile = "gfx/interface/decisions/H1_pt_1_done.dds"
+	}
+	spriteType = {
+		name = "GFX_second_base_done"
+		textureFile = "gfx/interface/decisions/H1_pt_2_done.dds"
+	}
+	spriteType = {
+		name = "GFX_third_base_done"
+		textureFile = "gfx/interface/decisions/H1_pt_3_done.dds"
+	}
+	spriteType = {
+		name = "GFX_fourth_base_done"
+		textureFile = "gfx/interface/decisions/H1_pt_4_done.dds"
+	}
+	spriteType = {
+		name = "GFX_fifth_base_done"
+		textureFile = "gfx/interface/decisions/H1_pt_5_done.dds"
+	}
+	spriteType = {
+		name = "GFX_background_water"
+		textureFile = "gfx/interface/decisions/QUA_tiled_decisions_bg_small.dds"
+	}
+}

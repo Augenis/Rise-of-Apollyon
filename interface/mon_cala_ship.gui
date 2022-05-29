@@ -1,0 +1,49 @@
+guiTypes = {
+	containerWindowType = {
+		name = "mon_cala_ship_interface"
+		orientation = CENTER
+		position = {x=-400 y=-300}
+		size = { width=600 height=450 }
+		background = {
+			name = "Background"
+			spriteType = "GFX_background_water"
+		}
+
+		instantTextBoxType = {
+			name = "Information_tip"
+			position = { x = 18 y = 20 }
+			font = "hoi36header"
+			maxWidth = 205
+			maxHeight = 20
+			text = "Each piece costs 50 Million Credits"
+			format = left
+			pdx_tooltip = "KARKADON_COUNTER_TT"
+		}
+
+		buttonType = {
+			name = "Mon_cala_first_base" 
+			position = {x=205 y=340}	
+			spriteType = "GFX_first_base"
+		}
+		buttonType = {
+			name = "Mon_cala_second_base" 
+			position = {x=205 y=260}	
+			spriteType = "GFX_second_base"
+		}
+		buttonType = {
+			name = "Mon_cala_third_base" 
+			position = {x=205 y=180}	
+			spriteType = "GFX_third_base"
+		}
+		buttonType = {
+			name = "Mon_cala_fourth_base" 
+			position = {x=205 y=100}	
+			spriteType = "GFX_fourth_base"
+		}
+		buttonType = {
+			name = "Mon_cala_fifth_base" 
+			position = {x=205 y=20}	
+			spriteType = "GFX_fifth_base"
+		}
+	}
+}

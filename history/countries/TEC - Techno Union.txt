@@ -1,0 +1,301 @@
+﻿capital = 166
+
+oob = "TEC_3677"
+set_research_slots = 4
+set_stability = 0.7
+set_war_support = 35
+set_variable = { var = tax_stability_modifier value = -0.05 }
+set_rule = { can_create_factions = yes }
+set_country_flag = Baktoid_subsidiary
+
+country_lock_all_division_template = yes # why?
+
+set_technology = {
+	tech_support = 1
+	tec_market = 1
+	battle_droid_0 = 1
+	battle_droid_1 = 1
+	transport = 1
+	cis_tank_1 = 1
+	stap_tech = 1
+	droideka_tech = 1
+	pac_tech = 1
+	mtt_tech = 1
+	vulture_tech = 1
+	c9979_tech = 1
+	marauder_tech = 1
+}
+
+add_political_power = 75
+set_convoys = 1000
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	service_by_requirement
+	CIS_equipped
+	REP_member_prewar
+	technologicalplateau
+	reclusive_headquarters
+	lack_of_skilled_labor
+	export_focus
+	partial_economic_mobilisation
+}
+
+set_autonomy = {
+	target = MUS
+	autonomous_state =  autonomy_puppet
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 90
+		fascism = 10
+	}
+}
+
+0978.8.8 = {
+
+	oob = "TEC_3687"
+
+	set_technology = {
+		tech_support = 1
+		tec_market = 1
+		battle_droid_0 = 1
+		battle_droid_1 = 1
+		battle_droid_2 = 1
+		transport = 1
+		cis_tank_1 = 1
+		cis_tank_2 = 1
+		dsd1_tech = 1
+	}
+
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 20
+		fascism = 80
+	}
+}
+
+
+create_country_leader = {
+	name = "Wat Tambor"
+	desc = "Foreman of the Techno Union"
+	picture = GFX_tambor
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+	name = "Wat Tambor"
+	desc = "Foreman of the Techno Union"
+	picture = GFX_tambor
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_field_marshal = {
+ 	name = "Wat Tambor"
+ 	portrait_path = "gfx/leaders/TEC/Wattambor.dds"
+	traits = { Harsh_Leader }
+	skill = 4 
+ 	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Kul Teska"
+	portrait_path = "gfx/leaders/TEC/KulTeska.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Dooba Kunda"
+	portrait_path = "gfx/leaders/TEC/doobakunda.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Domb Treetor"
+	portrait_path = "gfx/leaders/TEC/DombTreetor.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Tendir Blue"
+	portrait_path = "gfx/leaders/TEC/TendirBlue.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Nik Tesla"
+	portrait_path = "gfx/leaders/TEC/gen1.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Telm"
+	portrait_path = "gfx/leaders/TEC/gen2.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Elon Edison"
+	portrait_path = "gfx/leaders/TEC/gen3.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Thomas Musk"
+	portrait_path = "gfx/leaders/TEC/gen4.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Lika Smiljan"
+	portrait_path = "gfx/leaders/TEC/gen5.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Gis Qaurut"
+	portrait_path = "gfx/leaders/TEC/Gis_Qaurut.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Moch Slaw"
+	portrait_path = "gfx/leaders/TEC/Moch_Slaw.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_navy_leader = {
+	name = "Rob Otic"
+        portrait_path = "gfx/leaders/TEC/adm1.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Volt Tambor"
+        portrait_path = "gfx/leaders/TEC/adm2.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Andre Ampere"
+        portrait_path = "gfx/leaders/TEC/adm3.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Babon Mahik"
+        portrait_path = "gfx/leaders/TEC/adm4.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Data Strek"
+        portrait_path = "gfx/leaders/TEC/adm5.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Linguo"
+        portrait_path = "gfx/leaders/TEC/adm6.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Uplaks Corr"
+        portrait_path = "gfx/leaders/TEC/Uplaks_Corr.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}

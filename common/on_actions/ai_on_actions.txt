@@ -1,0 +1,109 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			#Recusant
+			if = {
+				limit = {
+					tag = CIS
+					has_global_flag = CIS_tech_2
+					REP = {
+						has_completed_focus = REP_battle_of_geonosis
+					}
+					CIS = {
+						is_ai = yes
+					}
+				}
+				CIS = {
+					add_equipment_production = {
+						equipment = {
+							type = recusant_equipment
+						}
+						requested_factories = 1
+						progress = 1.00
+						amount = 1
+					}
+				}
+			}
+			#Providence
+			if = {
+				limit = {
+					tag = CIS
+					has_global_flag = CIS_tech_3
+					REP = {
+						has_completed_focus = REP_battle_of_geonosis
+					}
+					CIS = {
+						is_ai = yes
+					}
+				}
+				CIS = {
+					add_equipment_production = {
+						equipment = {
+							type = providence_equipment
+						}
+						requested_factories = 1
+						progress = 1.00
+						amount = 1
+					}
+				}
+			}
+			#Hyena
+			if = {
+				limit = {
+					tag = CIS
+					has_global_flag = CIS_tech_1
+					REP = {
+						has_completed_focus = REP_battle_of_geonosis
+					}
+					CIS = {
+						is_ai = yes
+					}
+				}
+				CIS = {
+					add_equipment_to_stockpile = {
+						type = hyena_bomber_equip
+						 amount = 50
+					}
+				}
+			}
+			#vulture
+			if = {
+				limit = {
+					tag = CIS
+					has_global_flag = CIS_tech_2
+					REP = {
+						has_completed_focus = REP_battle_of_geonosis
+					}
+					CIS = {
+						is_ai = yes
+					}
+				}
+				CIS = {
+					add_equipment_to_stockpile = {
+						type = vulture_fighter_equip
+						amount = 50
+					}
+				}
+			}
+		}
+	}
+	on_weekly_REP = {
+		effect = {
+			if = {
+				limit = {
+					REP = {
+						owns_state = 189
+						has_completed_focus = REP_battle_of_geonosis
+						is_ai = yes
+					}
+					KAM = {
+						controls_state = 423
+					}
+				}
+				REP = {
+					load_oob = REP_ai_buff
+				}
+			}
+		}
+	}
+}

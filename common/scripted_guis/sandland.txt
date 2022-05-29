@@ -1,0 +1,16 @@
+scripted_gui = {
+	jawa_window = {
+		context_type = player_context
+		window_name = "jawa_window"
+		
+		visible = {
+			has_country_flag = jawa_open
+		}
+
+		effects = {
+		}
+		triggers = {
+		}
+	}
+}
+

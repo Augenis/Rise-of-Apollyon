@@ -1,0 +1,646 @@
+focus_tree = {
+	id = CAL_precivilwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CAL
+		}
+	}
+	focus = {
+		id = CAL_death_of_yos_kolina
+		icon = GFX_yos_kolina
+		x = 9
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = 13_CAL_tt
+			    always = no
+			}
+		}
+		completion_reward = {
+		}
+	}
+	#focus for side with dac (leads to dac branch)
+	focus = {
+		id = CAL_side_with_dac
+		icon = GFX_Placeholder
+		x = 9
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CAL_death_of_yos_kolina
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = 16_CAL_tt
+			    always = no
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.20
+			subtract_from_variable = { secessionpoint = 7 }
+		}
+	}
+	#Focus for calling the knights
+	focus = {
+		id = CAL_call_the_knights
+		icon = GFX_Placeholder
+		x = 8
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CAL_side_with_dac
+		}
+		ai_will_do = {
+				factor = 10
+		}
+		completion_reward = {
+			195 = {
+                create_unit = {
+                    division = "name = \"Arbitrator Division\" division_template = \"Moncal\" start_experience_factor = 1.0 start_equipment_factor = 0.9"
+                    owner = CAL
+                }
+				create_unit = {
+                    division = "name = \"Vidame Division\" division_template = \"Moncal\" start_experience_factor = 1.0 start_equipment_factor = 0.9"
+                    owner = CAL
+                }
+            }
+		}
+	}
+	#Focus for asking the republic for mediators
+	focus = {
+		id = CAL_ask_the_republic_for_mediators
+		icon = GFX_Padme
+		x = 10
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CAL_side_with_dac
+		}
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.05
+        }
+	}
+	focus = {
+		id = CAL_citizens_first
+		icon = GFX_Placeholder
+		x = 12
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CAL_ask_the_republic_for_mediators
+		}
+		mutually_exclusive = {
+			focus = CAL_prepare_for_the_inveitable
+		}
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = civil_unrest_1
+				add_idea = civil_unrest_2
+			}
+        }
+	}
+	focus = {
+		id = CAL_invest_in_consumer_goods
+		icon = GFX_Placeholder
+		x = 12
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CAL_citizens_first
+		}
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			191={
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type =  industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_stability = 0.05
+        }
+	}
+	focus = {
+		id = CAL_prepare_for_the_inveitable
+		icon = GFX_Placeholder
+		x = 14
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CAL_ask_the_republic_for_mediators
+		}
+		mutually_exclusive = {
+			focus = CAL_citizens_first
+		}
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = 10000
+    				producer = CAL
+			}
+        }
+	}
+	focus = {
+		id = CAL_churn_out_supplies
+		icon = GFX_Placeholder
+		x = 14
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = CAL_prepare_for_the_inveitable
+		}
+
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			add_ideas = supplies
+        }
+	}
+	focus = {
+		id = CAL_learn_from_the_gungans
+		icon = GFX_learn_from_ggs
+		x = 10
+		y = 4
+		cost = 7
+		available_if_capitulated = no
+		prerequisite = {
+			focus = CAL_ask_the_republic_for_mediators
+		}
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+				name = industry_bonus
+			}
+			
+		}
+	}
+	focus = {
+		id = CAL_remove_ruusan_agreement
+		icon = GFX_Placeholder
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = no
+		prerequisite = {
+			focus = CAL_prepare_the_armouries
+			focus = CAL_the_soldier_king
+		}
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			remove_ideas = {
+				ruusan_nerf_army
+				ruusan_nerf_nav 
+			}
+		}
+	}
+	focus = {
+		id = CAL_the_soldier_king
+		icon = GFX_Placeholder
+		x = 8
+		y = 5
+		cost = 6
+		available_if_capitulated = no
+		prerequisite = {
+			focus = CAL_sell_unnecessary_ships
+		}
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			swap_ruler_traits= {
+				remove = inexperienced_monarch
+				add = popular_king
+			}
+		}
+	}
+	focus = {
+		id = CAL_prepare_the_armouries
+		icon = GFX_Placeholder
+		x = 10
+		y = 5
+		cost = 8
+		available_if_capitulated = no
+		prerequisite = {
+			focus = CAL_learn_from_the_gungans
+		}
+
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			191={
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			197={
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAL_sell_unnecessary_ships
+		icon = GFX_Placeholder
+		x = 8
+		y = 4
+		cost = 6
+		available_if_capitulated = no
+		prerequisite = {
+			focus = CAL_call_the_knights
+		}
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			add_to_variable = { dx = 100 }
+			add_stability = -0.05
+			custom_effect_tooltip = 14_CAL_tt
+		}
+	}
+	focus = {
+		id = CAL_send_commanders_for_training
+		icon = GFX_Placeholder
+		x = 6
+		y = 4
+		cost = 8
+		available_if_capitulated = no
+		prerequisite = {
+			focus = CAL_call_the_knights
+		}
+
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			set_country_flag = CommandersTrained
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = CAL_enlist_ackbar
+		icon = GFX_Placeholder
+		x = 4
+		y = 5
+		cost = 7
+		available_if_capitulated = no
+		prerequisite = {
+			focus = CAL_send_commanders_for_training
+		}
+
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			set_country_flag = AckbarEnlisted
+			create_field_marshal = {
+				name = "Captain Ackbar"
+				id = 800
+				portrait_path = "gfx/leaders/CAL/Gial Ackbar.dds"
+				traits = { harsh_leader commando unyielding_defender}
+				skill = 7
+
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 4
+				logistics_skill = 5
+			}
+			create_navy_leader = {
+				name = "Captain Ackbar"
+			    portrait_path = "gfx/leaders/CAL/Gial Ackbar.dds"
+				traits = { aviation_enthusiast naval_lineage  }
+				skill = 5
+				coordination_skill = 2
+				attack_skill = 4
+				defense_skill = 3
+				maneuvering_skill = 3
+			}
+		}
+	}
+	focus = {
+		id = CAL_set_up_military_research_teams
+		icon = GFX_Placeholder
+		x = 6
+		y = 5
+		cost = 8
+		available_if_capitulated = no
+		prerequisite = {
+			focus = CAL_send_commanders_for_training
+		}
+
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = CAL_a_new_day_dawns
+		icon = GFX_Placeholder
+		x = 20
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		prerequisite = {
+			focus = CAL_the_gungans_arrive
+		}
+		ai_will_do = {
+				factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {
+			   add_timed_idea ={
+				   idea = a_society_swept_away_1
+				   days = 720
+			   }
+			   load_focus_tree = DAC
+			   add_ideas = brain_drain_1
+			}
+			custom_effect_tooltip = 15_CAL_tt
+		}
+	}
+	#Emergancy War Focuses
+	focus = {
+		id = CAL_For_our_home
+		icon = GFX_Placeholder
+		x = 20
+		y = 0
+		cost = 3
+		ai_will_do = {
+				factor = 1
+		}
+		available = {
+			 has_war = yes
+		}
+		completion_reward = {
+			add_ideas = defence_of_home
+		}
+	}
+	focus = {
+		id = CAL_recall_navy
+		icon = GFX_Placeholder
+		x = 19
+		y = 1
+		cost = 2
+		ai_will_do = {
+				factor = 1
+		}
+		available = {
+			 has_war = yes
+		}
+		completion_reward = {
+			set_technology = {
+				mc75_tech = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = mc75_equipment
+				}
+				requested_factories = 1
+				progress = 1.0
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = mc75_equipment
+				}
+				requested_factories = 1
+				progress = 1.0
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = mc75_equipment
+				}
+				requested_factories = 1
+				progress = 1.0
+				amount = 1
+			}
+		}
+	}
+	focus = {
+		id = CAL_protect_the_capital
+		icon = GFX_Placeholder
+		x = 21
+		y = 1
+		cost = 8
+		ai_will_do = {
+				factor = 1
+		}
+		prerequisite = {
+			focus = CAL_For_our_home
+		}
+		completion_reward = {
+			195 = {
+				add_building_construction = {
+	    		type = bunker
+	    		level = 3
+	    		instant_build = yes
+	    		province = 999
+				}
+				add_building_construction = {
+	    		type = bunker
+	    		level = 2
+	    		instant_build = yes
+	    		province = 6909
+				}
+				add_building_construction = {
+	    		type = bunker
+	    		level = 2
+	    		instant_build = yes
+	    		province = 2752
+				}
+				add_building_construction = {
+	    		type = bunker
+	    		level = 2
+	    		instant_build = yes
+	    		province = 6928
+				}
+			}
+		}
+	}
+	focus = {
+		id = CAL_the_gungans_arrive
+		icon = GFX_ggs_arrive
+		x = 21
+		y = 3
+		cost = 6
+		ai_will_do = {
+				factor = 1
+		}
+		prerequisite = {
+			focus = CAL_Clone_renforcements
+		}
+		completion_reward = {
+			set_technology = {
+				booma_tech = 1
+			}
+			division_template = {
+	  			name = "Gungan Warriors"
+	  			priority = 1
+
+		  		regiments = {
+					militia_Gungan = { x = 0 y = 0 }		
+					militia_Gungan = { x = 0 y = 1 }
+					militia_Gungan = { x = 0 y = 2 }
+					militia_Gungan = { x = 0 y = 3 }
+					militia_Gungan = { x = 0 y = 4 }
+					militia_Gungan = { x = 1 y = 0 }
+					militia_Gungan = { x = 1 y = 1 }
+					militia_Gungan = { x = 1 y = 2 }
+		 			militia_Gungan = { x = 1 y = 3 }
+					militia_Gungan = { x = 1 y = 4 }
+	  			}
+	  			support = {
+        			booma_unit = { x = 0 y = 0 }
+    			}
+			}
+			195 = {
+	                create_unit = {
+	                    division = "name = \"Wakadoo\" division_template = \"Gungan Warriors\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+	                    owner = CAL
+	                }
+					create_unit = {
+	                    division = "name = \"Greme\" division_template = \"Gungan Warriors\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+	                    owner = CAL
+	                }
+	                create_unit = {
+	                    division = "name = \"Dakada\" division_template = \"Gungan Warriors\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+	                    owner = CAL
+	                }
+					create_unit = {
+	                    division = "name = \"Regifa\" division_template = \"Gungan Warriors\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+	                    owner = CAL
+	                }
+	                create_unit = {
+	                    division = "name = \"Ongius\" division_template = \"Gungan Warriors\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+	                    owner = CAL
+	                }
+					create_unit = {
+	                    division = "name = \"Petia\" division_template = \"Gungan Warriors\" start_experience_factor = 0.2 start_equipment_factor = 0.7"
+	                    owner = CAL
+	                }
+			}
+		}
+	}
+	focus = {
+		id = CAL_republic_sends_guns
+			icon = GFX_Placeholder
+			x = 19
+			y = 2
+			cost = 3
+			ai_will_do = {
+				factor = 1
+			}
+			prerequisite = {
+				focus = CAL_protect_the_capital
+				focus = CAL_recall_navy
+			}
+			completion_reward = {
+				add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = 10000
+    				producer = REP
+				}
+			}
+	}
+
+	focus = {
+		id = CAL_Clone_renforcements
+		icon = GFX_clone_scuba_trooper_focus
+		x = 21
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = CAL_protect_the_capital
+			focus = CAL_recall_navy
+		}
+		completion_reward = {
+			set_technology = {
+				p1_clone_tech = 1
+			}
+			add_equipment_to_stockpile {
+					type = p1_clone_equip
+					amount = 2000
+					producer = KAM
+			}
+			division_template = {
+	  			name = "Clone Scuba Division"
+	  			priority = 1
+
+		  		regiments = {
+					clone_scuba = { x = 0 y = 0 }		
+					clone_scuba = { x = 0 y = 1 }
+					clone_scuba = { x = 0 y = 2 }
+					clone_scuba = { x = 0 y = 3 }
+					clone_scuba = { x = 0 y = 4 }
+					clone_scuba = { x = 1 y = 0 }
+					clone_scuba = { x = 1 y = 1 }
+					clone_scuba = { x = 1 y = 2 }
+		 			clone_scuba = { x = 1 y = 3 }
+					clone_scuba = { x = 1 y = 4 }
+	  			}
+			}
+			195 = {
+                create_unit = {
+                    division = "name = \"Kit Fistos Division\" division_template = \"Clone Scuba Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+                    owner = CAL
+                }
+				create_unit = {
+                    division = "name = \"Kit Fistos Division\" division_template = \"Clone Scuba Division\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+                    owner = CAL
+                }
+			}
+		}
+	}		
+}
+	
+

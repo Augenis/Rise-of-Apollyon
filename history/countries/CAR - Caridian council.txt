@@ -1,0 +1,129 @@
+﻿capital = 152
+
+oob = "CAR_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .40
+set_country_flag = no_ideas
+
+set_technology = {
+	tech_support = 1
+	militia_CAR = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	REP_member_prewar
+	service_by_requirement 
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	low_economic_mobilisation
+	food_exports
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+
+create_country_leader = {
+	name = "Laslo Dorits"
+	desc = "Leader of the Caridian Council"
+	picture = "gfx/leaders/CAR/VinisIrak.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+#needs to be changed, Council_of_Merchants. Laslo is from eridu
+
+create_corps_commander = {
+	name = "Dauren"
+	portrait_path = "gfx/leaders/CAR/Dauren.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Furgan"
+	portrait_path = "gfx/leaders/CAR/Furgan.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Jack Cardia"
+	portrait_path = "gfx/leaders/CAR/gen3.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Marko Rhodoras"
+	portrait_path = "gfx/leaders/CAR/gen2.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Alexsandr Badure"
+	portrait_path = "gfx/leaders/CAR/Alexsandr_Badure.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Petr Badure"
+	portrait_path = "gfx/leaders/CAR/gen1.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+}

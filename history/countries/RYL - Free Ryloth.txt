@@ -1,0 +1,154 @@
+﻿capital = 479
+
+oob = "RYL_3677"
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = .05
+
+set_technology = {
+	tech_support = 1
+	militia_RYL = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 75
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	volunteer_only
+	slave_raids
+	lack_of_recourses
+	cham_syndulla_insurgent
+	civilian_economy
+	spice_trade
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+create_country_leader = {
+	name = "Koyi Mateil"
+	desc = "Separatist"
+	picture = "gfx/leaders/RYL/KoyiMateil.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+	name = "Orn Free Taa"
+	desc = ""
+	picture = "gfx/leaders/RYL/Portrait_RYL_Orn_Free_Taa.png"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+
+create_field_marshal = {
+	name = "Cham Syndulla"
+	picture = "ChamSyndulla.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Fizfevuq"
+	portrait_path = "gfx/leaders/RYL/Fizfevuq.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Iodattamit"
+	portrait_path = "gfx/leaders/RYL/Iodattamit.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Osrorcrumi"
+	portrait_path = "gfx/leaders/RYL/Osrorcrumi.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Gobi Glie"
+	portrait_path = "gfx/leaders/RYL/Gobi_Glie.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Wofal Te"
+	portrait_path = "gfx/leaders/RYL/Gen1.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Beezer Fortuna"
+    picture = "adm1.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Kango Ves"
+    picture = "adm2.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}

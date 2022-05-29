@@ -1,0 +1,24 @@
+guiTypes = {
+	containerWindowType = {
+		name = "karkadon_interface"
+		orientation = center
+		position = {x=-400 y=-300}
+		size = { width=600 height=300 }
+		
+		instantTextBoxType = {
+			name = "karkadon_num"
+			position = { x = 18 y = 20 }
+			font = "hoi36header"
+			maxWidth = 140
+			maxHeight = 20
+			text = "karkadon_counter"
+			format = left
+			pdx_tooltip = "KARKADON_COUNTER_TT"
+		}
+		iconType = {
+			name = "riff_tamson"
+			position = { x=180 y=0 }  
+			spriteType = "GFX_riff_tamson_decision"
+		}
+	}
+}

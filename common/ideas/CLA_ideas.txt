@@ -1,0 +1,83 @@
+ideas = {
+    country = {
+    }
+	political_advisor = {
+        Com_Fordox = {
+			allowed = {
+				original_tag = CLA
+			}
+			traits = { Social_Reformer }
+        }
+	Shyla_Merricope = {
+			allowed = {
+				original_tag = CLA
+			}
+			traits = { Appeaser }		
+		}
+	Sena = {
+			allowed = {
+				original_tag = CLA
+			}
+			traits = { Compassionate_Commoner }
+		}
+    }
+			theorist = {
+		tGarm_Bel_Iblis = {
+			ledger = navy
+			allowed = {
+				original_tag = CLA
+			}
+			research_bonus = {
+				naval_doctrine = 0.15
+			}
+			traits = { naval_theorist }
+		}
+	}
+	army_chief = {
+	Garm_Bel_Iblis = {
+			allowed = {
+				original_tag = CLA
+			}
+		traits = { army_chief_offensive_2 }
+		}
+		}
+		air_chief = {
+			Francis_Drake = {
+			allowed = {
+				original_tag = CLA
+			}
+			traits = { air_chief_ground_support_2 }
+		}	
+	}
+	navy_chief  = {
+		William_Bligh = {
+			allowed = {
+				original_tag = CLA
+			}
+			traits = { navy_chief_decisive_battle_2 }
+		}
+	}
+	high_command = {
+			hcSena = {
+			ledger = army
+			allowed = {
+				original_tag = CLA
+			}
+			traits = { Army_Logistics_2 }
+		}
+			Irenez = {
+			ledger = army
+			allowed = {
+				original_tag = CLA
+			}
+			traits = { army_infantry_2 }
+		}	
+		Kelgri_Cornwak = {
+			ledger = army
+			allowed = {
+				original_tag = CLA
+			}
+			traits = { army_regrouping_2 }
+		}
+	}
+}

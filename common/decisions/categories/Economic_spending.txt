@@ -1,0 +1,18 @@
+Economic_spending = {
+
+icon = generic_political_discourse
+        allowed = { always = yes }
+
+}
+income_bonus = {
+
+    icon = zygerria_slaves_cat
+    visible = {
+    }
+    visible_when_empty = yes
+    available = { 
+    }
+
+    allowed = {
+    }
+}

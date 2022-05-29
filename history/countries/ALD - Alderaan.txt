@@ -1,0 +1,130 @@
+﻿capital = 186
+
+oob = "ALD_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_ALD = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	REP_member_prewar
+	volunteer_only
+	low_economic_mobilisation
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "0975.1.2"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+	give_military_access = REP
+}
+
+0978.8.1 = {
+
+	set_politics = {
+		ruling_party = democratic
+		last_election = "0975.1.2"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+		}
+	}
+
+	create_country_leader = {
+	name = "Breha Organa"
+	desc = "Queen of Alderaan"
+	picture = "gfx/leaders/ALD/Breha_Organa.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+	}
+
+	create_navy_leader = {
+		name = "Raymus Antilles"
+    	picture = "RaymusAntilles.dds"
+		traits = {  }
+		skill = 3
+		coordination_skill = 2
+		attack_skill = 3
+		defense_skill = 2
+		maneuvering_skill = 3
+	}
+
+	create_navy_leader = {
+		name = "Jeremoch Colton"
+    	picture = "JeremochColton.dds"
+		traits = {  }
+		skill = 2
+		coordination_skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		maneuvering_skill = 2
+	}
+
+	create_field_marshal = {
+		name = "Bail Organa"
+		portrait_path = "gfx/leaders/ALD/ALD_BailOrgana.dds"
+		traits = {  }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 4
+	}
+
+	create_corps_commander = {
+		name = "Krorrull Bom"
+		picture = "KrorrullBom.dds"
+		traits = {  }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+		name = "Adrian Verana"
+		portrait_path = "gfx/leaders/ALD/Adrian_Verana.dds"
+		traits = { }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+		name = "Gavvix Sironna"
+		portrait_path = "gfx/leaders/ALD/Gavvix_Sironna.dds"
+		traits = { }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}

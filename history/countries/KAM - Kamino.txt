@@ -1,0 +1,153 @@
+capital = 423
+
+oob = "KAM_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_KAM = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 100
+
+add_ideas = {
+	disarmed_nation
+	cloning_facilities
+	partial_economic_mobilisation
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+create_country_leader = {
+	name = "Lama Su"
+	desc = "Prime Minister of Kamino"
+	picture = "gfx/leaders/KAM/LamaSu.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}
+
+create_country_leader = {
+	name = "Lama Su"
+	desc = "Prime Minister of Kamino"
+	picture = "gfx/leaders/KAM/LamaSu.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_corps_commander = {
+	name = "CT-7567"
+	portrait_path = "gfx/leaders/KAM/Kamino Clone 1.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "CT-6969"
+	portrait_path = "gfx/leaders/KAM/Kamino Clone 2.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "CT-5385"
+	portrait_path = "gfx/leaders/KAM/Kamino Clone 3.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "CT-6183"
+	portrait_path = "gfx/leaders/KAM/Kamino_clone_4.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "CT-5764"
+	portrait_path = "gfx/leaders/KAM/Kamino4.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ko Sai"
+	portrait_path = "gfx/leaders/KAM/Ko_Sai.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Taun We"
+	portrait_path = "gfx/leaders/KAM/Taun_We.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Ciwah Sal"
+    picture = "Ciwah_Sal.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {
+	name = "Fewa Sai"
+    picture = "Fewa_Sai.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}

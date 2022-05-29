@@ -1,0 +1,52 @@
+guiTypes = {
+	containerWindowType = {
+		name = "consortium_container_state"
+		position = { x=18 y=-620}
+		#show_position = { x=2 y =-615 }
+		#show_animation_type = decelerated
+		#hide_animation_type = accelerated
+		#animation_time = 300
+		orientation = lower_left
+		size = { width=399 height=545 }
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_stateview_consortium"
+		}
+		buttonType = {
+			name = "outpost"
+			position = {x=19 y=16}
+			spriteType = "GFX_outpost"
+		}
+		buttonType = {
+			name = "established"
+			position = {x=98 y=16}
+			spriteType = "GFX_established"
+		}
+		buttonType = {
+			name = "prominant"
+			position = {x=198 y=16}
+			spriteType = "GFX_prominant"
+		}
+		buttonType = {
+			name = "dominant"
+			position = {x=291 y=16}
+			spriteType = "GFX_dominant"
+		}
+		icontype = {
+			name = "consortium_levels"
+			position = {x=0 y=320}
+			spriteType = "GFX_state_levels"
+		}
+		instantTextboxType = {
+            name = "hondo_counter"
+            position = {x=0 y=320}
+            font = "hoi_18mbs"
+            borderSize = {x = -8 y = 13}
+            text = "1"
+            maxWidth = 240
+            maxHeight = 30
+			format = center
+        }
+	}
+}

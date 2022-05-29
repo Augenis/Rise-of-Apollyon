@@ -1,0 +1,226 @@
+ideas = {
+    #############
+    country = {
+        royal_archivists = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                research_speed_factor = 0.05
+            }
+        }
+        old_building_techniques = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                production_speed_buildings_factor = 0.15
+            }
+        }
+        zygerria_empire = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                justify_war_goal_time = -0.25
+            }
+        }
+        slavery_hub = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+            }
+        }
+        zygerrian_lang = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                political_power_gain = 0.5
+            }
+        }
+        POW = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                weekly_manpower = 2000
+            }
+        }
+        strength_intelligence = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                army_org_factor = 0.08
+                research_speed_factor = 0.04
+
+            }
+        }
+        slaves_of_kyros = {
+
+            picture = the_war_to_end_all_wars
+
+            allowed = {
+		        always = no
+                original_tag = ZYG
+            }
+
+            available = {
+            }
+
+            modifier = {
+                consumer_goods_factor = -0.05
+
+            }
+        }
+    }
+    political_advisor = {
+    atai_molec = {
+            allowed = {
+				always = no 
+			}
+			modifier = {
+                stability_factor = 0.10
+                war_support_weekly = 0.01
+			}
+        }
+	Agruss = {
+			allowed = {
+				original_tag = ZYG
+			}
+			traits = { Prince_of_Terror }		
+		}
+	ADarts_D_Nar = {
+			allowed = {
+				original_tag = ZYG
+			}
+			traits = { Avid_Turanist }
+		}
+	sono_molec = {
+            allowed = {
+			original_tag = ZYG
+			}
+			traits = { Financial_Expert }
+        }
+    }
+			theorist = {
+		tatai_molec = {
+			ledger = Army
+			allowed = {
+				original_tag = ZYG
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			traits = { Military_theorist }
+		}
+	}
+	army_chief = {
+	acatai_molec = {
+			allowed = {
+				original_tag = ZYG
+			}
+		traits = { army_chief_offensive_2 }
+		}
+		}
+	air_chief = {
+			Zolghast = {
+			allowed = {
+				original_tag = ZYG
+			}
+			traits = { air_chief_ground_support_1 }
+		}	
+	}
+
+	navy_chief  = {
+		Darts_D_Nar = {
+			allowed = {
+				original_tag = ZYG
+			}
+			traits = { navy_chief_decisive_battle_1 }
+		}
+	}
+
+	high_command = {
+
+				Omus_Krill = {
+			ledger = army
+			allowed = {
+				original_tag = ZYG
+			}
+			traits = { Army_Logistics_1 }
+		}
+				Rajim_Armin = {
+			ledger = army
+			allowed = {
+				original_tag = ZYG
+			}
+			traits = { army_infantry_1 }
+		}	
+		Hordem_Molec = {
+			ledger = navy
+			allowed = {
+				original_tag = ZYG
+			}
+			traits = { navy_naval_air_defense_1 }
+		}
+	}
+}

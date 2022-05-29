@@ -1,0 +1,2511 @@
+spriteTypes = { 
+	##Icon For: Incorporate FAED
+	SpriteType = { 
+		name = "GFX_TEC_incorporate_faed-104098"
+		texturefile = "gfx/interface/goals/GFX_TEC_incorporate_faed-104098.dds"
+	}
+
+	##Icon Shine For: Incorporate FAED
+	SpriteType = { 
+		name = "GFX_TEC_incorporate_faed-104098_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_incorporate_faed-104098.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_incorporate_faed-104098.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_incorporate_faed-104098.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Commerce Ties
+	SpriteType = { 
+		name = "GFX_TEC_commerce_ties-104082"
+		texturefile = "gfx/interface/goals/GFX_TEC_commerce_ties-104082.dds"
+	}
+
+	##Icon Shine For: Commerce Ties
+	SpriteType = { 
+		name = "GFX_TEC_commerce_ties-104082_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_commerce_ties-104082.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_commerce_ties-104082.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_commerce_ties-104082.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Production Streamline
+	SpriteType = { 
+		name = "GFX_TEC_production_streamline-104095"
+		texturefile = "gfx/interface/goals/GFX_TEC_production_streamline-104095.dds"
+	}
+
+	##Icon Shine For: Production Streamline
+	SpriteType = { 
+		name = "GFX_TEC_production_streamline-104095_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_production_streamline-104095.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_production_streamline-104095.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_production_streamline-104095.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Enhanced Distribution Methods
+	SpriteType = { 
+		name = "GFX_TEC_enhanced_distribution_methods-104090"
+		texturefile = "gfx/interface/goals/GFX_TEC_enhanced_distribution_methods-104090.dds"
+	}
+
+	##Icon Shine For: Enhanced Distribution Methods
+	SpriteType = { 
+		name = "GFX_TEC_enhanced_distribution_methods-104090_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_enhanced_distribution_methods-104090.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_enhanced_distribution_methods-104090.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_enhanced_distribution_methods-104090.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Leave The Galactic Republic
+	SpriteType = { 
+		name = "GFX_TEC_leave_the_galactic_republic-104081"
+		texturefile = "gfx/interface/goals/GFX_TEC_leave_the_galactic_republic-104081.dds"
+	}
+
+	##Icon Shine For: Leave The Galactic Republic
+	SpriteType = { 
+		name = "GFX_TEC_leave_the_galactic_republic-104081_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_leave_the_galactic_republic-104081.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_leave_the_galactic_republic-104081.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_leave_the_galactic_republic-104081.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Fondor Factory Expansion
+	SpriteType = { 
+		name = "GFX_TEC_fondor_factory_expansion-104087"
+		texturefile = "gfx/interface/goals/GFX_TEC_fondor_factory_expansion-104087.dds"
+	}
+
+	##Icon Shine For: Fondor Factory Expansion
+	SpriteType = { 
+		name = "GFX_TEC_fondor_factory_expansion-104087_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_fondor_factory_expansion-104087.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_fondor_factory_expansion-104087.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_fondor_factory_expansion-104087.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Playing Politics
+	SpriteType = { 
+		name = "GFX_TEC_playing_politics-104039"
+		texturefile = "gfx/interface/goals/GFX_TEC_playing_politics-104039.dds"
+	}
+
+	##Icon Shine For: Playing Politics
+	SpriteType = { 
+		name = "GFX_TEC_playing_politics-104039_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_playing_politics-104039.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_playing_politics-104039.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_playing_politics-104039.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Self Defense
+	SpriteType = { 
+		name = "GFX_TEC_self_defense-104040"
+		texturefile = "gfx/interface/goals/GFX_TEC_self_defense-104040.dds"
+	}
+
+	##Icon Shine For: Self Defense
+	SpriteType = { 
+		name = "GFX_TEC_self_defense-104040_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_self_defense-104040.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_self_defense-104040.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_self_defense-104040.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: A More Perfect Union
+	SpriteType = { 
+		name = "GFX_TEC_a_more_perfect_union-104109"
+		texturefile = "gfx/interface/goals/GFX_TEC_a_more_perfect_union-104109.dds"
+	}
+
+	##Icon Shine For: A More Perfect Union
+	SpriteType = { 
+		name = "GFX_TEC_a_more_perfect_union-104109_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_a_more_perfect_union-104109.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_a_more_perfect_union-104109.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_a_more_perfect_union-104109.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: FAED
+	SpriteType = { 
+		name = "GFX_TEC_faed-104110"
+		texturefile = "gfx/interface/goals/GFX_TEC_faed-104110.dds"
+	}
+
+	##Icon Shine For: FAED
+	SpriteType = { 
+		name = "GFX_TEC_faed-104110_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_faed-104110.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_faed-104110.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_faed-104110.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Territorial Investment
+	SpriteType = { 
+		name = "GFX_TEC_territorial_investment-104043"
+		texturefile = "gfx/interface/goals/GFX_TEC_territorial_investment-104043.dds"
+	}
+
+	##Icon Shine For: Territorial Investment
+	SpriteType = { 
+		name = "GFX_TEC_territorial_investment-104043_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_territorial_investment-104043.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_territorial_investment-104043.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_territorial_investment-104043.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Research and Development Wing
+	SpriteType = { 
+		name = "GFX_TEC_research_and_development_wing-104111"
+		texturefile = "gfx/interface/goals/GFX_TEC_research_and_development_wing-104111.dds"
+	}
+
+	##Icon Shine For: Research and Development Wing
+	SpriteType = { 
+		name = "GFX_TEC_research_and_development_wing-104111_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_research_and_development_wing-104111.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_research_and_development_wing-104111.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_research_and_development_wing-104111.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Training Our Assets
+	SpriteType = { 
+		name = "GFX_TEC_training_our_assets-104045"
+		texturefile = "gfx/interface/goals/GFX_TEC_training_our_assets-104045.dds"
+	}
+
+	##Icon Shine For: Training Our Assets
+	SpriteType = { 
+		name = "GFX_TEC_training_our_assets-104045_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_training_our_assets-104045.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_training_our_assets-104045.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_training_our_assets-104045.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Life In The Union
+	SpriteType = { 
+		name = "GFX_TEC_life_in_the_union-104046"
+		texturefile = "gfx/interface/goals/GFX_TEC_life_in_the_union-104046.dds"
+	}
+
+	##Icon Shine For: Life In The Union
+	SpriteType = { 
+		name = "GFX_TEC_life_in_the_union-104046_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_life_in_the_union-104046.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_life_in_the_union-104046.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_life_in_the_union-104046.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Infrastructure Projects
+	SpriteType = { 
+		name = "GFX_TEC_infrastructure_projects-104047"
+		texturefile = "gfx/interface/goals/GFX_TEC_infrastructure_projects-104047.dds"
+	}
+
+	##Icon Shine For: Infrastructure Projects
+	SpriteType = { 
+		name = "GFX_TEC_infrastructure_projects-104047_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_infrastructure_projects-104047.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_infrastructure_projects-104047.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_infrastructure_projects-104047.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Resource Grab
+	SpriteType = { 
+		name = "GFX_TEC_resource_grab-104048"
+		texturefile = "gfx/interface/goals/GFX_TEC_resource_grab-104048.dds"
+	}
+
+	##Icon Shine For: Resource Grab
+	SpriteType = { 
+		name = "GFX_TEC_resource_grab-104048_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_resource_grab-104048.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_resource_grab-104048.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_resource_grab-104048.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: War In The Vacuum
+	SpriteType = { 
+		name = "GFX_TEC_war_in_the_vacuum-104113"
+		texturefile = "gfx/interface/goals/GFX_TEC_war_in_the_vacuum-104113.dds"
+	}
+
+	##Icon Shine For: War In The Vacuum
+	SpriteType = { 
+		name = "GFX_TEC_war_in_the_vacuum-104113_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_war_in_the_vacuum-104113.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_war_in_the_vacuum-104113.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_war_in_the_vacuum-104113.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Shipyards of Fondor
+	SpriteType = { 
+		name = "GFX_TEC_the_shipyards_of_fondor-104051"
+		texturefile = "gfx/interface/goals/GFX_TEC_the_shipyards_of_fondor-104051.dds"
+	}
+
+	##Icon Shine For: The Shipyards of Fondor
+	SpriteType = { 
+		name = "GFX_TEC_the_shipyards_of_fondor-104051_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_the_shipyards_of_fondor-104051.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_the_shipyards_of_fondor-104051.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_the_shipyards_of_fondor-104051.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Built For Combat
+	SpriteType = { 
+		name = "GFX_TEC_built_for_combat-104112"
+		texturefile = "gfx/interface/goals/GFX_TEC_built_for_combat-104112.dds"
+	}
+
+	##Icon Shine For: Built For Combat
+	SpriteType = { 
+		name = "GFX_TEC_built_for_combat-104112_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_built_for_combat-104112.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_built_for_combat-104112.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_built_for_combat-104112.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Tank Development
+	SpriteType = { 
+		name = "GFX_TEC_tank_development-104053"
+		texturefile = "gfx/interface/goals/GFX_TEC_tank_development-104053.dds"
+	}
+
+	##Icon Shine For: Tank Development
+	SpriteType = { 
+		name = "GFX_TEC_tank_development-104053_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_tank_development-104053.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_tank_development-104053.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_tank_development-104053.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Improved Battle Droids
+	SpriteType = { 
+		name = "GFX_TEC_improved_battle_droids-104054"
+		texturefile = "gfx/interface/goals/GFX_TEC_improved_battle_droids-104054.dds"
+	}
+
+	##Icon Shine For: Improved Battle Droids
+	SpriteType = { 
+		name = "GFX_TEC_improved_battle_droids-104054_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_improved_battle_droids-104054.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_improved_battle_droids-104054.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_improved_battle_droids-104054.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Tank Driver AI Enhancements
+	SpriteType = { 
+		name = "GFX_TEC_tank_driver_ai_enhancements-104055"
+		texturefile = "gfx/interface/goals/GFX_TEC_tank_driver_ai_enhancements-104055.dds"
+	}
+
+	##Icon Shine For: Tank Driver AI Enhancements
+	SpriteType = { 
+		name = "GFX_TEC_tank_driver_ai_enhancements-104055_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_tank_driver_ai_enhancements-104055.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_tank_driver_ai_enhancements-104055.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_tank_driver_ai_enhancements-104055.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Battle Droid Software Development
+	SpriteType = { 
+		name = "GFX_TEC_battle_droid_software_development-104056"
+		texturefile = "gfx/interface/goals/GFX_TEC_battle_droid_software_development-104056.dds"
+	}
+
+	##Icon Shine For: Battle Droid Software Development
+	SpriteType = { 
+		name = "GFX_TEC_battle_droid_software_development-104056_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_battle_droid_software_development-104056.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_battle_droid_software_development-104056.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_battle_droid_software_development-104056.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Tactical Droid Updates
+	SpriteType = { 
+		name = "GFX_TEC_tactical_droid_updates-104057"
+		texturefile = "gfx/interface/goals/GFX_TEC_tactical_droid_updates-104057.dds"
+	}
+
+	##Icon Shine For: Tactical Droid Updates
+	SpriteType = { 
+		name = "GFX_TEC_tactical_droid_updates-104057_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_tactical_droid_updates-104057.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_tactical_droid_updates-104057.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_tactical_droid_updates-104057.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Bred For Combat
+	SpriteType = { 
+		name = "GFX_TEC_bred_for_combat-104114"
+		texturefile = "gfx/interface/goals/GFX_TEC_bred_for_combat-104114.dds"
+	}
+
+	##Icon Shine For: Bred For Combat
+	SpriteType = { 
+		name = "GFX_TEC_bred_for_combat-104114_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_bred_for_combat-104114.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_bred_for_combat-104114.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_bred_for_combat-104114.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Caverns
+	SpriteType = { 
+		name = "GFX_TEC_the_caverns-104059"
+		texturefile = "gfx/interface/goals/GFX_TEC_the_caverns-104059.dds"
+	}
+
+	##Icon Shine For: The Caverns
+	SpriteType = { 
+		name = "GFX_TEC_the_caverns-104059_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_the_caverns-104059.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_the_caverns-104059.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_the_caverns-104059.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Pave The Way
+	SpriteType = { 
+		name = "GFX_TEC_pave_the_way-104061"
+		texturefile = "gfx/interface/goals/GFX_TEC_pave_the_way-104061.dds"
+	}
+
+	##Icon Shine For: Pave The Way
+	SpriteType = { 
+		name = "GFX_TEC_pave_the_way-104061_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_pave_the_way-104061.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_pave_the_way-104061.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_pave_the_way-104061.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Diplomatic Solution
+	SpriteType = { 
+		name = "GFX_TEC_diplomatic_solution-104062"
+		texturefile = "gfx/interface/goals/GFX_TEC_diplomatic_solution-104062.dds"
+	}
+
+	##Icon Shine For: Diplomatic Solution
+	SpriteType = { 
+		name = "GFX_TEC_diplomatic_solution-104062_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_diplomatic_solution-104062.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_diplomatic_solution-104062.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_diplomatic_solution-104062.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Protective Measures
+	SpriteType = { 
+		name = "GFX_TEC_protective_measures-104063"
+		texturefile = "gfx/interface/goals/GFX_TEC_protective_measures-104063.dds"
+	}
+
+	##Icon Shine For: Protective Measures
+	SpriteType = { 
+		name = "GFX_TEC_protective_measures-104063_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_protective_measures-104063.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_protective_measures-104063.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_protective_measures-104063.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Push For Repeal
+	SpriteType = { 
+		name = "GFX_TEC_push_for_repeal-104064"
+		texturefile = "gfx/interface/goals/GFX_TEC_push_for_repeal-104064.dds"
+	}
+
+	##Icon Shine For: Push For Repeal
+	SpriteType = { 
+		name = "GFX_TEC_push_for_repeal-104064_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_push_for_repeal-104064.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_push_for_repeal-104064.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_push_for_repeal-104064.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: War Profiteering
+	SpriteType = { 
+		name = "GFX_TEC_war_profiteering-104065"
+		texturefile = "gfx/interface/goals/GFX_TEC_war_profiteering-104065.dds"
+	}
+
+	##Icon Shine For: War Profiteering
+	SpriteType = { 
+		name = "GFX_TEC_war_profiteering-104065_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_war_profiteering-104065.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_war_profiteering-104065.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_war_profiteering-104065.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Arm the Separatists
+	SpriteType = { 
+		name = "GFX_TEC_arm_the_separatists-104066"
+		texturefile = "gfx/interface/goals/GFX_TEC_arm_the_separatists-104066.dds"
+	}
+
+	##Icon Shine For: Arm the Separatists
+	SpriteType = { 
+		name = "GFX_TEC_arm_the_separatists-104066_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_arm_the_separatists-104066.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_arm_the_separatists-104066.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_arm_the_separatists-104066.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Playing Both Sides
+	SpriteType = { 
+		name = "GFX_TEC_playing_both_sides-104067"
+		texturefile = "gfx/interface/goals/GFX_TEC_playing_both_sides-104067.dds"
+	}
+
+	##Icon Shine For: Playing Both Sides
+	SpriteType = { 
+		name = "GFX_TEC_playing_both_sides-104067_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_playing_both_sides-104067.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_playing_both_sides-104067.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_playing_both_sides-104067.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Join The Separatists
+	SpriteType = { 
+		name = "GFX_TEC_join_the_separatists-104068"
+		texturefile = "gfx/interface/goals/GFX_TEC_join_the_separatists-104068.dds"
+	}
+
+	##Icon Shine For: Join The Separatists
+	SpriteType = { 
+		name = "GFX_TEC_join_the_separatists-104068_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_join_the_separatists-104068.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_join_the_separatists-104068.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_join_the_separatists-104068.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Ribbon Cutting
+	SpriteType = { 
+		name = "GFX_TEC_ribbon_cutting-104069"
+		texturefile = "gfx/interface/goals/GFX_TEC_ribbon_cutting-104069.dds"
+	}
+
+	##Icon Shine For: Ribbon Cutting
+	SpriteType = { 
+		name = "GFX_TEC_ribbon_cutting-104069_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_ribbon_cutting-104069.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_ribbon_cutting-104069.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_ribbon_cutting-104069.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Arm The New Order
+	SpriteType = { 
+		name = "GFX_TEC_arm_the_new_order-104070"
+		texturefile = "gfx/interface/goals/GFX_TEC_arm_the_new_order-104070.dds"
+	}
+
+	##Icon Shine For: Arm The New Order
+	SpriteType = { 
+		name = "GFX_TEC_arm_the_new_order-104070_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_arm_the_new_order-104070.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_arm_the_new_order-104070.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_arm_the_new_order-104070.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Open and Honest
+	SpriteType = { 
+		name = "GFX_TEC_open_and_honest-104071"
+		texturefile = "gfx/interface/goals/GFX_TEC_open_and_honest-104071.dds"
+	}
+
+	##Icon Shine For: Open and Honest
+	SpriteType = { 
+		name = "GFX_TEC_open_and_honest-104071_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_open_and_honest-104071.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_open_and_honest-104071.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_open_and_honest-104071.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Shadow Supplier
+	SpriteType = { 
+		name = "GFX_TEC_shadow_supplier-104072"
+		texturefile = "gfx/interface/goals/GFX_TEC_shadow_supplier-104072.dds"
+	}
+
+	##Icon Shine For: Shadow Supplier
+	SpriteType = { 
+		name = "GFX_TEC_shadow_supplier-104072_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_shadow_supplier-104072.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_shadow_supplier-104072.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_shadow_supplier-104072.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Stable Foundations
+	SpriteType = { 
+		name = "GFX_TEC_stable_foundations-104073"
+		texturefile = "gfx/interface/goals/GFX_TEC_stable_foundations-104073.dds"
+	}
+
+	##Icon Shine For: Stable Foundations
+	SpriteType = { 
+		name = "GFX_TEC_stable_foundations-104073_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_stable_foundations-104073.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_stable_foundations-104073.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_stable_foundations-104073.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Factory Relocation
+	SpriteType = { 
+		name = "GFX_TEC_factory_relocation-104074"
+		texturefile = "gfx/interface/goals/GFX_TEC_factory_relocation-104074.dds"
+	}
+
+	##Icon Shine For: Factory Relocation
+	SpriteType = { 
+		name = "GFX_TEC_factory_relocation-104074_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_factory_relocation-104074.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_factory_relocation-104074.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_factory_relocation-104074.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Covering The Tracks
+	SpriteType = { 
+		name = "GFX_TEC_covering_the_tracks-104075"
+		texturefile = "gfx/interface/goals/GFX_TEC_covering_the_tracks-104075.dds"
+	}
+
+	##Icon Shine For: Covering The Tracks
+	SpriteType = { 
+		name = "GFX_TEC_covering_the_tracks-104075_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_covering_the_tracks-104075.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_covering_the_tracks-104075.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_covering_the_tracks-104075.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Roll The Credits
+	SpriteType = { 
+		name = "GFX_TEC_roll_the_credits-104076"
+		texturefile = "gfx/interface/goals/GFX_TEC_roll_the_credits-104076.dds"
+	}
+
+	##Icon Shine For: Roll The Credits
+	SpriteType = { 
+		name = "GFX_TEC_roll_the_credits-104076_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_roll_the_credits-104076.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_roll_the_credits-104076.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_roll_the_credits-104076.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Support the Disenffranchised
+	SpriteType = { 
+		name = "GFX_TEC_support_the_disenffranchised-104077"
+		texturefile = "gfx/interface/goals/GFX_TEC_support_the_disenffranchised-104077.dds"
+	}
+
+	##Icon Shine For: Support the Disenffranchised
+	SpriteType = { 
+		name = "GFX_TEC_support_the_disenffranchised-104077_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_support_the_disenffranchised-104077.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_support_the_disenffranchised-104077.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_support_the_disenffranchised-104077.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Annexation of Mustafar
+	SpriteType = { 
+		name = "GFX_TEC_annexation_of_mustafar-104078"
+		texturefile = "gfx/interface/goals/GFX_TEC_annexation_of_mustafar-104078.dds"
+	}
+
+	##Icon Shine For: Annexation of Mustafar
+	SpriteType = { 
+		name = "GFX_TEC_annexation_of_mustafar-104078_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_annexation_of_mustafar-104078.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_annexation_of_mustafar-104078.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_annexation_of_mustafar-104078.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Liberation Of Ryloth
+	SpriteType = { 
+		name = "GFX_TEC_liberation_of_ryloth-104079"
+		texturefile = "gfx/interface/goals/GFX_TEC_liberation_of_ryloth-104079.dds"
+	}
+
+	##Icon Shine For: Liberation Of Ryloth
+	SpriteType = { 
+		name = "GFX_TEC_liberation_of_ryloth-104079_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_liberation_of_ryloth-104079.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_liberation_of_ryloth-104079.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_liberation_of_ryloth-104079.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Defensive Measures
+	SpriteType = { 
+		name = "GFX_TEC_defensive_measures-104097"
+		texturefile = "gfx/interface/goals/GFX_TEC_defensive_measures-104097.dds"
+	}
+
+	##Icon Shine For: Defensive Measures
+	SpriteType = { 
+		name = "GFX_TEC_defensive_measures-104097_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_defensive_measures-104097.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_defensive_measures-104097.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_defensive_measures-104097.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Precautionary Measures
+	SpriteType = { 
+		name = "GFX_TEC_precautionary_measures-104096"
+		texturefile = "gfx/interface/goals/GFX_TEC_precautionary_measures-104096.dds"
+	}
+
+	##Icon Shine For: Precautionary Measures
+	SpriteType = { 
+		name = "GFX_TEC_precautionary_measures-104096_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_precautionary_measures-104096.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_precautionary_measures-104096.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_precautionary_measures-104096.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Galactic Stage
+	SpriteType = { 
+		name = "GFX_TEC_the_galactic_stage-104080"
+		texturefile = "gfx/interface/goals/GFX_TEC_the_galactic_stage-104080.dds"
+	}
+
+	##Icon Shine For: The Galactic Stage
+	SpriteType = { 
+		name = "GFX_TEC_the_galactic_stage-104080_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_the_galactic_stage-104080.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_the_galactic_stage-104080.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_the_galactic_stage-104080.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Purchase Saleucami
+	SpriteType = { 
+		name = "GFX_TEC_purchase_saleucami-104083"
+		texturefile = "gfx/interface/goals/GFX_TEC_purchase_saleucami-104083.dds"
+	}
+
+	##Icon Shine For: Purchase Saleucami
+	SpriteType = { 
+		name = "GFX_TEC_purchase_saleucami-104083_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_purchase_saleucami-104083.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_purchase_saleucami-104083.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_purchase_saleucami-104083.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Befriend Gunray
+	SpriteType = { 
+		name = "GFX_TEC_befriend_gunray-104084"
+		texturefile = "gfx/interface/goals/GFX_TEC_befriend_gunray-104084.dds"
+	}
+
+	##Icon Shine For: Befriend Gunray
+	SpriteType = { 
+		name = "GFX_TEC_befriend_gunray-104084_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_befriend_gunray-104084.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_befriend_gunray-104084.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_befriend_gunray-104084.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Offer Trade Agreements
+	SpriteType = { 
+		name = "GFX_TEC_offer_trade_agreements-104085"
+		texturefile = "gfx/interface/goals/GFX_TEC_offer_trade_agreements-104085.dds"
+	}
+
+	##Icon Shine For: Offer Trade Agreements
+	SpriteType = { 
+		name = "GFX_TEC_offer_trade_agreements-104085_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_offer_trade_agreements-104085.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_offer_trade_agreements-104085.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_offer_trade_agreements-104085.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Skako Factory Expansion
+	SpriteType = { 
+		name = "GFX_TEC_skako_factory_expansion-104086"
+		texturefile = "gfx/interface/goals/GFX_TEC_skako_factory_expansion-104086.dds"
+	}
+
+	##Icon Shine For: Skako Factory Expansion
+	SpriteType = { 
+		name = "GFX_TEC_skako_factory_expansion-104086_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_skako_factory_expansion-104086.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_skako_factory_expansion-104086.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_skako_factory_expansion-104086.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Hypori Factory Expansion
+	SpriteType = { 
+		name = "GFX_TEC_hypori_factory_expansion-104088"
+		texturefile = "gfx/interface/goals/GFX_TEC_hypori_factory_expansion-104088.dds"
+	}
+
+	##Icon Shine For: Hypori Factory Expansion
+	SpriteType = { 
+		name = "GFX_TEC_hypori_factory_expansion-104088_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_hypori_factory_expansion-104088.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_hypori_factory_expansion-104088.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_hypori_factory_expansion-104088.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Factory Investments
+	SpriteType = { 
+		name = "GFX_TEC_factory_investments-104089"
+		texturefile = "gfx/interface/goals/GFX_TEC_factory_investments-104089.dds"
+	}
+
+	##Icon Shine For: Factory Investments
+	SpriteType = { 
+		name = "GFX_TEC_factory_investments-104089_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_factory_investments-104089.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_factory_investments-104089.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_factory_investments-104089.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Factory Defenses
+	SpriteType = { 
+		name = "GFX_TEC_factory_defenses-104091"
+		texturefile = "gfx/interface/goals/GFX_TEC_factory_defenses-104091.dds"
+	}
+
+	##Icon Shine For: Factory Defenses
+	SpriteType = { 
+		name = "GFX_TEC_factory_defenses-104091_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_factory_defenses-104091.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_factory_defenses-104091.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_factory_defenses-104091.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Land Reclamation
+	SpriteType = { 
+		name = "GFX_TEC_land_reclamation-104092"
+		texturefile = "gfx/interface/goals/GFX_TEC_land_reclamation-104092.dds"
+	}
+
+	##Icon Shine For: Land Reclamation
+	SpriteType = { 
+		name = "GFX_TEC_land_reclamation-104092_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_land_reclamation-104092.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_land_reclamation-104092.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_land_reclamation-104092.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Efficient Factories
+	SpriteType = { 
+		name = "GFX_TEC_efficient_factories-104093"
+		texturefile = "gfx/interface/goals/GFX_TEC_efficient_factories-104093.dds"
+	}
+
+	##Icon Shine For: Efficient Factories
+	SpriteType = { 
+		name = "GFX_TEC_efficient_factories-104093_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_efficient_factories-104093.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_efficient_factories-104093.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_efficient_factories-104093.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Flexible Factories
+	SpriteType = { 
+		name = "GFX_TEC_flexible_factories-104094"
+		texturefile = "gfx/interface/goals/GFX_TEC_flexible_factories-104094.dds"
+	}
+
+	##Icon Shine For: Flexible Factories
+	SpriteType = { 
+		name = "GFX_TEC_flexible_factories-104094_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_flexible_factories-104094.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_flexible_factories-104094.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_flexible_factories-104094.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Shipyard Expansion
+	SpriteType = { 
+		name = "GFX_TEC_shipyard_expansion-104099"
+		texturefile = "gfx/interface/goals/GFX_TEC_shipyard_expansion-104099.dds"
+	}
+
+	##Icon Shine For: Shipyard Expansion
+	SpriteType = { 
+		name = "GFX_TEC_shipyard_expansion-104099_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_shipyard_expansion-104099.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_shipyard_expansion-104099.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_shipyard_expansion-104099.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Relocate the Union
+	SpriteType = { 
+		name = "GFX_TEC_relocate_the_union-104100"
+		texturefile = "gfx/interface/goals/GFX_TEC_relocate_the_union-104100.dds"
+	}
+
+	##Icon Shine For: Relocate the Union
+	SpriteType = { 
+		name = "GFX_TEC_relocate_the_union-104100_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_relocate_the_union-104100.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_relocate_the_union-104100.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_relocate_the_union-104100.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Geonosian Factories
+	SpriteType = { 
+		name = "GFX_TEC_geonosian_factories-104101"
+		texturefile = "gfx/interface/goals/GFX_TEC_geonosian_factories-104101.dds"
+	}
+
+	##Icon Shine For: Geonosian Factories
+	SpriteType = { 
+		name = "GFX_TEC_geonosian_factories-104101_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_geonosian_factories-104101.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_geonosian_factories-104101.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_geonosian_factories-104101.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Forced Incorporation of Blastech
+	SpriteType = { 
+		name = "GFX_TEC_forced_incorporation_of_blastech-104102"
+		texturefile = "gfx/interface/goals/GFX_TEC_forced_incorporation_of_blastech-104102.dds"
+	}
+
+	##Icon Shine For: Forced Incorporation of Blastech
+	SpriteType = { 
+		name = "GFX_TEC_forced_incorporation_of_blastech-104102_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_forced_incorporation_of_blastech-104102.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_forced_incorporation_of_blastech-104102.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_forced_incorporation_of_blastech-104102.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Huppla Paas
+	SpriteType = { 
+		name = "GFX_TEC_huppla_paas-104103"
+		texturefile = "gfx/interface/goals/GFX_TEC_huppla_paas-104103.dds"
+	}
+
+	##Icon Shine For: Huppla Paas
+	SpriteType = { 
+		name = "GFX_TEC_huppla_paas-104103_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_huppla_paas-104103.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_huppla_paas-104103.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_huppla_paas-104103.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: TransGalMeg Industry
+	SpriteType = { 
+		name = "GFX_TEC_transgalmeg_industry-104104"
+		texturefile = "gfx/interface/goals/GFX_TEC_transgalmeg_industry-104104.dds"
+	}
+
+	##Icon Shine For: TransGalMeg Industry
+	SpriteType = { 
+		name = "GFX_TEC_transgalmeg_industry-104104_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_transgalmeg_industry-104104.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_transgalmeg_industry-104104.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_transgalmeg_industry-104104.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Union Expansion
+	SpriteType = { 
+		name = "GFX_TEC_union_expansion-104105"
+		texturefile = "gfx/interface/goals/GFX_TEC_union_expansion-104105.dds"
+	}
+
+	##Icon Shine For: Union Expansion
+	SpriteType = { 
+		name = "GFX_TEC_union_expansion-104105_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_union_expansion-104105.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_union_expansion-104105.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_union_expansion-104105.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Security and Prosperity
+	SpriteType = { 
+		name = "GFX_TEC_security_and_prosperity-104106"
+		texturefile = "gfx/interface/goals/GFX_TEC_security_and_prosperity-104106.dds"
+	}
+
+	##Icon Shine For: Security and Prosperity
+	SpriteType = { 
+		name = "GFX_TEC_security_and_prosperity-104106_shine"
+		texturefile = "gfx/interface/goals/GFX_TEC_security_and_prosperity-104106.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_security_and_prosperity-104106.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_TEC_security_and_prosperity-104106.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }

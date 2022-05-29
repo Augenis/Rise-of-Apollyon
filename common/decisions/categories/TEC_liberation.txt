@@ -1,0 +1,7 @@
+TEC_liberation = {
+    icon = generic_political_discourse
+    visible_when_empty = no
+    available = {
+        tag = TEC
+	}
+}

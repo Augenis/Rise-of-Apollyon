@@ -1,0 +1,110 @@
+﻿division_template = {
+	name = "Her Majesty's Resistance"
+
+	regiments = {
+		NAB_unit_guard = { x = 0 y = 0 }
+		NAB_unit_guard = { x = 0 y = 1 }
+		NAB_unit_guard = { x = 1 y = 0 }
+		NAB_unit_guard = { x = 1 y = 1 }
+		NAB_unit_guard = { x = 2 y = 0 }
+		NAB_unit_guard = { x = 2 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Armed Speeder Division"
+
+	regiments = {
+		Flash_speeder_unit = { x = 0 y = 0 }
+		Flash_speeder_unit = { x = 0 y = 1 }
+		Flash_speeder_unit = { x = 0 y = 2 }
+		Flash_speeder_unit = { x = 1 y = 0 }
+		Flash_speeder_unit = { x = 1 y = 1 }
+		Flash_speeder_unit = { x = 1 y = 2 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Gungan"
+
+	regiments = {
+		militia_Gungan = { x = 0 y = 0 }
+		militia_Gungan = { x = 0 y = 1 }
+		militia_Gungan = { x = 0 y = 2 }
+		militia_Gungan = { x = 1 y = 0 }
+		militia_Gungan = { x = 1 y = 1 }
+		militia_Gungan = { x = 1 y = 2 }
+		militia_Gungan = { x = 2 y = 0 }
+		militia_Gungan = { x = 2 y = 1 }
+		militia_Gungan = { x = 2 y = 2 }
+	}
+	support = {
+
+	}
+}
+
+units = {
+	division= {	
+		name = "Resistance Division"
+		location = 9972 #naboo
+		division_template = "Her Majesty's Resistance"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Resistance Division"
+		location = 5034 #naboo
+		division_template = "Her Majesty's Resistance"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Resistance Division"
+		location = 5034 #naboo
+		division_template = "Her Majesty's Resistance"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Resistance Division"
+		location = 3653 #naboo
+		division_template = "Her Majesty's Resistance"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Resistance Division"
+		location = 9953 #naboo
+		division_template = "Her Majesty's Resistance"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Resistance Division"
+		location = 10001 #naboo
+		division_template = "Her Majesty's Resistance"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Core Planet Volunteers"
+		location = 10001 #naboo
+		division_template = "Armed Speeder Division"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Gungan Militia"
+		location = 10001 #Dantooine
+		division_template = "Gungan"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Gungan Militia"
+		location = 10001 #Dantooine
+		division_template = "Gungan"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Gungan Militia"
+		location = 10001 #Dantooine
+		division_template = "Gungan"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+}

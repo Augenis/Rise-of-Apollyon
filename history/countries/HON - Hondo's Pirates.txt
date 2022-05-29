@@ -1,0 +1,62 @@
+capital = 124
+
+set_research_slots = 2
+set_stability = 0.8
+set_war_support = 0.5
+
+set_technology = {
+	tech_support = 1
+	militia_standard = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 80
+set_convoys = 250
+
+add_ideas = {
+	REP_member_prewar
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	partial_economic_mobilisation
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		communism = 10
+		democratic = 90
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		communism = 100
+	}
+}
+
+create_country_leader = {
+	name = "Randall Vello" 
+	picture = "gfx/leaders/HON/Portrait_HON_Randall_Vello.png"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Hondo Ohnaka"
+	desc = "Hondo Ohnaka was a male Weequay pirate who led the Ohnaka Gang on the Outer Rim world of Florrum during the Clone Wars."
+	picture = GFX_hondo
+	expire = "2020.1.1"
+	ideology = marxism
+}

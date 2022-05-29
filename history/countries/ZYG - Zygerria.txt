@@ -1,0 +1,242 @@
+﻿capital = 88
+
+oob = "ZYG_3677"
+set_research_slots = 3
+set_stability = 0.65
+set_war_support = .25
+
+set_technology = {
+	tech_support = 1
+	transport = 1
+	infantry_weapons = 1
+	militia_ZYG = 1
+}
+
+add_political_power = 75
+set_convoys = 500
+
+add_ideas = {
+	limited_conscription
+	war_economy
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 0
+		neutrality = 55
+	    fascism = 30
+		communism = 15
+	}
+}
+
+#0978.8.8 = {
+#	set_politics = {
+#		ruling_party = democratic
+#		last_election = "1932.11.8"
+#		election_frequency = 240
+#		elections_allowed = no
+#	}
+#	set_popularities = {
+#		democratic = 47
+#		communism = 8
+#	    fascism = 21
+#	    neutrality = 24
+#	}
+#}
+#
+#create_country_leader = {
+#	name = "Garm Bel Iblis "
+#	desc = "The Governor of Corellia"
+#	picture = "gfx/leaders/CLA/garmbeliblis.dds"
+#	expire = "2020.1.1"
+#	ideology = conservatism
+#	traits = {	
+#	}
+#}
+create_country_leader = {
+	name = "Miraj Scintel"
+	desc = "Queen of Zyggeria"
+	picture = GFX_MIRAJ
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Miraj Scintel"
+	desc = "Queen of Zyggeria"
+	picture = GFX_MIRAJ
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+	name = "Miraj Scintel"
+	desc = "Queen of Zyggeria"
+	picture = GFX_MIRAJ
+	expire = "2020.1.1"
+	ideology = despotism
+}
+
+	create_field_marshal = {
+	name = "Atai Molec"
+	portrait_path = "gfx/leaders/ZYG/Atai_Molec.dds"
+		traits = {  }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	}
+	
+		create_field_marshal = {
+	name = "Angruss"
+	portrait_path = "gfx/leaders/ZYG/Angruss.dds"
+		traits = {  }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	}
+	
+	create_corps_commander = {
+	name = "Omus Krill"
+	portrait_path = "gfx/leaders/ZYG/Gen1.dds"
+		traits = {  }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 3
+	}
+
+	create_corps_commander = {
+	name = "Gorrek Lursks"
+	portrait_path = "gfx/leaders/ZYG/Gen2.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_corps_commander = {
+	name = "Zolghast Vhurk"
+	portrait_path = "gfx/leaders/ZYG/Gen3.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	
+	create_corps_commander = {
+	name = "Rajim Armin"
+	portrait_path = "gfx/leaders/ZYG/Gen4.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	
+	create_corps_commander = {
+	name = "Preth Faab"
+	portrait_path = "gfx/leaders/ZYG/Gen5.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Killi Ghan"
+	portrait_path = "gfx/leaders/ZYG/Gen6.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Zorba Kax"
+	portrait_path = "gfx/leaders/ZYG/Gen7.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	create_corps_commander = {
+	name = "Yoren Nikaak"
+	portrait_path = "gfx/leaders/ZYG/Gen8.dds"
+		traits = {  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	create_navy_leader = {
+	name = "Hordem Molec"
+    portrait_path = "gfx/leaders/ZYG/Adm1.dds"
+		traits = {  }
+		skill = 2
+		coordination_skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		maneuvering_skill = 2
+	}
+		create_navy_leader = {
+	name = "Coloz Byrn"
+    portrait_path = "gfx/leaders/ZYG/Adm2.dds"
+		traits = {  }
+		skill = 2
+		coordination_skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		maneuvering_skill = 2
+	}
+		create_navy_leader = {
+	name = "Flakka Bole"
+    portrait_path = "gfx/leaders/ZYG/Adm3.dds"
+		traits = {  }
+		skill = 2
+		coordination_skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		maneuvering_skill = 2
+	}
+		create_navy_leader = {
+	name = "Raney"
+    portrait_path = "gfx/leaders/ZYG/Raney.dds"
+		traits = {  }
+		skill = 3
+		coordination_skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		maneuvering_skill = 3
+	}
+		create_navy_leader = {
+	name = "Darts D Nar"
+    portrait_path = "gfx/leaders/ZYG/Darts_D_Nar.dds"
+		traits = {  }
+		skill = 4
+		coordination_skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		maneuvering_skill = 4
+	}

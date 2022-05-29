@@ -1,0 +1,22 @@
+#CMG_factions = {
+#     icon = generic_prospect_for_resources
+#	 scripted_gui = cmg_factions
+#	 priority = 90
+#
+#available = {
+#		original_tag = CMG
+#	}
+#allowed = {
+#		original_tag = CMG
+#	}
+#}
+#shareholding_initiative = {
+#	icon = generic_prospect_for_resources
+#available = { 
+#   original_tag = CMG
+#   has_completed_focus = Amass_Funding_For_Project_22
+#	}
+#allowed = {
+#	   original_tag = CMG
+#   }
+#}

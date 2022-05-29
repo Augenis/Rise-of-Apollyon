@@ -1,0 +1,54 @@
+guiTypes = {
+    containerWindowType = {
+        name = "cis_window_council"
+        orientation = center
+        position = {x=-400 y=-300}
+        size = { width=1344 height=432 }
+        moveable = yes
+
+        iconType = {
+			name = "cis_council_bar"
+			position = { x=-235 y=100 }  
+			spriteType = "GFX_cis_council_idealist_bar"
+		}
+        buttonType = {
+            name = "close_button"
+            position = {x=940 y=110}
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+		}
+        buttonType = {
+			name = "cis_council_member_1"
+			position = { x=-11 y=165 }  
+			spriteType = "GFX_cis_council_tec"
+		}
+        buttonType = {
+			name = "cis_council_member_2"
+			position = { x=379 y=165 }  
+			spriteType = "GFX_cis_council_trade"
+		}
+        buttonType = {
+			name = "cis_council_member_3" 
+			position = { x=767 y=165 }  
+			spriteType = "GFX_cis_council_dac"
+		}
+        buttonType = {
+			name = "cis_council_member_4"
+			position = { x=-11 y=366 }  
+			spriteType = "GFX_cis_council_zyg"
+		}
+        buttonType = {
+			name = "cis_council_member_5"
+			position = { x=379 y=366 }  
+			spriteType = "GFX_cis_council_cmg"
+		}
+        buttonType = {
+			name = "cis_council_member_6"
+			position = { x=767 y=366 }  
+			spriteType = "GFX_cis_council_ibc"
+		}
+    }
+}

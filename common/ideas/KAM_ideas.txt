@@ -1,0 +1,191 @@
+ideas = {
+	country = {
+		cloning_facilities = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = cloning_facilities
+			
+			modifier = {
+				weekly_manpower = 1000
+			}
+		}
+		cloning_facilities1 = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = cloning_facilities
+			
+			modifier = {
+				weekly_manpower = 1500
+			}
+		}
+		funded_research_departments = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = cloning_facilities
+			
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+
+		clone_growth_acc = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = cloning_facilities
+			
+            equipment_bonus = {
+                p1_clone_equip = {
+                    build_cost_ic = -0.1 instant = yes
+                }
+		}
+	}
+
+		clone_growth_acc1 = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = cloning_facilities
+
+            equipment_bonus = {
+                p1_clone_equip = {
+                    build_cost_ic = -0.1 instant = yes
+                }
+                p2_clone_equip = {
+                    build_cost_ic = -0.1 instant = yes
+                }
+		}
+	}
+
+		KAM_defence_of_homeland = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = cloning_facilities
+			
+			modifier = {
+				army_core_defence_factor = 0.10
+				army_core_attack_factor = 0.05
+			}
+	}
+
+
+		KAM_grand_army = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = cloning_facilities
+			
+			modifier = {
+				army_org_factor = 0.1
+				breakthrough_factor = 0.1
+				army_speed_factor = 0.1
+			}
+	}
+}
+    political_advisor = {
+			anala_se = {
+			allowed = {
+				original_tag = KAM
+			}
+			available = { has_completed_focus = KAM_r_and_d_platforms }
+			traits = { Education_Reformer }
+		}
+			ahalle_burtoni = {
+			allowed = {
+				original_tag = KAM
+			}
+			available = { has_completed_focus = KAM_join_republic }
+			traits = { Compassionate_Commoner }
+		}
+			ako_sai = {
+			allowed = {
+				original_tag = KAM
+			}
+			traits = { Lieutenant_of_Industry }
+		}
+	}
+		theorist = {
+		thalle_burtoni = {
+			ledger = Army
+			allowed = {
+				original_tag = KAM
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			traits = { Military_theorist }
+		}
+	}
+		army_chief = {
+	halle_burtoni = {
+			allowed = {
+				original_tag = KAM
+			}
+		traits = { army_chief_offensive_2 }
+		}
+		}
+		air_chief = {
+			Ciwah_Sal = {
+			allowed = {
+				original_tag = KAM
+			}
+			traits = { air_bomber_interception_2 }
+		}	
+	}
+	navy_chief  = {
+		Fewa_Sai = {
+			allowed = {
+				original_tag = KAM
+			}
+			traits = { navy_chief_decisive_battle_2 }
+		}
+	}
+	high_command = {
+			Taun_We = {
+			ledger = army
+			allowed = {
+				original_tag = KAM
+			}
+			traits = { Army_Logistics_2 }
+		}
+			ko_sai = {
+			ledger = army
+			allowed = {
+				original_tag = KAM
+			}
+			traits = { army_infantry_2 }
+		}	
+		nala_se = {
+			ledger = army
+			allowed = {
+				original_tag = KAM
+			}
+			traits = { army_regrouping_3 }
+		}
+	}
+}

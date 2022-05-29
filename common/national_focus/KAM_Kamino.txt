@@ -1,0 +1,1004 @@
+focus_tree = {
+	id = Kamino
+	country = {
+		factor = 0
+		modifier = {
+			add = 0
+			tag = KAM
+		}
+	}
+	continuous_focus_position = { x = 80 y = 2050 }
+	default = no
+
+
+focus = {
+		id = KAM_cloning_technology
+		icon = GFX_goal_unknown
+		x = 8
+		y = -1
+		cost = 14.3
+		available_if_capitulated = yes
+		#prerequisite = { focus =  }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = {
+			cloning = 1
+			}
+		}
+				
+	}
+
+
+##### add order to get clones #####
+focus = {
+		id = KAM_sifo_dyas_order 
+		icon = GFX_goal_unknown
+		x = 8
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_cloning_technology }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = { dx = 100 }
+			custom_effect_tooltip = KAM_clone_order
+		}
+				
+	}
+
+##### make into bounty hunter? #####
+focus = {
+		id = KAM_jango_fett_dna 
+		icon = GFX_goal_unknown
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_sifo_dyas_order }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_field_marshal = {
+				name = "Jango Fett"
+				#picture = ".dds"
+				traits = {  }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			set_technology = {
+		        p1_clone_tech = 1
+		    }
+		    set_variable = { global.phase_1weeklymax = 275 }
+		}		
+	}
+
+
+focus = {
+		id = KAM_expand_cloning_efforts
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_jango_fett_dna }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+			    add_idea = cloning_facilities1
+			    remove_idea = cloning_facilities
+			} 
+		}		
+	}
+
+
+focus = {
+		id = KAM_expand_research_facilities
+		icon = GFX_goal_unknown
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_expand_cloning_efforts }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = { dx = -50 }
+			custom_effect_tooltip = KAM_cost
+			add_timed_idea = {idea = funded_research_departments days = 365}
+		}		
+	}
+
+
+	focus = {
+		id = KAM_improve_platform_infrastructure
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_expand_cloning_efforts }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+						423 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+				426 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}		
+	}
+
+
+	focus = {
+		id = KAM_r_and_d_platforms
+		icon = GFX_goal_unknown
+		x = 3
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_more_platforms }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}		
+	}
+
+	focus = {
+		id = KAM_more_platforms
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_improve_platform_infrastructure }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				423 = {
+				add_extra_state_shared_building_slots = 2
+			}
+				426 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}		
+	}
+
+		focus = {
+		id = KAM_platform_hangars
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_more_platforms }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				417 = {
+				add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+				}	
+			}
+				423 = {
+				add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+				}
+			}
+		}		
+	}
+
+
+		focus = {
+		id = KAM_spaceport_defences
+		icon = GFX_goal_unknown
+		x = 2
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_more_platforms }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+					419 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 4000
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 4000
+					instant_build = yes
+				}
+			}	
+		}		
+	}
+
+
+focus = {
+		id = KAM_expand_cloning
+		icon = GFX_goal_unknown
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_improve_platform_infrastructure }
+		prerequisite = { focus = KAM_expand_research_facilities }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+					add_to_variable = { dx = -50 }
+			custom_effect_tooltip = KAM_cost
+						423 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = corporate_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}		
+	}
+
+
+focus = {
+		id = KAM_the_perfect_soldier
+		icon = GFX_goal_unknown
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_jango_fett_dna }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 15
+			add_war_support = 0.05
+		}		
+	}
+
+
+##### make production cheaper/faster? #####
+focus = {
+		id = KAM_growth_acceleration 
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_the_perfect_soldier }
+		mutually_exclusive = { focus = KAM_expand_cloning_fac }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = { clone_growth_acc }
+		}		
+	}
+
+
+##### improve stats or evnt just add xp #####
+focus = {
+		id = KAM_combat_training_grounds 
+		icon = GFX_goal_unknown
+		x = 11
+		y = 5
+		cost = 12.2
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_expand_cloning_fac focus = KAM_growth_acceleration }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 15
+						create_corps_commander = {
+				name = "CT-3445"
+				portrait_path = "gfx/leaders/KAM/Kamino4.dds"
+				traits = { infantry_officer }
+				skill = 4
+				attack_skill = 2
+				defense_skill = 5
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "CT-3512"
+				portrait_path = "gfx/leaders/KAM/Kamino4.dds"
+				traits = { infantry_officer }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}		
+	}
+
+
+
+
+focus = {
+		id = KAM_expand_cloning_fac
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_the_perfect_soldier }
+		mutually_exclusive = { focus = KAM_growth_acceleration }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			426 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			431 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			419 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}		
+	}
+
+focus = {
+		id = KAM_join_republic
+		icon = GFX_goal_unknown
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_jango_fett_dna }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		 # obi wan has found kamino
+		 has_global_flag = kaminodiscovered
+		}
+		completion_reward = {
+		REP = {
+			add_to_faction = KAM
+		}
+		set_politics = {
+			elections_allowed = yes
+			ruling_party = democratic
+		}
+	}	
+}
+
+
+##### add clones or make cheaper slightly #####
+focus = {
+		id = KAM_clones_for_the_war_effort	
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 12.2
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_join_republic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    		type = clone_trooper
+    		amount = 5000
+    		producer = KAM
+}
+			
+		}		
+	}
+
+
+##### perhaps this focus must be completed to unlock clone legions, aswell as rep focus?? #####
+focus = {
+		id = KAM_rally_the_legions
+		icon = GFX_goal_unknown
+		x = 8
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_clones_for_the_war_effort }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+		custom_effect_tooltip = KAM_legions		
+		}		
+	}
+
+
+##### militarize kamino, airfields, forts, mils and mil tech bonuses #####
+focus = {
+		id = KAM_defense_of_rishi 
+		icon = GFX_goal_unknown
+		x = 10
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_join_republic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				add_war_support = 0.05
+		}		
+	}
+focus = {
+		id = KAM_rishi_outpost
+		icon = GFX_goal_unknown
+		x = 11
+		y = 8
+		cost = 7.2
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_defense_of_rishi }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		has_tech = radio_detection
+		}
+		completion_reward = {
+				63 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}		
+	}
+focus = {
+		id = KAM_rishi_outpost_improve
+		icon = GFX_goal_unknown
+		x = 12
+		y = 9
+		cost = 7.2
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_rishi_outpost }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		has_tech = decimetric_radar
+		}
+		completion_reward = {
+				63 = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}		
+	}
+focus = {
+		id = KAM_rishi_bases
+		icon = GFX_goal_unknown
+		x = 10
+		y = 9
+		cost = 7.2
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_rishi_outpost }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			63 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 10621
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 10621
+					instant_build = yes
+				}
+			}			
+		}		
+	}
+
+
+##### add civs, ports, tech bonuses #####
+focus = {
+		id = KAM_economic_growth
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_join_republic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			431 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			426 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}		
+		}		
+	}
+
+
+focus = {
+		id = KAM_war_manufacturies
+		icon = GFX_goal_unknown
+		x = 6
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_economic_growth }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+					add_to_variable = { dx = -50 }
+			custom_effect_tooltip = KAM_cost
+						423 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = corporate_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}		
+	}
+
+focus = {
+		id = KAM_situation_training
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_join_republic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				army_experience = 25
+		}		
+	}
+focus = {
+		id = KAM_republic_supervisors
+		icon = GFX_goal_unknown
+		x = 14
+		y = 8
+		cost = 7.2
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_situation_training }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				army_experience = 10
+				REP = {
+				army_experience = 25
+				}
+		}		
+	}
+
+focus = {
+		id = KAM_defence_of_homeland
+		icon = GFX_goal_unknown
+		x = 15
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_republic_supervisors }
+		prerequisite = { focus = KAM_tactical_preparation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = {
+			KAM_defence_of_homeland
+			}
+		}		
+	}
+
+focus = {
+		id = KAM_tactical_preparation
+		icon = GFX_goal_unknown
+		x = 16
+		y = 8
+		cost = 7.2
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_situation_training }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = kam1
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+		}		
+	}
+
+
+focus = {
+		id = KAM_shipyards
+		icon = GFX_goal_unknown
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_jango_fett_dna }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			419 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			427 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}		
+	}
+
+
+	focus = {
+		id = KAM_shipyards2
+		icon = GFX_goal_unknown
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_shipyards }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			419 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			427 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}		
+	}
+
+		focus = {
+		id = KAM_ships
+		icon = GFX_goal_unknown
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_shipyards }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+				add_tech_bonus = {
+				name = kam2
+				bonus = 1.0
+				uses = 2
+				category = naval_doctrine
+			}					
+		}		
+	}
+
+
+##### add phase 2 upgrade later down the focus tree #####
+focus = {
+		id = KAM_phase2 
+		icon = GFX_goal_unknown
+		x = 8
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_rally_the_legions }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		REP = {
+		has_completed_focus = REP_phase_ii_upgrade
+		}
+		}
+		completion_reward = {
+				set_technology = {
+		        p2_clone_tech = 1
+		    }		
+		}		
+	}
+
+focus = {
+		id = KAM_phase2_growth
+		icon = GFX_goal_unknown
+		x = 7
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_phase2 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		has_completed_focus = KAM_growth_acceleration
+		}
+		completion_reward = {
+swap_ideas = {
+add_idea = clone_growth_acc1
+remove_idea = clone_growth_acc
+}
+		}		
+	}
+focus = {
+		id = KAM_phase2_fac
+		icon = GFX_goal_unknown
+		x = 9
+		y = 11
+		cost = 11.5
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_phase2 }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		has_completed_focus = KAM_expand_cloning_fac
+		}
+		completion_reward = {
+			426 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			431 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			419 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}		
+	}
+
+
+focus = {
+		id = KAM_underwater_drills
+		icon = GFX_goal_unknown
+		x = 9
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_phase2_fac }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+			423 = {
+				add_resource = {
+		            type = steel
+		            amount = 10
+		        }
+			}
+			426 = {
+				add_resource = {
+		            type = steel
+		            amount = 10
+		        }
+			}
+		}		
+	}
+
+focus = {
+		id = KAM_specialized_chambers
+		icon = GFX_goal_unknown
+		x = 7
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_phase2_growth}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+		army_experience = 25
+		add_war_support = 0.10
+		}		
+	}
+
+focus = {
+		id = KAM_corprate_production
+		icon = GFX_goal_unknown
+		x = 8
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_underwater_drills focus = KAM_specialized_chambers}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		completion_reward = {
+			add_to_variable = { dx = -50 }
+			custom_effect_tooltip = KAM_cost
+			423 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = corporate_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}		
+	}
+
+
+
+focus = {
+		id = KAM_arc_troopers
+		icon = GFX_goal_unknown
+		x = 10
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_phase2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		    set_technology = {
+		        arc_tech = 1
+				arf_tech = 1
+		    }
+		}		
+	}
+
+focus = {
+		id = KAM_specialized_units
+		icon = GFX_goal_unknown
+		x = 6
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_phase2 }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_technology = {
+				clone_engineer_tech = 1
+				clone_medic_tech = 1
+				clone_scuba_tech = 1
+				clone_snow_tech = 1
+			}
+		}		
+	}
+
+
+focus = {
+		id = KAM_grand_army
+		icon = GFX_goal_unknown
+		x = 8
+		y = 16
+		cost = 14.4
+		available_if_capitulated = yes
+		prerequisite = { focus = KAM_arc_troopers }
+		prerequisite = { focus = KAM_specialized_units }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = {
+			KAM_grand_army
+			}
+		}		
+	}
+
+
+
+
+
+
+
+
+}

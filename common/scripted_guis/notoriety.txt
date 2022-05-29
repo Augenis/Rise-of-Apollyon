@@ -1,0 +1,29 @@
+scripted_gui = {
+	notoriety_window = {
+		context_type = player_context
+		window_name = "notoriety_window"
+		
+		visible = {
+			has_country_flag = notoriety_open
+		}
+
+		effects = {
+			notoriety_random_click = {
+
+			}
+			}
+		triggers = {
+			}
+		dynamic_lists = {
+			notoriety_grid = {
+				array = global.consortium_countries
+				entry_container = notoriety_entry
+				change_scope = yes
+			}
+		}
+		properties = {
+			notoriety_random = { image = "[GetNotoriety]" }
+		}
+	}
+}
+

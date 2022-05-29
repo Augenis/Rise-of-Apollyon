@@ -1,0 +1,193 @@
+ideas = {
+	political_advisor = {
+		Bail_Prestor_Organa = {
+			name = "Bail Organa"
+			picture = "gfx/interface/ideas/bail_organa.dds"
+			allowed = {
+				original_tag = ALD
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+			trade_opinion_factor = 0.30
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+
+			bail_antilles = {
+			name = "Bail Antilles"
+			picture = "gfx/interface/ideas/antilles.dds"
+			allowed = {
+				original_tag = ALD
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+				political_power_gain = 0.50
+			}
+		}
+		
+					Agrippa_Aldrete = {
+			name = "Agrippa Aldrete"
+			picture = "gfx/interface/ideas/Agrippa_Aldrete.dds"
+			allowed = {
+				original_tag = ALD
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+				stability_factor = 0.10
+			}
+		}
+		
+			Sheltay_Retrac = {
+			name = "Sheltay Retrac"
+			picture = "gfx/interface/ideas/Sheltay_Retrac.dds"
+			allowed = {
+				original_tag = ALD
+			}
+	
+			on_add = {
+			}
+
+			modifier = {
+				non_core_manpower = 0.10
+			}
+		}
+		
+	}
+	
+		theorist = {
+		
+		Raymus_Antilles = {
+			ledger = navy
+		name = "Raymus Antilles"
+			picture = "gfx/interface/ideas/Raymus_Antilles.dds"
+			allowed = {
+				original_tag = ALD
+			}
+
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+
+			traits = { naval_theorist }
+		}
+		
+		Krorrull_Bom = {
+		name = "Krorrull Bom"
+			picture = "gfx/interface/ideas/Krorrull_Bom.dds"
+			ledger = Army
+
+			allowed = {
+				original_tag = ALD
+			}
+
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+
+			traits = { Military_theorist }
+		}
+	}
+	
+			army_chief = {
+		
+		acKrorrull_Bom = {
+		name = "Krorrull Bom"
+			picture = "gfx/interface/ideas/Krorrull_Bom.dds"
+		
+			allowed = {
+				original_tag = ALD
+			}
+			
+			traits = { army_chief_morale_2 }
+			
+			}
+		}
+	
+		air_chief = {
+		
+				Gavvix_Sironna = {
+		name = "Gavvix Sironna"
+			picture = "gfx/interface/ideas/Gavvix_Sironna.dds"
+		
+			allowed = {
+				original_tag = ALD
+			}
+			
+			traits = { air_air_combat_training_2 }
+			
+			}
+		}
+		
+	navy_chief  = {
+		ncRaymus_Antilles= {
+		name = "Raymus Antilles"
+			picture = "gfx/interface/ideas/Raymus_Antilles.dds"
+			allowed = {
+				original_tag = ALD
+			}
+			
+			traits = { navy_chief_decisive_battle_2 }
+
+		}
+	}
+	
+		high_command = {
+
+		Adrian_Verana = {
+		name = "Adrian Verana"
+			picture = "gfx/interface/ideas/Adrian_Verana.dds"
+			ledger = army
+
+			
+			allowed = {
+				original_tag = ALD
+			}
+			available = {
+			}
+			traits = { army_infantry_1 }
+				
+		}
+		
+		Jeremoch_Colton = {
+		name = "Jeremoch Colton"
+			picture = "gfx/interface/ideas/Jeremoch_Colton.dds"
+			ledger = Navy
+
+			
+			allowed = {
+				original_tag = ALD
+			}
+			available = {
+			}
+			traits = { navy_fleet_logistics_1 }
+			
+		}
+		
+				hcBail_Organa = {
+			name = "Bail Organa"
+			picture = "gfx/interface/ideas/bail_organa.dds"
+			ledger = army
+
+			
+			allowed = {
+				original_tag = ALD
+			}
+			available = {
+			}
+			traits = { Army_Logistics_1 }
+			
+		}
+		
+	}
+	
+	
+}

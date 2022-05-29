@@ -1,0 +1,274 @@
+defined_text = {
+    name = get_dooku_checkbox_1
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = CIS_senate_political_power 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = CIS_senate_political_power
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+defined_text = {
+    name = get_dooku_checkbox_2
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = CIS_senate_stability 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = CIS_senate_stability
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+defined_text = {
+    name = get_dooku_checkbox_3
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = CIS_senate_construction 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = CIS_senate_construction
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+##### TECHNO####
+defined_text = {
+    name = get_TEC_checkbox_1
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = Cheaper_tec_market 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = Cheaper_tec_market
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+defined_text = {
+    name = get_TEC_checkbox_2
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = TEC_help_CIS_industry 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = TEC_help_CIS_industry
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+defined_text = {
+    name = get_TEC_checkbox_3
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = TEC_research_CIS_help 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = TEC_research_CIS_help
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+### TRADE FED
+defined_text = {
+    name = get_FED_checkbox_1
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = Cheaper_fed_market 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = Cheaper_fed_market
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+defined_text = {
+    name = get_FED_checkbox_2
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = FED_naval_CIS_help 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = FED_naval_CIS_help
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+defined_text = {
+    name = get_FED_checkbox_3
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = FED_air_sortie_CIS_help 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = FED_air_sortie_CIS_help
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+###### SAN HILL###
+defined_text = {
+    name = get_IBC_checkbox_1
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = IBC_army_CIS_help 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = IBC_army_CIS_help
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+defined_text = {
+    name = get_IBC_checkbox_2
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = IBC_loans_CIS_help 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = IBC_loans_CIS_help
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+defined_text = {
+    name = get_IBC_checkbox_3
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = IBC_resource_CIS_help 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = IBC_resource_CIS_help
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+#### POGGLE####
+defined_text = {
+    name = get_geo_checkbox_1
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = GEO_faster_B1_CIS_help 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = GEO_faster_B1_CIS_help
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+defined_text = {
+    name = get_geo_checkbox_2
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = GEO_B2_production_CIS_help 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = GEO_B2_production_CIS_help
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}
+defined_text = {
+    name = get_geo_checkbox_3
+    
+    text = {
+        trigger = {
+            NOT = {
+                has_idea = GEO_recruitable_CIS_help 
+            }
+        }
+        localization_key = "GFX_CIS_checkbox"
+    }
+    text = {
+        trigger = {
+            has_idea = GEO_recruitable_CIS_help
+        }
+        localization_key = "GFX_CIS_checkbox_filled"
+    }
+}

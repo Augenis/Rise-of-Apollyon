@@ -1,0 +1,186 @@
+capital = 195
+
+oob = "CAL_3677"
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.10
+
+set_technology = {
+	tech_support = 1
+	cal_market = 1
+	transport = 1
+	infantry_weapons = 1
+	dockyard1 = 1
+	militia_CAL = 1
+}
+country_event = { id = CAL.4 days = 10 }
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	limited_conscription
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+	
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+set_variable = { cal_state_1_support = 100 }
+set_variable = { cal_state_2_support = 100 }
+set_variable = { cal_state_3_support = 100 }
+set_variable = { cal_state_4_support = 100 }
+set_variable = { cal_state_5_support = 75 }
+set_variable = { cal_state_6_support = 50 }
+set_variable = { cal_state_7_support = 25 }
+create_country_leader = {
+	name = "Prince Lee-Char"
+	desc = "Lee-Char was a male Mon Calamari who served as the leader of Mon Cala during the Clone Wars."
+	picture = GFX_LEECHAR
+	expire = "2020.1.1"
+	ideology = conservatism
+ }
+
+create_country_leader = {
+	name = "King Yos Kolina"
+	desc = ""
+	picture = "gfx/leaders/CAL/Yos Kolina.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+
+create_corps_commander = {
+ 	name = "Broil"
+ 	portrait_path = "gfx/leaders/CAL/Broil.dds"
+	 traits = { infantry_leader fortress_buster }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Bubba"
+ 	portrait_path = "gfx/leaders/CAL/Bubba.dds"
+	traits = { panzer_leader }
+	skill = 2 
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Herpies"
+ 	portrait_path = "gfx/leaders/CAL/Herpies.dds"
+	traits = { }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Raddus"
+ 	portrait_path = "gfx/leaders/CAL/Raddus.dds"
+	traits = { panzer_leader fortress_buster }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+ 	name = "Shallan"
+	portrait_path = "gfx/leaders/CAL/Shallan.dds"
+	traits = { }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Broil"
+    portrait_path = "gfx/leaders/CAL/Broil.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Bubba"
+    portrait_path = "gfx/leaders/CAL/Bubba.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Herpies"
+    portrait_path = "gfx/leaders/CAL/Herpies.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Raddus"
+    portrait_path = "gfx/leaders/CAL/Raddus.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Shallan"
+    portrait_path = "gfx/leaders/CAL/Shallan.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}

@@ -1,0 +1,57 @@
+scripted_gui = {
+	consortium_politics_window = {
+		context_type = player_context
+		
+		window_name = "consortium_politics_window"
+		parent_window_name = countrypoliticsview
+		
+		visible = {
+			ROOT = {
+				OR = {
+				has_government = communism
+				has_government = syndicate
+				}
+			}
+		}
+	}
+
+	consortium_topbar = {
+		window_name = "consortium_topbar_unique"
+		context_type = player_context
+		parent_window_name = "topbar"
+
+		visible = {
+			ROOT = {
+				OR = {
+				has_government = communism
+				has_government = syndicate
+				}
+			}
+		}
+
+		effects = {
+			black_market_icon_click = {
+
+			}
+		}
+	}
+
+
+
+
+	corporate_politics_window = {
+		context_type = player_context
+
+		window_name = "corporate_politics_window"
+		parent_window_name = countrypoliticsview
+		visible = {
+			ROOT = {
+				is_market_corporation = yes
+			}
+			NOT = {
+				has_country_flag = not_corp
+			}
+		}
+	}
+}
+

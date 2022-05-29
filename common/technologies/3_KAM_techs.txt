@@ -1,0 +1,88 @@
+technologies = {
+	@974 = 0
+	@975 = 3
+	@976 = 6
+	@977 = 9
+	@978 = 12
+	@979 = 15
+	@980 = 18
+	@981 = 21
+	@982 = 24
+	@983 = 27
+	cloning = {
+
+			modifier = {
+			monthly_population = 0.025
+		}
+		
+		path = {
+			leads_to_tech = cloning2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 975
+		folder = {
+			name = kam_folder
+			position = { x = -7 y = 5 }
+		}
+		
+		categories = {
+			kamino
+		}
+		
+		ai_will_do = {
+			factor = 1
+		} 
+	}
+	cloning2 = {
+
+			modifier = {
+			monthly_population = 0.025
+		}
+		path = {
+			leads_to_tech = cloning3
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = kam_folder
+			position = { x = -7 y = 10 }
+		}
+		
+		categories = {
+			kamino
+		}
+		
+		ai_will_do = {
+			factor = 1
+		} 
+	}
+	cloning3 = {
+			modifier = {
+			monthly_population = 0.025
+		}
+		path = {
+			#leads_to_tech = cloning3
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 976
+		folder = {
+			name = kam_folder
+			position = { x = -7 y = 15 }
+		}
+		
+		categories = {
+			kamino
+		}
+		
+		ai_will_do = {
+			factor = 1
+		} 
+	}
+}
+

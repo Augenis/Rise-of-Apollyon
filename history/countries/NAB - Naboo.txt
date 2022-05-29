@@ -1,0 +1,263 @@
+﻿capital = 388
+
+oob = "NAB_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .40
+
+set_technology = {
+	tech_support = 1
+	militia_NAB = 1
+	militia_Gungan = 1
+	transport = 1
+	flash_speeder_tech = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 100
+
+add_ideas = {
+	#REP_member_prewar
+	NAB_resistance
+	low_economic_mobilisation
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+create_country_leader = {
+	name = "Padmé Amidala" 
+	picture = "gfx/leaders/NAB/Portrait_NAB_Padme_Amidala.png"
+	expire = "2020.1.1"
+	ideology = liberalism
+}
+
+create_corps_commander = {
+	name = "Nathaniel Camaran"
+	portrait_path = "gfx/leaders/NAB/NathanielCamaran.dds"
+	traits = { Guerilla_Fighter }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lyonie"
+	portrait_path = "gfx/leaders/GUN/BossLyonie.dds"
+	traits = { infantry_officer swamp_fox }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Roos Tarpals"
+	portrait_path = "gfx/leaders/GUN/RoosTarpals.dds"
+	traits = { infantry_officer swamp_fox }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Tobler Ceel"
+	portrait_path = "gfx/leaders/GUN/ToblerCeel.dds"
+	traits = { infantry_officer swamp_fox }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jar Jar Binks"
+	portrait_path = "gfx/leaders/GUN/JarJarBinks.dds"
+	traits = { trait_reckless }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Gregar Typho"
+	portrait_path = "gfx/leaders/NAB/GregarTypho.dds"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Tobias Pall"
+	portrait_path = "gfx/leaders/NAB/TobiasPall.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Quarsh Panaka"
+	portrait_path = "gfx/leaders/NAB/QuarshPanaka.dds"
+	traits = { infantry_officer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Jerus Jannick"
+	portrait_path = "gfx/leaders/NAB/JerusJannick.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Danzal Galak Sr"
+	portrait_path = "gfx/leaders/NAB/DanzalGalakSr.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Tonra"
+	portrait_path = "gfx/leaders/NAB/Tonra.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Perosei"
+    picture = "Perosei.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Carlon Brandes"
+    picture = "CarlonBrandes.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Theomet Danle"
+    picture = "TheometDanle.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Gavyn Sykes"
+    picture = "GavynSykes.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+}
+create_navy_leader = {
+	name = "Dinee Ellberger"
+    picture = "DineeEllberger.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+}
+create_navy_leader = {
+	name = "Rhys Dallows"
+    picture = "Rhys_Dallows.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+}
+create_navy_leader = {
+	name = "Ric Olie"
+    picture = "RicOlie.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Porro Dolphe"
+	picture = "Porro_Dolphe.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+}

@@ -1,0 +1,70 @@
+QUA_volunteers = {
+
+    icon = zygerria_slaves_cat
+    visible = {
+        QUA = {
+            has_completed_focus = QUA_karkarodon_enforcers
+        }
+        original_tag = QUA
+    }
+    visible_when_empty = yes
+    scripted_gui = karkadon_volunteers_ui 
+    available = { 
+        original_tag = QUA
+    }
+
+    allowed = {
+		original_tag = QUA
+	}
+}
+QUA_market_connections = {
+
+    icon = zygerria_slaves_cat
+    visible = {
+        QUA = {
+            has_completed_focus = QUA_contacts_in_the_companies
+        }
+        original_tag = QUA
+    }
+    visible_when_empty = yes
+    available = { 
+        original_tag = QUA
+    }
+
+    allowed = {
+        original_tag = QUA
+    }
+}
+QUA_senate = {
+    icon = zygerria_slaves_cat
+    visible = {
+        QUA = {
+            has_completed_focus = QUA_a_regime_of_heros
+        }
+        original_tag = QUA
+    }
+    visible_when_empty = yes
+    available = { 
+        original_tag = QUA
+    }
+
+    allowed = {
+        original_tag = QUA
+    }
+}
+CAL_ship_creation = {
+
+    icon = zygerria_slaves_cat
+    visible = {
+        original_tag = CAL
+    }
+    scripted_gui = mon_cala_ships_ui
+    visible_when_empty = yes 
+    available = { 
+        original_tag = CAL
+    }
+
+    allowed = {
+        original_tag = CAL
+    }
+}

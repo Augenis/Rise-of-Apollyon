@@ -1,0 +1,90 @@
+defined_text = {
+    name = get_mon_cala_ship_icon_first
+    
+    text = {
+        trigger = {
+            NOT = {
+                CAL = {has_country_flag = first_base}
+            }
+        }
+        localization_key = "GFX_first_base"
+    }
+    text = {
+        trigger = {
+            CAL = {has_country_flag = first_base}
+        }
+        localization_key = "GFX_first_base_done"
+    }
+}
+defined_text = {
+    name = get_mon_cala_ship_icon_second
+    
+    text = {
+        trigger = {
+            NOT = {
+                CAL = {has_country_flag = second_base}
+            }
+        }
+        localization_key = "GFX_second_base"
+    }
+    text = {
+        trigger = {
+            CAL = {has_country_flag = second_base}
+        }
+        localization_key = "GFX_second_base_done"
+    }
+}
+defined_text = {
+    name = get_mon_cala_ship_icon_third
+    
+    text = {
+        trigger = {
+            NOT = {
+                CAL = {has_country_flag = third_base}
+            }
+        }
+        localization_key = "GFX_third_base"
+    }
+    text = {
+        trigger = {
+            CAL = {has_country_flag = third_base}
+        }
+        localization_key = "GFX_third_base_done"
+    }
+}
+defined_text = {
+    name = get_mon_cala_ship_icon_fourth
+    
+    text = {
+        trigger = {
+           NOT = {
+             CAL = {has_country_flag = fourth_base}
+           }
+        }
+        localization_key = "GFX_fourth_base"
+    }
+    text = {
+        trigger = {
+            CAL = {has_country_flag = fourth_base}
+        }
+        localization_key = "GFX_fourth_base_done"
+    }
+}
+defined_text = {
+    name = get_mon_cala_ship_icon_fifth
+    
+    text = {
+        trigger = {
+            NOT = {
+                CAL = {has_country_flag = fifth_base}
+            }
+        }
+        localization_key = "GFX_fifth_base"
+    }
+    text = {
+        trigger = {
+            CAL = {has_country_flag = fifth_base}
+        }
+        localization_key = "GFX_fifth_base_done"
+    }
+}

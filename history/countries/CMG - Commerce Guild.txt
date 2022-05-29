@@ -1,0 +1,261 @@
+capital = 154
+
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 35
+set_rule = { can_create_factions = no }
+
+set_technology = {
+	tech_support = 1
+	transport = 1
+	flash_speeder_tech = 1
+	infantry_weapons = 1
+   	0G9_Equipment = 1
+	koorivar_tech = 1
+}
+
+oob = "CMG_3677"
+
+
+add_ideas = { 
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	extensive_conscription
+	CMG_Faction_Infighting
+	partial_economic_mobilisation
+}
+
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 0
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+
+	oob = "CMG_3687"
+
+	set_technology = {
+		tech_support = 1
+		transport = 1
+		flash_speeder_tech = 1
+		cis_tank_2 = 1
+		dsd1_tech = 1
+		battle_droid_2 = 1
+	}
+
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 0
+		communism = 0
+		neutrality = 0
+		fascism = 100
+	}
+}
+
+create_country_leader = {
+	name = "Shu Mai"
+	desc = "President of the Commerce Guild"
+	picture = GFX_SHUMAI
+	expire = "4000.1.1"
+	ideology = fascism_ideology
+}
+
+create_country_leader = {
+	name = "Shu Mai"
+	desc = "President of the Commerce Guild"
+	picture = GFX_SHUMAI
+	expire = "4000.1.1"
+	ideology = conservatism
+}
+
+create_corps_commander = {
+	name = "An Sovv"
+	portrait_path = "gfx/leaders/CMG/AnSovv.dds"
+	traits = {}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Cuto hao"
+	portrait_path = "gfx/leaders/CMG/Cutohao.dds"
+	traits = {}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Schal Noah"
+	portrait_path = "gfx/leaders/CMG/Schalnoah.dds"
+	traits = {}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ruyuz Selnelurr"
+	portrait_path = "gfx/leaders/CMG/Gen1.dds"
+	traits = {}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Zak Bu"
+	portrait_path = "gfx/leaders/CMG/Gen2.dds"
+	traits = {}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Lem Kumolne"
+	portrait_path = "gfx/leaders/CMG/Gen3.dds"
+	traits = {}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Klayyn Bi"
+	portrait_path = "gfx/leaders/CMG/Gen4.dds"
+	traits = {}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Zoddug Ko"
+	portrait_path = "gfx/leaders/CMG/Gen5.dds"
+	traits = {}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Cat Min"
+	portrait_path = "gfx/leaders/CMG/Cat_Min.dds"
+	traits = {}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Xamo Vista"
+	portrait_path = "gfx/leaders/CMG/gen6.dds"
+	traits = {}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Oro Dassayne"
+	portrait_path = "gfx/leaders/CMG/Oro_Dassayne.dds"
+	traits = {}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Kaiusar"
+    picture = "kaiusar.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Vog Fun"
+    picture = "adm1.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Paz Kiwontel"
+    picture = "adm2.dds"
+	traits = {  }
+	skill = 3
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}
+
+create_navy_leader = {
+	name = "Kag Kemdelnos"
+    picture = "adm3.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+}
+
+create_navy_leader = {
+	name = "Ces Rumos"
+    picture = "adm4.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+}

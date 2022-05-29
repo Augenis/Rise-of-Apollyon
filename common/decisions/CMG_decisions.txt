@@ -1,0 +1,120 @@
+shareholding_initiative = {
+     Small_Fundraiser = {
+	  cost = 50
+    icon = unknown
+		
+		available = {
+      CMG = { has_completed_focus = Amass_Funding_For_Project_22}
+		}
+		
+		visible = {
+		}
+          complete_effect = {
+            Add_to_variable = { dx = 20 }
+			custom_effect_tooltip = "This will give us 20 m Credits"
+          }
+      }
+      Medium_Fundraiser = {
+        cost = 100
+        icon = unknown
+		
+		available = {
+      CMG = { has_completed_focus = Amass_Funding_For_Project_22}
+		}
+              complete_effect = {
+                   
+                Add_to_variable = { dx = 50 }
+				custom_effect_tooltip = "This will give us 50 m Credits"
+    
+              }
+         }
+         Large_Fundraiser = {
+	        cost = 150
+          icon = unknown
+		
+		available = {
+      CMG = { has_completed_focus = Amass_Funding_For_Project_22}
+		}
+          complete_effect = {
+               
+            Add_to_variable = { dx = 100 }
+			custom_effect_tooltip = "This will give us 100 m Credits"
+
+          }
+      }
+}
+
+Internal_Management_CMG = {
+	militarist_decision = {
+		cost = 0
+		icon = unknown
+		available = {
+			CMG = {
+				has_completed_focus = The_Crescent_Moons
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
+	shipbuilders_decision = {
+		cost = 0
+		icon = unknown
+		available = {
+			CMG = {
+				has_completed_focus = The_Crescent_Moons
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
+	arms_dealer_decision = {
+		cost = 0
+		icon = unknown
+		available = {
+			CMG = {
+				has_completed_focus = The_Crescent_Moons
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
+	ecoterrorist_decision = {
+		cost = 0
+		icon = unknown
+		available = {
+			CMG = {
+				has_completed_focus = The_Crescent_Moons
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
+	agricorps_decision = {
+		cost = 0
+		icon = unknown
+		available = {
+			CMG = {
+				has_completed_focus = The_Crescent_Moons
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
+	miningguild_decision = {
+		cost = 0
+		icon = unknown
+		available = {
+			CMG = {
+				has_completed_focus = The_Crescent_Moons
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
+}

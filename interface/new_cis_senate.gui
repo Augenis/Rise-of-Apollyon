@@ -1,0 +1,374 @@
+guiTypes = {
+    containerWindowType = {
+        name = "CIS_senate_container"
+        orientation = center
+        position = {x=0 y=0}
+        size = { width=1084 height=430 }
+        moveable = yes
+        background = {
+            name = "CIS_senate_background"
+            Spritetype ="GFX_background_CIS_senate"
+		}
+        buttonType = {
+            name = "Wat_Tambor_button"
+            position = { x=-439 y=-310 }
+            spriteType = "GFX_Wat_tambor_senate"
+            Orientation = "LOWER_RIGHT"
+        }
+        buttonType = {
+            name = "Poggle_button"
+            position = { x=161 y=112 }
+            spriteType = "GFX_Poggle_senate"
+        }
+        buttonType = {
+            name = "Nute_Gunray_button"
+            position = { x=19 y=68 }
+            spriteType = "GFX_Nute_senate"
+        }
+        buttonType = {
+            name = "Count_Dooku_button"
+            position = { x=-100 y= -104}
+            spriteType = "GFX_Count_dooku_senate"
+            Orientation = "CENTER"
+        }
+        buttonType = {
+            name = "San_hill_button"
+            position = { x=-217 y=-302 }
+            spriteType = "GFX_San_hill_senate"
+            Orientation = "LOWER_RIGHT"
+        }
+        buttonType = {
+            name = "close_button"
+            position = { x = -44 y = 5 }
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            Orientation = "UPPER_RIGHT"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+        }
+    }
+    containerWindowType = {
+        name = "count_dooku_box_container"
+        orientation = center
+        position = {x=0 y=0}
+        size = { width=400 height=625 }
+        moveable = yes
+        background = {
+            name = "CIS_senate_checkbox_container"
+            Spritetype ="GFX_CIS_senate_checkbox_container"
+        }
+        instantTextBoxType = {
+            name = "Title"
+            position = { x=137 y=15 }
+            text = "DOOKU_SENATE_TITLE"
+            maxWidth = "295"
+            maxHeight = "30"
+            font = "hoi_24header"
+        }
+        buttonType = {
+            name = "checkbox_1"
+            position = { x=20 y=110 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_1_text"
+            position = { x=90 y=100 }
+            text = "DOOKU_CHECKBOX_1_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "checkbox_2"
+            position = { x=20 y=310 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_2_text"
+            position = { x=90 y=300 }
+            text = "DOOKU_CHECKBOX_2_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "checkbox_3"
+            position = { x=20 y=510 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_3_text"
+            position = { x=90 y=500 }
+            text = "DOOKU_CHECKBOX_3_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "close_button"
+            position = { x = -40`` y = 30 }
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            Orientation = "UPPER_RIGHT"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+        }
+    }
+    containerWindowType = {
+        name = "Wat_Tambor_box_container"
+        orientation = center
+        position = {x=0 y=0}
+        size = { width=400 height=625 }
+        moveable = yes
+        background = {
+            name = "CIS_senate_checkbox_container"
+            Spritetype ="GFX_CIS_senate_checkbox_container"
+        }
+        instantTextBoxType = {
+            name = "Title"
+            position = { x=135 y=14 }
+            text = "WAT_TAMBOR_SENATE_TITLE"
+            maxWidth = "295"
+            maxHeight = "30"
+            font = "hoi_24header"
+        }
+        buttonType = {
+            name = "checkbox_1"
+            position = { x=20 y=110 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_1_text"
+            position = { x=90 y=100 }
+            text = "WAT_CHECKBOX_1_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "checkbox_2"
+            position = { x=20 y=310 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_2_text"
+            position = { x=90 y=300 }
+            text = "WAT_CHECKBOX_2_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "checkbox_3"
+            position = { x=20 y=510 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_3_text"
+            position = { x=90 y=500 }
+            text = "WAT_CHECKBOX_3_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "close_button"
+            position = { x = -40`` y = 30 }
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            Orientation = "UPPER_RIGHT"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+        }
+    }
+    containerWindowType = {
+        name = "Nute_Gunray_box_container"
+        orientation = center
+        position = {x=0 y=0}
+        size = { width=400 height=625 }
+        moveable = yes
+        background = {
+            name = "CIS_senate_checkbox_container"
+            Spritetype ="GFX_CIS_senate_checkbox_container"
+        }
+        instantTextBoxType = {
+            name = "Title"
+            position = { x=113 y=12 }
+            text = "NUTE_GUNRAY_SENATE_TITLE"
+            maxWidth = "295"
+            maxHeight = "30"
+            font = "hoi_24header"
+        }
+        buttonType = {
+            name = "checkbox_1"
+            position = { x=20 y=110 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_1_text"
+            position = { x=90 y=100 }
+            text = "NUTE_CHECKBOX_1_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "checkbox_2"
+            position = { x=20 y=310 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_2_text"
+            position = { x=90 y=300 }
+            text = "NUTE_CHECKBOX_2_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "checkbox_3"
+            position = { x=20 y=510 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_3_text"
+            position = { x=90 y=500 }
+            text = "NUTE_CHECKBOX_3_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "close_button"
+            position = { x = -40`` y = 30 }
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            Orientation = "UPPER_RIGHT"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+        }
+    }
+    containerWindowType = {
+        name = "San_hill_box_container"
+        orientation = center
+        position = {x=0 y=0}
+        size = { width=400 height=625 }
+        moveable = yes
+        background = {
+            name = "CIS_senate_checkbox_container"
+            Spritetype ="GFX_CIS_senate_checkbox_container"
+        }
+        instantTextBoxType = {
+            name = "Title"
+            position = { x=135 y=15 }
+            text = "SAN_HILL_SENATE_TITLE"
+            maxWidth = "295"
+            maxHeight = "30"
+            font = "hoi_24header"
+        }
+        buttonType = {
+            name = "checkbox_1"
+            position = { x=20 y=110 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_1_text"
+            position = { x=90 y=100 }
+            text = "SAN_CHECKBOX_1_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "checkbox_2"
+            position = { x=20 y=310 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_2_text"
+            position = { x=90 y=300 }
+            text = "SAN_CHECKBOX_2_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "checkbox_3"
+            position = { x=20 y=510 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_3_text"
+            position = { x=90 y=500 }
+            text = "SAN_CHECKBOX_3_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "close_button"
+            position = { x = -40`` y = 30 }
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            Orientation = "UPPER_RIGHT"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+        }
+    }
+    containerWindowType = {
+        name = "Poggle_box_container"
+        orientation = center
+        position = {x=0 y=0}
+        size = { width=400 height=625 }
+        moveable = yes
+        background = {
+            name = "CIS_senate_checkbox_container"
+            Spritetype ="GFX_CIS_senate_checkbox_container"
+        }
+        instantTextBoxType = {
+            name = "Title"
+            position = { x=155 y=15 }
+            text = "POGGLE_LESSER_SENATE_TITLE"
+            font = "hoi_24header"
+        }
+        buttonType = {
+            name = "checkbox_1"
+            position = { x=20 y= 110}
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_1_text"
+            position = { x=90 y=100 }
+            text = "POGGLE_CHECKBOX_1_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "checkbox_2"
+            position = { x=20 y=310 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_2_text"
+            position = { x=90 y=300 }
+            text = "POGGLE_CHECKBOX_2_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "checkbox_3"
+            position = { x=20 y=510 }
+            spriteType = "GFX_CIS_checkbox"
+        }
+        instantTextBoxType = {
+            name = "checkbox_3_text"
+            position = { x=90 y=500 }
+            text = "POGGLE_CHECKBOX_3_TEXT"
+            maxWidth = "295"
+            maxHeight = "30"
+        }
+        buttonType = {
+            name = "close_button"
+            position = { x = -40`` y = 30 }
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            Orientation = "UPPER_RIGHT"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+        }
+    }
+}

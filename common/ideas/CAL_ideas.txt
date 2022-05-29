@@ -1,0 +1,443 @@
+ideas = {
+	country = {
+		ships_are_our_art = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_navy = 0.05
+				naval_damage_factor = 0.10
+				naval_hit_chance = 0.1
+
+			}
+		}
+        defence_of_home = {
+        	picture = ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			available = {
+
+
+			}
+			cancel = {
+				 has_war = no
+			}
+
+			removal_cost = -1
+
+			picture = unknown
+
+			modifier = {
+			army_core_attack_factor = 0.1
+			army_core_defence_factor 0.1
+			}
+		}
+		civil_unrest_1 = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.2
+			}
+		}
+		civil_unrest_2 = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+			 	has_war = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+			}
+		}
+		supplies = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+	            artillery_equipment = {
+	                build_cost_ic = -0.1 instant = yes
+	            }
+			}
+		}
+		a_society_swept_away_1 = {
+			picture = unknown
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory= -0.2
+				industrial_capacity_dockyard = -0.3
+			}
+		}
+		brain_drain_1 = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.1
+			}
+		}
+		brain_drain_2 = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.05
+			}
+		}
+		Outer_rim_inventors = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		stubborn_defenders = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.03
+				experience_loss_factor = -0.1
+				army_defence_factor = 0.05
+			}
+		}
+		ship_home = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		weather_the_storm = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		Quarren_civil_war = {
+			picture = GFX_idea_ships_are_our_art
+			allowed = {
+				always = no
+			}
+			available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {	
+				ai_join_ally_desire_factor = 2000
+			}
+		}
+	}
+	political_advisor = {
+		senator_tills = {
+			name = "Senator Tills"
+			allowed = {
+				original_tag = CAL
+			}
+
+			available = {
+			}
+
+			modifier = {
+			     trade_opinion_factor = 0.60
+				 consumer_goods_factor = -0.05	
+			}
+		}
+		prince_lee_char = {
+			name = "Prince Lee Char"
+			allowed = {
+				original_tag = CAL 
+			}
+
+			available = {
+			}
+
+			modifier = {
+			     defensive_war_stability_factor = 0.2
+			     political_power_factor = 0.10	
+			}
+		}
+	}
+	army_chief = {
+			Raddus2 = {
+			 	name = "Raddus"
+			 	#picture = gfx_idea_raddus
+				allowed = {
+					original_tag = CAL
+				}
+				available = {
+					custom_trigger_tooltip = {
+					    tooltip = 17_CAL_tt
+					 	has_country_flag = CommandersTrained
+					}
+				}
+				traits = { army_chief_drill_2 }
+			}
+
+			
+			Broil1 = {
+			 	name = "Broil"
+			 	#picture = broil
+				allowed = {
+					original_tag = CAL
+				}
+				available = {
+					custom_trigger_tooltip = {
+					    tooltip = 17_CAL_tt
+					 	has_country_flag = CommandersTrained
+					}
+				}
+				traits = { army_chief_offensive_2 }			
+			}
+	}
+	air_chief = {
+			Bubba1 = {
+			 	name = "Bubba"
+			 	#picture = bubba
+				allowed = {
+					original_tag = CAL
+				}
+				available = {
+					custom_trigger_tooltip = {
+					    tooltip = 17_CAL_tt
+					 	has_country_flag = CommandersTrained
+					}
+				}
+				equipment_bonus = {
+					fighter_equipment = {
+						instant = yes
+						fuel_consumption = -0.2
+					}
+					heavy_fighter_equipment = {
+						instant = yes
+						fuel_consumption = -0.2
+					}
+				}
+			traits = { air_chief_night_operations_3 }
+		}	
+	}
+	theorist = {
+		ackbar = {
+			name = "Gial Ackbar"
+			#picture = ackbar
+			ledger = navy
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				custom_trigger_tooltip = {
+				    tooltip = 18_CAL_tt
+				 	has_country_flag = AckbarEnlisted
+				}
+			}
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			traits = { naval_theorist }
+		}
+	}
+
+	high_command = {
+		kit_fisto = {
+			ledger = army
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = 19_CAL_tt
+					has_completed_focus = CAL_Clone_renforcements
+					has_war = yes
+				}
+			}
+			allowed = {
+				original_tag = CAL
+			}
+			traits = { army_infantry_3 }
+		}
+		raddus = {
+			name = "Raddus"
+			#picture = raddus
+			ledger = army
+			available = {
+				custom_trigger_tooltip = {
+					    tooltip = 17_CAL_tt
+					 	has_country_flag = CommandersTrained
+					} 
+			}
+			allowed = {
+				original_tag = CAL
+			}
+			traits = {army_infantry_2}	
+		}
+		shallan = {
+			name = "Shallan"
+			#picture = shallan
+			ledger = army
+			available = {
+				custom_trigger_tooltip = {
+					    tooltip = 17_CAL_tt
+					 	has_country_flag = CommandersTrained
+				}
+			}
+			allowed = {
+				original_tag = CAL
+			}
+			traits = {army_entrenchment_2}
+		}
+		herpies = {
+			name = "Herpies"
+			#picture = herpies
+			ledger = navy
+			available = {
+				custom_trigger_tooltip = {
+					    tooltip = 17_CAL_tt
+					 	has_country_flag = CommandersTrained
+				} 
+			}
+			allowed = {
+				original_tag = CAL
+			}
+			traits = {navy_carrier_2}
+		}
+	}
+	navy_chief  = {
+		ackbar_chief = {
+			name = "Ackbar"
+			#picture = ackbar
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				custom_trigger_tooltip = {
+				    tooltip = 18_CAL_tt
+				 	has_country_flag = AckbarEnlisted
+				}
+			}
+			traits = { navy_chief_decisive_battle_3 }
+
+		}
+	}
+}

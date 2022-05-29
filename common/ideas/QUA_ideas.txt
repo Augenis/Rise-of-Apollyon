@@ -1,0 +1,389 @@
+ideas = {
+	country = {
+		Quarren_immgration = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 50
+			}
+		}
+		necessity_of_war = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+		}
+		unease = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = -0.2
+				industrial_capacity_factory = -0.2
+			}
+		}
+		rebellions_1 = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				required_garrison_factor = 0.4
+				stability_factor = -0.30
+			}
+		}
+		rebellions_2 = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				required_garrison_factor = 0.3
+				stability_factor = -0.20
+			}
+		}
+		rebellions_3 = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				required_garrison_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		fearful_populace = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				compliance_growth_on_our_occupied_states = 0.02
+				political_power_gain = -0.08
+			}
+		}
+		work_camps = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				local_resources = 0.2
+				political_power_gain = -0.08
+			}
+		}
+		Belief_in_the_cause = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources = 0.1
+			}
+		}
+		Underground_agriculture= {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = 400
+			}
+		}
+		shining_gem = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		kings_guard = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				conscription = 0.03
+			}
+		}
+		the_peoples_republic = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.05
+				stability_factor = 0.1
+				political_power_gain = 0.10
+			}
+		}
+		Struggle_of_equality = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				army_org_regain = 0.05
+				fighter_sortie_efficiency = 0.1
+			}
+		}
+		Every_worker = {
+			picture = GFX_idea_ships_are_our_art
+
+			allowed = {
+				always = no
+			}
+			 available = {
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.10
+				naval_critical_effect_factor = -0.1
+			}
+		}
+	}
+	political_advisor = {
+		tikkes = {
+			name = "Senator Tikkes"
+			allowed = {
+				original_tag = QUA
+			}
+
+			available = {
+			}
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.02
+			}
+		}
+		nossor_ri = {
+			name = "Nossor Ri"
+			allowed = {
+				original_tag = QUA
+			}
+
+			available = {
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				war_stability_factor = 0.05
+			}
+		}
+	}
+	army_chief = {
+		Matte = {
+		 	name = "Matte"
+			allowed = {
+				original_tag = QUA
+			}
+			available = {
+			}
+			traits = { army_chief_reform_2 }
+		}
+	}
+	navy_chief  = {
+		Kallid_chief = {
+			name = "Kallid"
+			allowed = {
+				original_tag = QUA
+			}
+			available = {
+			}
+			traits = { navy_chief_commerce_raiding_2  } 
+		}
+		gratta_chief = {
+			name = "Gratta"
+			allowed = {
+				original_tag = QUA
+			}
+			available = {
+			}
+			traits = {  navy_chief_decisive_battle_1  } 
+		}
+	}
+	high_command = {
+		gratta = {
+			name = "Gratta"
+			ledger = army
+			available = {
+			}
+			allowed = {
+				original_tag = QUA
+			}
+			traits = {army_armored_2}	
+		}
+		Kallid = {
+			name = "Kallid"
+			ledger = navy
+			available = {
+			}
+			allowed = {
+				original_tag = QUA
+			}
+			traits = {navy_naval_air_defense_2}
+		}
+	}
+	theorist = {
+		Matte = {
+			name = "Matte"
+			ledger = navy
+			allowed = {
+				original_tag = QUA
+			}
+			available = {
+			}
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			traits = { naval_theorist }
+		}
+	}
+}

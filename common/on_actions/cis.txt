@@ -1,0 +1,48 @@
+#on_actions = {
+#    on_daily = {
+#		effect = {
+#				if = {
+#					limit = {
+#						check_variable = { cohesion > 68 }
+#						tag = CIS
+#					}
+#					add_ideas = cohesion_4
+#					remove_ideas = cohesion_3
+#					remove_ideas = cohesion_2
+#					remove_ideas = cohesion_1
+#				}
+#				if = {
+#					limit = {
+#						check_variable = { cohesion < 68 }
+#						check_variable = { cohesion > 50 }
+#						tag = CIS
+#					}
+#					add_ideas = cohesion_3
+#					remove_ideas = cohesion_4
+#					remove_ideas = cohesion_2
+#					remove_ideas = cohesion_1
+#				}
+#				if = {
+#					limit = {
+#						check_variable = { cohesion < 50 }
+#						check_variable = { cohesion > 32 }
+#						tag = CIS
+#					}
+#					add_ideas = cohesion_2
+#					remove_ideas = cohesion_3
+#					remove_ideas = cohesion_4
+#					remove_ideas = cohesion_1
+#				}
+#				if = {
+#					limit = {
+#						check_variable = { cohesion < 32 }
+#						tag = CIS
+#					}
+#					add_ideas = cohesion_1
+#					remove_ideas = cohesion_3
+#					remove_ideas = cohesion_2
+#					remove_ideas = cohesion_4
+#			}
+#		}
+#	}
+#}

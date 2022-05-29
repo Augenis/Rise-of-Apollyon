@@ -1,0 +1,65 @@
+﻿l_english:
+
+ # focuses
+
+ KAM_sifo_dyas_order:0 "Sifo Dyas's Order"
+ KAM_jango_fett_dna:0 "Jango Fett's DNA"
+ KAM_expand_cloning_efforts:0 "Expand Cloning Efforts"
+ KAM_expand_research_facilities:0 "Fund Research Facilities"
+ KAM_improve_platform_infrastructure:0 "Improve Platforms Infrastructure"
+ KAM_expand_cloning:0 "Expand Cloning Manufactories"
+ KAM_the_perfect_soldier:0 "The Perfect Soldier"
+ KAM_growth_acceleration:0 "Growth Acceleration Chambers"
+ KAM_phase2_growth:0 "Improved Growth Acceleration Chambers"
+ KAM_combat_training_grounds:0 "Combat Training Grounds"
+ KAM_expand_cloning_fac:0 "Expand Cloning Facilities"
+ KAM_join_republic:0 "Kaminoan Entry Into The Republic"
+ KAM_r_and_d_platforms:0 "R&D Platforms"
+ KAM_platform_hangars:0 "Platform Hangars"
+ KAM_spaceport_defences:0 "Spaceport Defences"
+ KAM_economic_growth:0 "Economic Growth"
+ KAM_clones_for_the_war_effort:0 "Clones For The Republic War Effort"
+ KAM_rally_the_legions:0 "Produce The Legions"
+ KAM_defense_of_rishi:0 "The Defence Of Rishi"
+ KAM_rishi_outpost:0 "The Rishi Outpost"
+ KAM_rishi_outpost_improve:0 "Expand The Rishi Outpost"
+ KAM_rishi_bases:0 "Rishi Base Defences"
+ KAM_war_manufacturies:0 "War Manufactories"
+ KAM_phase2:0 "Phase 2"
+ KAM_cloning_technology:0 "Kaminoan Cloning Technology"
+ KAM_shipyards:0 "Kaminoan Shipyards"
+ KAM_shipyards2:0 "Shipyard Effort"
+ KAM_ships:0 "Ship Prototypes"
+ KAM_situation_training:0 "Situation Training"
+ KAM_republic_supervisors:0 "Republic Supervisors"
+ KAM_tactical_preparation:0 "Tactical Preparation"
+ KAM_specialized_units:0 "Specialized Clone Units"
+ KAM_arc_troopers:0 "Arc Trooper Programs"
+ KAM_defence_of_homeland:0 "The Defenders Of Kamino"
+ KAM_grand_army:0 "The Grand Army"
+ KAM_corprate_production:0 "Corprate Production"
+ KAM_specialized_chambers:0 "Specialized Chambers"
+ KAM_underwater_drills:0 "Underwater Drills"
+ KAM_phase2_fac:0 "Large Cloning Platforms"
+ KAM_more_platforms:0 "More Platforms"
+
+ # custom tooltips
+
+ KAM_clone_order:0 "We have recieved an order for §Yone million clones§! and will recieve §G100M credits§! as payment."
+ KAM_legions:0 "We will produce §Yorganized legions§! for the §GRepublic§!. \nCompleting this focus will allow the §GRepublic§! to §Ycomplete a focus to unlock the legions§! in the galactic market."
+ KAM_cost:0 "§RCosts 50M Credits§!"
+ # ideas
+
+ funded_research_departments:0 "Funded Research Facilities"
+ cloning_facilities:0 "Cloning Facilities"
+ cloning_facilities1:0 "Improved Cloning Facilities"
+ clone_growth_acc:0 "Clone Growth Acceleration Chambers"
+ clone_growth_acc1:0 "Clone Growth Acceleration Chambers"
+ KAM_defence_of_homeland:0 "The Defenders Of Kamino"
+ KAM_grand_army:0 "The Grand Army"
+
+  # research
+
+ cloning:0 "Cloning Technology"
+ cloning2:0 "Improved Cloning Technology"
+ cloning3:0 "Advanced Cloning Technology"

@@ -1,0 +1,41 @@
+state={
+	id=553
+	name="The Jedi Temple"
+	provinces={
+		194
+	}
+	manpower=10000
+	buildings_max_level_factor=0
+	state_category=wasteland
+	
+	resources={
+		steel=0
+		aluminium=0
+		rubber=0
+		tungsten=0
+		oil=0
+		chromium=0
+	}
+
+  	history = {
+		owner=REP
+		add_core_of = REP
+		set_demilitarized_zone = yes
+
+		buildings = {
+			infrastructure=8
+			arms_factory=0
+			industrial_complex=0
+			dockyard=0
+			air_base=0
+
+			#province = {
+			#	naval_base = 4
+			#}
+		}
+		
+		victory_points = {
+			194 30
+		}
+	}
+}

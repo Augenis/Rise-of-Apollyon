@@ -1,0 +1,25 @@
+cis_general_decisons = {
+     icon = generic_prospect_for_resources
+	visible = {
+		original_tag = CIS
+		CIS = {
+			has_country_flag = corporatecontracts
+		}
+	}
+	available = { 
+		original_tag = CIS
+     }
+	allowed = {
+		original_tag = CIS
+	}
+}
+
+cis_missions = {
+     icon = generic_prospect_for_resources
+	available = { 
+		original_tag = CIS
+	}
+	allowed = {
+		original_tag = CIS
+	}
+}

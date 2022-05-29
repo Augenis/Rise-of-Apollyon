@@ -1,0 +1,817 @@
+add_namespace = CMG
+## 26 BBY/977 ATC
+# 
+news_event = {
+	id = CMG.1 #Korriban Control
+	title = "Commerce Guild gains controll of Korriban"
+	desc = ""
+	major = yes
+    
+    is_triggered_only = yes
+    fire_only_once = no
+    option = {
+		   name = "This is outrageous!"     
+		trigger = {
+		   	OR = { 
+		   		TAG = REP
+		   }
+		}	                   
+	}
+		
+    option = {
+		name = "Separatist Influences Expand"     
+		trigger = {
+		   OR = { 
+		   	TAG = CIS
+		   	TAG = FED
+		   }
+		}	                   
+	}
+		
+	option = {
+		name = "Our Influences Expand"     
+		trigger = {
+		   	OR = { 
+		   		TAG = CMG
+		   	}
+		}	                   
+	}
+}
+
+#Invites to join faction for actual CIS countries
+news_event = {
+	id = CMG.2
+	title = "Incoming Transmission from Count Dooku"
+	desc = "Count Dooku has asked that you secede from the Republic and join the Confederacy of Independent Systems."
+
+	is_triggered_only = yes 
+	fire_only_once = yes
+
+	option = {
+    	name = "Secede. Join the Confederacy."
+
+		ai_chance = {
+		    base = 200
+		}
+
+    	leave_faction = yes
+    	CIS = {
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = CIS
+			}
+			add_to_faction = CMG 
+		}
+    	ROOT = {
+    		add_popularity = {
+			    ideology = fascism
+			    popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = fascism
+			}
+		}
+    }
+	option = {
+    	name = "Remain Loyal to the Republic"
+    }
+	
+	option = {
+    	name = "Go our own way."
+		leave_faction = yes
+		set_rule = { can_create_factions = yes }
+    }
+}
+
+news_event = {
+	id = CMG.3 #Mission to Anison
+	title = "Commerce Guild's diplomatic mission to Anison"
+	desc = "Ansion has decided to remain a member of the Galactic Republic, and the planet's Alwari ruling councils have united under the Council of Alwari Elders. Also, the our plan of issuing war demands to the Republic have been delayed"
+
+    
+   	is_triggered_only = yes
+	fire_only_once = yes
+	
+		option = {
+			name = "Accept Failure"
+
+			ai_chance = {
+				base = 200
+			}
+
+			ROOT = {
+				add_stability = .02
+			}	
+		}  
+		option = {
+    	name = "Abandon Mission"
+		
+			ROOT = {
+					add_stability = -.02
+			}
+		}
+}
+
+#Jedi Petition
+news_event = {
+	id = CMG.4
+	title = "Anti-Jedi Petition"
+	desc = "Our anti-Jedi factional petition to sever all future Jedi affiliation with the Senate has failed, however we can make the best of this."
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+    	name = "This is why we cant trust the Republic.."
+
+		ai_chance = {
+		    base = 200
+		}
+    	ROOT = {
+    		add_popularity = {
+			    ideology = fascism
+			    popularity = 0.1
+			}
+		}
+    }
+	option = {
+    	name = "Accept the Senate's decision"
+    }
+}
+#Invite to cis
+news_event = {
+	id = CMG.5
+	title = "Invite To Join Faction"
+	desc = "The Confederacy of Independent Systems has invited us to join its fight to end corruption in the galaxy."
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+    	name = "Join the Confederacy of Independent Systems."
+		ai_chance = {
+		    base = 2000
+		}
+		CIS = {
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = CIS
+			}
+			add_to_faction = CMG
+		}
+		CMG = {
+			remove_ideas = REP_member
+			remove_ideas = REP_member_prewar
+			set_politics = {
+				ruling_party = fascism
+			}
+			set_popularities = {
+				democratic = 15
+				neutrality = 0
+				fascism = 85
+			}	
+		}
+		REP = {
+			news_event = CMG.7
+		}
+    }
+	option = {
+    	name = "Deny the offer."
+
+		ai_chance = {
+		    base = -2000
+		}
+		CIS = {
+			news_event = CMG.6
+		}
+    }
+}
+
+#Invite to cis declined
+news_event = {
+	id = CMG.6
+	title = "Invite To Join Faction Declined"
+	desc = "The Commerce Guild has denied our offer to end corruption in the galaxy. They must be part of the problem."
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Very Unfortunate."
+    }
+}
+
+#REP informed that CMG has seceded
+news_event = {
+	id = CMG.7
+	title = "The Commerce Guild Secedes!"
+	desc = "After selling off a planet to the appalling secessionist movement known as the Confederacy of Independent Systems, the Commerce Guild has chosen to leave the Galactic Republic."
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Very Unfortunate."
+		trigger = {
+			tag = REP
+		}
+    }
+}
+
+#Invite to cis accepted
+news_event = {
+	id = CMG.8
+	title = "Invite To Join Faction Accepted!"
+	desc = "The Commerce Guild has accepted our offer to end corruption in the galaxy. They are a noble organization that clearly sees the Galactic Republic for what it truly is."
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "Very Unfortunate."
+    }
+}
+#Maul Stuff
+news_event = {
+	id = CMG.9
+	title = "The Dark One Rises"
+	desc = "Contacts among some of our black market dealers have been approached"
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "The Dark One must be appeased."
+    }
+}
+#Black mraket event
+news_event = {
+	id = CMG.10
+	title = "Black Market opportunities"
+	desc = "Some interesting opportunity has arisen among some of the syndicates, more commonly known as our entrance to the black market."
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "We should consider some of the more profitable ways to run a business."
+    }
+}
+#bad internal factions opinions
+#country_event = {
+#	id = CMG.11
+#	title = "Internal Faction Tensions."
+#	desc = "The internal factions have decided that they no longer appreciate our regime and have decided to rise up."
+#	
+#	hidden = yes
+#
+#	trigger = {
+#		has_civil_war = no
+#		OR = {
+#			check_variable = {
+#   			militarist_opinion > 10
+#			}
+#			check_variable = {
+#   			shipbuilders_opinion > 10
+#			}
+#			check_variable = {
+#   			arms_dealer_opinion > 10
+#			}
+#			check_variable = {
+#   			ecoterrorist_opinion > 10
+#			}
+#			check_variable = {
+#   			agricorps_opinion > 10
+#			}
+#			check_variable = {
+#   			miningguild_opinion > 10
+#			}
+#		}
+#		NOT = { 
+#			has_country_flag = crisis_in_progress
+#		}
+#		NOT = { has_completed_focus = First_Conglomerate_Council }
+#	}
+#
+#	mean_time_to_happen = { 
+#		days = 360 
+#		modifier = {
+#			factor = 1.0
+#			has_idea = disarmed_nation
+#		}
+#		modifier = {
+#			factor = 1.0
+#			has_idea = volunteer_only
+#		}
+#		modifier = {
+#			factor = 2.5
+#			has_idea = undisturbed_isolation
+#		}
+#		modifier = {
+#			factor = 2.0
+#			has_idea = isolation
+#		}
+#		modifier = {
+#			factor = 1.0
+#			has_idea = civilian_economy
+#		}
+#		modifier = {
+#			factor = 0.25
+#			NOT = { has_government = loyalist }
+#		}
+#		modifier = {
+#			factor = 0.5
+#			NOT = { has_government = seperatist }
+#		}
+#		modifier = {
+#			factor = 0.75
+#			OR = {
+#				has_stability < 0.4
+#				has_war_support < 0.4
+#			}
+#		}
+#		modifier = {
+#			factor = 0.65
+#			OR = {
+#				has_stability < 0.2
+#				has_war_support < 0.2
+#			}
+#		}
+#		modifier = {
+#			factor = 0.65
+#			OR = {
+#				check_variable = {
+#	    			militarist_opinion > 10
+#				}
+#				check_variable = {
+#	    			shipbuilders_opinion > 10
+#				}
+#				check_variable = {
+#	    			arms_dealer_opinion > 10
+#				}
+#				check_variable = {
+#	    			ecoterrorist_opinion > 10
+#				}
+#				check_variable = {
+#	    			agricorps_opinion > 10
+#				}
+#				check_variable = {
+#	    			miningguild_opinion > 10
+#				}
+#			}
+#		}
+#	}
+#
+#	immediate = { 
+#		random_list = {
+#			100 = { 
+#				modifier = {
+#					factor = 0
+#					has_country_flag = factions_resolved
+#				}
+#				modifier = {
+#					factor = 0.1
+#					has_war_support > 0.5
+#				}
+#				add_ideas = CMG_internal_factions
+#				country_event = CMG.11
+#			} #draft dodging
+#		}
+#		if = {
+#			limit = {
+#				NOT = {
+#					has_country_flag = crisis_in_progress
+#				}
+#			}
+#			set_country_flag = crisis_in_progress
+#		}
+#	}
+#	
+#	option = { 
+#		name = " Our Internal Factions are quite troublesome"
+#		ai_chance = {
+#		}
+#		
+#	}
+#
+#}
+#draft dodging
+country_event = {
+	id = CMG.11
+	title = "Faction Crisis"
+	desc = {
+		text = "All of our faction workers are being pulled away to deal with other matters within our internal factions."
+	trigger = { 	
+		text = "The internal factions are slightly troubled."	 
+			has_idea = CMG_internal_factions 
+		}	
+	} 	
+	desc = {
+		text = "The faction tensions worsen."
+		trigger = { has_idea = CMG_internal_factions_2 }
+	}
+	desc = {
+		text = "Violence in the streets."
+		trigger = { has_idea = CMG_internal_factions_3 }
+	}				
+		
+	is_triggered_only = yes
+
+	immediate = { 
+		if = {
+			limit = {
+				NOT = { has_country_flag = crisis_in_progress }
+			}
+			set_country_flag = crisis_in_progress 
+		}
+		if = {
+			limit = {
+				has_country_flag = crisis_solution_in_progress
+			}
+			clr_country_flag = crisis_solution_in_progress
+		}
+	}
+	option = { 
+		name = "Do nothing and suffer."
+		ai_chance = {
+			base = 0
+		}
+	}
+	
+	option = {
+		trigger = { 
+			NOT = {
+				OR = {
+					has_idea = CMG_internal_factions_2
+					has_idea = CMG_internal_factions_3
+				}
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_stability < 0.4
+				factor = 0
+			}
+			modifier = {
+				has_political_power > 100
+				factor = 0.5
+			}
+		}
+		name = "Target the youth"
+		add_political_power = -75
+		custom_effect_tooltip = 15_days_tt
+		set_country_flag = crisis_solution_in_progress
+		if = {
+			limit = {
+				has_stability > 0.3
+			}
+			random_list = {
+				60 = { country_event = { id = CMG.12 days = 15 } } #success
+				40 = { country_event = { id = CMG.13 days = 15 } } #failure
+			}
+		}
+		if = {
+			limit = {
+				has_stability < 0.3
+			}
+			random_list = {
+				60 = { country_event = { id = CMG.12 days = 15 } } #success
+				35 = { country_event = { id = CMG.13 days = 15 } } #failure
+			}
+		}
+	}
+
+	option = { #improve living standards
+		trigger = { 
+			NOT = {
+				OR = {
+					has_idea = CMG_internal_factions_2
+					has_idea = CMG_internal_factions_3
+				}
+			}
+		}
+		name = "Target the faction leaders."
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_stability < 0.4
+				factor = 2
+			}
+			modifier = {
+				has_political_power > 100
+				factor = 2
+			}
+		}
+		add_political_power = -120
+		custom_effect_tooltip = 30_days_tt
+		set_country_flag = crisis_solution_in_progress
+		random_list = {
+			80 = { country_event = { id = CMG.14 days = 30 } } #success
+			20 = { country_event = { id = CMG.11 days = 30 } } 
+
+		}
+	}
+
+	option = {
+		trigger = { 
+			has_idea = CMG_internal_factions_2
+		}
+		name = "The young leaders"
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_stability < 0.4
+				factor = 0
+			}
+			modifier = {
+				has_political_power > 100
+				factor = 0.5
+			}
+		}
+		add_political_power = -80
+		custom_effect_tooltip = 15_days_tt
+		set_country_flag = crisis_solution_in_progress
+		if = {
+			limit = {
+				has_stability > 0.3
+			}
+			random_list = {
+				60 = { country_event = { id = CMG.15 days = 15 } } #success
+				40 = { country_event = { id = CMG.16 days = 15 } } #failure
+			}
+		}
+		if = {
+			limit = {
+				has_stability < 0.3
+			}
+			random_list = {
+				55 = { country_event = { id = CMG.15 days = 15 } } #success
+				45 = { country_event = { id = CMG.16 days = 15 } } #failure
+			}
+		}
+	}
+
+	option = { #improve living standards lvl 2
+		trigger = { 
+			has_idea = CMG_internal_factions_2
+		}
+		name = "Improve Living Standards"
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_stability < 0.4
+				factor = 2
+			}
+			modifier = {
+				has_political_power > 100
+				factor = 2
+			}
+		}
+		add_political_power = -130
+		custom_effect_tooltip = 30_days_tt
+		set_country_flag = crisis_solution_in_progress
+		random_list = {
+			80 = { country_event = { id = CMG.17 days = 30 } } #success
+			20 = { country_event = { id = CMG.11 days = 30 } } #failure
+
+		}
+	}
+
+	option = { #military crackdown level 3
+		trigger = { 
+			has_idea = CMG_internal_factions_3
+		}
+		name = "Push for removal of senior officers."
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_stability < 0.4
+				factor = 0
+			}
+			modifier = {
+				has_political_power > 100
+				factor = 0.5
+			}
+		}
+		add_political_power = -90
+		custom_effect_tooltip = 15_days_tt
+		set_country_flag = crisis_solution_in_progress
+		if = {
+			limit = {
+				has_stability > 0.3
+			}
+			random_list = {
+				60 = { country_event = { id = CMG.18 days = 15 } } #success
+				40 = { country_event = { id = CMG.19 days = 15 } } #failure
+			}
+		}
+		if = {
+			limit = {
+				has_stability < 0.3
+			}
+			random_list = {
+				50 = { country_event = { id = CMG.18 days = 15 } } #success
+				50 = { country_event = { id = CMG.19 days = 15 } } #failure
+			}
+		}
+	}
+
+	option = {
+		trigger = { 
+			has_idea = CMG_internal_factions_3
+		}
+		name = "Better the officer's standard of living."
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_stability < 0.4
+				factor = 2
+			}
+			modifier = {
+				has_political_power > 100
+				factor = 2
+			}
+		}
+		add_political_power = -150
+		custom_effect_tooltip = 30_days_tt
+		set_country_flag = crisis_solution_in_progress
+		random_list = {
+			80 = { country_event = { id = CMG.20 days = 30 } } #success
+			20 = { country_event = { id = CMG.11 days = 30 } } #failure
+		}
+	}
+
+}
+#military crackdown response to draft dodging - success
+country_event = {
+	id = CMG.12
+	title = "Success with cleansing the old guard."
+	desc = "Cleansing from the top worked!"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Now to return to normal life."
+		remove_ideas =  { 
+			CMG_internal_factions 
+			CMG_internal_factions_2
+			CMG_internal_factions_3
+		}
+		clr_country_flag = crisis_in_progress
+		clr_country_flag = crisis_solution_in_progress
+		set_country_flag = { flag = factions_resolved days = 90 }
+	}
+
+}
+#military crackdown response to draft dodging - failure, loss of stability
+country_event = {
+	id = CMG.13
+	title = "Lets consult our advisors again later."	
+	desc = "Failure!!!"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Success was never really on the table."
+		add_stability = -0.05
+		add_war_support = -0.05
+		clr_country_flag = crisis_solution_in_progress
+	}
+}
+# improve living conditions - success
+country_event = {
+	id = CMG.14
+	title = "Getting rid of young ideas worked!"
+	desc = "The younglings were the real problem here."
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Success!"
+		remove_ideas =  { 
+			CMG_internal_factions
+			CMG_internal_factions_2
+			CMG_internal_factions_3
+		} 
+		add_stability = 0.05
+		add_war_support = 0.05
+		clr_country_flag = crisis_in_progress
+		clr_country_flag = crisis_solution_in_progress
+		set_country_flag = { flag = factions_resolved days = 180 }
+		}
+	}
+country_event = {
+	id = CMG.15
+	title = "Officers purged - Success"
+	desc = "It has worked superbly."
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "Success."
+		remove_ideas =  { 
+			CMG_internal_factions 
+			CMG_internal_factions_2
+			CMG_internal_factions_3
+		}
+		clr_country_flag = crisis_in_progress
+		clr_country_flag = crisis_solution_in_progress
+		set_country_flag = { flag = factions_resolved days = 90 }
+	}
+
+}
+country_event = {
+	id = CMG.16
+	title = "Officers Purged - Nothing Changed"
+	desc = "Officers purged didn't work"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "We can only try again."
+		add_stability = -0.1
+		add_war_support = -0.1
+		clr_country_flag = crisis_solution_in_progress
+	}
+
+}
+# improve living conditions, level 2 - success
+country_event = {
+	id = CMG.17
+	title = "Clearing the young doubt worked."
+	desc = "Death to new ideas. Up with the old ways of thinking."
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "The youth are terrible."
+		remove_ideas =  { 
+			CMG_internal_factions 
+			CMG_internal_factions_2
+			CMG_internal_factions_3
+		} 
+		add_stability = 0.05
+		add_war_support = 0.05
+		clr_country_flag = crisis_in_progress
+		clr_country_flag = crisis_solution_in_progress
+		set_country_flag = { flag = factions_resolved days = 180 }
+	}
+
+}
+#military crackdown response to draft dodging, level 3 - success
+country_event = {
+	id = CMG.18
+	title = "Grandpa is gone."
+	desc = "By granny!!!"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "We have defeated this threat."
+		remove_ideas =  { 
+			CMG_internal_factions 
+			CMG_internal_factions_2
+			CMG_internal_factions_3
+		}
+		clr_country_flag = crisis_in_progress
+		clr_country_flag = crisis_solution_in_progress
+		set_country_flag = { flag = factions_resolved days = 90 }
+	}
+
+}
+#military crackdown response to draft dodging, level 3 - failure, loss of stability
+country_event = {
+	id = CMG.19
+	title = "The oldies just won't quit."
+	desc = "We may have lost the battle, but we will win the war!"
+		
+	is_triggered_only = yes
+	
+	option = { 
+		name = "I can't beleive they won..."
+		add_stability = -0.1
+		clr_country_flag = crisis_solution_in_progress
+	}
+
+}
+# improve living conditions, level 3 - success
+country_event = {
+	id = CMG.20
+	title = "Young Purgery was successful."
+	desc = "Winner winner chicken dinner."
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "It's over."
+		remove_ideas =  { 
+			CMG_internal_factions 
+			CMG_internal_factions_2
+			CMG_internal_factions_3
+		}
+		add_stability = 0.05
+		clr_country_flag = crisis_in_progress
+		clr_country_flag = crisis_solution_in_progress
+		set_country_flag = { flag = draft_dodging_resolved days = 180 }
+	}
+
+}

@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Nute_senate"
+		texturefile = "gfx/interface/Cis_senate/sen_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_Wat_tambor_senate"
+		texturefile = "gfx/interface/Cis_senate/sen_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_Poggle_senate"
+		texturefile = "gfx/interface/Cis_senate/sen_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_San_hill_senate"
+		texturefile = "gfx/interface/Cis_senate/sen_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_Count_dooku_senate"
+		texturefile = "gfx/interface/Cis_senate/sen_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_background_CIS_senate"
+		texturefile = "gfx/interface/Cis_senate/separatist_council_edit.dds"
+	}
+	SpriteType = {
+		name = "GFX_CIS_senate_checkbox_container"
+		texturefile = "gfx/interface/Cis_senate/checkboxcontainer.dds"
+	}
+	SpriteType = {
+		name = "GFX_CIS_checkbox"
+		texturefile = "gfx/interface/Cis_senate/check_box.dds"
+	}
+	SpriteType = {
+		name = "GFX_CIS_checkbox_filled"
+		texturefile = "gfx/interface/Cis_senate/check_box_checked.dds"
+	}
+}

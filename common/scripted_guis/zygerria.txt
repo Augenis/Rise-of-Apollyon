@@ -1,0 +1,20 @@
+#scripted_gui = {
+#	zygerria_slavery_window = {
+#		context_type = decision_category
+#		
+#		window_name = "zygerria_slave_window"
+#		visible = {
+#			always = no
+#		}
+#	}
+#	zygerria_slave_screen = {
+#		context_type = player_context
+#
+#		window_name = "zygerria_slave_screen"
+#		visible = {
+#			always = no
+#		}
+#	}
+#}
+#
+#

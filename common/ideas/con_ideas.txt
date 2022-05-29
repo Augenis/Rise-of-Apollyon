@@ -1,0 +1,49 @@
+ideas = {
+	country = {
+		notoriety_1 = {
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = rank_gold
+
+			modifier = {
+				operative_slot = 3
+				weekly_manpower = 1000
+			}
+		}
+		notoriety_2 = {
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = rank_silver
+
+			modifier = {
+				operative_slot = 2
+				weekly_manpower = 800
+			}
+		}
+		notoriety_3 = {
+
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = rank_bronze
+
+			modifier = {
+				operative_slot = 1
+				weekly_manpower = 500
+			}
+		}
+	}
+}

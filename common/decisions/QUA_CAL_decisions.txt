@@ -1,0 +1,481 @@
+QUA_volunteers = {
+	karkadon_volunteers = {
+		icon = zygerria_slaves
+		fixed_random_seed = no
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			has_political_power > 150
+		}
+		cost = 150
+        fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		days_remove = 100
+		days_re_enable = 50
+		remove_effect = {
+           	random_list = {
+				20 = {
+					add_to_variable = { karkadon_count = 6000 }
+					custom_effect_tooltip = 19_QUA_tt
+				}
+				50 = {
+					add_to_variable = { karkadon_count = 8000 }
+					custom_effect_tooltip = 17_QUA_tt
+				}
+				30 = {
+					add_to_variable = { karkadon_count = 12000 }
+					custom_effect_tooltip = 18_QUA_tt
+				}
+			}
+        }
+	}
+	karkadon_paid_mercs = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			check_variable = {
+			    dx > 60
+			}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 30
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			add_to_variable = { karkadon_count = 20000 }
+			custom_effect_tooltip = 20_QUA_tt
+			subtract_from_variable = { dx = 60 }
+		}
+	}
+	karkadon_produce_unit = {
+		icon = zygerria_slaves
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			custom_trigger_tooltip = {
+    			tooltip = 1_trigger_QUA_tt		
+				check_variable = {
+				    Karkadon_division_count < 6
+				}
+			}
+			custom_trigger_tooltip = {
+    			tooltip = 2_trigger_QUA_tt		
+				check_variable = {
+				    karkadon_count > 20000
+				}
+			}
+		}
+		cost = 0
+        fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			subtract_from_variable = { karkadon_count = 20000 }
+			if = {
+				limit = {
+					NOT = {
+						has_template = "Karkarodon Warriors"
+					}
+				}
+				division_template = {
+		  			name = "Karkarodon Warriors"
+		  			priority = 1
+			  		regiments = {
+						Karkarodon_unit = { x = 0 y = 0 }		
+						Karkarodon_unit = { x = 0 y = 1 }
+						Karkarodon_unit = { x = 0 y = 2 }
+						Karkarodon_unit = { x = 0 y = 3 }
+						Karkarodon_unit = { x = 0 y = 4 }
+						Karkarodon_unit = { x = 1 y = 0 }
+						Karkarodon_unit = { x = 1 y = 1 }
+						Karkarodon_unit = { x = 1 y = 2 }
+			 			Karkarodon_unit = { x = 1 y = 3 }
+						Karkarodon_unit = { x = 1 y = 4 }
+		  			}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {has_tech = Karkarodon_tech}
+				}
+				set_technology = {
+					Karkarodon_tech = 1
+				}
+			}
+			195 = {
+                create_unit = {
+                    division = "name = \"Karkarodon Division\" division_template = \"Karkarodon Warriors\" start_experience_factor = 1.0 start_equipment_factor = 1.0"
+                    owner = QUA
+                }
+            }
+            add_to_variable = {Karkadon_division_count = 1}
+		}
+	}
+	karkadon_renforcements = {
+		icon = zygerria_slaves
+		visible = {
+			TAG = QUA
+		}
+		cost = 0
+        fire_only_once = no
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			custom_trigger_tooltip = {
+    			tooltip = 3_trigger_QUA_tt		
+				check_variable = {
+				    karkadon_count > 5000
+				}
+			}
+		}
+		complete_effect = {
+			subtract_from_variable = { karkadon_count = 5000 }
+			add_equipment_to_stockpile {
+					type = Karkarodon_equip
+					amount = 5000
+					producer = QUA
+			}
+		}
+	}
+}
+QUA_market_connections = {
+	B1_droids_cheaper = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = 23_QUA_tt
+			subtract_from_variable = { b1_pricem = 0.8 }
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 60
+        remove_effect = {
+           	add_to_variable = { b1_pricem = 0.8 }
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+	B2_droids_cheaper = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = 23_QUA_tt
+			subtract_from_variable = { b2_pricem = 0.8 }
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 60
+        remove_effect = {
+           	add_to_variable = { b2_pricem = 0.8 }
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+	lucrehulk_freighter_cheaper = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = 23_QUA_tt
+			subtract_from_variable = { lucrehulk_freighter_pricem = 40 }
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 60
+        remove_effect = {
+           	add_to_variable = { lucrehulk_freighter_pricem = 40 }
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+	vulture_droids_cheaper = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = 23_QUA_tt
+			subtract_from_variable = { vulture_pricem = 0.20 }
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 60
+        remove_effect = {
+           	add_to_variable = { vulture_pricem = 0.2 }
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+	aat_cheaper = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = 23_QUA_tt
+			subtract_from_variable = { aat_pricem = 2.25 }
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 60
+        remove_effect = {
+           	add_to_variable = { aat_pricem = 2.25 }
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+	recusant_cheaper = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = 23_QUA_tt
+			subtract_from_variable = { fed_recusant_pricem = 8 }
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 60
+        remove_effect = {
+           	add_to_variable = { fed_recusant_pricem = 8 }
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+}
+QUA_senate = {
+	Rush_ship_production = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			industrial_capacity_dockyard = 0.25
+		}
+		complete_effect = {
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 70
+        remove_effect = {
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+	more_equipment = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			industrial_capacity_factory = 0.15
+		}
+		complete_effect = {
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 70
+        remove_effect = {
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+	refit_and_repair = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			refit_speed = 0.5
+			navy_refit_speed = 0.3
+			repair_speed_factor = 0.3
+			industry_repair_factor = 0.3
+			line_change_production_efficiency_factor = 0.25
+		}
+		complete_effect = {
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 70
+        remove_effect = {
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+	research_priority = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			research_speed_factor = 0.1
+		}
+		complete_effect = {
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 70
+        remove_effect = {
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+	civic_stability = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			stability_weekly = 0.002
+		}
+		complete_effect = {
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 70
+        remove_effect = {
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+	separatist_propaganda = {
+		icon = zygerria_slaves
+
+		visible = {
+			TAG = QUA
+		}
+		available = {
+			NOT = {has_country_flag = not_currently_doing_decision}
+		}
+		cost = 100
+        fire_only_once = no
+        days_re_enable = 120
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			war_stability_factor = 0.4
+			war_support_weekly = 0.001
+		}
+		complete_effect = {
+			set_country_flag = not_currently_doing_decision
+		}
+		days_remove = 70
+        remove_effect = {
+           	clr_country_flag = not_currently_doing_decision
+        }
+	}
+}

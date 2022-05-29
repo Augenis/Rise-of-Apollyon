@@ -1,0 +1,1325 @@
+#focus_tree = {
+#	id = CMGB
+#		country =  {
+#				factor = 0
+#
+#				modifier = {
+#					add = 0
+#					tag = CMG
+#				}
+#		}
+#		continuous_focus_position = { x = 400 y = 2800 }
+#		   default = no
+#
+#
+#focus = {
+#	id = The_Great_Divide
+#	icon = GFX_CMG_basicicon
+#	x = 10
+#	y = 2
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_political_power = -100
+#	   set_variable = { militarist_opinion = 50 }
+#	   set_variable = { shipbuilders_opinion = 50 }
+#	   set_variable = { arms_dealer_opinion = 50 }
+#	   set_variable = { ecoterrorist_opinion = 50 }
+#	   set_variable = { agricorps_opinion = 50 }
+#	   set_variable = { miningguild_opinion = 50 }
+#	   }
+#}
+#focus = {
+#	id = The_Mining_Guild
+#	icon = GFX_CMG_basicicon
+#	x = 7
+#	y = 3
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_to_variable = { miningguild_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Mining Guild a +10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = The_Great_Divide }
+#   mutually_exclusive = { focus = Agricultural_Boom }
+#}
+#focus = {
+#	id = Improved_Oil_Drilling
+#	icon = GFX_CMG_basicicon
+#	x = 7
+#	y = 4
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   random_owned_controlled_state = {
+#		   limit = { has_resources_amount = { resource = oil amount > 0 } }
+#
+#	   add_resource = {
+#		   type = oil
+#	   amount = 10
+#				   }
+#	   }
+#	   }
+#   prerequisite = { focus = The_Mining_Guild }
+#}
+#focus = {
+#	id = Better_Working_Conditions
+#	icon = GFX_CMG_basicicon
+#	x = 7
+#	y = 5
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_ideas = CMG_Working_Conditions
+#	   }
+#   prerequisite = { focus = Improved_Oil_Drilling }
+#}
+#focus = {
+#	id = Smear_The_Agricorps
+#	icon = GFX_CMG_basicicon
+#	x = 7
+#	y = 6
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_stability = -0.2
+#	   subtract_from_variable = { agricoprs_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Agricorps a -10 opinion of our administration."
+#	   add_to_variable = { miningguild_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Mining Guild a +10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = Better_Working_Conditions }
+#}
+#focus = {
+#	id = Collective_Hate_Of_Eco_Survivalists
+#	icon = GFX_CMG_basicicon
+#	x = 7
+#	y = 7
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_stability = -0.2
+#	   subtract_from_variable = { ecoterrorist_opinion = 10 }
+#	   add_to_variable = { miningguild_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Mining Guild a +10 opinion of our administration."
+#	   add_to_variable = { shipbuilders_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Shipbuilders a +10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = Smear_The_Agricorps }
+#}
+#focus = {
+#	id = Agricultural_Boom
+#	icon = GFX_CMG_basicicon
+#	x = 9
+#	y = 3
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   subtract_from_variable = { ecoterrorist_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Ecoterrorists a -10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = The_Great_Divide }
+#}
+#focus = {
+#	id = Mining_Infringement
+#	icon = GFX_CMG_basicicon
+#	x = 9
+#	y = 4
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   production_lack_of_resource_penalty_factor = -0.5
+#	   subtract_from_variable = { miningguild_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Mining Guild a -10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = Agricultural_Boom }
+#}
+#focus = {
+#	id = Receive_Militarist_Bribes
+#	icon = GFX_CMG_basicicon
+#	x = 9
+#	y = 5
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_to_variable = { dx = 100 }
+#	   custom_effect_tooltip = "This will give us 100 m Credits"
+#	   add_to_variable = { militarist_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Militarists a +10 opinion of our administration."
+#	   subtract_from_variable = { miningguild_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Mining Guild a -10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = Mining_Infringement }
+#}
+#focus = {
+#	id = Civilian_Industry_Programs
+#	icon = GFX_CMG_basicicon
+#	x = 9
+#	y = 6
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_to_variable = { dx = 10 }
+#	   custom_effect_tooltip = "This will give us 10 m Credits"
+#	   industry_repair_factor = 0.75
+#	   }
+#   prerequisite = { focus = Receive_Militarist_Bribes }
+#}
+#focus = {
+#	id = The_Corporate_Alliance
+#	icon = GFX_CMG_basicicon
+#	x = 9
+#	y = 7.5
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   ##### Buyout Corporate Alliance
+#	   subtract_variable = { dx = 100 }
+#	   custom_effect_tooltip = "This will give us 100 m Credits"
+#	   line_change_production_efficiency_factor = 0.5
+#	   add_political_power = 150
+#	   add_research_slot = 1
+#	   completion_reward = {
+#		create_field_marshal = {
+#			name = "Maxo Vista"
+#			portrait_path = "gfx/leaders/CMG/Maxo_Vista.dds"
+#			traits = {}
+#			skill = 7
+#			attack_skill = 7
+#			defense_skill = 3
+#			planning_skill = 5
+#			logistics_skill = 6
+#			}
+#		create_unit = {
+#				division = "name = Koorivar Fusiliers" division_template = "Koorivar Fusiliers" start_experience_factor = 1 start_equipment_factor = 1
+#				 owner = CMG
+#				   }
+#			}
+#		add_ideas = CMG_The_Corporate_Alliance
+#		}
+#   prerequisite = { focus = Civilian_Industry_Programs
+#					   focus = Smear_The_Agricorps 
+#				}
+#}
+#focus = {
+#	id = Might_Over_Mind
+#	icon = GFX_CMG_basicicon
+#	x = 11
+#	y = 3
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_to_variable = { militarist_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Militarists a +10 opinion of our administration."
+#	   war_support_weekly = 0.01
+#	   }
+#   prerequisite = { focus = The_Great_Divide }
+#}
+#focus = {
+#	id = Eco_Terrorist_Collaboration
+#	icon = GFX_CMG_basicicon
+#	x = 11
+#	y = 4
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_to_variable = { militarist_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Militarists a +10 opinion of our administration."
+#	   add_to_variable = { ecoterrorist_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Ecoterrorists a +10 opinion of our administration."
+#	   fascism_acceptance = 50
+#	   }
+#   prerequisite = { focus = Might_Over_Mind }
+#}
+#focus = {
+#	id = Active_Recruiting
+#	icon = GFX_CMG_basicicon
+#	x = 11
+#	y = 5
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#   prerequisite = { focus = Eco_Terrorist_Collaboration }
+#   completion_reward = {
+#	add_ideas =  CMG_Active_Recruiting 
+#   }
+#}
+#focus = {
+#	id = CIS_War_Donations
+#	icon = GFX_CMG_basicicon
+#	x = 11
+#	y = 6
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#		Add_to_variable = { dx = 100 }
+#		custom_effect_tooltip = "This will give us 100 m Credits"
+#		   add_equipment_to_stockpile = {
+#			   type = b1_droid
+#			   amount = 10000
+#		   }
+#	}
+#   prerequisite = { focus = Active_Recruiting }
+#}
+#focus = {
+#	id = Eco_Terrorist_Ideals
+#	icon = GFX_CMG_basicicon
+#	x = 13
+#	y = 3
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#		add_to_variable = { ecoterrorist_opinion = 10 }
+#		custom_effect_tooltip = "This will give the Ecoterrorists a +10 opinion of our administration."
+#	   add_stability_factor = -0.0.5
+#	}
+#   prerequisite = { focus = The_Great_Divide }
+#}
+#focus = {
+#	id = Alderaan_Public_Bombings
+#	icon = GFX_CMG_basicicon
+#	x = 13
+#	y = 4
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#		add_to_variable = { ecoterrorist_opinion = 10 }
+#		custom_effect_tooltip = "This will give the Ecoterrorists a +10 opinion of our administration."
+#	   ALD = {
+#		   add_stability = -0.15
+#		   add_war_support = -0.05
+#	   }   
+#	}
+#   prerequisite = { focus = Eco_Terrorist_Ideals }
+#}
+#focus = {
+#	id = Coruscant_Federal_District_Propaganda
+#	icon = GFX_CMG_basicicon
+#	x = 13
+#	y = 5
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   REP = {
+#		   add_stability = -0.2
+#	   }   
+#	}
+#   prerequisite = { focus = Alderaan_Public_Bombings }
+#}
+#focus = {
+#	id = Senate_Hostage_Crisis
+#	icon = GFX_CMG_basicicon
+#	x = 13
+#	y = 6
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   CIS = {
+#		   add_war_support = 0.2
+#	   }   
+#	   Rep = {
+#		   add_stability_factor = -0.2
+#	   }
+#	}
+#   prerequisite = { focus = Coruscant_Federal_District_Propaganda }
+#}
+#focus = {
+#	id = Total_War_Economy
+#	icon = GFX_CMG_basicicon
+#	x = 11
+#	y = 7
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#		add_ideas = CMG_Total_War_Economy
+#	}
+#   prerequisite = { focus = Senate_Hostage_Crisis }
+#   prerequisite = { focus = CIS_War_Donations }
+#}
+#focus = {
+#	id = Ship_Builders_Union
+#	icon = GFX_CMG_basicicon
+#	x = 15
+#	y = 3
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_to_variable = { shipbuilders_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Shipbuilders a +10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = The_Great_Divide }
+#}
+#focus = {
+#	id = Arms_Manufacturing_Schism
+#	icon = GFX_CMG_basicicon
+#	x = 15
+#	y = 4
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_political_power = -50
+#	   }
+#   prerequisite = { focus = Ship_Builders_Union }
+#}
+#focus = {
+#	id = Stay_The_Course
+#	icon = GFX_CMG_basicicon
+#	x = 15
+#	y = 5
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_stability_factor = 0.2
+#	   add_to_variable = { shipbuilders_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Shipbuilders a +10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = Arms_Manufacturing_Schism }
+#   mutually_exclusive = { focus = Non_Traditional_Routes }
+#}
+#focus = {
+#	id = Non_Traditional_Routes
+#	icon = GFX_CMG_basicicon
+#	x = 17
+#	y = 5
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_stability_factor = -0.1
+#	   add_to_variable = { arms_dealer_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Arms Dealers a +10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = Arms_Manufacturing_Schism }
+#   mutually_exclusive = { focus = Stay_The_Course }
+#}
+#focus = {
+#	id = Ship_Building_General_Authority
+#	icon = GFX_CMG_basicicon
+#	x = 15
+#	y = 6
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   production_speed_dockyard_factor = 0.4 
+#	   add_to_variable = { shipbuilders_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Shipbuilders a +10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = Stay_The_Course }
+#}
+#focus = {
+#	id = Banking_Clan_Diverted_Funds
+#	icon = GFX_CMG_basicicon
+#	x = 17
+#	y = 6
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   Add_to_variable = { dx = 150 }
+#	   custom_effect_tooltip = "This will give us 150 m credits."
+#	   add_idea = CMG_Diverted_Funds
+#	   }
+#   prerequisite = { focus = Non_Traditional_Routes }
+#}
+#focus = {
+#	id = Efficient_Cruiser_Dockyards
+#	icon = GFX_CMG_basicicon
+#	x = 15
+#	y = 7
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   production_factory_efficiency_gain_factor = 0.5 
+#	   add_to_variable = { shipbuilders_opinion = 10 }
+#	   custom_effect_tooltip = "This will give the Shipbuilders a +10 opinion of our administration."
+#	   }
+#   prerequisite = { focus = Ship_Building_General_Authority }
+#}
+#focus = {
+#	id = Schemes_Upon_Schemes
+#	icon = GFX_CMG_basicicon
+#	x = 17
+#	y = 7
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   Add_to_variable = { dx = 100 }
+#	   custom_effect_tooltip = "This will give us 100 m credits."
+#	   agency_upgrade_time = 0.5
+#	   create_intelligence_agency = yes
+#	   }
+#   prerequisite = { focus = Banking_Clan_Diverted_Funds }
+#}
+#focus = {
+#	id = First_Conglomerate_Council
+#	icon = GFX_CMG_basicicon
+#	x = 10
+#	y = 9
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_political_power = 150
+#	   add_idea = CMG_First_Council_Meeting
+#	   remove_idea = CMG_Faction_Infighting
+#	   }
+#   prerequisite = { focus = Destabilize_The_Republic }
+#   prerequisite = { focus = Total_War_Economy }
+#   prerequisite = { focus = The_Corporate_Alliance }
+#   prerequisite = { focus = Schemes_Upon_Schemes
+#					focus = Efficient_Cruiser_Dockyards }
+#}
+#focus = {
+#	id = Preperations_Begin
+#	icon = GFX_CMG_basicicon
+#	x = 10
+#	y = 10
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   add_war_support = 0.5
+#	   }
+#   prerequisite = { focus = First_Conglomerate_Council }
+#}
+#focus = {
+#	id = Our_Universal_Right_To_Expansion
+#	icon = GFX_CMG_basicicon
+#	x = 12
+#	y = 10
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#	   CMG = {
+#		   create_wargoal {
+#		   type = annex_everything
+#		   target = KOR
+#	   }
+#	   }
+#	}
+#   prerequisite = { focus = First_Conglomerate_Council }
+#}
+#focus = {
+#	id = Rally_The_Populace
+#	icon = GFX_CMG_basicicon
+#	x = 8
+#	y = 10
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#		add_war_support = 0.2
+#	   }
+#   prerequisite = { focus = First_Conglomerate_Council }
+#}
+#focus = {
+#	id = The_Sundaran_Fire
+#	icon = GFX_CMG_basicicon
+#	x = 10
+#	y = 11
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#		add_idea = CMG_Sundari_Fire
+#	}
+#   prerequisite = { focus = Preperations_Begin }
+#}
+#focus = {
+#	id = Terrorism_Is_In_Our_Nature
+#	icon = GFX_CMG_basicicon
+#	x = 10
+#	y = 12
+#	cost = 10
+#	available_if_capitulated = yes
+#	ai_will_do = {
+#	   factor = 1
+#	}
+#	completion_reward = {
+#		declare_war_on = { type = annex_everything    target = HON }
+#		add_ideas = CMG_Terrorism
+#	   }
+#   prerequisite = { focus = The_Sundaran_Fire }
+#   prerequisite = { focus = Our_Universal_Right_To_Expansion }
+#   prerequisite = { focus = Rally_The_Populace }
+#}
+#focus = {
+#id = Begin_Mobilisation
+#icon = GFX_CMG_basicicon
+#x = 21
+#y = 2
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#factor = 1
+#}
+#completion_reward = {
+#army_experience = 50
+#navy_experience = 50
+#air_experience = 50
+#}
+#}
+#focus = {
+#id = The_Beginnings_Of_A_Navy
+#icon = GFX_CMG_basicicon
+#x = 21
+#y = 3
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	navy_experience = 50
+#	add_tech_bonus = {
+#		name = "Naval Doctrine Bonus"
+#		bonus = 1.0
+#		uses = 2
+#		category = naval_doctrine
+#	}
+#   }
+#prerequisite = { focus = Begin_Mobilisation }
+#}
+#focus = {
+#id = Naval_Buildup
+#icon = GFX_CMG_basicicon
+#x = 21
+#y = 4
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_tech_bonus = {
+#		name = "Thinktanks"
+#		bonus = 1.0
+#		uses = 2
+#		category = naval_doctrine
+#	}
+#   }
+#prerequisite = { focus = The_Beginnings_Of_A_Navy }
+#}
+#focus = {
+#id = Cruiser_Specialities
+#icon = GFX_CMG_basicicon
+#x = 23
+#y = 4
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_tech_bonus = {
+#		name = "Cruiser Bonus"
+#		bonus = 1.0
+#		uses = 2
+#		category = cruisers
+#	}
+#   }
+#prerequisite = { focus = The_Beginnings_Of_A_Navy }
+#}
+#focus = {
+#id = Naval_Dockyards
+#icon = GFX_CMG_basicicon
+#x = 23
+#y = 5
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	random_owned_state = {
+#		add_building_construction = {
+#			type = naval_dockyard
+#			level = 3
+#			instant_build = yes
+#		}
+#	}
+#}
+#prerequisite = { focus = Cruiser_Specialities }
+#prerequisite = { focus = Naval_Buildup }
+#}
+#focus = {
+#id = Shu_Mais_Refitting_Scheme
+#icon = GFX_CMG_basicicon
+#x = 21
+#y = 5
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	 navy_experience = 50
+#}
+#prerequisite = { focus = Cruiser_Specialities }
+#prerequisite = { focus = Naval_Buildup }
+#}
+#focus = {
+#id = Better_Navy_Training_Academy
+#icon = GFX_CMG_basicicon
+#x = 21
+#y = 6
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_ideas = CMG_navy_academy
+#}
+#prerequisite = { focus = Shu_Mais_Refitting_Scheme }
+#prerequisite = { focus = Naval_Dockyards }
+#}
+#focus = {
+#id = Experienced_Admirals
+#icon = GFX_CMG_basicicon
+#x = 23
+#y = 6
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	navy_experience = 50
+#}
+#prerequisite = { focus = Shu_Mais_Refitting_Scheme }
+#prerequisite = { focus = Naval_Dockyards }
+#}
+#focus = {
+#id = A_Superior_Army
+#icon = GFX_CMG_basicicon
+#x = 25
+#y = 3
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_tech_bonus = {
+#		name = "Army Doctrine Bonus"
+#		bonus = 1.0
+#		uses = 2
+#		category = land_doctrine
+#	}
+#   }
+#prerequisite = { focus = Begin_Mobilisation }
+#}
+#focus = {
+#id = Mercenaries_For_Hire
+#icon = GFX_CMG_basicicon
+#x = 25
+#y = 4
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_ideas = CMG_mercenaries
+#   }
+#prerequisite = { focus = A_Superior_Army }
+#}
+#focus = {
+#id = Koorivar_Guard
+#icon = GFX_CMG_basicicon
+#x = 27
+#y = 4
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	army_experience = 100
+#   }
+#prerequisite = { focus = A_Superior_Army }
+#}
+#focus = {
+#id = Factories_Abundant
+#icon = GFX_CMG_basicicon
+#x = 25
+#y = 5
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	random_owned_state = {
+#		add_building_construction = {
+#			type = arms_factory
+#			level = 2
+#			instant_build = yes
+#		}
+#	}
+#   }
+#prerequisite = { focus = Koorivar_Guard }
+#prerequisite = { focus = Mercenaries_For_Hire }
+#}
+#focus = {
+#id = Better_Infantry_Equipment
+#icon = GFX_CMG_basicicon
+#x = 27
+#y = 5
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#		add_tech_bonus = {
+#			name = "Better Infantry Bonus"
+#			bonus = 1.0
+#			uses = 2
+#			category = infantry
+#		}
+#   }
+#prerequisite = { focus = Koorivar_Guard }
+#prerequisite = { focus = Mercenaries_For_Hire }
+#}
+#focus = {
+#id = Hired_Help
+#icon = GFX_CMG_basicicon
+#x = 27
+#y = 6
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	create_field_marshal = {
+#		name = "Magistrate Argente"
+#		portrait_path = "gfx/leaders/CMG/Oro_Dassayne.dds"
+#		traits = {}
+#		skill = 7
+#		attack_skill = 8
+#		defense_skill = 5
+#		planning_skill = 3
+#		logistics_skill = 4
+#		}
+#   }
+#prerequisite = { focus = Better_Infantry_Equipment }
+#prerequisite = { focus = Factories_Abundant }
+#}
+#focus = {
+#id = Experience_Is_For_Hardened_Armies
+#icon = GFX_CMG_basicicon
+#x = 25
+#y = 6
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	army_experience = 100
+#   }
+#prerequisite = { focus = Better_Infantry_Equipment }
+#prerequisite = { focus = Factories_Abundant }
+#}
+#focus = {
+#id = Conglomerate_Airforce
+#icon = GFX_CMG_basicicon
+#x = 29
+#y = 3
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_tech_bonus = {
+#		name = "Air Doctrine Bonus"
+#		bonus = 1.0
+#		uses = 2
+#		category = air_doctrine
+#	}
+#   }
+#prerequisite = { focus = Begin_Mobilisation }
+#}
+#focus = {
+#id = The_Ace_In_The_Hole
+#icon = GFX_CMG_basicicon
+#x = 29
+#y = 4
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_ideas = CMG_ace_hole
+#   }
+#prerequisite = { focus = Conglomerate_Airforce }
+#}
+#focus = {
+#id = The_Real_Force_of_the_Skies
+#icon = GFX_CMG_basicicon
+#x = 31
+#y = 4
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	air_experience = 50
+#   }
+#prerequisite = { focus = Conglomerate_Airforce }
+#}
+#focus = {
+#id = The_Flying_Bastion
+#icon = GFX_CMG_basicicon
+#x = 29
+#y = 5
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	completion_reward = {
+#		random_owned_state = {
+#			add_building_construction = {
+#				type = air_base
+#				level = 3
+#				instant_build = yes
+#		}
+#	}
+#   }
+#}
+#prerequisite = { focus = The_Real_Force_of_the_Skies }
+#prerequisite = { focus = The_Ace_In_The_Hole }
+#}
+#focus = {
+#id = Fighters_Are_The_Future
+#icon = GFX_CMG_basicicon
+#x = 31
+#y = 5
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	completion_reward = {
+#		add_tech_bonus = {
+#			name = "Fighter Bonus"
+#			bonus = 1.0
+#			uses = 2
+#			category = medium_air
+#		}
+#	   }
+#   }
+#prerequisite = { focus = The_Real_Force_of_the_Skies }
+#prerequisite = { focus = The_Ace_In_The_Hole }
+#}
+#focus = {
+#id = Experienced_Pilots
+#icon = GFX_CMG_basicicon
+#x = 21
+#y = 6
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	completion_reward = {
+#		air_experience = 100
+#	   }
+#   }
+#prerequisite = { focus = The_Flying_Bastion }
+#prerequisite = { focus = Fighters_Are_The_Future }
+#}
+#focus = {
+#id = Agile_Planes
+#icon = GFX_CMG_basicicon
+#x = 29
+#y = 6
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	completion_reward = {
+#		add_tech_bonus = {
+#			name = "Fighter Bonus"
+#			bonus = 1.0
+#			uses = 2
+#			category = light_air
+#		}				   }
+#   }
+#prerequisite = { focus = The_Flying_Bastion }
+#prerequisite = { focus = Fighters_Are_The_Future }
+#}
+#focus = {
+#id = Military_Domination
+#icon = GFX_CMG_basicicon
+#x = 21
+#y = 7
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	completion_reward = {
+#		air_experience = 100
+#		navy_experience = 100
+#		army_experience = 100
+#		add_ideas = CMG_Smarter_Battle
+#	   }
+#   }
+#prerequisite = { focus = Better_Navy_Training_Academy }
+#prerequisite = { focus = Experienced_Admirals }
+#prerequisite = { focus = Hired_Help }
+#prerequisite = { focus = Experience_Is_For_Permanent_Armies }
+#prerequisite = { focus = Agile_Planes }
+#prerequisite = { focus = Experienced_Pilots }
+#}
+#
+#focus = {
+#id = Pick_A_Side
+#icon = GFX_CMG_basicicon
+#x = 10
+#y = 13
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_political_power = 150
+#   }
+#prerequisite = { focus = Terrorism_Is_In_Our_Nature }
+#}
+#focus = {
+#id = Supply_The_Galactic_republic
+#icon = GFX_CMG_basicicon
+#x = 8
+#y = 14
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_popularity = {
+#		ideology = loyalist
+#		popularity = 0.1
+#		add_political_power = -150
+#	}
+#   }
+#   prerequisite = { focus = Pick_A_Side }
+#   mutually_exclusive = { focus = Supply_The_Seperatist_Senate }
+#   mutually_exclusive = { focus = True_Neutrality }
+#}
+#focus = {
+#id = Supply_The_Seperatist_Senate
+#icon = GFX_CMG_basicicon
+#x = 12
+#y = 14
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	set_politics = {
+#		ruling_party = seperatist
+#	}
+#	add_popularity = {
+#		ideology = seperatist
+#		popularity = 0.5
+#	}
+#   }
+#   prerequisite = { focus = Pick_A_Side }
+#   mutually_exclusive = { focus = Supply_The_Galactic_republic }
+#   mutually_exclusive = { focus = True_Neutrality }
+#}
+#focus = {
+#id = Shrug_Off_The_Restrictions
+#icon = GFX_CMG_basicicon
+#x = 14
+#y = 15
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#		remove_ideas = {
+#			ruusan_nerf_army
+#			ruusan_nerf_nav
+#		}
+#	
+#   }
+#   prerequisite = { focus = Supply_The_Seperatist_Senate }
+#}
+#focus = {
+#id = Join_The_CIS
+#icon = GFX_CMG_basicicon
+#x = 12
+#y = 15
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_political_power = 150
+#	add_popularity = {
+#		ideology = seperatist
+#		popularity = 0.2
+#	}
+#	add_ideas = CIS_member
+#   }
+#   prerequisite = { focus = Supply_The_Seperatist_Senate }
+#}
+#focus = {
+#id = Join_The_Republic
+#icon = GFX_CMG_basicicon
+#x = 8
+#y = 15
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_political_power = 150
+#	add_popularity = {
+#		ideology = loyalist
+#		popularity = 0.2
+#	}
+#	add_ideas = REP_member
+#   }
+#   prerequisite = { focus = Supply_The_Galactic_republic }
+#}
+#focus = {
+#id = Ally_Closely_With_Important_Systems
+#icon = GFX_CMG_basicicon
+#x = 6
+#y = 15
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_political_power = 50
+#	add_stability = 0.2
+#}
+#   prerequisite = { focus = Supply_The_Galactic_republic }
+#}
+#focus = {
+#id = True_Neutrality
+#icon = GFX_CMG_basicicon
+#x = 10
+#y = 14
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_stability = 0.3
+#}
+#   prerequisite = { focus = Pick_A_Side }
+#   mutually_exclusive = { focus = Supply_The_Galactic_Republic }
+#   mutually_exclusive = { focus = Supply_The_Seperatist_Senate }
+#}
+#focus = {
+#id = Independant_Economy
+#icon = GFX_CMG_basicicon
+#x = 10
+#y = 15
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	Add_to_variable = { dx = 20 }
+#	custom_effect_tooltip = "This will give us 20 m Credits"
+#	add_ideas = CMG_reduced_trade
+#}
+#   prerequisite = { focus = True_Neutrality }
+#}
+#focus = {
+#id = Black_Market_Opportunities
+#icon = GFX_CMG_basicicon
+#x = 9
+#y = 16
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	Add_to_variable = { dx = 50 }
+#	custom_effect_tooltip = "This will give us 50 m Credits"
+#	add_stability = -0.4
+#	add_ideas = CMG_blackmarket
+#	country_event = {
+#		id = CMG.10
+#	}
+#}
+#   prerequisite = { focus = Independant_Economy }
+#   mutually_exclusive = { focus = Straight_As_An_Arrow }
+#}
+#focus = {
+#id = Straight_As_An_Arrow
+#icon = GFX_CMG_basicicon
+#x = 11
+#y = 16
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_stability = 0.3
+#	add_political_power = 100
+#}
+#   prerequisite = { focus = Independant_Economy }
+#   mutually_exclusive = { focus = Black_Market_Opportunities }
+#}
+#focus = {
+#id = The_Pikes
+#icon = GFX_CMG_basicicon
+#x = 9
+#y = 17
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	add_resource = {
+#		type = oil
+#		amount = 25
+#		state = 4038
+#	}
+#}
+#   prerequisite = { focus = Black_Market_Opportunities }
+#}
+#focus = {
+#id = The_Dark_One
+#icon = GFX_CMG_basicicon
+#x = 7
+#y = 17
+#cost = 10
+#available_if_capitulated = yes
+#ai_will_do = {
+#   factor = 1
+#}
+#completion_reward = {
+#	country_event = {
+#		id = CMG.9
+#	}
+#}
+#   prerequisite = { focus = Black_Market_Opportunities }
+#}
+#}

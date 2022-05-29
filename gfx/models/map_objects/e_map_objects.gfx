@@ -1,0 +1,36 @@
+objectTypes = {
+	pdxmesh = {
+		name = "kamino_mesh"
+		file = "gfx/models/map_objects/kamino/kamino.mesh"
+		meshsettings = {
+			#texture_diffuse = "towerTexture.dds"
+			#texture_normal = "towerNormal.dds"
+			#texture_specular = "towerSpec.dds"
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "mandalore_mesh"
+		file = "gfx/models/map_objects/mandalore/mandalore.mesh"
+		meshsettings = {
+			#texture_diffuse = "towerTexture.dds"
+			#texture_normal = "towerNormal.dds"
+			#texture_specular = "towerSpec.dds"
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "jedi_temple_mesh"
+		file = "gfx/models/map_objects/coruscant/jedi_temple.mesh"
+		meshsettings = {
+			#texture_diffuse = "towerTexture.dds"
+			#texture_normal = "towerNormal.dds"
+			#texture_specular = "towerSpec.dds"
+			shader = PdxMeshAdvanced
+		}
+		scale = 1.0
+	}
+}

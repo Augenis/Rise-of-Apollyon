@@ -1,0 +1,261 @@
+scripted_gui = {
+
+	karkadon_volunteers_ui = {
+		context_type = decision_category
+		window_name = "karkadon_interface"
+	}
+
+	mon_cala_ships_ui = {
+		context_type = decision_category
+		window_name = "mon_cala_ship_interface"
+		effects = {
+			Mon_cala_first_base_click = {
+				if = {
+					limit = {
+						NOT = {
+			                CAL = {has_country_flag = first_base}
+			            }
+			            check_variable = {
+						    dx > 50
+						}
+					}
+					set_country_flag = first_base
+					subtract_from_variable = { dx = 50 }
+					if = {
+						limit ={
+							has_country_flag = first_base
+							has_country_flag = second_base
+							has_country_flag = third_base
+							has_country_flag = fourth_base
+							has_country_flag = fifth_base
+						}
+						if = {
+							limit = {
+								NOT = {
+									CAL = {has_tech = mc80_tech}
+								}
+							}
+							set_technology = {
+							    mc80_tech = 1
+							}
+						}
+						add_equipment_production = {
+							equipment = {
+								type = mc80_equipment
+							}
+							requested_factories = 1
+							progress = 1.0
+							amount = 1
+						}
+						clr_country_flag = first_base
+						clr_country_flag = second_base
+						clr_country_flag = third_base
+						clr_country_flag = fourth_base
+						clr_country_flag = fifth_base
+					}
+				}
+			}
+			Mon_cala_second_base_click = {
+				if = {
+					limit = {
+						NOT = {
+			                CAL = {has_country_flag = second_base}
+			            }
+			            check_variable = {
+						    dx > 50
+						}
+					}
+					set_country_flag = second_base
+					subtract_from_variable = { dx = 50 }
+					if = {
+						limit ={
+							has_country_flag = first_base
+							has_country_flag = second_base
+							has_country_flag = third_base
+							has_country_flag = fourth_base
+							has_country_flag = fifth_base
+						}
+						if = {
+							limit = {
+								NOT = {
+									CAL = {has_tech = mc80_tech}
+								}
+							}
+							set_technology = {
+							    mc80_tech = 1
+							}
+						}
+						add_equipment_production = {
+							equipment = {
+								type = mc80_equipment
+							}
+							requested_factories = 1
+							progress = 1.0
+							amount = 1
+						}
+						clr_country_flag = first_base
+						clr_country_flag = second_base
+						clr_country_flag = third_base
+						clr_country_flag = fourth_base
+						clr_country_flag = fifth_base
+					}
+				}
+			}
+			Mon_cala_third_base_click = {
+				if = {
+					limit = {
+						NOT = {
+			                CAL = {has_country_flag = third_base}
+			            }
+			            check_variable = {
+						    dx > 50
+						}
+					}
+					set_country_flag = third_base
+					subtract_from_variable = { dx = 50 }
+					if = {
+						limit ={
+							has_country_flag = first_base
+							has_country_flag = second_base
+							has_country_flag = third_base
+							has_country_flag = fourth_base
+							has_country_flag = fifth_base
+						}
+						if = {
+							limit = {
+								NOT = {
+									CAL = {has_tech = mc80_tech}
+								}
+							}
+							set_technology = {
+							    mc80_tech = 1
+							}
+						}
+						add_equipment_production = {
+							equipment = {
+								type = mc80_equipment
+							}
+							requested_factories = 1
+							progress = 1.0
+							amount = 1
+						}
+						clr_country_flag = first_base
+						clr_country_flag = second_base
+						clr_country_flag = third_base
+						clr_country_flag = fourth_base
+						clr_country_flag = fifth_base
+					}
+				}
+			}
+			Mon_cala_fourth_base_click = {
+				if = {
+					limit = {
+						NOT = {
+			                CAL = {has_country_flag = fourth_base}
+			            }
+			            check_variable = {
+						    dx > 50
+						}
+					}
+					set_country_flag = fourth_base
+					subtract_from_variable = { dx = 50 }
+					if = {
+						limit ={
+							has_country_flag = first_base
+							has_country_flag = second_base
+							has_country_flag = third_base
+							has_country_flag = fourth_base
+							has_country_flag = fifth_base
+						}
+						if = {
+							limit = {
+								NOT = {
+									CAL = {has_tech = mc80_tech}
+								}
+							}
+							set_technology = {
+							    mc80_tech = 1
+							}
+						}
+						add_equipment_production = {
+							equipment = {
+								type = mc80_equipment
+							}
+							requested_factories = 1
+							progress = 1.0
+							amount = 1
+						}
+						clr_country_flag = first_base
+						clr_country_flag = second_base
+						clr_country_flag = third_base
+						clr_country_flag = fourth_base
+						clr_country_flag = fifth_base
+					}
+				}
+			}
+			Mon_cala_fifth_base_click = {
+				if = {
+					limit = {
+						NOT = {
+			                CAL = {has_country_flag = fifth_base}
+			            }
+			            check_variable = {
+						    dx > 50
+						}
+					}
+					set_country_flag = fifth_base
+					subtract_from_variable = { dx = 50 }
+					if = {
+						limit ={
+							has_country_flag = first_base
+							has_country_flag = second_base
+							has_country_flag = third_base
+							has_country_flag = fourth_base
+							has_country_flag = fifth_base
+						}
+						if = {
+							limit = {
+								NOT = {
+									CAL = {has_tech = mc80_tech}
+								}
+							}
+							set_technology = {
+							    mc80_tech = 1
+							}
+						}
+						add_equipment_production = {
+							equipment = {
+								type = mc80_equipment
+							}
+							requested_factories = 1
+							progress = 1.0
+							amount = 1
+						}
+						clr_country_flag = first_base
+						clr_country_flag = second_base
+						clr_country_flag = third_base
+						clr_country_flag = fourth_base
+						clr_country_flag = fifth_base
+					}
+				}
+			}
+		}
+		properties = {
+			Mon_cala_fifth_base = {
+				image = "[get_mon_cala_ship_icon_fifth]"
+			}
+			Mon_cala_fourth_base = {
+				image = "[get_mon_cala_ship_icon_fourth]"
+			}
+			Mon_cala_third_base = {
+				image = "[get_mon_cala_ship_icon_third]"
+			}
+			Mon_cala_second_base = {
+				image = "[get_mon_cala_ship_icon_second]"
+			}
+			Mon_cala_first_base = {
+				image = "[get_mon_cala_ship_icon_first]"
+			}
+		}
+	}
+}

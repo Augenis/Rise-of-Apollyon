@@ -1,0 +1,551 @@
+scripted_gui = {
+	CIS_senate_container = {
+		context_type = player_context
+		window_name = "CIS_senate_container"
+
+		ai_enabled = {
+			always = yes
+		}
+
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = CIS_senate_open
+				}
+			}
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = CIS_senate_open
+			}
+			Count_Dooku_button_click = {
+				set_country_flag = Count_dooku_checkbox_open
+			}
+			Poggle_button_click = {
+				set_country_flag = Poggle_checkbox_open
+			}
+			Wat_Tambor_button_click = {
+				set_country_flag = Wat_Tambor_checkbox_open
+			}
+			Nute_Gunray_button_click = {
+				set_country_flag = Nute_Gunray_checkbox_open
+			}
+			San_hill_button_click = {
+				set_country_flag = San_hill_checkbox_open
+			}
+		}
+		triggers = {
+			Count_Dooku_button_click_enabled = {
+			}
+			Poggle_button_click_enabled = {
+				is_in_faction_with = GEO
+			}
+			Wat_Tambor_button_click_enabled = {
+				is_in_faction_with = TEC
+			}
+			Nute_Gunray_button_click_enabled = {
+				is_in_faction_with = FED
+			}
+			San_hill_button_click_enabled = {
+				is_in_faction_with = IBC
+			}
+		}
+	}
+	count_dooku_box_container = {
+		context_type = player_context
+		window_name = "count_dooku_box_container"
+
+		ai_enabled = {
+			always = yes
+		}
+
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = Count_dooku_checkbox_open
+				}
+			}
+		}
+
+		effects = {
+			checkbox_1_click = {                    #############  INDUSTRIAL RESEARCH ########
+				if = {
+					limit = {
+						NOT = {has_idea = CIS_senate_political_power}
+					}
+					add_ideas = CIS_senate_political_power
+					add_to_variable = { CIS_senate_cost = 0.3 }
+				}
+				else = {
+					remove_ideas = CIS_senate_political_power
+					subtract_from_variable = { CIS_senate_cost = 0.3 }
+				}
+			}
+			checkbox_2_click = {
+				if = {
+					limit = {                             ############# STABILITY  ##########
+						NOT = {has_idea = CIS_senate_stability}
+					}
+					add_ideas = CIS_senate_stability
+					add_to_variable = { CIS_senate_cost = 0.3 }
+				}
+				else = {
+					remove_ideas = CIS_senate_stability
+					subtract_from_variable = { CIS_senate_cost = 0.3 }
+				}
+			}
+			checkbox_3_click = {                    #############  CONSTRUCTION SPEED ########
+				if = {
+					limit = {
+						NOT = {has_idea = CIS_senate_construction}
+					}
+					add_ideas = CIS_senate_construction
+					add_to_variable = { CIS_senate_cost = 0.5 }
+				}
+				else = {
+					remove_ideas = CIS_senate_construction
+					subtract_from_variable = { CIS_senate_cost = 0.5 }
+				}
+			}
+
+			close_button_click = {
+				clr_country_flag = Count_dooku_checkbox_open
+			}
+		}
+		properties = {
+			checkbox_1 = {
+				image = "[get_dooku_checkbox_1]"
+			}
+			checkbox_2 = {
+				image = "[get_dooku_checkbox_2]"
+			}
+			checkbox_3 = {
+				image = "[get_dooku_checkbox_3]"
+			}
+		}
+	}
+	Wat_Tambor_box_container = {
+		context_type = player_context
+		window_name = "Wat_Tambor_box_container"
+
+		ai_enabled = {
+			always = yes
+		}
+
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = Wat_Tambor_checkbox_open
+				}
+			}
+		}
+
+		effects = {
+			checkbox_1_click = {
+				if = {
+					limit = {
+						NOT = {has_idea = Cheaper_tec_market}
+					}
+					add_ideas = Cheaper_tec_market
+					subtract_from_variable = { b1_pricem = 0.18}   ######CHEAPER TECHNO MARKET AT COST OF FED#############
+                	subtract_from_variable = { b2_pricem = 0.40}
+                	subtract_from_variable = { hyena_pricem = 0.12}
+                	subtract_from_variable = { hmpgunship_pricem = 0.3}
+                	subtract_from_variable = { rogue_pricem = 0.64}
+                	subtract_from_variable = {aat_pricem = 1.13}
+                	subtract_from_variable = {aat2_pricem = 1.27}
+                	subtract_from_variable = {cmg_homing_spider_pricem = 0.7}
+                	subtract_from_variable = {tankdroid_pricem = 0.74}
+                	subtract_from_variable = {crab_pricem = 0.3}
+                	subtract_from_variable = {octuparramagna_pricem = 1.8}
+                	add_to_variable = {lucrehulk_freighter_pricem = 12.0}
+                	add_to_variable = {lucrehulk_battleship_pricem = 25.0}
+                	add_to_variable = {fed_munificent_pricem = 1.2}
+                	add_to_variable = {fed_recusant_pricem = 4.0}
+                	add_to_variable = {vulture_pricem = 0.095}
+                	add_to_variable = { trifighter_pricem = 0.20}
+				}
+			}
+			checkbox_2_click = {
+				if = {
+					limit = {                             ############# INDUSTRIAL EFFICENCY  ##########
+						NOT = {has_idea = TEC_help_CIS_industry}
+					}
+					add_ideas = TEC_help_CIS_industry
+					add_to_variable = { CIS_senate_cost = 0.2 }
+				}
+				else = {
+					remove_ideas = TEC_help_CIS_industry
+					subtract_from_variable = { CIS_senate_cost = 0.2 }
+				}
+			}
+
+			checkbox_3_click = {                    #############  INDUSTRIAL RESEARCH ########
+				if = {
+					limit = {
+						NOT = {has_idea = TEC_research_CIS_help}
+					}
+					add_ideas = TEC_research_CIS_help
+					add_to_variable = { CIS_senate_cost = 0.15 }
+				}
+				else = {
+					remove_ideas = TEC_research_CIS_help
+					subtract_from_variable = { CIS_senate_cost = 0.15 }
+				}
+			}
+
+			close_button_click = {
+				clr_country_flag = Wat_Tambor_checkbox_open
+			}
+		}
+		triggers = {
+            checkbox_1_click_enabled = {
+            	NOT = {has_idea = Cheaper_fed_market}
+            }
+        }
+        properties = {
+			checkbox_1 = {
+				image = "[get_TEC_checkbox_1]"
+			}
+			checkbox_2 = {
+				image = "[get_TEC_checkbox_2]"
+			}
+			checkbox_3 = {
+				image = "[get_TEC_checkbox_3]"
+			}
+		}
+	}
+	Nute_Gunray_box_container = {
+		context_type = player_context
+		window_name = "Nute_Gunray_box_container"
+
+		ai_enabled = {
+			always = yes
+		}
+
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = Nute_Gunray_checkbox_open
+				}
+			}
+		}
+
+		effects = {
+			checkbox_1_click = {
+				if = {
+					limit = {
+						NOT = {has_idea = Cheaper_tec_market}
+					}
+					add_ideas = Cheaper_fed_market
+					add_to_variable = { b1_pricem = 0.18}
+	                add_to_variable = { b2_pricem = 0.40}
+	                add_to_variable = { hyena_pricem = 0.12}
+	                add_to_variable = { hmpgunship_pricem = 0.3}
+	                add_to_variable = { rogue_pricem = 0.64}
+	                add_to_variable = {aat_pricem = 1.13}
+	                add_to_variable = {aat2_pricem = 1.27}
+	                add_to_variable = {cmg_homing_spider_pricem = 0.7}
+	                add_to_variable = {tankdroid_pricem = 0.74}
+	                add_to_variable = {crab_pricem = 0.3}
+	                add_to_variable = {octuparramagna_pricem = 1.8}
+	                subtract_from_variable = {lucrehulk_freighter_pricem = 12.0}
+	                subtract_from_variable = {lucrehulk_battleship_pricem = 25.0}
+	                subtract_from_variable = {fed_munificent_pricem = 1.2}
+	                subtract_from_variable = {fed_recusant_pricem = 4.0}
+	                subtract_from_variable = {vulture_pricem = 0.095}
+	                subtract_from_variable = { trifighter_pricem = 0.20}
+	            }
+			}
+			checkbox_2_click = {  ###NAVAL EXPERIANCE###
+				if = {
+					limit = {
+						NOT = {has_idea = FED_naval_CIS_help}
+					}
+					add_ideas = FED_naval_CIS_help
+					add_to_variable = { CIS_senate_cost = 0.1 }
+				}
+				else = {
+					remove_ideas = FED_naval_CIS_help
+					subtract_from_variable = { CIS_senate_cost = 0.1 }
+				}
+			}
+			checkbox_3_click = {   ###AIR SORTIE EFFICENCY###
+				if = {
+					limit = {
+						NOT = {has_idea = FED_air_sortie_CIS_help}
+					}
+					add_ideas = FED_air_sortie_CIS_help
+					add_to_variable = { CIS_senate_cost = 0.3 }
+				}
+				else = {
+					remove_ideas = FED_air_sortie_CIS_help
+					subtract_from_variable = { CIS_senate_cost = 0.3 }
+				}
+			}
+			close_button_click = {
+				clr_country_flag = Nute_Gunray_checkbox_open
+			}
+		}
+		triggers = {
+            checkbox_1_click_enabled = {
+            	NOT = {has_idea = Cheaper_tec_market}
+            }
+        }
+        properties = {
+			checkbox_1 = {
+				image = "[get_FED_checkbox_1]"
+			}
+			checkbox_2 = {
+				image = "[get_FED_checkbox_2]"
+			}
+			checkbox_3 = {
+				image = "[get_FED_checkbox_3]"
+			}
+		}
+	}
+	San_hill_box_container = {
+		context_type = player_context
+		window_name = "San_hill_box_container"
+
+		ai_enabled = {
+			always = yes
+		}
+
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = San_hill_checkbox_open
+				}
+			}
+		}
+
+		effects = {
+			checkbox_1_click = {
+				if = {
+					limit = {
+						NOT = {has_idea = IBC_army_CIS_help} ###ARMY EXPERIANCE
+					}
+					add_ideas = IBC_army_CIS_help
+					add_to_variable = { CIS_senate_cost = 0.1 }
+				}
+				else = {
+					remove_ideas = IBC_army_CIS_help
+					subtract_from_variable = { CIS_senate_cost = 0.1 }
+				}
+			}
+			checkbox_2_click = {
+				if = {
+					limit = {
+						NOT = {has_idea = IBC_loans_CIS_help}  ###BETTER LOAN INTREST###
+					}
+					add_ideas = IBC_loans_CIS_help
+					add_to_variable = { CIS_senate_cost = 0.5 }
+				}
+				else = {
+					remove_ideas = IBC_loans_CIS_help
+					subtract_from_variable = { CIS_senate_cost = 0.5 }
+				}
+			}
+			checkbox_3_click = {
+				if = {
+					limit = {
+						NOT = {has_idea = IBC_resource_CIS_help}  ######## RESOURCE EFFECIANCY #######
+					}
+					add_ideas = IBC_resource_CIS_help
+					add_to_variable = { CIS_senate_cost = 0.4 }
+				}
+				else = {
+					remove_ideas = IBC_resource_CIS_help
+					subtract_from_variable = { CIS_senate_cost = 0.4 }
+				}
+			}
+			close_button_click = {
+				clr_country_flag = San_hill_checkbox_open
+			}
+		}
+		properties = {
+			checkbox_1 = {
+				image = "[get_IBC_checkbox_1]"
+			}
+			checkbox_2 = {
+				image = "[get_IBC_checkbox_2]"
+			}
+			checkbox_3 = {
+				image = "[get_IBC_checkbox_3]"
+			}
+		}
+	}
+	Poggle_box_container = {
+		context_type = player_context
+		window_name = "Poggle_box_container"
+
+		ai_enabled = {
+			always = yes
+		}
+
+		visible = {
+			ROOT = {
+				OR = {
+					is_ai = yes
+					has_country_flag = Poggle_checkbox_open
+				}
+			}
+		}
+
+		effects = {
+			checkbox_1_click = {	###FASTER B1 PRODUCTION
+				if = {
+					limit = {
+						NOT = {has_idea = GEO_faster_B1_CIS_help} 
+					}
+					add_ideas = GEO_faster_B1_CIS_help
+					add_to_variable = { CIS_senate_cost = 0.4 }
+				}
+				else = {
+					remove_ideas = GEO_faster_B1_CIS_help
+					subtract_from_variable = { CIS_senate_cost = 0.4 }
+				}
+			}
+			checkbox_2_click = {    ### ENABLES BUILDING OF B2s###
+				if = {
+					limit = {
+						NOT = {has_idea = GEO_B2_production_CIS_help} 
+					}
+					if = {
+						limit = {
+							ROOT = {
+								OR = {
+									has_idea = CIS_member
+									has_idea = CIS_member_prewar
+									has_government = fascism
+									TAG = FED
+									TAG = CIS
+									owns_state = 22
+								}
+								NOT = {
+									has_tech = battle_droid_2
+								}
+							}
+						}
+						Root = {
+							set_technology = {
+								battle_droid_2 = 1
+							}
+						}
+					}
+					add_ideas = GEO_B2_production_CIS_help
+					set_country_flag = canproduceb2
+					add_to_variable = { CIS_senate_cost = 0.5}
+				}
+				else = {
+					remove_ideas = GEO_B2_production_CIS_help
+					clr_country_flag = canproduceb2
+					subtract_from_variable = { CIS_senate_cost = 0.5 }
+				}
+			}
+			checkbox_3_click = {	### RECRUITABLE MANPOWER ###
+				if = {
+					limit = {
+						NOT = {has_idea = GEO_recruitable_CIS_help} 
+					}
+					add_ideas = GEO_recruitable_CIS_help
+					add_to_variable = { CIS_senate_cost = 0.1 }
+				}
+				else = {
+					remove_ideas = GEO_recruitable_CIS_help
+					subtract_from_variable = { CIS_senate_cost = 0.1 }
+				}
+			}
+			close_button_click = {
+				clr_country_flag = Poggle_checkbox_open
+			}
+		}
+		properties = {
+			checkbox_1 = {
+				image = "[get_geo_checkbox_1]"
+			}
+			checkbox_2 = {
+				image = "[get_geo_checkbox_2]"
+			}
+			checkbox_3 = {
+				image = "[get_geo_checkbox_3]"
+			}
+		}
+		triggers = {
+			checkbox_1_click_enabled = {
+				GEO = {
+					OR = {
+						controls_state = 66
+						controls_state = 442
+						controls_state = 460
+						controls_state = 462
+						controls_state = 446
+						controls_state = 449
+						controls_state = 437
+					}
+				}
+			}
+			checkbox_2_click_enabled = {
+				AND = {
+					GEO = {
+						OR = {
+							controls_state = 66
+							controls_state = 442
+							controls_state = 460
+							controls_state = 462
+							controls_state = 446
+							controls_state = 449
+							controls_state = 437
+						}
+					}
+					has_global_flag = CIS_tech_3
+				}
+			}
+			checkbox_3_click_enabled = {
+				GEO = {
+					OR = {
+						controls_state = 66
+						controls_state = 442
+						controls_state = 460
+						controls_state = 462
+						controls_state = 446
+						controls_state = 449
+						controls_state = 437
+					}
+				}
+			}
+		}
+	}
+	open_cis_window = {
+		context_type = player_context
+		
+		window_name = "open_cis_window"
+		parent_window_name = countrypoliticsview
+		
+		visible = {
+			ROOT = {
+				tag = CIS
+			}
+		}
+		effects = {
+			cis_senate_open_button_click = {
+				if = {
+					limit = {
+						has_country_flag = CIS_senate_open
+					}
+					clr_country_flag = CIS_senate_open
+				}
+				else = {
+					set_country_flag = CIS_senate_open
+				}
+			}
+		}
+	}
+}

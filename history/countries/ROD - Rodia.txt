@@ -1,0 +1,230 @@
+capital = 421
+
+oob = "ROD_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_ROD = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 75
+
+add_ideas = {
+	REP_member_prewar
+	disarmed_nation
+	starvation_rodia
+	pirates_rodia
+	bad_reputaion
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	civilian_economy
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+create_country_leader = {
+	name = "Onaconda Farr"
+	desc = "Senator of Rodia"
+	picture = "gfx/leaders/ROD/OnacondaFarr.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Sheed Zsippigg"
+	desc = "Leader of Rodia"
+	picture = "gfx/leaders/ROD/SheedZsippigg.dds"
+	expire = "2020.1.1"
+	ideology = fascism_ideology
+}
+
+create_corps_commander = {
+	name = "Jannik the White"
+	portrait_path = "gfx/leaders/ROD/Jannik_The_White.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Evo the Blue"
+	portrait_path = "gfx/leaders/ROD/Evo_the_Blue.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Kelko"
+	portrait_path = "gfx/leaders/ROD/Kelko.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sordaan Xris"
+	portrait_path = "gfx/leaders/ROD/Sordaan_Xris.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ziven Tissak"
+	portrait_path = "gfx/leaders/ROD/Ziven_Tissak.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Tripp Rar"
+	portrait_path = "gfx/leaders/ROD/Tripp_Rar.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Evo Morales"
+	portrait_path = "gfx/leaders/ROD/gen1.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Kipotauros Greecko"
+	portrait_path = "gfx/leaders/ROD/gen2.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Ati Greecko"
+	portrait_path = "gfx/leaders/ROD/gen3.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Tseebo"
+	portrait_path = "gfx/leaders/ROD/Tseebo.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Pablo"
+	portrait_path = "gfx/leaders/ROD/Pablo.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Ne'Chak"
+	portrait_path = "gfx/leaders/ROD/NeChak.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Teeg"
+	portrait_path = "gfx/leaders/ROD/Teeg.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Zelenko Zeleni"
+	portrait_path = "gfx/leaders/ROD/gen4.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Lola Scars"
+	portrait_path = "gfx/leaders/ROD/Lola_scars.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
+}

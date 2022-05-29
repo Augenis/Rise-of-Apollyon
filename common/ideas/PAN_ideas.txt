@@ -1,0 +1,179 @@
+ideas = {
+
+	country = {
+		PAN_construction_workers = {
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_goal_unknown
+			
+			modifier = {
+				production_speed_buildings_factor = 0.5
+			}
+		}
+		PAN_ineffective_administration = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_goal_unknown
+
+			modifier = {
+				political_power_gain = -0.07
+				research_speed_factor = -0.02
+			}
+
+		}
+		PAN_conscription_dodging = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_goal_unknown
+
+			modifier = {
+				recruitable_population = -0.05
+			}
+		}
+		PAN_focusing_on_civilian_economy = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_goal_unknown
+
+			modifier = {
+				production_speed_buildings_factor = 0.5
+				political_power_factor = -0.002
+				stabilty_weekly_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		PAN_expanded_military_production = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_goal_unknown
+
+			modifier = {
+				
+			}
+		}
+		PAN_ineffective_military_staff = {
+
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_goal_unknown
+
+			modifier = {
+				
+			}
+			
+
+		}
+	}
+	political_advisor = {
+		Riyo_Chuchi = {
+			allowed = {
+				original_tag = PAN
+			}
+			traits = { National_Integralist }
+		}
+			Chi_Eekway_Papanoida = {
+			allowed = {
+				original_tag = PAN
+			}
+			traits = { Popular_Figurehead }
+		}
+			Ion_Papanoida = {
+			allowed = {
+				original_tag = PAN
+			}
+			traits = { Marxist_Priest }
+		}
+	}
+	theorist = {
+	Chi_Cho = {
+			ledger = army
+			allowed = {
+				original_tag = PAN
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			traits = { Military_theorist }
+		}
+	}
+
+	army_chief = {
+    CChi_Cho = {
+			allowed = {
+				original_tag = PAN
+			}
+		traits = { army_chief_offensive_1 }
+		}
+		}
+	air_chief = {
+	Mavi_Polis = {
+			allowed = {
+				original_tag = PAN
+			}
+			traits = { air_pilot_training_1 }
+		}	
+	}
+	navy_chief  = {
+	Lassa_Rhayme = {
+			allowed = {
+				original_tag = PAN
+			}
+			traits = { navy_chief_decisive_battle_2 }
+		}
+	}
+
+	high_command = {
+	Arend_Shen = {
+			ledger = army
+
+			allowed = {
+				original_tag = PAN
+			}
+			traits = { Army_Logistics_1 }
+		}
+		Johny_Sky = {
+			ledger = navy
+			allowed = {
+				original_tag = PAN
+			}
+			traits = { navy_naval_air_defense_1 }
+		}		
+		Plavi_Plavac = {
+			ledger = army
+			allowed = {
+				original_tag = PAN
+			}
+			traits = { army_infantry_2 }
+		}		
+		}
+}

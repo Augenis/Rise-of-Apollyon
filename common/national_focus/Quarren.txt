@@ -1,0 +1,1752 @@
+focus_tree = {
+	id = QUA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = QUA
+		}
+	}
+	focus = {
+		id = QUA_a_new_world_a_new_beginning
+		icon = GFX_A_New_World
+		x = 13
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			hidden_effect = {		
+				set_variable = {
+					var = TreeInProgress
+					value = 0
+				}
+				add_to_variable = { dx = 100 }
+				custom_effect_tooltip = 13_QUA_tt
+			}
+		}
+	}
+####QUA TECHNO UNION FOCUSES###
+	#Focus for moving industry to pammant
+	focus = {
+		id = QUA_move_industry_to_pammant
+		icon = GFX_Placeholder
+		x = 16
+		y = 1
+		cost = 6
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 20
+		}
+		available  = {
+			check_variable = {TreeInProgress = 0}
+		}
+		prerequisite = {
+			focus = QUA_a_new_world_a_new_beginning
+		}
+		completion_reward = {
+			236={
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			188 = {
+				remove_building{
+					type = industrial_complex
+    				level = 1
+				}
+			}
+			202 = {
+				remove_building{
+					type = industrial_complex
+    				level = 1
+				}
+			}
+			191 = {
+				remove_building{
+					type = industrial_complex
+    				level = 1
+				}
+			}
+			add_to_variable = { TreeInProgress = 1 }	
+		}
+	}
+	focus = {
+		id = QUA_techno_union_engineers
+		icon = GFX_Placeholder
+		x = 13
+		y = 2
+		cost = 4
+		ai_will_do = {
+				factor = 1
+		}
+		prerequisite = {
+			focus = QUA_move_industry_to_pammant
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+				name = industry_bonus
+			}
+		}
+	}
+	focus = {
+		id = QUA_production_b1s
+		icon = GFX_B1_Droids_focus
+		x = 17
+		y = 2
+		cost = 6
+		ai_will_do = {
+				factor = 1
+		}
+		prerequisite = {
+			focus = QUA_move_industry_to_pammant
+		}
+		completion_reward = {
+			set_technology = {
+				battle_droid_1 = 1
+			}
+			set_technology = {
+				battle_droid_0 = 1
+			}
+			division_template = {
+			    name = "B1 Division"
+			    priority = 1
+			    regiments = {
+			        b1_droid_unit  = { x = 0 y = 0 }
+			        b1_droid_unit  = { x = 0 y = 1 }
+			        b1_droid_unit  = { x = 0 y = 2 }
+			        b1_droid_unit  = { x = 0 y = 3 }
+			    }
+			}
+			set_country_flag = canproduceoom
+			set_country_flag = canproduceb1
+		}
+	}
+	focus = {
+		id = QUA_techno_union_construction_supplies
+		icon = GFX_Placeholder
+		x = 19
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_move_industry_to_pammant
+		}
+		completion_reward = {
+			236={
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_techno_union_military_personal
+		icon = GFX_Placeholder
+		x = 15
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_move_industry_to_pammant
+		}
+		completion_reward = {
+			245 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			227 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_artificial_gravity
+		icon = GFX_Placeholder
+		x = 13
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_techno_union_engineers
+		}
+		completion_reward = {
+			236 = {
+					add_extra_state_shared_building_slots = 1
+	   				add_building_construction = {
+					type =  infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_expansion_of_logisitcal_equipment
+		icon = GFX_Placeholder
+		x = 19
+		y = 3
+		cost = 6
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus =  QUA_techno_union_construction_supplies
+		}
+		completion_reward = {
+			236 = {
+					add_extra_state_shared_building_slots = 1
+	   				add_building_construction = {
+					type =  infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_pay_the_techno_union
+		icon = GFX_Placeholder
+		x = 16
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus =   QUA_expansion_of_logisitcal_equipment
+		}
+		prerequisite = {
+			focus =  QUA_artificial_gravity
+		}
+		prerequisite = {
+			focus =  QUA_production_b1s
+		}
+		prerequisite = {
+			focus =  QUA_techno_union_military_personal
+		}
+		completion_reward = {
+			subtract_from_variable = { dx = 150 }
+			subtract_from_variable = { TreeInProgress = 1 }
+			custom_effect_tooltip = 14_QUA_tt
+		}
+	}
+	####QUA TRADE FED FOCUSES###
+	focus = {
+		id = QUA_trade_fed_veterans
+		icon = GFX_Placeholder
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available  = {
+			check_variable = {
+    			TreeInProgress = 0
+			}
+		}
+		prerequisite = {
+			focus = QUA_a_new_world_a_new_beginning
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.6
+				uses = 2
+				category = naval_doctrine
+				name = naval_bonus
+			}
+			add_to_variable = { TreeInProgress = 1 }
+		}
+	}
+	focus = {
+		id = QUA_trade_fed_sponsored_dockyards
+		icon = GFX_Placeholder
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_trade_fed_veterans
+		}
+		completion_reward = {
+			28 = {
+				add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_trade_fed_designers
+		icon = GFX_Placeholder
+		x = 8
+		y = 2
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_trade_fed_veterans
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = naval_equipment
+				name = naval_bonus
+			}
+		}
+	}
+	focus = {
+		id = QUA_trade_fed_research_labs
+		icon = GFX_Placeholder
+		x = 10
+		y = 3
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_trade_fed_sponsored_dockyards
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = QUA_tunneled_shipyard
+		icon = GFX_Placeholder
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_trade_fed_designers
+		}
+		completion_reward = {
+			add_ideas = necessity_of_war
+		}
+	}
+	focus = {
+		id = QUA_pay_the_fed
+		icon = GFX_Placeholder
+		x = 9
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus =  QUA_tunneled_shipyard
+		}
+		prerequisite = {
+			focus = QUA_trade_fed_research_labs
+		}
+		completion_reward = {
+			subtract_from_variable = { dx = 150 }
+			subtract_from_variable = { TreeInProgress = 1 }
+			custom_effect_tooltip = 14_QUA_tt
+		}
+	}
+
+	###QUA MAIN TREE AND CIS FOCUSES###
+	focus = {
+		id = QUA_gather_quarren_insurgents
+		icon= GFX_Placeholder
+		x = 4
+		y = 4
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		 focus = QUA_prepare_our_people
+		}
+		completion_reward = {
+			division_template = {
+	  			name = "Quarren Warrior"
+	  			priority = 1
+
+		  		regiments = {
+					Quarren_warrior = { x = 0 y = 0 }		
+					Quarren_warrior = { x = 0 y = 1 }
+					Quarren_warrior = { x = 0 y = 2 }
+					Quarren_warrior = { x = 0 y = 3 }
+					Quarren_warrior = { x = 0 y = 4 }
+					Quarren_warrior = { x = 1 y = 0 }
+					Quarren_warrior = { x = 1 y = 1 }
+					Quarren_warrior = { x = 1 y = 2 }
+		 			Quarren_warrior = { x = 1 y = 3 }
+					Quarren_warrior = { x = 1 y = 4 }
+	  			}
+			}
+			236 = {
+                create_unit = {
+                    division = "name = \"Carnation Division\" division_template = \"Quarren Warrior\" start_experience_factor = 0.6 start_equipment_factor = 0.4"
+                    owner = QUA
+                }
+				create_unit = {
+                    division = "name = \"Sea Whip Division\" division_template = \"Quarren Warrior\" start_experience_factor = 0.6 start_equipment_factor = 0.4"
+                    owner = QUA
+                }
+				create_unit = {
+                    division = "name = \"Medusa Division\" division_template = \"Quarren Warrior\" start_experience_factor = 0.6 start_equipment_factor = 0.4"
+                    owner = QUA
+                }
+			}
+		}
+	}
+	focus = {
+		id = QUA_contact_the_cis
+		icon= GFX_Contact_CIS_focus
+		x = 2
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+		prerequisite = {
+			focus = QUA_a_new_world_a_new_beginning
+		}
+		completion_reward = {
+			set_war_support = 0.05
+			add_command_power = 0
+		}
+	}
+	focus = {
+		id = QUA_cis_research_teams
+		icon= GFX_Placeholder
+		x = 0
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = QUA_contact_the_cis
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = electronics
+				name = electronics_bonus
+			}
+			add_tech_bonus = {
+				bonus = 0.2
+				uses = 1
+				category = land_doctrine
+				name = doctrine_bonus
+			}
+		}
+	}
+	focus = {
+		id = QUA_cis_subsidies
+		icon = GFX_Placeholder
+		x = 0
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		 focus = QUA_cis_research_teams
+		}
+		completion_reward = {
+			add_to_variable = { dx = 70 }
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = QUA_aqua_droid_production
+		icon= GFX_Aquadroids
+		x = 0
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		 focus = QUA_aqua_droids
+		}
+		completion_reward = {
+			236 = {
+	   			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_further_production
+		icon= GFX_Placeholder
+		x = 1
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		 focus = QUA_aqua_droid_production
+		}
+		completion_reward = {
+			236 = {
+	   			add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type =  arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+#	focus = {
+#		id = QUA_free_dac_engineering
+#		icon= GFX_Placeholder
+#		x = 13
+#		y = 6
+#		cost = 1
+#		available_if_capitulated = yes
+#		ai_will_do = {
+#			factor = 0 #### AI will never do free dac subsidiary so they dont screw human players
+#		}
+#		completion_reward = {
+#			set_country_flag  = Free_dac_subsidiary
+#		}
+#	}
+
+	focus = {
+		id = QUA_prepare_a_invasion_fleet
+		icon= GFX_Placeholder
+		x = 4
+		y = 2
+		cost = 12
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		 focus = QUA_contact_the_cis
+		}
+		completion_reward = {
+			hidden_effect{
+				set_technology = {
+					providence_tech = 1
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = providence_equipment
+				}
+				requested_factories = 1
+				progress = 0.90
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = providence_equipment
+				}
+				requested_factories = 1
+				progress = 0.90
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = providence_equipment
+				}
+				requested_factories = 1
+				progress = 0.90
+				amount = 1
+			}
+		}
+	}
+	focus = {
+		id = QUA_prepare_our_people
+		icon= GFX_Placeholder
+		x = 4
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		 focus = QUA_prepare_a_invasion_fleet
+		}
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	}
+	focus = {
+		id = QUA_aqua_droids
+		icon= GFX_Placeholder
+		x = 0
+		y = 4
+		cost = 4
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		 focus = QUA_cis_subsidies
+		}
+		completion_reward = {
+			set_technology = {
+				aqua_droid_tech = 1
+			}
+			division_template = {
+			    name = "Aqua Droid"
+			    priority = 1
+			    regiments = {
+			        aqua_droid_unit  = { x = 0 y = 0 }
+			        aqua_droid_unit  = { x = 0 y = 1 }
+			        aqua_droid_unit  = { x = 0 y = 2 }
+			        aqua_droid_unit  = { x = 0 y = 3 }
+			    }
+			}
+			custom_effect_tooltip = 10_QUA_tt
+		}
+	}
+	focus = {
+		id = QUA_hydroid_medusases
+		icon = GFX_Hydroid_Medusas_focus
+		x = 4
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		 	focus = QUA_gather_quarren_insurgents
+		}
+		completion_reward = {
+			set_technology = {
+				hydroid_medusases_tech = 1
+			}
+		}
+	}
+#	focus = {
+#		id = QUA_we_have_been_betrayed
+#		icon = GFX_Placeholder
+#		x = 3
+#		y = 21
+#		cost = 2
+#		available_if_capitulated = yes
+#		ai_will_do = {
+#			factor = 0
+#		}
+#		completion_reward = {
+#			custom_effect_tooltip = 12_QUA_tt
+#			hidden_effect{
+#				CAL = {
+#					load_focus_tree = MCQ
+#				}
+#				CAL = {change_tag_from = QUA}
+#			}
+#		}
+#	}
+	###COMMERCE GUILD FOCUSES###
+	focus = {
+		id = QUA_exploit_natural_resources
+		icon= GFX_Exploit_Resources_focus
+		x = 25
+		y = 1
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available  = {
+			check_variable = {
+    			TreeInProgress = 0
+			}
+		}
+		prerequisite = {
+			focus = QUA_a_new_world_a_new_beginning
+		}
+		completion_reward = {
+			236 = {
+	   				add_resource = {
+						type = steel
+						amount = 3
+					}
+			}
+			227 = {
+	   				add_resource = {
+						type = steel
+						amount = 2
+					}
+			}
+			245 = {
+	   				add_resource = {
+						type = steel
+						amount = 6
+					}
+			}
+			240 = {
+	   				add_resource = {
+						type = steel
+						amount = 1
+					}
+			}
+			225 = {
+	   				add_resource = {
+						type = steel
+						amount = 2
+					}
+			}
+			28 = {
+				add_resource = {
+						type = chromium
+						amount = 3
+				}
+			}
+			238 = {
+				add_resource = {
+						type = tungsten
+						amount = 4
+				}
+			}
+			add_to_variable = { TreeInProgress = 1 }
+		}
+	}
+	focus = {
+		id = QUA_commerce_infantry_weapons
+		icon= GFX_Placeholder
+		x = 27
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_exploit_natural_resources
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+				name = infantry_bonus
+			}
+		}
+	}
+	focus = {
+		id = QUA_pull_metorites_into_orbit
+		icon= GFX_Placeholder
+		x = 23
+		y = 2
+		cost = 9
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_exploit_natural_resources
+		}
+		completion_reward = {
+			236 = {
+	   				add_resource = {
+						type = steel
+						amount = 3
+					}
+			}
+			227 = {
+	   				add_resource = {
+						type = steel
+						amount = 1
+					}
+			}
+			245 = {
+	   				add_resource = {
+						type = steel
+						amount = 2
+					}
+			}
+			240 = {
+	   				add_resource = {
+						type = chromium
+						amount = 1
+					}
+			}
+			225 = {
+	   				add_resource = {
+						type = aluminium
+						amount = 2
+					}
+			}
+			28 = {
+				add_resource = {
+						type = chromium
+						amount = 3
+				}
+			}
+			238 = {
+				add_resource = {
+						type = tungsten
+						amount = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_commerce_recusant
+		icon= GFX_Placeholder
+		x = 25
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_exploit_natural_resources
+		}
+		completion_reward = {
+			set_technology = {
+				recusant_tech = 1
+			}
+		}
+	}
+	focus = {
+		id = QUA_bio_habitats
+		icon= GFX_Placeholder
+		x = 27
+		y = 3
+		cost = 9
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_commerce_infantry_weapons
+		}
+		completion_reward = {
+			add_ideas = Underground_agriculture
+		}
+	}
+	focus = {
+		id = QUA_pay_commerce
+		icon= GFX_Placeholder
+		x = 25
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_bio_habitats
+		}
+		prerequisite = {
+			focus = QUA_pull_metorites_into_orbit
+		}
+		prerequisite = {
+			focus = QUA_commerce_recusant
+		}
+		completion_reward = {
+			subtract_from_variable = { dx = 100 }
+			subtract_from_variable = { TreeInProgress = 1 }
+			custom_effect_tooltip = 15_QUA_tt
+		}
+	}
+
+
+################################################################################################################################
+
+	###Won Dac civil War###
+	###RIFF TAMSON AFTER WAR FOCUSES###
+	focus = {
+		id = QUA_riff_tamson
+		icon= GFX_Riff_Tamson_focus
+		x = 5
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = 5_trigger_QUA_tt
+			    always = no
+			}
+		}
+		completion_reward = {
+			add_stability = -0.05
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Riff Tamson"
+				desc = "Riff Tamson, a Karkaradon that orchestrated the civil war and forced the two sides to fight, just to take control of the country for himself"
+				picture = "gfx/leaders/QUA/QUA_RiffTamson.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					dictator
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_karkarodons_arrive
+		icon= GFX_Placeholder
+		x = 5
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_karkarodon_enforcers
+		}
+		prerequisite = {
+			focus = QUA_sharks_among_squids
+		}
+		completion_reward = {
+			191={
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type =  industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			22={
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type =  industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_sharks_among_squids
+		icon= GFX_Placeholder
+		x =6
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_riff_tamson
+		}
+		completion_reward = {
+			add_ideas = fearful_populace
+		}
+	}
+	focus = {
+		id = QUA_karkarodon_enforcers
+		icon= GFX_Placeholder
+		x = 4
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_riff_tamson
+		}
+		completion_reward = {
+			set_variable = {
+					var = Karkadon_count
+					value = 10000
+			}
+			set_variable = {
+					var = Karkadon_division_count
+					value = 0
+			}
+			custom_effect_tooltip = 16_QUA_tt
+		}
+	}
+	focus = {
+		id = QUA_rulers_of_sheep
+		icon= GFX_Placeholder
+		x = 4
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_karkarodons_arrive
+		}
+		completion_reward = {
+			add_to_variable = {dx = 150}
+			add_stability = -0.1
+			custom_effect_tooltip = 12_QUA_tt
+		}
+	}
+	focus = {
+		id = QUA_deal_with_insurgents_violently
+		icon= GFX_Placeholder
+		x = 2
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_work_camps
+		}
+		completion_reward = {
+			remove_ideas = rebellions_2
+			add_manpower = -50000
+		}
+	}
+	focus = {
+		id = QUA_crack_down_on_liberty
+		icon= GFX_Placeholder
+		x = 2
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_riff_tamson
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = rebellions_1
+				add_idea = rebellions_2
+			}
+		}
+	}
+	focus = {
+		id = QUA_execution_of_traitors
+		icon= GFX_Placeholder
+		x = 6
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_karkarodons_arrive
+		}
+		completion_reward = {
+			country_event = {
+			    id = QUA.6
+			}
+		}   ####EVENTS FOR ALL CAL GENERALS###
+	}
+	focus = {
+		id = QUA_work_camps
+		icon= GFX_Placeholder
+		x = 2
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_crack_down_on_liberty
+		}
+		completion_reward = {
+			add_ideas = {
+				work_camps
+			}
+		}
+	}
+	####IEGO FOCUSES###
+	focus = {
+		id = QUA_rationed_supplies
+		icon= GFX_Placeholder
+		x = 11
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_senator_tikkes
+		}
+		completion_reward = {
+			custom_effect_tooltip = 21_QUA_tt
+		}
+	}
+	focus = {
+		id = QUA_look_outward
+		icon= GFX_Placeholder
+		x = 9
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_riff_tamson
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = QUA_the_false_god
+		icon= GFX_Placeholder
+		x = 10
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_look_outward
+			focus = QUA_rationed_supplies
+		}
+		completion_reward = {
+			add_state_claim = 203
+			transfer_state = 203
+		}
+	}
+	focus = {
+		id = QUA_pose_as_god
+		icon= GFX_Placeholder
+		x = 11
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = QUA_rapid_invasion
+		}	
+		prerequisite = {
+			focus = QUA_the_false_god
+		}
+		completion_reward = {
+			add_political_power = -150
+			annex_country = {
+			target = IEG
+			transfer_troops = no
+			}
+		}
+	}
+	focus = {
+		id = QUA_rapid_invasion
+		icon= GFX_Placeholder
+		x = 9
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = QUA_pose_as_god
+		}	
+		prerequisite = {
+			focus = QUA_the_false_god
+		}
+		completion_reward = {
+			IEG= {
+				leave_faction = yes
+				set_rule = {
+				    can_join_factions = no
+				}
+			}
+			declare_war_on = {
+			    target = IEG
+			    type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = QUA_plunder_iego
+		icon= GFX_Placeholder
+		x = 10
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_rapid_invasion
+			focus = QUA_pose_as_god
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+				}
+			}
+		}
+	}
+	####Senator tikkes LOST WAR ###
+	focus = {
+		id = QUA_senator_tikkes
+		icon= GFX_Senator_Tikkes_focus
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = 4_trigger_QUA_tt
+			    always = no
+			}
+		}
+		completion_reward = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Senator Tikkes"
+				desc = "Senator Tikkes, a defector to the CIS. He has many contacts within the companies within the CIS and has a seat on the ruling council"
+				picture = "gfx/leaders/QUA/QUA_Tikkes.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_the_dockyard_outerrim
+		icon= GFX_Placeholder
+		x = 14
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_senator_tikkes
+		}
+		completion_reward = {
+			225 = {
+				add_building_construction = {
+							type = dockyard
+							level = 3
+							instant_build = yes
+					}
+			}
+		}
+	}
+	focus = {
+		id = QUA_contacts_in_the_companies
+		icon= GFX_Placeholder
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_senator_tikkes
+		}
+		completion_reward = {
+			custom_effect_tooltip = 11_QUA_tt
+		}
+	}
+	focus = {
+		id = QUA_every_last_scrap
+		icon= GFX_Placeholder
+		x = 15
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_contacts_in_the_companies
+			focus = QUA_the_dockyard_outerrim
+		}
+		completion_reward = {
+			add_resource = {
+			    type = steel
+			    amount = 14
+			    state = 236
+			}
+		}
+	}
+	focus = {
+		id = QUA_free_dac
+		icon= GFX_Placeholder
+		x = 14
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_every_last_scrap
+		}
+		completion_reward = {
+			hidden_effect{
+				set_technology = {
+					subjugator_tech = 1
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = subjugator_equipment
+				}
+				requested_factories = 1
+				progress = 0.80
+				amount = 1
+			}
+
+		}
+	}
+	focus = {
+		id = QUA_a_people_ready
+		icon= GFX_Placeholder
+		x = 16
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_every_last_scrap ##WAR SUPPORT
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_ideas = tot_economic_mobilisation
+		}
+	}
+	focus = {
+		id = QUA_fighters
+		icon= GFX_Placeholder
+		x = 15
+		y = 12
+		cost = 10  ###ENABLE TO BUILD DROID FIGHTERS
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_a_people_ready
+			focus = QUA_free_dac
+		}
+		completion_reward = {
+			set_technology = {
+					mc25_tech = 1
+			}
+		}
+	}
+ ####QUARREN KINGDOM####
+ focus = {
+		id = QUA_Nossor_ri
+		icon= GFX_Nossor_Ri_focus
+		x = 25
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			custom_trigger_tooltip = {
+			    tooltip = 6_trigger_QUA_tt
+			    always = no
+			}
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = QUA_reconcilliation
+		icon= GFX_Placeholder
+		x = 24
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_the_proposal_to_cala
+		}
+		prerequisite = {
+			focus = QUA_seperatist_ideals
+		}
+		completion_reward = {
+			add_stability = 0.1
+			if = {
+			    limit = {
+			    	has_idea = rebellions_2
+			    }
+				swap_ideas = {
+				    remove_ideas = rebellions_2
+				    add_ideas = rebellions_3
+				}
+			}
+			else_if = {
+				limit = {
+			    	has_idea = rebellions_3
+			    }
+				    remove_ideas = rebellions_3
+			}			
+		}
+	}
+	focus = {
+		id = QUA_a_regime_of_heros
+		icon= GFX_Placeholder
+		x = 24
+		y = 9
+		cost = 10
+		available_if_capitulated = yes  ###LIKE EXECUTION BUT NO REBELLION
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_Nossor_ri
+		}
+		completion_reward = {
+			custom_effect_tooltip = 22_QUA_tt
+			country_event = {
+			    id = QUA.6
+			}
+			if = {
+			    limit = {
+			    	has_idea = rebellions_1
+			    }
+				swap_ideas = {
+				    remove_idea = rebellions_1
+				    add_idea = rebellions_2
+				}
+				else_if = {
+					limit = {
+				    	has_idea = rebellions_2
+				    }
+					swap_ideas = {
+					    remove_idea = rebellions_2
+					    add_idea = rebellions_3
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = QUA_seperatist_ideals
+		icon= GFX_Placeholder
+		x = 26
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_self_determination
+		}
+		completion_reward = {
+			add_ideas = Belief_in_the_cause
+			if = {
+			    limit = {
+			    	has_idea = rebellions_1
+			    }
+				swap_ideas = {
+				    remove_idea = rebellions_1
+				    add_idea = rebellions_2
+				}
+			}
+			else_if = {
+				limit = {
+			    	has_idea = rebellions_2
+			    }
+				swap_ideas = {
+				    remove_idea = rebellions_2
+				    add_idea = rebellions_3
+				}
+			}		
+		}
+	}
+	focus = {
+		id = QUA_the_proposal_to_cala
+		icon= GFX_Placeholder
+		x = 24
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_a_regime_of_heros
+		}
+		completion_reward = {
+			set_technology = {
+				mc75_tech = 1
+			}
+		}
+	}
+	focus = {
+		id = QUA_the_shining_gem
+		icon= GFX_Placeholder
+		x = 26
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_seperatist_ideals
+		}
+		completion_reward = {
+			add_ideas = shining_gem
+		}
+	}
+	focus = {
+		id = QUA_self_determination
+		icon= GFX_Placeholder
+		x = 26
+		y = 9
+		cost = 8
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_Nossor_ri
+		}
+		avaliable = {
+		}
+		completion_reward = {  ####MAKE CORING EASIER####
+			add_war_support = 0.10
+
+		}
+	}
+	focus = {
+		id = QUA_the_peoples_republic
+		icon= GFX_Placeholder
+		x = 26
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+		focus = QUA_the_new_king
+		}		
+
+		prerequisite = {
+			focus = QUA_the_shining_gem
+			focus = QUA_reconcilliation
+		}
+		completion_reward = {
+			add_ideas = the_peoples_republic
+			set_country_leader_name = {
+				ideology = fascism_ideology
+				name = "Peoples Representative Nossor Ri"
+			}
+			set_cosmetic_tag = QUA_peoples_republic_tag
+		}
+	}
+	focus = {
+		id = QUA_the_new_king
+		icon= GFX_Placeholder
+		x = 24
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = QUA_the_peoples_republic
+		}	
+		prerequisite = {
+			focus = QUA_the_shining_gem
+			focus = QUA_reconcilliation
+		}
+		completion_reward = {
+			add_ideas = kings_guard
+			set_country_leader_name = {
+				ideology = fascism_ideology
+				name = "King Nossor Ri"
+			}
+			set_cosmetic_tag = QUA_quarren_kingdom
+		}
+	}
+	####ARMY OF MEN###
+	focus = {
+		id = QUA_army_of_ideas
+		icon= GFX_Placeholder
+		x = 20
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_Nossor_ri
+			focus = QUA_senator_tikkes
+		}
+		avaliable = {
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = QUA_ammunition_over_men
+		icon= GFX_Placeholder
+		x = 19
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_army_of_ideas
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				ahead_reduction = 1
+				category = artillery
+				name = artillery_bonus
+			}
+		}
+	}
+	focus = {
+		id = QUA_dreamers
+		icon= GFX_Placeholder
+		x = 21
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_army_of_ideas
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+				name = doctrine_bonus
+			}
+		}
+	}
+	focus = {
+		id = QUA_struggle_of_equality
+		icon= GFX_Placeholder
+		x = 20
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_ammunition_over_men
+		}
+		prerequisite = {
+			focus = QUA_dreamers
+		}
+		completion_reward = {
+			add_ideas = Struggle_of_equality
+		}
+	}
+	focus = {
+		id = QUA_every_worker
+		icon= GFX_Placeholder
+		x = 20
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = QUA_struggle_of_equality
+		}
+		completion_reward = {
+			add_ideas = Every_worker
+		}
+	}
+}
+
+
+

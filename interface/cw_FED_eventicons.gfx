@@ -1,0 +1,31 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_eriadusummit" 
+		texturefile = "gfx/event_pictures/eriaduass.dds" 
+	} 
+
+	SpriteType = {  
+		name = "GFX_eriadusummitsoon" 
+		texturefile = "gfx/event_pictures/eriadu.dds" 
+	} 
+	
+	SpriteType = {  
+		name = "GFX_dorvalla" 
+		texturefile = "gfx/event_pictures/dorvallaincident.dds"  
+	}
+	
+	SpriteType = {  
+		name = "GFX_sith"  
+		texturefile = "gfx/event_pictures/sithhelp.dds"  
+	}
+	
+	SpriteType = {  
+		name = "GFX_maulpirate"
+		texturefile = "gfx/event_pictures/maulpirate.dds"  
+	}
+	
+	SpriteType = {  
+		name = "GFX_mar_tuuk"
+		texturefile = "gfx/event_pictures/GFX_mar_tuuk.dds"  
+	} 
+} 

@@ -1,0 +1,21 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			set_variable = { profit_illegalweapons = productionillegalweapons }
+			set_variable = { profit_spice = productionspice }
+			set_variable = { profit_deathsticks = productiondeathsticks }
+			multiply_variable = { profit_illegalweapons = 0.10 }
+			multiply_variable = { profit_spice = 0.13 }
+			multiply_variable = { profit_deathsticks = 0.11 }
+			add_to_variable = { dx = profit_illegalweapons }
+			add_to_variable = { dx = profit_spice }
+			add_to_variable = { dx = profit_deathsticks }
+			set_variable = { productionillegalweapons = totalillegalfactoriesused_illegalweapons }
+			set_variable = { productionspice = totalillegalfactoriesused_spice }
+			set_variable = { productiondeathsticks = totalillegalfactoriesused_deathsticks }
+			multiply_variable = { productionillegalweapons = 6 }
+			multiply_variable = { productionspice = 10 }
+			multiply_variable = { productiondeathsticks = 8 }
+		}
+	}
+}

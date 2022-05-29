@@ -1,0 +1,168 @@
+capital = 226
+
+oob = "OND_3677"
+set_research_slots = 2
+set_stability = 0.4
+set_war_support = .05
+
+set_technology = {
+	tech_support = 1
+	militia_OND = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 100
+
+add_ideas = {
+	REP_member_prewar 
+	OND_king_dendup
+	volunteer_only
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	civilian_economy
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1837.11.8"
+		election_frequency = 1200
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+create_country_leader = {
+	name = "Ramsis Dendup"
+	desc = "King of Onderon"
+	picture = GFX_RAMSIS
+	expire = "4000.1.1"
+	ideology = conservatism	
+}
+
+create_country_leader = {
+	name = "Sanjay Rash"
+	desc = "King of Onderon"
+	picture = GFX_RASH
+	expire = "4000.1.1"
+	ideology = fascism_ideology 
+	traits = { unpopular_monarch }
+		
+}
+create_field_marshal = {
+	name = "Akenathen Tandin"
+ 	portrait_path = "gfx/leaders/OND/Akenathen_Tandin.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+ 	name = "Steela Gerrera"
+ 	portrait_path = "gfx/leaders/OND/Steela_Gerrera.dds"
+	traits = { Trickster Guerilla_Fighter }
+	skill = 3 
+ 	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+ 	name = "Saw Gerrera"
+ 	portrait_path = "gfx/leaders/OND/Saw_Gerrera.dds"
+	traits = { Trickster Guerilla_Fighter Harsh_Leader }
+	skill = 5 
+ 	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "kurac Rash"
+	portrait_path = "gfx/leaders/OND/gen1.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Babre Voash"
+	portrait_path = "gfx/leaders/OND/gen2.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Tor Gesh"
+	portrait_path = "gfx/leaders/OND/gen3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Dono"
+	portrait_path = "gfx/leaders/OND/Dono.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Hutch"
+	portrait_path = "gfx/leaders/OND/Hutch.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Mike Jaja"
+    picture = "adm1.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Lux Bonteri"
+    picture = "Lux_Bonteri.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}

@@ -1,0 +1,2909 @@
+scripted_gui = {
+	corporate_top_screen = {
+		window_name = "corporate_top"
+		parent_window_name = countrypoliticsview
+		visible = {
+			is_market_corporation = yes
+			NOT = {
+				has_country_flag = not_corp
+			}
+		}
+		effects = {
+			politics_click = {
+				clr_country_flag = stock_screen_open
+			}
+			stocks_click = {
+				set_country_flag = stock_screen_open
+			}
+		}
+		triggers = {
+			politics_click_enabled = {
+				has_country_flag = stock_screen_open
+			}
+			stocks_click_enabled = {
+				NOT = {
+					has_country_flag = stock_screen_open
+				}
+			}
+		}
+	}
+	corporate_screen = {
+		context_type = player_context
+
+		window_name = "corporate_window"
+		parent_window_name = countrypoliticsview
+		visible = {
+			is_market_corporation = yes
+			NOT = {
+				has_country_flag = not_corp
+			}
+			has_country_flag = stock_screen_open
+		}
+
+		effects = {
+			geonosis_click = {
+				open_corpo_info = yes
+				set_country_flag = geonosis_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			aratech_click = {
+				open_corpo_info = yes
+				set_country_flag = aratech_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+			}
+			blastech_click = {
+				open_corpo_info = yes
+				set_country_flag = blastech_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			chiewab_click = {
+				open_corpo_info = yes
+				set_country_flag = chiewab_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			colicoid_click = {
+				open_corpo_info = yes
+				set_country_flag = colicoid_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+			corellian_click = {
+				open_corpo_info = yes
+				set_country_flag = corellian_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			corporate_click = {
+				open_corpo_info = yes
+				set_country_flag = corporate_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			czerka_click = {
+				open_corpo_info = yes
+				set_country_flag = czerka_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+			free_dac_click = {
+				open_corpo_info = yes
+				set_country_flag = free_dac_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			haor_click = {
+				open_corpo_info = yes
+				set_country_flag = haor_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+			hoersch_click = {
+				open_corpo_info = yes
+				set_country_flag = hoersch_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			industrial_auto_click = {
+				open_corpo_info = yes
+				set_country_flag = industrial_auto_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+			leisuremech_click = {
+				open_corpo_info = yes
+				set_country_flag = leisuremech_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			mandal_click = {
+				open_corpo_info = yes
+				set_country_flag = mandal_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			mining_guild_click = {
+				open_corpo_info = yes
+				set_country_flag = mining_guild_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			slaynandkorpil_click = {
+				open_corpo_info = yes
+				set_country_flag = slaynandkorpil_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag =	medium_company_open
+				
+			}
+			rendili_click = {
+				open_corpo_info = yes
+				set_country_flag = rendili_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			incom_click = {
+				open_corpo_info = yes
+				set_country_flag = incom_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			sienar_click = {
+				open_corpo_info = yes
+				set_country_flag = sienar_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			sorosuub_click = {
+				open_corpo_info = yes
+				set_country_flag = sorosuub_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = major_company_open
+				
+			}
+			taimandbak_click = {
+				open_corpo_info = yes
+				set_country_flag = taimandbak_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			tagge_click = {
+				open_corpo_info = yes
+				set_country_flag = tagge_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			trans_click = {
+				open_corpo_info = yes
+				set_country_flag = trans_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+			ubril_click = {
+				open_corpo_info = yes
+				set_country_flag = ubril_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = minor_company_open
+				
+			}
+			xucphra_click = {
+				open_corpo_info = yes
+				set_country_flag = xucphra_open
+				list_for_influencers_or_whatever = yes
+				open_corpo_size = yes
+				set_country_flag = medium_company_open
+				
+			}
+		}
+		dynamic_lists = {
+			subsidiary_grid = {
+				array = subsidiary_array
+				entry_container = subsidiary_entry
+				change_scope = yes
+			}
+		}
+		properties = {
+			subsidiary = { image = "[Getsubsidiary]" }
+		}
+	}
+	corpo_other_screen = {
+		context_type = player_context
+
+		window_name = "corpo_other_screen"
+		parent_window_name = countrypoliticsview
+		visible = {
+			has_country_flag = corpo_info_open
+		}
+
+		effects = {
+			close_button_click = {
+				clr_country_flag = corpo_info_open
+			}
+			buy_1_share_click = {
+				set_country_flag = p_1_share
+				clr_country_flag = p_5_share
+				clr_country_flag = p_10_share
+			}
+			buy_5_shares_click = {
+				clr_country_flag = p_1_share
+				set_country_flag = p_5_share
+				clr_country_flag = p_10_share
+			}
+			buy_10_shares_click = {
+				clr_country_flag = p_1_share
+				clr_country_flag = p_5_share
+				set_country_flag = p_10_share
+			}
+			buy_shares_click = {
+				meta_effect = {
+					text = {
+						if = {
+							limit = {
+								has_country_flag = p_1_share
+							}
+							add_to_variable = { shares_held_[Getcompanyname] = 1 }
+							add_to_variable = { global.total_shares_[Getcompanyname] = 1 }
+							ROOT = {
+								subtract_from_variable = { dx = global.share_price_[Getcompanyname] }
+							}
+						}
+						if = {
+							limit = {
+								has_country_flag = p_5_share
+								}
+								add_to_variable = { shares_held_[Getcompanyname] = 5 }
+								add_to_variable = { global.total_shares_[Getcompanyname] = 5 }
+								ROOT = {
+									set_temp_variable = { 5_share_price = global.share_price_[Getcompanyname] }
+									multiply_temp_variable = { 5_share_price = 5 }
+									subtract_from_variable = { dx = 5_share_price }
+								}
+							}
+							if = {
+								limit = {
+									has_country_flag = p_10_share
+								}
+								add_to_variable = { shares_held_[Getcompanyname] = 10 }
+								add_to_variable = { global.total_shares_[Getcompanyname] = 10 }
+								ROOT = {
+									set_temp_variable = { 10_share_price = global.share_price_[Getcompanyname] }
+									multiply_temp_variable = { 10_share_price = 10 }
+									subtract_from_variable = { dx = 10_share_price }
+								}
+							}
+						}
+					Getcompanyname = "[Getcompanyname]"
+				}
+				list_for_influencers_or_whatever = yes
+				percent_calc_corp = yes
+			}
+			buyout_click = {
+				meta_effect = {
+					text = {
+					ROOT = {
+						subtract_from_variable = { dx = buyout_[Getcompanyname] }
+						set_country_flag = [Getcompanyname]_subsidiary
+					}
+					set_variable = { global.[Getcompanyname]_majority = THIS.id }
+					add_to_array = {
+						array = subsidiary_array
+						value = [Getcompanyvalue]
+					}
+				}
+				Getcompanyname = "[Getcompanyname]"
+				Getcompanyvalue = "[Getcompanyvalue]"
+
+				}
+				list_for_influencers_or_whatever = yes
+			}
+			sell_shares_click = {
+				meta_effect = {
+					text = {
+						if = {
+							limit = {
+								has_country_flag = p_1_share
+							}
+							subtract_from_variable = { shares_held_[Getcompanyname] = 1 }
+							subtract_from_variable = { global.total_shares_[Getcompanyname] = 1 }
+							ROOT = {
+								add_to_variable = { dx = global.share_price_[Getcompanyname] }
+							}
+						}
+						if = {
+							limit = {
+								has_country_flag = p_5_share
+								}
+								subtract_from_variable = { shares_held_[Getcompanyname] = 5 }
+								subtract_from_variable = { global.total_shares_[Getcompanyname] = 5 }
+								ROOT = {
+									set_temp_variable = { 5_share_price = global.share_price_[Getcompanyname] }
+									multiply_temp_variable = { 5_share_price = 5 }
+									add_to_variable = { dx = 5_share_price }
+								}
+							}
+							if = {
+								limit = {
+									has_country_flag = p_10_share
+								}
+								subtract_from_variable = { shares_held_[Getcompanyname] = 10 }
+								subtract_from_variable = { global.total_shares_[Getcompanyname] = 10 }
+								ROOT = {
+									set_temp_variable = { 10_share_price = global.share_price_[Getcompanyname] }
+									multiply_temp_variable = { 10_share_price = 10 }
+									add_to_variable = { dx = 10_share_price }
+								}
+							}
+						}
+			Getcompanyname = "[Getcompanyname]"
+			}
+				list_for_influencers_or_whatever = yes
+				percent_calc_corp = yes
+			}
+			purchased_company_click = {
+
+			}
+		}
+		properties = {
+			selected_company = { image = "[Getselectedcorp]" }
+			purchased_company = { image = "[Getselectedcompanyowner]"}
+		}
+
+		triggers = {
+			buy_1_share_click_enabled = {
+				NOT = {
+					has_country_flag = p_1_share
+				}
+			}
+			buy_5_shares_click_enabled = {
+				NOT = {
+					has_country_flag = p_5_share
+				}
+			}
+			buy_10_shares_click_enabled = {
+				NOT = {
+					has_country_flag = p_10_share
+				}
+			}
+
+			purchased_company_visible = {
+				meta_trigger = {
+					text = {
+							any_country = {
+								has_country_flag = [Getcompanyname]_subsidiary
+							}
+						}
+					Getcompanyname = "[Getcompanyname]"
+				}
+			}
+			corpo_owned_visible = {
+				meta_trigger = {
+					text = {
+							any_country = {
+								has_country_flag = [Getcompanyname]_subsidiary
+							}
+						}
+					Getcompanyname = "[Getcompanyname]"
+				}
+			}
+			buy_shares_click_enabled = {
+				meta_trigger = {
+					text = {
+						NOT = {
+							any_country = {
+									has_country_flag = [Getcompanyname]_subsidiary
+								}
+							}
+							if = {
+								limit = {
+									has_country_flag = p_1_share
+								}
+								check_variable = { dx > share_price_[Getcompanyname] }
+							}
+							else_if = {
+								limit = {
+									has_country_flag = p_5_share
+								}
+								set_temp_variable = { 5_share_price_check = global.share_price_[Getcompanyname] }
+								multiply_temp_variable = { 5_share_price_check = 5 }
+								check_variable = { dx > 5_share_price_check }
+							}
+							else_if = {
+								limit = {
+									has_country_flag = p_10_share
+								}
+								set_temp_variable = { 10_share_price_check = global.share_price_[Getcompanyname] }
+								multiply_temp_variable = { 10_share_price_check = 10 }
+								check_variable = { dx > 10_share_price_check }
+							}
+					}
+					Getcompanyname = "[Getcompanyname]"
+				}
+			}
+			buyout_click_enabled = {
+				meta_trigger = {
+					text = {
+						check_variable = { shares_held_percent_[Getcompanyname] > 50 }
+					NOT = {
+						any_country = {
+								has_country_flag = [Getcompanyname]_subsidiary
+							}
+						}
+						check_variable = { dx > buyout_[Getcompanyname] }
+					}
+					Getcompanyname = "[Getcompanyname]"
+				}
+			}
+			sell_shares_click_enabled = {
+				meta_trigger = {
+					text = {
+						NOT = {
+							any_country = {
+									has_global_flag = [Getcompanyname]_subsidiary
+								}
+							}
+							if = {
+								limit = {
+									has_country_flag = p_1_share
+								}
+								check_variable = { 0 < shares_held_[Getcompanyname] }
+							}
+							else_if = {
+								limit = {
+									has_country_flag = p_5_share
+								}
+								check_variable = { 4 < shares_held_[Getcompanyname] }
+							}
+							else_if = {
+								limit = {
+									has_country_flag = p_10_share
+								}
+								check_variable = { 9 < shares_held_[Getcompanyname] }
+							}
+					}
+					Getcompanyname = "[Getcompanyname]"
+				}
+			}
+		}
+	}
+	corporate_screen_ai = {
+		context_type = player_context
+
+		window_name = "corporate_window_ai"
+		parent_window_name = countrypoliticsview
+		ai_enabled = {
+			always = yes
+		}
+		visible = {
+			AND = {
+				is_ai = yes
+				is_market_corporation = yes
+			}
+		}
+		effects = {
+			geonosis_buy_click = {
+				set_country_flag = geonosis_open
+				subtract_from_variable = { dx = 10 }
+				add_to_variable = { shares_held_Geonosis = 1 }
+				add_to_variable = { global.total_shares_Geonosis = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = geonosis_open
+			}
+			aratech_buy_click = {
+				set_country_flag = aratech_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 15 }
+				add_to_variable = { shares_held_Aratech = 1 }
+				add_to_variable = { global.total_shares_Aratech = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = aratech_open
+			}
+			blastech_buy_click = {
+				set_country_flag = blastech_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 15 }
+				add_to_variable = { shares_held_Blastech = 1 }
+				add_to_variable = { global.total_shares_Blastech = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = blastech_open
+			}
+			chiewab_buy_click = {
+				set_country_flag = chiewab_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 5 }
+				add_to_variable = { shares_held_Chiewab = 1 }
+				add_to_variable = { global.total_shares_Chiewab = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = chiewab_open
+			}
+			colicoid_buy_click = {
+				set_country_flag = colicoid_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 10 }
+				add_to_variable = { shares_held_Colicoid = 1 }
+				add_to_variable = { global.total_shares_Colicoid = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = colicoid_open
+			}
+			corellian_buy_click = {
+				set_country_flag = corellian_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 15 }
+				add_to_variable = { shares_held_Corellian = 1 }
+				add_to_variable = { global.total_shares_Corellian = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = corellian_open
+			}
+			corporate_buy_click = {
+				set_country_flag = corporate_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 15 }
+				add_to_variable = { shares_held_Corporate = 1 }
+				add_to_variable = { global.total_shares_Corporate = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = corporate_open
+			}
+			czerka_buy_click = {
+				set_country_flag = czerka_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 10 }
+				add_to_variable = { shares_held_Czerka = 1 }
+				add_to_variable = { global.total_shares_Czerka = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = czerka_open
+			}
+			free_dac_buy_click = {
+				set_country_flag = free_dac_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 15 }
+				add_to_variable = { shares_held_Free_dac = 1 }
+				add_to_variable = { global.total_shares_Free_dac = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = free_dac_open
+			}
+			haor_buy_click = {
+				set_country_flag = haor_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 10 }
+				add_to_variable = { shares_held_Haor = 1 }
+				add_to_variable = { global.total_shares_Haor = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = haor_open
+			}
+			hoersch_buy_click = {
+				set_country_flag = hoersch_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 15 }
+				add_to_variable = { shares_held_Hoersch = 1 }
+				add_to_variable = { global.total_shares_Hoersch = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = hoersch_open
+			}
+			industrial_auto_buy_click = {
+				set_country_flag = industrial_auto_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 10 }
+				add_to_variable = { shares_held_Industrial_Automaton = 1 }
+				add_to_variable = { global.total_shares_Industrial_Automaton = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = industrial_auto_open
+			}
+			leisuremech_buy_click = {
+				set_country_flag = leisuremech_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 5 }
+				add_to_variable = { shares_held_LeisureMechEnterprises = 1 }
+				add_to_variable = { global.total_shares_LeisureMechEnterprises = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = leisuremech_open
+			}
+			mandal_buy_click = {
+				set_country_flag = mandal_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 15 }
+				add_to_variable = { shares_held_MandalMotors = 1 }
+				add_to_variable = { global.total_shares_MandalMotors = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = mandal_open
+			}
+			mining_guild_buy_click = {
+				set_country_flag = mining_guild_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 5 }
+				add_to_variable = { shares_held_Mining_guild = 1 }
+				add_to_variable = { global.total_shares_Mining_guild = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = mining_guild_open
+			}
+			slaynandkorpil_buy_click = {
+				set_country_flag = slaynandkorpil_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 10 }
+				add_to_variable = { shares_held_Slayn_and_korpil = 1 }
+				add_to_variable = { global.total_shares_Slayn_and_korpil = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = slaynandkorpil_open
+			}
+			rendili_buy_click = {
+				set_country_flag = rendili_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 15 }
+				add_to_variable = { shares_held_RendiliStarDrive = 1 }
+				add_to_variable = { global.total_shares_RendiliStarDrive = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = rendili_open
+			}
+			incom_buy_click = {
+				set_country_flag = incom_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 10 }
+				add_to_variable = { shares_held_Incom = 1 }
+				add_to_variable = { global.total_shares_Incom = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = incom_open
+			}
+			sienar_buy_click = {
+				set_country_flag = sienar_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 15 }
+				add_to_variable = { shares_held_SienarFleetSystems = 1 }
+				add_to_variable = { global.total_shares_SienarFleetSystems = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = sienar_open
+			}
+			sorosuub_buy_click = {
+				set_country_flag = sorosuub_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 15 }
+				add_to_variable = { shares_held_SoroSuub = 1 }
+				add_to_variable = { global.total_shares_SoroSuub = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = sorosuub_open
+			}
+			taimandbak_buy_click = {
+				set_country_flag = taimandbak_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 5 }
+				add_to_variable = { shares_held_Taimandbak = 1 }
+				add_to_variable = { global.total_shares_Taimandbak = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = taimandbak_open
+			}
+			tagge_buy_click = {
+				set_country_flag = tagge_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 5 }
+				add_to_variable = { shares_held_Tagge = 1 }
+				add_to_variable = { global.total_shares_Tagge = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = tagge_open
+			}
+			trans_buy_click = {
+				set_country_flag = trans_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 10 }
+				add_to_variable = { shares_held_TransGalMegIndustriesIncorporated = 1 }
+				add_to_variable = { global.total_shares_TransGalMegIndustriesIncorporated = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = trans_open
+			}
+			ubril_buy_click = {
+				set_country_flag = ubril_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 5 }
+				add_to_variable = { shares_held_UbrikkianIndustries = 1 }
+				add_to_variable = { global.total_shares_UbrikkianIndustries = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = ubril_open
+			}
+			xucphra_buy_click = {
+				set_country_flag = xucphra_open
+				list_for_influencers_or_whatever = yes
+				subtract_from_variable = { dx = 10 }
+				add_to_variable = { shares_held_XucphraCorporation = 1 }
+				add_to_variable = { global.total_shares_XucphraCorporation = 1 }
+				percent_calc_corp = yes
+				list_for_influencers_or_whatever = yes
+				clr_country_flag = xucphra_open
+			}
+			##########################Buyout#########################################
+			geonosis_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Geonosis }
+					set_country_flag = Geonosis_subsidiary
+				}
+				set_variable = { global.Geonosis_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 1
+				}
+			}
+			aratech_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Aratech }
+					set_country_flag = Aratech_subsidiary
+				}
+				set_variable = { global.Aratech_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 2
+				}
+			}
+			blastech_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Blastech }
+					set_country_flag = Blastech_subsidiary
+				}
+				set_variable = { global.Blastech_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 3
+				}
+			}
+			chiewab_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Chiewab }
+					set_country_flag = Chiewab_subsidiary
+				}
+				set_variable = { global.Chiewab_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 4
+				}
+			}
+			colicoid_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Colicoid }
+					set_country_flag = Colicoid_subsidiary
+				}
+				set_variable = { global.Colicoid_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 5
+				}
+			}
+			corellian_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Corellian }
+					set_country_flag = Corellian_subsidiary
+				}
+				set_variable = { global.Corellian_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 6
+				}
+			}
+			corporate_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Corporate }
+					set_country_flag = Corporate_subsidiary
+				}
+				set_variable = { global.Corporate_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 7
+				}
+			}
+			czerka_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Czerka }
+					set_country_flag = Czerka_subsidiary
+				}
+				set_variable = { global.Czerka_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 8
+				}
+			}
+			free_dac_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Free_dac }
+					set_country_flag = Free_dac_subsidiary
+				}
+				set_variable = { global.Free_dac_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 9
+				}
+			}
+			haor_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Haor }
+					set_country_flag = Haor_subsidiary
+				}
+				set_variable = { global.Haor_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 10
+				}
+			}
+			hoersch_buyout_click = {
+				set_country_flag = hoersch_open
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Hoersch }
+					set_country_flag = Hoersch_subsidiary
+				}
+				set_variable = { global.Hoersch_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 11
+				}
+			}
+			industrial_auto_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Industrial_Automaton }
+					set_country_flag = Industrial_Automaton_subsidiary
+				}
+				set_variable = { global.Industrial_Automaton_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 12
+				}
+			}
+			leisuremech_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_LeisureMechEnterprises }
+					set_country_flag = LeisureMechEnterprises_subsidiary
+				}
+				set_variable = { global.LeisureMechEnterprises_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 13
+				}
+			}
+			mandal_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_MandalMotors }
+					set_country_flag = MandalMotors_subsidiary
+				}
+				set_variable = { global.MandalMotors_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 14
+				}
+			}
+			mining_guild_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Mining_guild }
+					set_country_flag = Mining_guild_subsidiary
+				}
+				set_variable = { global.Mining_guild_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 15
+				}
+			}
+			slaynandkorpil_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Slayn_and_korpil }
+					set_country_flag = Slayn_and_korpil_subsidiary
+				}
+				set_variable = { global.Slayn_and_korpil_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 16
+				}
+			}
+			rendili_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_RendiliStarDrive }
+					set_country_flag = RendiliStarDrive_subsidiary
+				}
+				set_variable = { global.RendiliStarDrive_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 17
+				}
+			}
+			incom_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Incom }
+					set_country_flag = Incom_subsidiary
+				}
+				set_variable = { global.Incom_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 18
+				}
+			}
+			sienar_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_SienarFleetSystems }
+					set_country_flag = SienarFleetSystems_subsidiary
+				}
+				set_variable = { global.SienarFleetSystems_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 19
+				}
+			}
+			sorosuub_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_SoroSuub }
+					set_country_flag = SoroSuub_subsidiary
+				}
+				set_variable = { global.SoroSuub_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 20
+				}
+			}
+			taimandbak_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Taimandbak }
+					set_country_flag = Taimandbak_subsidiary
+				}
+				set_variable = { global.Taimandbak_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 21
+				}
+			}
+			tagge_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_Tagge }
+					set_country_flag = Tagge_subsidiary
+				}
+				set_variable = { global.Tagge_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 22
+				}
+			}
+			trans_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_TransGalMegIndustriesIncorporated }
+					set_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+				}
+				set_variable = { global.TransGalMegIndustriesIncorporated_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 23
+				}
+			}
+			ubril_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_UbrikkianIndustries }
+					set_country_flag = UbrikkianIndustries_subsidiary
+				}
+				set_variable = { global.UbrikkianIndustries_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 24
+				}
+			}
+			xucphra_buyout_click = {
+				ROOT = {
+					subtract_from_variable = { dx = buyout_XucphraCorporation }
+					set_country_flag = XucphraCorporation_subsidiary
+				}
+				set_variable = { global.XucphraCorporation_majority = THIS.id }
+				add_to_array = {
+					array = subsidiary_array
+					value = 25
+				}
+			}
+		}
+		triggers = {
+			geonosis_buy_click_enabled = {
+				check_variable = { dx > 9 }
+				NOT = {
+					any_country = {
+						has_country_flag = Geonosis_subsidiary
+					}
+				}
+			}
+			aratech_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Aratech_subsidiary
+					}
+				}
+				check_variable = { dx > 14 }
+			}
+			blastech_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Blastech_subsidiary
+					}
+				}
+				check_variable = { dx > 14 }
+			}
+			chiewab_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Chiewab_subsidiary
+					}
+				}
+				check_variable = { dx > 4}
+			}
+			colicoid_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Colicoid_subsidiary
+					}
+				}
+				check_variable = { dx > 9 }
+			}
+			corellian_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Corellian_subsidiary
+					}
+				}
+				check_variable = { dx > 14 }
+			}
+			corporate_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Corporate_subsidiary
+					}
+				}
+				check_variable = { dx > 14 }
+			}
+			czerka_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Czerka_subsidiary
+					}
+				}
+				check_variable = { dx > 9 }
+			}
+			free_dac_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Free_dac_subsidiary
+					}
+				}
+				check_variable = { dx > 14 }
+			}
+			haor_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Haor_subsidiary
+					}
+				}
+				check_variable = { dx > 9 }
+			}
+			hoersch_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Hoersch_subsidiary
+					}
+				}
+				check_variable = { dx > 14 }
+			}
+			industrial_auto_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Industrial_Automaton_subsidiary
+					}
+				}
+				check_variable = { dx > 9 }
+			}
+			leisuremech_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = LeisureMechEnterprises_subsidiary
+					}
+				}
+				check_variable = { dx > 4}
+			}
+			mandal_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = MandalMotors_subsidiary
+					}
+				}
+				check_variable = { dx > 14 }
+			}
+			mining_guild_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Mining_guild_subsidiary
+					}
+				}
+				check_variable = { dx > 4}
+			}
+			slaynandkorpil_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Slayn_and_korpil_subsidiary
+					}
+				}
+				check_variable = { dx > 9 }
+			}
+			rendili_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = RendiliStarDrive_subsidiary
+					}
+				}
+				check_variable = { dx > 14 }
+			}
+			incom_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Incom_subsidiary
+					}
+				}
+				check_variable = { dx > 9 }
+			}
+			sienar_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = SienarFleetSystems_subsidiary
+					}
+				}
+				check_variable = { dx > 14 }
+			}
+			sorosuub_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = SoroSuub_subsidiary
+					}
+				}
+				check_variable = { dx > 14 }
+			}
+			taimandbak_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Taimandbak_subsidiary
+					}
+				}
+				check_variable = { dx > 4}
+			}
+			tagge_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Tagge_subsidiary
+					}
+				}
+				check_variable = { dx > 4}
+			}
+			trans_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+					}
+				}
+				check_variable = { dx > 9 }
+			}
+			ubril_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = UbrikkianIndustries_subsidiary
+					}
+				}
+				check_variable = { dx > 4}
+			}
+			xucphra_buy_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = XucphraCorporation_subsidiary
+					}
+				}
+				check_variable = { dx > 9 }
+			}
+			##################Majority Click Enabled#########################
+			geonosis_buyout_click_enabled = {
+				check_variable = { dx > buyout_Geonosis }
+				NOT = {
+					any_country = {
+						has_country_flag = Geonosis_subsidiary
+					}
+				}
+				has_country_flag = majority_share_holder_Geonosis
+			}
+			aratech_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Aratech_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Aratech }
+				has_country_flag = majority_share_holder_Aratech
+			}
+			blastech_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Blastech_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Blastech }
+				has_country_flag = majority_share_holder_Blastech
+			}
+			chiewab_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Chiewab_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Chiewab }
+				has_country_flag = majority_share_holder_Chiewab
+			}
+			colicoid_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Colicoid_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Colicoid }
+				has_country_flag = majority_share_holder_Colicoid
+			}
+			corellian_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Corellian_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Corellian }
+				has_country_flag = majority_share_holder_Corellian
+			}
+			corporate_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Corporate_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Corporate }
+				has_country_flag = majority_share_holder_Corporate
+			}
+			czerka_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Czerka_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Czerka }
+				has_country_flag = majority_share_holder_Czerka
+			}
+			free_dac_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Free_dac_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Free_dac }
+				has_country_flag = majority_share_holder_Free_dac
+			}
+			haor_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Haor_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Haor }
+				has_country_flag = majority_share_holder_Haor
+			}
+			hoersch_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Hoersch_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Hoersch }
+			}
+			industrial_auto_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Industrial_Automaton_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Industrial_Automaton }
+				has_country_flag = majority_share_holder_Industrial_Automaton
+			}
+			leisuremech_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = LeisureMechEnterprises_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_LeisureMechEnterprises }
+				has_country_flag = majority_share_holder_LeisureMechEnterprises
+			}
+			mandal_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = MandalMotors_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_MandalMotors }
+				has_country_flag = majority_share_holder_MandalMotors
+			}
+			mining_guild_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Mining_guild_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Mining_guild }
+				has_country_flag = majority_share_holder_Mining_guild
+			}
+			slaynandkorpil_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Slayn_and_korpil_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Slayn_and_korpil }
+				has_country_flag = majority_share_holder_Slayn_and_korpil
+			}
+			rendili_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = RendiliStarDrive_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_RendiliStarDrive }
+				has_country_flag = majority_share_holder_RendiliStarDrive
+			}
+			incom_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Incom_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Incom }
+				has_country_flag = majority_share_holder_Incom
+			}
+			sienar_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = SienarFleetSystems_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_SienarFleetSystems }
+				has_country_flag = majority_share_holder_SienarFleetSystems
+			}
+			sorosuub_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = SoroSuub_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_SoroSuub }
+				has_country_flag = majority_share_holder_SoroSuub
+			}
+			taimandbak_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Taimandbak_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Taimandbak }
+				has_country_flag = majority_share_holder_Taimandbak
+			}
+			tagge_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = Tagge_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_Tagge }
+				has_country_flag = majority_share_holder_Tagge
+			}
+			trans_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = TransGalMegIndustriesIncorporated_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_TransGalMegIndustriesIncorporated }
+				has_country_flag = majority_share_holder_TransGalMegIndustriesIncorporated
+			}
+			ubril_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = UbrikkianIndustries_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_UbrikkianIndustries }
+				has_country_flag = majority_share_holder_UbrikkianIndustries
+			}
+			xucphra_buyout_click_enabled = {
+				NOT = {
+					any_country = {
+						has_country_flag = XucphraCorporation_subsidiary
+					}
+				}
+				check_variable = { dx > buyout_XucphraCorporation }
+				has_country_flag = majority_share_holder_XucphraCorporation
+			}
+		}
+		ai_weights = {
+			geonosis_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Geonosis
+						}
+						add = -300
+					}
+				}
+			}
+			aratech_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = CLA
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = KAM
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Aratech
+						}
+						add = -300
+					}
+				}
+			}
+			blastech_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = KAM
+						}
+						add = 180
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Blastech
+						}
+						add = -300
+					}
+				}
+			}
+			chiewab_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							tag = KAM
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Chiewab
+						}
+						add = -300
+					}
+				}
+			}
+			colicoid_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Colicoid
+						}
+						add = -300
+					}
+				}
+			}
+			corellian_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 50
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 50
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = CLA
+						}
+						add = 280
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Corellian
+						}
+						add = -300
+					}
+				}
+			}
+			corporate_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Corporate
+						}
+						add = -300
+					}
+				}
+			}
+			czerka_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 140
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Czerka
+						}
+						add = -300
+					}
+				}
+			}
+			free_dac_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 180
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Free_dac
+						}
+						add = -300
+					}
+				}
+			}
+			haor_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 180
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Haor
+						}
+						add = -300
+					}
+				}
+			}
+			#hoersch_buy_click = {
+			#	list_for_influencers_or_whatever = yes
+			#	subtract_from_variable = { dx = 15 }
+			#	add_to_variable = { shares_held_Hoersch = 1 }
+			#	add_to_variable = { global.total_shares_Hoersch = 1 }
+			#}
+			industrial_auto_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 90
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Industrial_Automaton
+						}
+						add = -300
+					}
+				}
+			}
+			leisuremech_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = KAM
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_LeisureMechEnterprises
+						}
+						add = -300
+					}
+				}
+			}
+			mandal_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -400
+							ROOT = {
+								has_country_flag = dontbuystocks
+
+							}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							tag = KAM
+						}
+						add = 100
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_MandalMotors
+						}
+						add = -300
+					}
+				}
+			}
+			mining_guild_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Mining_guild
+						}
+						add = -300
+					}
+				}
+			}
+			slaynandkorpil_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 30
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 30
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 30
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 140
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Slayn_and_korpil
+						}
+						add = -300
+					}
+				}
+			}
+			rendili_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 90
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 190
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_RendiliStarDrive
+						}
+						add = -300
+					}
+				}
+			}
+			incom_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 30
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 30
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 30
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 140
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Incom
+						}
+						add = -300
+					}
+				}
+			}
+			sienar_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 90
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 160
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_SienarFleetSystems
+						}
+						add = -300
+					}
+				}
+			}
+			sorosuub_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 180
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 190
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 140
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_SoroSuub
+						}
+						add = -300
+					}
+				}
+			}
+			taimandbak_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							tag = KAM
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Taimandbak
+						}
+						add = -300
+					}
+				}
+			}
+			tagge_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 90
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 190
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 200
+					}
+					modifier = {
+						ROOT = {
+							tag = KAM
+						}
+						add = 150
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 130
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_Tagge
+						}
+						add = -300
+					}
+				}
+			}
+			trans_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 90
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 190
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_TransGalMegIndustriesIncorporated
+						}
+						add = -300
+					}
+				}
+			}
+			ubril_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 90
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 190
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 250
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_UbrikkianIndustries
+						}
+						add = -300
+					}
+				}
+			}
+			xucphra_buy_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = -1500
+						ROOT = {
+							has_country_flag = dontbuystocks
+						}
+					}
+					modifier = {
+						ROOT = {
+							tag = TEC
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = CMG
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = FED
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = KUA
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = COR
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = REN
+						}
+						add = 80
+					}
+					modifier = {
+						ROOT = {
+							tag = KAM
+						}
+						add = 180
+					}
+					modifier = {
+						ROOT = {
+							has_country_flag = majority_share_holder_XucphraCorporation
+						}
+						add = -300
+					}
+				}
+			}
+			geonosis_buyout_click = {
+				ai_will_do = {
+					base = 500
+					modifier = {
+						add = -500
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			aratech_buyout_click = {
+				ai_will_do = {
+					base = 500
+					modifier = {
+						add = -500
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			blastech_buyout_click = {
+				ai_will_do = {
+					base = 500
+					modifier = {
+						add = -500
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			chiewab_buyout_click = {
+				ai_will_do = {
+					base = 500
+					modifier = {
+						add = -500
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			colicoid_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -200
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			corellian_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -200
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			corporate_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -200
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			czerka_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			free_dac_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -200
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			haor_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -200
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			#hoersch_buyout_click = {
+			#	list_for_influencers_or_whatever = yes
+			#	subtract_from_variable = { dx = 15 }
+			#	add_to_variable = { shares_held_Hoersch = 1 }
+			#	add_to_variable = { global.total_shares_Hoersch = 1 }
+			#}
+			industrial_auto_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -200
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			leisuremech_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			mandal_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			mining_guild_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			slaynandkorpil_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			rendili_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			incom_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			sienar_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			sorosuub_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			taimandbak_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			tagge_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			trans_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			ubril_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -250
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+			xucphra_buyout_click = {
+				ai_will_do = {
+					base = 200
+					modifier = {
+						add = -200
+							ROOT = {
+								has_country_flag = dontbuystocks
+							}
+					}
+				}
+			}
+		}
+	}
+}

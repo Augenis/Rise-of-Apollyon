@@ -1,0 +1,14 @@
+guiTypes = {
+    containerWindowType = {
+        name = "jawa_window"
+        orientation = center
+        position = {x=-400 y=-300}
+        size = { width=1500 height=747 }
+        moveable = yes
+
+        background = {
+            name = "Background"
+            quadTextureSprite ="GFX_jawa_crawler"
+		}
+	}
+}

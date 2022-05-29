@@ -1,0 +1,109 @@
+capital = 25
+
+oob = "QUA_3677"
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.30
+
+set_technology = {
+	tech_support = 1
+	militia_QUA = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 50
+
+add_ideas = {
+	limited_conscription
+	war_economy
+	closed_economy
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = fascism
+		last_election = "1933.3.5"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 100
+	}
+}
+
+
+create_country_leader = {
+	name = "Nossor Ri"
+	desc = "Nossor Ri is the leader of the Quarren Isolation League, and he believes his people have been exploited by the oppressive Mon Cala monarchy."
+	picture = "gfx/leaders/QUA/QUA_NossorRi.dds"
+	expire = "3678.1.1"
+	ideology = fascism_ideology
+}
+create_corps_commander = {
+ 	name = "Gratta"
+ 	id = 830
+ 	portrait_path = "gfx/leaders/QUA/Gratta.dds"
+	 traits = { infantry_leader }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+ 	name = "Kallid"
+ 	id = 831
+ 	portrait_path = "gfx/leaders/QUA/Kallid.dds"
+	 traits = { panzer_leader }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+ 	name = "Matte"
+ 	id = 832
+ 	portrait_path = "gfx/leaders/QUA/Matte.dds"
+	 traits = { infantry_leader fortress_buster }
+	skill = 2
+ 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {
+ 	name = "Riff Tamson"
+ 	portrait_path = "gfx/leaders/QUA/QUA_RiffTamson.dds"
+	 traits = { infantry_leader fortress_buster }
+	skill = 5
+ 	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Maranarra"
+	id = 833
+    picture = "gfx/leaders/QUA/Maranarra.dds"
+	traits = {  }
+	skill = 2
+	coordination_skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+}

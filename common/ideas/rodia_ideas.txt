@@ -1,0 +1,189 @@
+ideas = {
+
+	country = {
+		starvation_rodia = {
+			picture = starvation_rodia
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -0.15
+			}
+		}
+    }
+	country = {
+		pirates_rodia = {
+			picture = pirates_rodia
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.001
+				consumer_goods_factor = 0.01
+			}
+		}
+    }
+	country = {
+		bad_reputaion = {
+			picture = bad_reputaion
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.2
+			}
+		}
+    }
+	country = {
+		macklunky_rodia = {
+			picture = macklunky_rodia
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.08
+				army_attack_factor = -0.15
+			}
+		}
+    }	
+
+   political_advisor = {
+        Lolo_Purs = {
+		name = "Lolo Purs"
+ 	portrait_path = "gfx/interface/ideas/Lolo_Purs.dds"
+
+            allowed = {
+				original_tag = ROD
+			}
+			traits = { Backroom_Windbag }
+        }
+
+        Pa_Dua = {
+		name = "Pa Dua"
+ 	portrait_path = "gfx/interface/ideas/Pa_Dua.dds"
+
+            allowed = {
+				original_tag = ROD
+			}
+			traits = { Humble_Appeaser }
+        }
+
+        Tox_Don = {
+		name = "Tox Don"
+ 	portrait_path = "gfx/interface/ideas/Tox_Don.dds"
+
+            allowed = {
+				original_tag = ROD
+			}
+			traits = { Industry_Reformer }
+        }
+		}
+
+
+			theorist = {
+		Sordaan_Xris = {
+	name = "Sordaan Xris"
+	portrait_path = "gfx/interface/ideas/Sordaan_Xris.dds"
+
+			ledger = Army
+
+			allowed = {
+				original_tag = ROD
+			}
+
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+
+			traits = { Military_theorist }
+		}
+	}
+
+	army_chief = {
+	Onaconda_Farr = {
+	name = "Onaconda Farr"
+	portrait_path = "gfx/interface/ideas/Onaconda_Farr.dds"
+
+			allowed = {
+				original_tag = ROD
+			}
+
+		traits = { army_chief_Defensive_1 }
+		}
+		}
+
+	high_command = {
+		hcSordaan_Xris = {
+	name = "Sordaan Xris"
+	portrait_path = "gfx/interface/ideas/Sordaan_Xris.dds"
+			ledger = army
+
+			allowed = {
+				original_tag = ROD
+			}
+			available = {
+			}
+			traits = { Army_Logistics_2 }
+		}
+
+	Ziven_Tissak = {
+	name = "Ziven Tissak"
+	portrait_path = "gfx/interface/ideas/Ziven_Tissak.dds"
+			ledger = army
+
+			allowed = {
+				original_tag = ROD
+			}
+
+			traits = { army_regrouping_1 }
+
+		}
+
+	NeChak = {
+	name = "Ne'Chak"
+	portrait_path = "gfx/interface/ideas/NeChak.dds"
+			ledger = navy
+
+			allowed = {
+				original_tag = ROD
+			}
+
+			traits = { army_Concealment_1 }
+
+		}
+	}
+
+
+}

@@ -1,0 +1,18 @@
+guiTypes = {
+	containerWindowType = {
+		name = "cmg_factions"
+		orientation = center
+		position = {x=-400 y=-300}
+		size = { width=507 height=335 }
+
+	instantTextboxType = {
+		name = "faction_1_happiness"
+		position = { x = 86 y = 160 }
+		font = "hoi_16mbs"
+		text = ""
+		maxWidth = 140
+		maxHeight = 20
+		format = center
+		}
+	}
+}

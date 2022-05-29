@@ -1,0 +1,141 @@
+capital = 351
+
+oob = "MAL_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	militia_MAL = 1
+	transport = 1
+	infantry_weapons = 1
+}
+
+add_political_power = 75
+set_convoys = 75
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav
+	REP_member_prewar 
+	volunteer_only
+	low_economic_mobilisation
+}
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 100
+		communism = 0
+		neutrality = 0
+		fascism = 0
+	}
+}
+
+
+
+create_country_leader = {
+	name = "Nakha Urus"
+	picture = "gfx/leaders/MAL/NakhaUrus.dds"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+
+create_country_leader = {
+	name = "Kric Raals"
+	picture = "gfx/leaders/MAL/KricRaals.dds"
+	expire = "2020.1.1"
+	ideology = nazism
+}
+create_corps_commander = {
+	name = "Zillo Urus"
+	portrait_path = "gfx/leaders/MAL/gen1.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Pribo Teem"
+	portrait_path = "gfx/leaders/MAL/gen2.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Kobho Kwandid"
+	portrait_path = "gfx/leaders/MAL/gen3.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Trunroggo Bugise"
+	portrait_path = "gfx/leaders/MAL/gen4.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Dagri Bairani"
+	portrait_path = "gfx/leaders/MAL/gen5.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_navy_leader = {
+	name = "Prubru Kaansad"
+    picture = "adm1.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Graddix Diwaas"
+    picture = "adm2.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}

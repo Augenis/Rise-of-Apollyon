@@ -1,0 +1,88 @@
+ideas = {
+    
+    political_advisor = {
+        Sio_Bibble = {
+            allowed = {
+				original_tag = NAB
+			}
+	traits = { Feminist_Ultranationalist }
+        }
+		        Sabe = {
+            allowed = {
+				original_tag = NAB
+			}
+	traits = { Silent_Workhorse }
+        }
+		        Dorme = {
+            allowed = {
+				original_tag = NAB
+			}
+	traits = { Connected_Citizen }
+        }
+	}
+			theorist = {
+		Quarsh_Panaka = {
+			ledger = Army
+			allowed = {
+				original_tag = NAB
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			traits = { Military_theorist }
+		}
+	}
+
+	army_chief = {
+	acQuarsh_Panaka = {
+	name = "Quarsh Panaka"
+			allowed = {
+				original_tag = NAB
+			}
+		traits = { army_chief_offensive_1 }
+		}
+		}
+		air_chief = {
+	RicOlie = {
+			allowed = {
+				original_tag = NAB
+			}
+			traits = { air_pilot_training_2 }
+		}	
+	}
+		navy_chief  = {
+	Rhys_Dallows = {
+			allowed = {
+				original_tag = NAB
+			}
+			traits = { navy_chief_decisive_battle_1 }
+		}
+	}
+
+	high_command = {
+		NathanielCamaran = {
+			ledger = army
+			allowed = {
+				original_tag = NAB
+			}
+			traits = { Army_Logistics_2 }
+		}
+	Gregar_Typho = {
+			ledger = army
+			allowed = {
+				original_tag = NAB
+			}
+			traits = { army_infantry_2 }
+		}
+
+	Porro_Dolphe = {
+			ledger = air
+			allowed = {
+				original_tag = NAB
+			}
+			traits = { army_Concealment_2 }
+		}
+	}
+}
+
+  

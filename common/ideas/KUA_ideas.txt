@@ -1,0 +1,93 @@
+ideas = {
+    country = {
+        popularity_of_our_shipyards = {
+            allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_goal_unknown
+        }
+    }
+	political_advisor = {
+        Walex_Blissex = {
+			allowed = {
+				original_tag = KUA
+			}
+			traits = { Education_Reformer }
+		#modifier = { production_speed_naval_base_0.20 }
+        }
+	Risi_Lenoan = {
+			allowed = {
+				original_tag = KUA
+			}
+			traits = { Ideological_Groupie }		
+		}
+	Giddean_Danu = {
+			allowed = {
+				original_tag = KUA
+			}
+			traits = { war_industrialist }
+		}
+    }
+		theorist = {
+		tWalex_Blissex = {
+			ledger = navy
+			allowed = {
+				original_tag = KUA
+			}
+			research_bonus = {
+				naval_doctrine = 0.15
+			}
+			traits = { naval_theorist }
+		}
+	}
+	army_chief = {
+	Kal_Skirata = {
+			allowed = {
+				original_tag = KUA
+			}
+		traits = { army_chief_offensive_2 }
+		}
+		}
+		air_chief = {
+			Daley_Blind = {
+			allowed = {
+				original_tag = KUA
+			}
+			traits = { air_bomber_interception_2 }
+		}	
+	}
+	navy_chief  = {
+		Kuat_of_Kuat = {
+			allowed = {
+				original_tag = KUA
+			}
+			traits = { navy_chief_decisive_battle_2 }
+		}
+	}
+	high_command = {
+			Gout = {
+			ledger = army
+			allowed = {
+				original_tag = KUA
+			}
+			traits = { Army_Logistics_2 }
+		}
+			Brennat_Covcrus = {
+			ledger = army
+			allowed = {
+				original_tag = KUA
+			}
+			traits = { army_infantry_2 }
+		}	
+		Richard_Kimble = {
+			ledger = army
+			allowed = {
+				original_tag = KUA
+			}
+			traits = { army_regrouping_2 }
+		}
+	}
+}

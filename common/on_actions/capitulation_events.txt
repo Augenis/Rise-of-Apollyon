@@ -1,0 +1,10 @@
+on_actions = {
+  on_capitulation = {
+    effect = {
+      if = {
+        limit = { ROOT = { tag = KAM } }
+        news_event = { id = CAP.KAM days = 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+income_bonus = {
+	decrease_tax = {
+		icon = zygerria_slaves
+		visible = {
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			has_country_flag = lower_tax_decision
+			NOT = {
+				has_active_mission = increase_tax
+			}
+		}
+		cost = 0
+        fire_only_once = no
+        is_good = yes
+        selectable_mission = no
+		ai_will_do = {
+			factor = 0
+		}
+		days_mission_timeout = 60
+		days_re_enable = 0
+		timeout_effect = {
+			subtract_from_variable = { tax_bonus_income = 0.1 }
+           	subtract_from_variable = {construction_debuff = 0.01}
+           	add_to_variable = {research_debuff = 0.02}
+           	add_to_variable = {consumer_goods_debuff = 0.02}
+           	clr_country_flag = lower_tax_decision
+		}
+		complete_effect = {
+		}
+	}
+	increase_tax = {
+		icon = zygerria_slaves
+		visible = {
+		}
+		available = {
+			always = no
+		}
+        activation = {
+        	has_country_flag = raise_tax_decision
+        	NOT = {
+				has_active_mission = decrease_tax
+			}
+        }
+        cost = 0
+        fire_only_once = no
+        is_good = yes
+        selectable_mission = no
+		ai_will_do = {
+			factor = 0
+		}
+		days_mission_timeout = 60
+		days_re_enable = 0
+		timeout_effect = {
+			add_to_variable = { tax_bonus_income = 0.1 } 
+           	add_to_variable = {construction_debuff = 0.01}
+           	subtract_from_variable = {research_debuff = 0.02}
+           	subtract_from_variable = {consumer_goods_debuff = 0.02}
+           	clr_country_flag = raise_tax_decision
+		}
+		complete_effect = {
+		}
+	}
+}

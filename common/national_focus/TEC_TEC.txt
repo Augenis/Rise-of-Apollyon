@@ -1,0 +1,1718 @@
+focus_tree = {
+	id = TEC
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TEC
+		}
+	}
+	#Focus for Incorporate FAED
+	focus = {
+		id = TEC_incorporate_faed
+		icon = GFX_TEC_incorporate_faed-104098
+		x = 42
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_relocate_the_union }
+		available = {
+			has_political_power > 100
+			has_full_control_of_state = 306
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -100
+			add_research_slot = 1
+		}
+	}
+
+	#Focus for Commerce Ties
+	focus = {
+		id = TEC_commerce_ties
+		icon = GFX_TEC_commerce_ties-104082
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_the_galactic_stage }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			CMG = {
+				country_event = {
+					id = TEC.9
+				}
+			}
+			add_opinion_modifier = {
+				target = CMG
+				modifier = medium_increase
+			}
+			reverse_add_opinion_modifier = {
+				target = CMG
+				modifier = medium_increase
+			}
+		}
+	}
+
+	#Focus for Production Streamline
+	focus = {
+		id = TEC_production_streamline
+		icon = GFX_TEC_production_streamline-104095
+		x = 37
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_security_and_prosperity }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = production_streamline
+		}
+	}
+
+	#Focus for Enhanced Distribution Methods
+	focus = {
+		id = TEC_enhanced_distribution_methods
+		icon = GFX_TEC_enhanced_distribution_methods-104090
+		x = 35
+		y = 7
+		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cost_15		
+				check_variable = { dx > 14.9 }
+			}
+		}
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEC_efficient_factories 
+			focus = TEC_flexible_factories 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = cost_15
+			subtract_from_variable = { dx = 15 }
+			add_ideas = enhanced_distribution_methods
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 50
+			}
+		}
+	}
+
+	#Focus for Leave The Galactic Republic
+	focus = {
+		id = TEC_leave_the_galactic_republic
+		icon = GFX_TEC_leave_the_galactic_republic-104081
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			NOT = {
+				has_government = democratic
+			}
+			is_in_faction_with = REP
+		}
+		prerequisite = { focus = TEC_the_galactic_stage }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_from_array = {
+				array = global.corporate_list
+				value = TEC
+			}
+			custom_effect_tooltip = tecleavesenate_tt
+		}
+	}
+
+	#Focus for Fondor Factory Expansion
+	focus = {
+		id = TEC_fondor_factory_expansion
+		icon = GFX_TEC_fondor_factory_expansion-104087
+		x = 37
+		y = 9
+		cost = 10
+		available = {
+			has_full_control_of_state = 311
+			custom_trigger_tooltip = {
+				tooltip = cost_15		
+				check_variable = { dx > 14.9 }
+			}
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_factory_investments }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = cost_15
+			subtract_from_variable = { dx = 15 }
+			311 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = corporate_factory
+				    level = 1
+				    instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Playing Politics
+	focus = {
+		id = TEC_playing_politics
+		icon = GFX_TEC_playing_politics-104039
+		x = 22
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	#Focus for Self Defense
+	focus = {
+		id = TEC_self_defense
+		icon = GFX_TEC_self_defense-104040
+		x = 22
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_playing_politics }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 10
+			add_war_support = 0.1
+		}
+	}
+
+	#Focus for A More Perfect Union
+	focus = {
+		id = TEC_a_more_perfect_union
+		icon = GFX_TEC_a_more_perfect_union-104109
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_playing_politics }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+		}
+	}
+
+	#Focus for FAED
+	focus = {
+		id = TEC_faed
+		icon = GFX_TEC_faed-104110
+		x = 1
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_a_more_perfect_union }
+		available = {
+			has_full_control_of_state = 306
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = faed_idea
+		}
+	}
+
+	#Focus for Territorial Investment
+	focus = {
+		id = TEC_territorial_investment
+		icon = GFX_TEC_territorial_investment-104043
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_a_more_perfect_union }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Research and Development Wing
+	focus = {
+		id = TEC_research_and_development_wing
+		icon = GFX_TEC_research_and_development_wing-104111
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_a_more_perfect_union }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			remove_ideas = technologicalplateau
+		}
+	}
+
+	#Focus for Training Our Assets
+	focus = {
+		id = TEC_training_our_assets
+		icon = GFX_TEC_training_our_assets-104045
+		x = 1
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_faed }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = faed_recruitment_program
+			remove_ideas = lack_of_skilled_labor
+		}
+	}
+
+	#Focus for Life In The Union
+	focus = {
+		id = TEC_life_in_the_union
+		icon = GFX_TEC_life_in_the_union-104046
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_territorial_investment }
+		search_filters = { FOCUS_FILTER_STABILITY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	#Focus for Infrastructure Projects
+	focus = {
+		id = TEC_infrastructure_projects
+		icon = GFX_TEC_infrastructure_projects-104047
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_life_in_the_union }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Resource Grab
+	focus = {
+		id = TEC_resource_grab
+		icon = GFX_TEC_resource_grab-104048
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_territorial_investment }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = {
+				resource_grab
+			}
+		}
+	}
+
+	#Focus for War In The Vacuum
+	focus = {
+		id = TEC_war_in_the_vacuum
+		icon = GFX_TEC_war_in_the_vacuum-104113
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_research_and_development_wing }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 20
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+				category = TEC_naval
+				name = yeet
+			}
+		}
+	}
+
+	#Focus for The Shipyards of Fondor
+	focus = {
+		id = TEC_the_shipyards_of_fondor
+		icon = GFX_TEC_the_shipyards_of_fondor-104051
+		x = 8
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_war_in_the_vacuum }
+		available = {
+			has_full_control_of_state = 306
+			has_full_control_of_state = 314
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			314 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = corporate_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Built For Combat
+	focus = {
+		id = TEC_built_for_combat
+		icon = GFX_TEC_built_for_combat-104112
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_research_and_development_wing }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 50
+			add_ideas = built_for_combat
+		}
+	}
+
+	#Focus for Tank Development
+	focus = {
+		id = TEC_tank_development
+		icon = GFX_TEC_tank_development-104053
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_built_for_combat }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.40
+				uses = 2
+				category = TEC_armor
+				name = yeet
+			}
+		}
+	}
+
+	#Focus for Improved Battle Droids
+	focus = {
+		id = TEC_improved_battle_droids
+		icon = GFX_TEC_improved_battle_droids-104054
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_built_for_combat }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.40
+				uses = 2
+				category = TEC_battledroids
+				name = yeet
+			}
+		}
+	}
+
+	#Focus for Tank Driver AI Enhancements
+	focus = {
+		id = TEC_tank_driver_ai_enhancements
+		icon = GFX_TEC_tank_driver_ai_enhancements-104055
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_tank_development }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 2
+				category = deep_battle_doctrine
+				name = yeet
+			}
+		}
+	}
+
+	#Focus for Battle Droid Software Development
+	focus = {
+		id = TEC_battle_droid_software_development
+		icon = GFX_TEC_battle_droid_software_development-104056
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_improved_battle_droids }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience = 50
+			add_ideas = battle_droid_software_development
+		}
+	}
+
+	#Focus for Tactical Droid Updates
+	focus = {
+		id = TEC_tactical_droid_updates
+		icon = GFX_TEC_tactical_droid_updates-104057
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_improved_battle_droids }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = land_doctrine
+				name = yeet
+			}
+			create_corps_commander = {
+				name = "ST-Series Tactical Droid"
+				picture = "stseries.dds"
+				traits = { }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 5
+			}
+			create_corps_commander = {
+				name = "ST-Series Tactical Droid"
+				picture = "stseries.dds"
+				traits = { }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 5
+			}
+		}
+	}
+
+	#Focus for Pave The Way
+	focus = {
+		id = TEC_pave_the_way
+		icon = GFX_TEC_pave_the_way-104061
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_self_defense }
+		mutually_exclusive = { focus = TEC_push_for_repeal }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = 50
+		}
+	}
+
+	#Focus for Diplomatic Solution
+	focus = {
+		id = TEC_diplomatic_solution
+		icon = GFX_TEC_diplomatic_solution-104062
+		x = 23
+		y = 3
+		cost = 10
+		available = {
+			has_political_power > 50
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_push_for_repeal }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -50
+			REP = {
+				country_event = {
+					id = TEC.4
+				}
+			}
+		}
+	}
+
+	#Focus for Protective Measures
+	focus = {
+		id = TEC_protective_measures
+		icon = GFX_TEC_protective_measures-104063
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_pave_the_way }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			REP = {
+				country_event = {
+					id = TEC.2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ruusan_nerf_army
+				}
+				remove_ideas = {
+					ruusan_nerf_army
+					ruusan_nerf_nav
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ruusan_nerf_army_small
+				}
+				remove_ideas = {
+					ruusan_nerf_army_small
+					ruusan_nerf_nav_small
+				}
+			}
+		}
+	}
+
+	#Focus for Push For Repeal
+	focus = {
+		id = TEC_push_for_repeal
+		icon = GFX_TEC_push_for_repeal-104064
+		x = 23
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_political_power > 100
+		}
+		prerequisite = { focus = TEC_self_defense }
+		mutually_exclusive = { focus = TEC_pave_the_way }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -100
+			add_stability = 0.1
+			REP = {
+				country_event = {
+					id = TEC.3
+				}
+			}
+		}
+	}
+
+	#Focus for War Profiteering
+	focus = {
+		id = TEC_war_profiteering
+		icon = GFX_TEC_war_profiteering-104065
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEC_protective_measures 
+			focus = TEC_diplomatic_solution 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.10
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
+		}
+	}
+
+	#Focus for Arm the Separatists
+	focus = {
+		id = TEC_arm_the_separatists
+		icon = GFX_TEC_arm_the_separatists-104066
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_war_profiteering }
+		mutually_exclusive = { focus = TEC_playing_both_sides }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.3
+			}
+			CIS = {
+				country_event = {
+					id = TEC.15
+				}
+			}
+		}
+	}
+
+	#Focus for Playing Both Sides
+	focus = {
+		id = TEC_playing_both_sides
+		icon = GFX_TEC_playing_both_sides-104067
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_war_profiteering }
+		mutually_exclusive = { focus = TEC_arm_the_separatists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			CIS = {
+				country_event = {
+					id = TEC.15
+				}
+			}
+			REP = {
+				country_event = {
+					id = TEC.16
+				}
+			}
+		}
+	}
+
+	#Focus for Join The Separatists
+	focus = {
+		id = TEC_join_the_separatists
+		icon = GFX_TEC_join_the_separatists-104068
+		x = 16
+		y = 6
+		cost = 10
+		available = {
+			has_political_power > 100
+			fascism > 0.2
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_arm_the_separatists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -100
+			set_politics = {
+				ruling_party = fascism
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.6
+			}
+			add_ideas = CIS_member
+		}
+	}
+
+	#Focus for Ribbon Cutting
+	focus = {
+		id = TEC_ribbon_cutting
+		icon = GFX_TEC_ribbon_cutting-104069
+		x = 19
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEC_playing_both_sides 
+			focus = TEC_arm_the_separatists 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	#Focus for Arm The New Order
+	focus = {
+		id = TEC_arm_the_new_order
+		icon = GFX_TEC_arm_the_new_order-104070
+		x = 22
+		y = 6
+		cost = 10
+		available = {
+			REP = {
+				has_completed_focus = REP_the_first_galactic_empire
+			}
+			has_political_power > 100
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_playing_both_sides }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -100
+			REP = {
+				country_event = {
+					id = TEC.20
+				}
+			}
+		}
+	}
+
+	#Focus for Open and Honest
+	focus = {
+		id = TEC_open_and_honest
+		icon = GFX_TEC_open_and_honest-104071
+		x = 17
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_ribbon_cutting }
+		mutually_exclusive = { focus = TEC_shadow_supplier }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = {
+					TEC = {
+						has_completed_focus = TEC_arm_the_separatists
+					}
+				}
+				REP = {
+					country_event = {
+						id = TEC.24
+					}
+				}
+			}
+			if = {
+				limit = {
+					TEC = {
+						has_completed_focus = TEC_playing_both_sides
+					}
+				}
+				REP = {
+					country_event = {
+						id = TEC.24
+					}
+				}
+				CIS = {
+					country_event = {
+						id = TEC.25
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Shadow Supplier
+	focus = {
+		id = TEC_shadow_supplier
+		icon = GFX_TEC_shadow_supplier-104072
+		x = 21
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_ribbon_cutting }
+		mutually_exclusive = { focus = TEC_open_and_honest }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -50
+		}
+	}
+
+	#Focus for Stable Foundations
+	focus = {
+		id = TEC_stable_foundations
+		icon = GFX_TEC_stable_foundations-104073
+		x = 17
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_open_and_honest }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.1
+		}
+	}
+
+	#Focus for Factory Relocation
+	focus = {
+		id = TEC_factory_relocation
+		icon = GFX_TEC_factory_relocation-104074
+		x = 20
+		y = 8
+		cost = 10
+		available = {
+			has_full_control_of_state = 455
+			has_full_control_of_state = 467
+			has_full_control_of_state = 464
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_shadow_supplier }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			17 = {
+				remove_building = {
+					type = corporate_factory
+					level = 1
+				}
+			}
+			298 = {
+				remove_building = {
+					type = corporate_factory
+					level = 1
+				}
+			}
+			311 = {
+				remove_building = {
+					type = corporate_factory
+					level = 1
+				}
+			}
+			455 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = corporate_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			467 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = corporate_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			464 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = corporate_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Covering The Tracks
+	focus = {
+		id = TEC_covering_the_tracks
+		icon = GFX_TEC_covering_the_tracks-104075
+		x = 22
+		y = 8
+		cost = 10
+		available = {
+			has_political_power > 100
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_shadow_supplier }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.1
+		}
+	}
+
+	#Focus for Support the Disenffranchised
+	focus = {
+		id = TEC_support_the_disenffranchised
+		icon = GFX_TEC_support_the_disenffranchised-104077
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_war_profiteering }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+		}
+	}
+
+	#Focus for Annexation of Mustafar
+	focus = {
+		id = TEC_annexation_of_mustafar
+		icon = GFX_TEC_annexation_of_mustafar-104078
+		x = 27
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_political_power > 100
+			MUS = {
+				has_full_control_of_state = 445
+				has_full_control_of_state = 68
+				has_full_control_of_state = 455
+				has_full_control_of_state = 467
+				has_full_control_of_state = 459
+			}
+		}
+		prerequisite = { focus = TEC_support_the_disenffranchised }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -100
+			transfer_state = 445
+			transfer_state = 68
+			transfer_state = 455
+			transfer_state = 467
+			transfer_state = 459
+		}
+	}
+
+	#Focus for Liberation Of Ryloth
+	focus = {
+		id = TEC_liberation_of_ryloth
+		icon = GFX_TEC_liberation_of_ryloth-104079
+		x = 25
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			has_political_power > 50
+			num_divisions > 50
+			has_war_support > 0.5
+		}
+		prerequisite = { focus = TEC_support_the_disenffranchised }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -50
+			unlock_decision_tooltip = { decision = TEC_liberate_ryloth show_effect_tooltip = yes show_modifiers = yes }			
+		}
+	}
+
+	#Focus for Defensive Measures
+	focus = {
+		id = TEC_defensive_measures
+		icon = GFX_TEC_defensive_measures-104097
+		x = 40
+		y = 5
+		cost = 10
+		available = {
+			has_full_control_of_state = 166
+			has_full_control_of_state = 306
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_security_and_prosperity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			166 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			306 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Precautionary Measures
+	focus = {
+		id = TEC_precautionary_measures
+		icon = GFX_TEC_precautionary_measures-104096
+		x = 40
+		y = 6
+		cost = 10
+		available = {
+			has_war_support > 0.5
+			PLT = {
+				has_full_control_of_state = 177
+			}
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_defensive_measures }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = PLT
+				type = annex_everything
+			}
+		}
+	}
+
+	#Focus for The Galactic Stage
+	focus = {
+		id = TEC_the_galactic_stage
+		icon = GFX_TEC_the_galactic_stage-104080
+		x = 28
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_playing_politics }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+		}
+	}
+
+	#Focus for Purchase Saleucami
+	focus = {
+		id = TEC_purchase_saleucami
+		icon = GFX_TEC_purchase_saleucami-104083
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			CMG = {
+				has_full_control_of_state = 274
+			}
+			custom_trigger_tooltip = {
+				tooltip = cost450
+				check_variable = { dx > 449.9 }
+			}
+			has_political_power > 50
+		}
+		prerequisite = { focus = TEC_commerce_ties }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -50
+			CMG = {
+				country_event = {
+					id = TEC.11
+				}
+			}
+		}
+	}
+
+	#Focus for Befriend Gunray
+	focus = {
+		id = TEC_befriend_gunray
+		icon = GFX_TEC_befriend_gunray-104084
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		available = {
+			FED = {
+				has_country_leader = {
+					name = "Nute Gunray"
+					ruling_only = yes
+				}
+			}
+		}
+		prerequisite = { focus = TEC_the_galactic_stage }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			FED = {
+				country_event = {
+					id = TEC.10
+				}
+			}
+			add_opinion_modifier = {
+				target = FED
+				modifier = medium_increase
+			}
+			reverse_add_opinion_modifier = {
+				target = FED
+				modifier = medium_increase
+			}
+		}
+	}
+
+	#Focus for Offer Trade Agreements
+	focus = {
+		id = TEC_offer_trade_agreements
+		icon = GFX_TEC_offer_trade_agreements-104085
+		x = 30
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_befriend_gunray }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 100
+			}
+			add_ideas = trade_deals_tecfed
+			FED = {
+				add_ideas = trade_deals_tecfed
+			}
+		}
+	}
+
+	#Focus for Skako Factory Expansion
+	focus = {
+		id = TEC_skako_factory_expansion
+		icon = GFX_TEC_skako_factory_expansion-104086
+		x = 39
+		y = 9
+		cost = 10
+		available = {
+			has_full_control_of_state = 166
+			custom_trigger_tooltip = {
+				tooltip = cost_15		
+				check_variable = { dx > 14.9 }
+			}
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_factory_investments }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = cost_15
+			subtract_from_variable = { dx = 15 }
+			166 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = corporate_factory
+				    level = 1
+				    instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Hypori Factory Expansion
+	focus = {
+		id = TEC_hypori_factory_expansion
+		icon = GFX_TEC_hypori_factory_expansion-104088
+		x = 35
+		y = 9
+		cost = 10
+		available = {
+			has_full_control_of_state = 69
+			custom_trigger_tooltip = {
+				tooltip = cost_15		
+				check_variable = { dx > 14.9 }
+			}
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_factory_investments }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = cost_15
+			subtract_from_variable = { dx = 15 }
+			69 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = corporate_factory
+				    level = 1
+				    instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Factory Investments
+	focus = {
+		id = TEC_factory_investments
+		icon = GFX_TEC_factory_investments-104089
+		x = 37
+		y = 8
+		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cost_50
+				check_variable = { dx > 49.9 }
+			}
+		}
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEC_enhanced_distribution_methods 
+		}
+		prerequisite = { 
+			focus = TEC_factory_defenses 
+		}
+		prerequisite = { 
+			focus = TEC_land_reclamation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 30
+			custom_effect_tooltip = cost_50
+			subtract_from_variable = { dx = 50}
+		}
+	}
+
+	#Focus for Factory Defenses
+	focus = {
+		id = TEC_factory_defenses
+		icon = GFX_TEC_factory_defenses-104091
+		x = 37
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEC_efficient_factories 
+			focus = TEC_flexible_factories 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			69 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			311 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			166 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+		}
+	}
+
+	#Focus for Land Reclamation
+	focus = {
+		id = TEC_land_reclamation
+		icon = GFX_TEC_land_reclamation-104092
+		x = 39
+		y = 7
+		cost = 10
+		available = {
+			has_political_power > 10
+			custom_trigger_tooltip = {
+				tooltip = cost_50		
+				check_variable = { dx > 49.9 }
+			}
+			has_full_control_of_state = 69
+			has_full_control_of_state = 311
+			has_full_control_of_state = 166
+		}
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = TEC_efficient_factories 
+			focus = TEC_flexible_factories 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -10
+			custom_effect_tooltip = cost_50
+			69 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			311 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			166 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			subtract_from_variable = { dx = 50 }
+		}
+	}
+
+	#Focus for Efficient Factories
+	focus = {
+		id = TEC_efficient_factories
+		icon = GFX_TEC_efficient_factories-104093
+		x = 36
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_production_streamline }
+		mutually_exclusive = { focus = TEC_flexible_factories }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = efficient_factories
+		}
+	}
+
+	#Focus for Flexible Factories
+	focus = {
+		id = TEC_flexible_factories
+		icon = GFX_TEC_flexible_factories-104094
+		x = 38
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_production_streamline }
+		mutually_exclusive = { focus = TEC_efficient_factories }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = flexible_factories
+		}
+	}
+
+	#Focus for Shipyard Expansion
+	focus = {
+		id = TEC_shipyard_expansion
+		icon = GFX_TEC_shipyard_expansion-104099
+		x = 44
+		y = 6
+		cost = 10
+		available = {
+			has_full_control_of_state = 314
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_relocate_the_union }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = shipyard_expansion
+			add_building_construction = {
+				type = dockyard
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+
+	#Focus for Relocate the Union
+	focus = {
+		id = TEC_relocate_the_union
+		icon = GFX_TEC_relocate_the_union-104100
+		x = 43
+		y = 5
+		cost = 10
+		available = {
+			has_political_power > 150
+			has_full_control_of_state = 306
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_security_and_prosperity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -150
+			set_capital = 306
+			remove_ideas = reclusive_headquarters
+		}
+	}
+
+	#Focus for union expansion
+	focus = {
+		id = TEC_union_expansion
+		icon = GFX_TEC_geonosian_factories-104101
+		x = 31
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_security_and_prosperity }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.1
+		}
+	}
+
+	#Focus for Forced Incorporation of Blastech
+	focus = {
+		id = TEC_forced_incorporation_of_blastech
+		icon = GFX_TEC_forced_incorporation_of_blastech-104102
+		x = 29
+		y = 6
+		cost = 10
+		available = {
+			has_political_power > 25
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_union_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -25
+			custom_effect_tooltip = buy10blastech_tt
+			hidden_effect = {
+				add_to_variable = { shares_held_Blastech = 10 }
+				add_to_variable = { global.total_shares_Blastech = 10 }
+				list_for_influencers_or_whatever = yes
+				percent_calc_corp = yes
+			}
+		}
+	}
+
+	#Focus for Huppla Paas
+	focus = {
+		id = TEC_huppla_paas
+		icon = GFX_TEC_huppla_paas-104103
+		x = 31
+		y = 6
+		cost = 10
+		available = {
+			has_political_power > 25
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_union_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -25
+			custom_effect_tooltip = buy10huppla_tt
+			hidden_effect = {
+				add_to_variable = { shares_held_Geonosis = 10 }
+				add_to_variable = { global.total_shares_Geonosis = 10 }
+				list_for_influencers_or_whatever = yes
+				percent_calc_corp = yes
+			}
+		}
+	}
+
+	#Focus for TransGalMeg Industry
+	focus = {
+		id = TEC_transgalmeg_industry
+		icon = GFX_TEC_transgalmeg_industry-104104
+		x = 33
+		y = 6
+		cost = 10
+		available = {
+			has_political_power > 25
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_union_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -25
+			custom_effect_tooltip = buy10transgal_tt
+			hidden_effect = {
+				add_to_variable = { shares_held_TransGalMegIndustriesIncorporated = 10 }
+				add_to_variable = { global.total_shares_TransGalMegIndustriesIncorporated = 10 }
+				list_for_influencers_or_whatever = yes
+				percent_calc_corp = yes
+			}
+		}
+	}
+
+	#Focus for geonosian factories
+	focus = {
+		id = TEC_geonosian_factories
+		icon = GFX_TEC_union_expansion-104105
+		x = 31
+		y = 7
+		cost = 10
+		available = {
+			has_political_power > 25
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = TEC_huppla_paas }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = -25
+			add_offsite_building = { type = corporate_factory level = 1 }
+		}
+	}
+
+	#Focus for Security and Prosperity
+	focus = {
+		id = TEC_security_and_prosperity
+		icon = GFX_TEC_security_and_prosperity-104106
+		x = 37
+		y = 4
+		cost = 10
+		available = {
+			OR = {
+				has_completed_focus = TEC_stable_foundations
+				AND = {
+					has_completed_focus = TEC_factory_relocation
+					has_completed_focus = TEC_covering_the_tracks
+				}
+			}
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.1
+		}
+	}
+
+#End of focuses 
+ }

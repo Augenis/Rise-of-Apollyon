@@ -1,0 +1,145 @@
+capital = 217
+
+oob = "KUA_3677"
+set_research_slots = 2
+set_stability = 0.9
+set_war_support = .01
+
+set_technology = {
+	tech_support = 1
+	kua_market = 1
+	transport = 1
+	infantry_weapons = 1
+	SPHA_tech = 1
+	atte_tech = 1
+	atrt_tech = 1
+}
+
+add_political_power = 75
+set_convoys = 600
+
+add_ideas = {
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
+	limited_conscription
+	partial_economic_mobilisation
+}
+
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+	}
+
+ set_country_flag = rimfaction
+ set_country_flag = corefaction
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = yes
+	}
+	set_popularities = {
+		democratic = 100
+	}
+}
+
+create_country_leader = {
+	name = "Sirona Kuat"
+	picture = "gfx/leaders/KUA/Portrait_KUA_Sirona_Kuat.png"
+	expire = "2020.1.1"
+	ideology = conservatism
+}
+create_corps_commander = {
+	name = "Kal Skirata"
+	portrait_path = "gfx/leaders/KUA/Kal_Skirata.dds"
+	traits = { infantry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Harrison 'Jones' Gout"
+	portrait_path = "gfx/leaders/KUA/gen1.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Brennat Covcrus"
+	portrait_path = "gfx/leaders/KUA/gen2.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Richard Kimble"
+	portrait_path = "gfx/leaders/KUA/gen3.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_navy_leader = {
+	name = "Daley Blind"
+    picture = "adm1.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Christian Turtle"
+    picture = "adm2.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Horat Nelson"
+    picture = "adm3.dds"
+	traits = {  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Kuat of Kuat"
+    picture = "Kuat_Kuat.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 3
+}

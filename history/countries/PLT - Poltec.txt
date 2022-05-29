@@ -1,0 +1,42 @@
+﻿capital = 177
+
+oob = "POL_3677"
+
+set_research_slots = 1
+set_stability = 0.95
+set_war_support = 0.1
+
+add_political_power = 0
+set_convoys = 0
+
+0975.1.2 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+0978.8.8 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1932.11.8"
+		election_frequency = 240
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
+
+create_country_leader = {
+	name = "Qin Yazal"
+	desc = "Chief of the Poletec"
+	picture = "gfx/leaders/POL/poletec_leader.dds"
+	expire = "2020.1.1"
+	ideology = despotism
+}

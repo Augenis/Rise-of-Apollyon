@@ -1,0 +1,675 @@
+add_namespace = TEC
+country_event = {
+	id = TEC.1
+	title = "Establish The Caverns Cloning Facility"
+	desc = "After months of hardwork, our Research and Development Wing have begun completed a cloning facility in The Caverns of Saleucami."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "A Grand Development. Notify Dooku of our progress."
+    	ai_chance = {
+			base = 100
+		}
+		set_global_flag = TEC_cloning_facilities_online
+    }
+}
+country_event = {
+	id = TEC.2
+	title = "Techno Union Forcefully Withdraws From Ruusan Agreement"
+	desc = "Fearing that it will become unable to protect itself, the Techno Union has forcefully withdrawn from the Ruusan Military Restrictions."
+	is_triggered_only = yes
+	
+	option = {
+    	name = "We must retaliate with economic sanctions."
+    	ai_chance = {
+			base = 100
+		}
+		TEC = {
+			add_ideas = republic_sanctions
+			set_variable = { global.cancel_tec_sanctions = 120 }
+			country_event = {
+				id = TEC.26
+			}
+		}
+    }
+	option = {
+    	name = "This Means War. Ironic."
+    	ai_chance = {
+			base = 0
+		}
+		REP = {
+			remove_from_faction = TEC
+			declare_war_on = {
+				target = TEC
+				type = annex_everything
+			}
+		}
+    }
+}
+country_event = {
+	id = TEC.3
+	title = "Techno Union Begins Action For Ruusan Restriction Withdrawal"
+	desc = "Fearing that it will become unable to protect itself, the Techno Union has lobbied fow an exemption from the Ruusan Military Restrictions."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Interesting."
+    	ai_chance = {
+			base = 100
+		}
+    }
+}
+country_event = {
+	id = TEC.4
+	title = "Techno Union Presents It's Case To Remove Ruusan Restrictions"
+	desc = "Citing a rise in piracy and violence across the galaxy, the Techno Union has presented its case to receive an exemption from the Ruusan Combat Restrictions."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Action On This Matter Is Not Necessary."
+		TEC = {
+			country_event = {
+				id = TEC.8
+			}
+		}
+    }
+	option = {
+    	name = "Allow The Exemption Free of Consequence."
+		TEC = {
+			country_event = {
+				id = TEC.5
+			}
+			if = {
+				limit = {
+					has_idea = ruusan_nerf_army
+				}
+				remove_ideas = {
+					ruusan_nerf_army
+					ruusan_nerf_nav
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ruusan_nerf_army_small
+				}
+				remove_ideas = {
+					ruusan_nerf_army_small
+					ruusan_nerf_nav_small
+				}
+			}
+		}
+    }
+	option = {
+    	name = "Allow The Exemption With Applied Sanctions."
+		ai_chance = {
+			base = 100
+		}
+		TEC = {
+			country_event = {
+				id = TEC.6
+			}
+			add_ideas = republic_sanctions
+			if = {
+				limit = {
+					has_idea = ruusan_nerf_army
+				}
+				remove_ideas = {
+					ruusan_nerf_army
+					ruusan_nerf_nav
+				}
+			}
+			if = {
+				limit = {
+					has_idea = ruusan_nerf_army_small
+				}
+				remove_ideas = {
+					ruusan_nerf_army_small
+					ruusan_nerf_nav_small
+				}
+			}
+		}
+    }
+	option = {
+    	name = "Reduce Their Restrictions."
+		trigger = {
+			TEC = {
+				has_idea = ruusan_nerf_army
+			}
+		}
+		TEC = {
+			country_event = {
+				id = TEC.7
+			}
+			swap_ideas = {
+				remove_idea = ruusan_nerf_army
+				add_idea = ruusan_nerf_army_small
+			}
+			swap_ideas = {
+				remove_idea = ruusan_nerf_nav
+				add_idea = ruusan_nerf_nav_small
+			}
+		}
+    }
+}
+country_event = {
+	id = TEC.5
+	title = "The Galactic Republic Approves Our Request"
+	desc = "Fearing that it will become unable to protect itself, the Techno Union has lobbied fow an exemption from the Ruusan Military Restrictions."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Perfect."
+    	ai_chance = {
+			base = 100
+		}
+    }
+}
+country_event = {
+	id = TEC.6
+	title = "The Galactic Republic Approves Our Request But Imposes Sanctions"
+	desc = "Fearing that it will become unable to protect itself, the Techno Union has lobbied fow an exemption from the Ruusan Military Restrictions."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Was it Worth it?"
+    	ai_chance = {
+			base = 100
+		}
+    }
+}
+country_event = {
+	id = TEC.7
+	title = "The Galactic Republic Reduces Our Restrictions"
+	desc = "After many hours of debate, the Galactic Republic has compromised on a reduction in our restrictions. Unfortunately, some restrictions will still remain in effect if we choose to abide."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "A Step In The Right Direction."
+    	ai_chance = {
+			base = 100
+		}
+    }
+	option = {
+    	name = "Unacceptable."
+    	ai_chance = {
+			base = 100
+		}
+		remove_ideas = {
+			ruusan_nerf_army_small
+			ruusan_nerf_nav_small
+		}
+		REP = {
+			country_event = {
+				id = TEC.2
+			}
+		}
+    }
+}
+country_event = {
+	id = TEC.8
+	title = "The Galactic Republic Ignores Our Request"
+	desc = "The Galactic Republic has ignored our request to lift the Ruusan Restrictions."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "It Was Worth A Shot."
+    }
+	option = {
+    	name = "Unacceptable."
+    	ai_chance = {
+			base = 100
+		}
+		if = {
+			limit = {
+				has_idea = ruusan_nerf_army
+			}
+			remove_ideas = {
+				ruusan_nerf_army
+				ruusan_nerf_nav
+			}
+		}
+		if = {
+			limit = {
+				has_idea = ruusan_nerf_army_small
+			}
+			remove_ideas = {
+				ruusan_nerf_army_small
+				ruusan_nerf_nav_small
+			}
+		}
+		REP = {
+			country_event = {
+				id = TEC.2
+			}
+		}
+    }
+}
+country_event = {
+	id = TEC.9
+	title = "Meeting With Wat Tambor"
+	desc = "The Foreman of the Techno Union, Wat Tambor, has traveled to Felucia to meet you. He understands that in order to succeed, large technology and production corporations must work together to secure political victories."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Very Interesting."
+    	ai_chance = {
+			base = 100
+		}
+    }
+}
+
+country_event = {
+	id = TEC.10
+	title = "Meeting With Wat Tambor"
+	desc = "The Foreman of the Techno Union, Wat Tambor, has traveled to Cato Neimoidia to meet you. He understands that in order to succeed, large technology and production corporations must work together to secure political victories."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Very Interesting."
+    	ai_chance = {
+			base = 100
+		}
+    }
+}
+
+country_event = {
+	id = TEC.11
+	title = "Techno Union Offers Credits For Saleucami"
+	desc = "The Techno Union has made an offer of 450 million Credits to purchase the planet Saleucami from our Guild."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Accept the offer."
+		TEC = {
+			transfer_state = 274
+			transfer_state = 261
+			transfer_state = 279
+			transfer_state = 267
+			transfer_state = 35
+			transfer_state = 272
+			transfer_state = 257
+			subtract_from_variable = { dx = 450 }
+			country_event = {
+				id = TEC.12
+			}
+		}
+		CMG = {
+			add_to_variable = { dx = 450 }
+		}
+    }
+	option = {
+    	name = "Offer only Southwestern Saleucami for 100 million Credits."
+    	ai_chance = {
+			base = 100
+		}
+		TEC = {
+			country_event = {
+				id = TEC.13
+			}
+		}
+    }
+	option = {
+    	name = "Decline the offer."
+		TEC = {
+			country_event = {
+				id = TEC.14
+			}
+		}
+    }
+}
+
+country_event = {
+	id = TEC.12
+	title = "The Commerce Guild Accepts Our Offer"
+	desc = "The Commerce Guild has accepted our offer of 450 million Credits to purchase the planet Saleucami."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Perfect."
+    }
+}
+country_event = {
+	id = TEC.13
+	title = "The Commerce Guild Offers A Sector"
+	desc = "The Commerce Guild will not sell off the entirety of Saleucami. Instead, they have opted to sell us the Southwestern sector for 100 million Credits."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Accept The Offer."
+		ai_chance = {
+			base = 100
+		}
+		TEC = {
+			transfer_state = 274
+			subtract_from_variable = { dx = 100 }
+		}
+		hidden_effect = {
+			CMG = {
+				add_to_variable = { dx = 100 }
+			}
+		}
+    }
+	option = {
+    	name = "Decline The Offer."
+    }
+}
+country_event = {
+	id = TEC.14
+	title = "The Commerce Guild Declines Our Offer"
+	desc = "The Commerce Guild has declined our offer to purchase Saleucami. They do not wish to renegotiate the terms."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Unfortunate."
+    }
+}
+
+country_event = {
+	id = TEC.15
+	title = "Techno Union Pledges To Continue Providing Arms"
+	desc = "After a brief contract renegotiation within the Techno Union, they have pledged to continue providing the means of fighting our war."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "As Expected."
+    }
+}
+
+country_event = {
+	id = TEC.16
+	title = "Techno Union Offers Battle Droid Contract"
+	desc = "After a brief contract renegotiation within the Techno Union, they have chosen to provide the Galactic Republic with B1 Battle Droids should we wish to purchase them."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "One Time Purchase of 50,000 Battle Droids For 130M."
+		REP = {
+			add_equipment_to_stockpile = {
+				type = b1_droid_equip
+				amount = 50000
+				producer = TEC
+			}
+			set_technology = {
+				battle_droid_1 = 1
+			}
+			subtract_from_variable = { dx = 130 }
+		}
+		TEC = {
+			add_to_variable = { dx = 100 }
+			country_event = {
+				id = TEC.17
+			}
+		}
+    }
+	option = {
+    	name = "One Time Purchase of 50,000 Battle Droids + Production Rights For 500M."
+		REP = {
+			add_equipment_to_stockpile = {
+				type = b1_droid_equip
+				amount = 50000
+				producer = TEC
+			}
+			set_technology = {
+				battle_droid_1 = 1
+			}
+			set_country_flag = canproduceb1
+			subtract_from_variable = { dx = 500 }
+		}
+		TEC = {
+			add_to_variable = { dx = 470 }
+			country_event = {
+				id = TEC.18
+			}
+		}
+    }
+	option = {
+    	name = "Decline The Offer."
+		country_event = {
+			id = TEC.19
+		}
+    }
+}
+
+country_event = {
+	id = TEC.17
+	title = "The Galactic Republic Signs Contract"
+	desc = "After reviewing our contract, the Galactic Republic has chosen a one time purchase of 50,000 B1 Battle Droids for 130M Credits."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Very Nice."
+    }
+}
+country_event = {
+	id = TEC.18
+	title = "The Galactic Republic Signs Contract"
+	desc = "After reviewing our contract, the Galactic Republic has chosen a one time purchase, and production rights of 50,000 B1 Battle Droids for 500M Credits."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Fantastic."
+    }
+}
+country_event = {
+	id = TEC.19
+	title = "The Galactic Republic Refuses Our Contract"
+	desc = "The Galactic Republic refuses to sign our contract."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Unfortunate."
+		unlock_national_focus = TEC_join_the_separatists
+    }
+}
+
+country_event = {
+	id = TEC.20
+	title = "Techno Union Offers Battle Droid Contract To Galactic Empire"
+	desc = "After a brief contract renegotiation within the Techno Union, they have chosen to provide the newly formed Galactic Empire with B2 Battle Droids should we wish to purchase them."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "One Time Purchase of 50,000 Battle Droids For 200M."
+		REP = {
+			add_equipment_to_stockpile = {
+				type = b2_droid_equip
+				amount = 50000
+				producer = TEC
+			}
+			set_technology = {
+				battle_droid_2 = 1
+			}
+			subtract_from_variable = { dx = 20 }
+		}
+		TEC = {
+			add_to_variable = { dx = 180 }
+			country_event = {
+				id = TEC.21
+			}
+		}
+    }
+	option = {
+    	name = "One Time Purchase of 50,000 Battle Droids + Production Rights For 1B Credits."
+		REP = {
+			add_equipment_to_stockpile = {
+				type = b2_droid_equip
+				amount = 50000
+				producer = TEC
+			}
+			set_technology = {
+				battle_droid_2 = 1
+			}
+			set_country_flag = canproduceb2
+			subtract_from_variable = { dx = 1000 }
+		}
+		TEC = {
+			add_to_variable = { dx = 970 }
+			country_event = {
+				id = TEC.22
+			}
+		}
+    }
+	option = {
+    	name = "Decline The Offer."
+		country_event = {
+			id = TEC.23
+		}
+    }
+}
+
+country_event = {
+	id = TEC.21
+	title = "The Galactic Empire Signs Contract"
+	desc = "After reviewing our contract, the Galactic Empire has chosen a one time purchase of 50,000 B1 Battle Droids for 130M Credits."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Very Nice."
+    }
+}
+country_event = {
+	id = TEC.22
+	title = "The Galactic Empire Signs Contract"
+	desc = "After reviewing our contract, the Galactic Empire has chosen a one time purchase, and production rights of 50,000 B1 Battle Droids for 500M Credits."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Fantastic."
+    }
+}
+country_event = {
+	id = TEC.23
+	title = "The Galactic Empire Refuses Our Contract"
+	desc = "The Galactic Empire refuses to sign our contract."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "Unfortunate."
+    }
+}
+
+country_event = {
+	id = TEC.24
+	title = "The Techno Union Admits Involvement"
+	desc = "The Techno Union has finally admitted to their involvement in the war. They have been supplying the Confederacy of Independent Systems with war materials while keeping ties with the Galactic Republic."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "We Knew All Along."
+    }
+	option = {
+    	name = "Shocking!"
+    }
+}
+
+country_event = {
+	id = TEC.25
+	title = "The Techno Union Admits It Supplied Republic"
+	desc = "The Techno Union has finally admitted to their involvement in the supply of battle droids to the Galactic Republic."
+	is_triggered_only = yes 
+	
+	option = {
+    	name = "We Will Build The Droids Ourselves!"
+		set_technology = {
+			battle_droid_1 = 1
+			battle_droid_2 = 1
+		}
+		set_country_flag = canproduceb1
+		set_country_flag = canproduceb2
+    }
+	option = {
+    	name = "They Are A Corporation Afterall."
+    }
+}
+
+country_event = {
+	id = TEC.26
+	title = "Republic Imposes Sanctions"
+	desc = "In response to our forceful withdrawal from the Ruusan Reformation, the Republic has imposed economic sanctions. This will cost us 2M Credits per day for 120 days."
+	is_triggered_only = yes
+	
+	option = {
+    	name = "Unbelievable."
+    	ai_chance = {
+			base = 100
+		}
+    }
+}
+
+
+######Old Events######
+#CIS - TEC has pledged their loyalty to us!
+country_event = {
+	id = TEC.30
+	title = TEC.30.t
+	desc = TEC.30.d
+	is_triggered_only = yes 
+	
+	option = {
+    	name = TEC.30.a #Cool
+    	ai_chance = {
+			base = 100
+		}
+		add_opinion_modifier = {
+    		target = TEC
+    		modifier = large_increase
+		}
+    }
+}
+#CIS - TEC wants to join the Separatist Alliance
+country_event = {
+	id = TEC.31
+	title = TEC.31.t
+	desc = TEC.31.d
+	is_triggered_only = yes 
+	
+	option = {
+    	name = TEC.31.a #Yea sure
+    	ai_chance = {
+			base = 100
+		}
+		add_to_faction = FROM
+		FROM = { country_event = { id = TEC.32 hours = 6 }}
+    }
+    option = {
+    	name = TEC.31.b #Nah
+    	ai_chance = {
+			base = 0
+		}
+		FROM = { country_event = { id = TEC.33 hours = 6 }}
+    }
+}
+#TEC - CIS says yah
+country_event = {
+	id = TEC.32
+	title = TEC.32.t
+	desc = TEC.32.d
+	is_triggered_only = yes 
+	
+	option = {
+    	name = TEC.32.a #Yea sure
+    }
+}
+#TEC - CIS says nah
+country_event = {
+	id = TEC.33
+	title = TEC.33.t
+	desc = TEC.33.d
+	is_triggered_only = yes 
+	
+	option = {
+    	name = TEC.33.a #Yea sure
+    }
+}
+
+#NEWS - Techno Union pledges support to CIS
+news_event = {
+	id = TEC.34
+	title = TEC.34.t
+	desc = TEC.34.d
+	is_triggered_only = yes 
+	
+	option = {
+    	name = TEC.34.a #ok
+    }
+}

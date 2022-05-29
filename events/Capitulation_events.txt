@@ -1,0 +1,64 @@
+add_namespace = CAP
+news_event = {
+	id = CAP.1
+	title = "The Fall Of Kamino"
+	desc = "Kamino, the home of the Grand Army of the Republic, has fallen to Seperatist forces. With the destruction of the cloning facilities, the Republics ability to fight has been weakened across the galaxy, as they can no longer replace their loses."
+	picture = GFX_dorvalla
+	
+	major = yes
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = no
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = "Is the end of the war near?"
+
+		ai_chance = {
+			base = 10
+		}
+	}
+}
+news_event = {
+	id = CAP.2
+	title = "The Fall Of Corusant"
+	desc = "The beating heart of the Republic, Corusant, has fallen to Seperatist forces. Fighting still rages across the planet, but majority of the surface is under CIS occupation. Reports coming from the Senate building report the Supreme Chancellor has escaped."
+	picture = GFX_dorvalla
+	
+	major = yes
+	
+	trigger = {
+		189 = { is_controlled_by = CIS }
+		CIS = { has_war_with = REP }
+		NOT = { has_global_flag = fall_of_corusant }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_corusant
+	}
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		name = "A devastating loss!"
+		trigger = {
+			NOT = {
+				TAG = CIS
+				TAG = REP
+			}
+		}
+	}
+	option = {
+		name = "We have taken the heart of the Republic!"
+		trigger = { TAG = CIS }
+	}
+	option = {
+		name = "We are doomed!"
+		trigger = { TAG = REP }
+	}
+}

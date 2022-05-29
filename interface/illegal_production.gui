@@ -1,0 +1,304 @@
+guiTypes = {
+	containerWindowType = {
+		name = "illegal_prod_container"
+		position = { x = 1255 y = 2 }
+		
+		buttonType ={
+			name ="trophy_open_button"
+			spriteType = "GFX_trophies_button"
+			position = { x=-1200 y=500 }
+			scale = 0.8
+		}
+	}
+	
+	containerWindowType = {
+		name = "illegal_prod_window"
+		orientation = center
+		position = {x=-400 y=-430}
+		size = { width=800 height=900 }
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_production_screen_consortium"
+		}
+
+		buttonType = {
+            name = "close_button"
+            position = {x=705 y=35}
+            quadTextureSprite ="GFX_close_button_1"
+            buttonFont = "hoi_16mbs"
+            shortcut = "ESCAPE"
+            clicksound = click_close
+            pdx_tooltip = "CLOSE"
+		}
+		buttonType = {
+            name = "right_arrow"
+            position = {x=433 y=406}
+            quadTextureSprite ="GFX_rightarrow"
+            pdx_tooltip = "deathstick"
+		}
+		buttonType = {
+            name = "left_arrow"
+            position = {x=317 y=406}
+            quadTextureSprite ="GFX_leftarrow"
+            pdx_tooltip = "deathstick"
+		}
+		buttonType = {
+            name = "deathsticks"
+            position = {x=144 y=130}
+            quadTextureSprite ="GFX_deathsticks"
+            pdx_tooltip = "deathstick"
+		}
+		buttonType = {
+            name = "spice"
+            position = {x=316 y=130}
+            quadTextureSprite ="GFX_spice"
+            pdx_tooltip = "spice"
+		}
+		buttonType = {
+            name = "illegalweapons"
+            position = {x=490 y=130}
+            quadTextureSprite ="GFX_weapons"
+            pdx_tooltip = "weapons"
+		}
+		instantTextboxType = {
+			name = "totalillegalfactories"
+			position = { x = 299 y = 349 }
+			font = "hoi_24header"
+			text = "[?totalillegalfactories]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "factoriesdeathsticks"
+			position = { x = 299 y = 424 }
+			font = "hoi_24header"
+			text = "[?totalillegalfactoriesused_deathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "factoriesspice"
+			position = { x = 299 y = 424 }
+			font = "hoi_24header"
+			text = "[?totalillegalfactoriesused_spice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "factoriesillegalweapons"
+			position = { x = 299 y = 424 }
+			font = "hoi_24header"
+			text = "[?totalillegalfactoriesused_illegalweapons]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "productiondeathsticks"
+			position = { x = 132 y = 365 }
+			font = "hoi_24header"
+			text = "[?productiondeathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "productionspice"
+			position = { x = 132 y = 365 }
+			font = "hoi_24header"
+			text = "[?productionspice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "productionillegalweapons"
+			position = { x = 132 y = 365 }
+			font = "hoi_24header"
+			text = "[?productionillegalweapons]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "profitsdeathsticks"
+			position = { x = 465 y = 365 }
+			font = "hoi_24header"
+			text = "[?profit_deathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "profitsspice"
+			position = { x = 465 y = 365 }
+			font = "hoi_24header"
+			text = "[?profit_spice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "profitsillegalweapons"
+			position = { x = 465 y = 365 }
+			font = "hoi_24header"
+			text = "[?profit_illegalweapons]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "bes_productiondeathsticks"
+			position = { x = 183 y = 506 }
+			font = "hoi_24header"
+			text = "[?BES.productiondeathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "bes_productionspice"
+			position = { x = 183 y = 506 }
+			font = "hoi_24header"
+			text = "[?BES.productionspice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "bes_productionillegalweapons"
+			position = { x = 183 y = 506 }
+			font = "hoi_24header"
+			text = "[?BES.productionillegalweapons]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "bla_productiondeathsticks"
+			position = { x = 183 y = 571 }
+			font = "hoi_24header"
+			text = "[?BLA.productiondeathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "bla_productionspice"
+			position = { x = 183 y = 571 }
+			font = "hoi_24header"
+			text = "[?BLA.productionspice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "bla_productionillegalweapons"
+			position = { x = 183 y = 571 }
+			font = "hoi_24header"
+			text = "[?BLA.productionillegalweapons]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "gor_productiondeathsticks"
+			position = { x = 183 y = 636 }
+			font = "hoi_24header"
+			text = "[?GOR.productiondeathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "gor_productionspice"
+			position = { x = 183 y = 636 }
+			font = "hoi_24header"
+			text = "[?GOR.productionspice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "gor_productionillegalweapons"
+			position = { x = 183 y = 636 }
+			font = "hoi_24header"
+			text = "[?GOR.productionillegalweapons]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "hon_productiondeathsticks"
+			position = { x = 183 y = 701 }
+			font = "hoi_24header"
+			text = "[?HON.productiondeathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "hon_productionspice"
+			position = { x = 183 y = 701 }
+			font = "hoi_24header"
+			text = "[?HON.productionspice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "hon_productionillegalweapons"
+			position = { x = 183 y = 701 }
+			font = "hoi_24header"
+			text = "[?HON.productionillegalweapons]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "jht_productiondeathsticks"
+			position = { x = 421 y = 506 }
+			font = "hoi_24header"
+			text = "[?JHT.productiondeathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "jht_productionspice"
+			position = { x = 421 y = 506 }
+			font = "hoi_24header"
+			text = "[?JHT.productionspice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "jht_productionillegalweapons"
+			position = { x = 421 y = 506 }
+			font = "hoi_24header"
+			text = "[?JHT.productionillegalweapons]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "kes_productiondeathsticks"
+			position = { x = 421 y = 571 }
+			font = "hoi_24header"
+			text = "[?KES.productiondeathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "kes_productionspice"
+			position = { x = 421 y = 571 }
+			font = "hoi_24header"
+			text = "[?KES.productionspice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "kes_productionillegalweapons"
+			position = { x = 421 y = 571 }
+			font = "hoi_24header"
+			text = "[?KES.productionillegalweapons]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "qun_productiondeathsticks"
+			position = { x = 421 y = 636 }
+			font = "hoi_24header"
+			text = "[?QUN.productiondeathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "qun_productionspice"
+			position = { x = 421 y = 636 }
+			font = "hoi_24header"
+			text = "[?QUN.productionspice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "qun_productionillegalweapons"
+			position = { x = 421 y = 636 }
+			font = "hoi_24header"
+			text = "[?QUN.productionillegalweapons]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "dea_productiondeathsticks"
+			position = { x = 421 y = 701 }
+			font = "hoi_24header"
+			text = "[?DEA.productiondeathsticks]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "dea_productionspice"
+			position = { x = 421 y = 701 }
+			font = "hoi_24header"
+			text = "[?DEA.productionspice]"
+			format = center
+        }
+		instantTextboxType = {
+			name = "dea_productionillegalweapons"
+			position = { x = 421 y = 701 }
+			font = "hoi_24header"
+			text = "[?DEA.productionillegalweapons]"
+			format = center
+        }
+	}
+}
