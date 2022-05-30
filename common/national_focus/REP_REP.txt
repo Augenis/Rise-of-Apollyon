@@ -15,12 +15,13 @@ focus_tree = {
 		icon = GFX_REP_1000_years_of_peace-39674
 		x = 50
 		y = 0
-		cost = 6
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			add_political_power = 50
+			country_event = republic.1
 		}
 	}
 	focus = {
@@ -37,7 +38,16 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			add_war_support = 0.05
+			custom_effect_tooltip = Naboo_minus_secession_point_tt
+			hidden_effect = {
+				NAB = {
+					add_to_variable = { secessionpoint = -1 }
+				}
+			}
+			FED = {
+				country_event = 
+			}
 		}
 	}
 	focus = {
@@ -46,12 +56,22 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = REP_chancellor_dansion
-		cost = 6
+		cost = 3
 		prerequisite = { 
 			focus = REP_chancellor_dansion 
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 50
+		}
+		bypass = {
+			OR = { # fails if Naboo conflict has been lost
+				NAB = {
+					is_subject_of = FED
+				}
+				NOT = {
+					country_exists = NAB
+				}
+			}
 		}
 		completion_reward = {
 			
@@ -70,6 +90,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		bypass = {
+			OR = { # fails if Naboo conflict has been lost
+				NAB = {
+					is_subject_of = FED
+				}
+				NOT = {
+					country_exists = NAB
+				}
+			}
+		}
 		completion_reward = {
 			
 		}
@@ -80,12 +110,22 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = REP_chancellor_dansion
-		cost = 6
+		cost = 3
 		prerequisite = { 
 			focus = REP_trade_fed_boycott 
 		}
 		ai_will_do = {
-			factor = 10
+			factor = 30
+		}
+		bypass = {
+			OR = { # fails if Naboo conflict has been lost
+				NAB = {
+					is_subject_of = FED
+				}
+				NOT = {
+					country_exists = NAB
+				}
+			}
 		}
 		completion_reward = {
 			
@@ -104,6 +144,16 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		bypass = {
+			OR = { # fails if Naboo conflict has been lost
+				NAB = {
+					is_subject_of = FED
+				}
+				NOT = {
+					country_exists = NAB
+				}
+			}
+		}
 		completion_reward = {
 			
 		}
@@ -121,8 +171,24 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		bypass = {
+			OR = { # fails if Naboo conflict has been lost
+				NAB = {
+					is_subject_of = FED
+				}
+				NOT = {
+					country_exists = NAB
+				}
+			}
+		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+		    	bonus = 1
+		    	uses = 1
+		    	category = land_doctrine
+				name = REP_study_naboo_tactics
+		    }
+			army_experience = 50
 		}
 	}
 	focus = {
@@ -137,6 +203,16 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
+		}
+		bypass = {
+			OR = { # fails if Naboo conflict has been lost
+				NAB = {
+					is_subject_of = FED
+				}
+				NOT = {
+					country_exists = NAB
+				}
+			}
 		}
 		completion_reward = {
 			
@@ -156,7 +232,8 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = receive_100
+			add_to_variable = { dx = 100 }
 		}
 	}
 	focus = {
@@ -190,7 +267,19 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			189 = {
+				set_building_level = {
+  					type = infrastructure
+				    level = 10
+   					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+		    	add_building_construction = {
+		    		type = industrial_complex
+		    		level = 2
+		    		instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -259,6 +348,16 @@ focus_tree = {
 		}
 		prerequisite = { 
 			focus = REP_gunray_last_words
+		}
+		bypass = {
+			OR = { # fails if Naboo conflict has been lost
+				NAB = {
+					is_subject_of = FED
+				}
+				NOT = {
+					country_exists = NAB
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 10
@@ -356,7 +455,16 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			REP = {
+				subtract_from_variable = {dx = 50}
+			}
+			KUA = {
+				add_to_variable = {dx = 50}
+			}
+			add_to_variable = { global.venatormonthly = 1 }
+			add_to_variable = { global.acclamatormonthly = 2 }
+			custom_effect_tooltip = kuatinvestment
+			custom_effect_tooltip = cost_50
 		}
 	}
 	focus = {

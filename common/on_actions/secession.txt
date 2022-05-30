@@ -75,6 +75,12 @@ on_actions = {
             CHR = {
                 set_variable = { secessionpoint = -1}
             }
+			ERI = {
+                set_variable = { secessionpoint = -4}
+            }
+			SUL = {
+                set_variable = { secessionpoint = 2}
+            }
         }
     }
 # Commenting this out because I'll just be doing a manual check at the start of the Clone Wars, also HOLY SHIT this would cause so much lag. Daily check on every country in the game with several if triggers :solution:
