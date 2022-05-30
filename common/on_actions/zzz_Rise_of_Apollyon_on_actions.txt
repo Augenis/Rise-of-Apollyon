@@ -1,0 +1,28 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			#Naboo takes over their capital - Naboo victory
+			if = {
+				limit = {
+					tag = NAB
+					FROM.FROM = { state = 388 }
+				}
+				country_event = { id = republic.2 days = 7 }
+			}
+		}
+	}
+	#ROOT is winner #FROM is loser
+	on_peaceconference_ended = {
+		effect = {
+			#Trade Federation takes over Gungan Nation - Federation victory
+			if = {
+				limit = {
+					FROM = { tag = NAB }
+					tag = FED
+				}
+				country_event = { id = republic.4 days = 3 }
+			}
+		}
+	}
+}

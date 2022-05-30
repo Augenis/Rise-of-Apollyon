@@ -1,6 +1,6 @@
 add_namespace = republic
 
-news_event = {
+news_event = { # Dansion intro
 	id = republic.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.1"}
 	title = republic.1.t
@@ -13,6 +13,97 @@ news_event = {
 	option = { 
 		name = republic.1.a
 		
+	}
+}
+news_event = { # Naboo crisis - Naboo victory
+	id = republic.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.2"}
+	title = republic.2.t
+	desc = republic.2.d
+	picture = GFX_naboocrisisescalates
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		388 = {
+			is_controlled_by = NAB
+		}
+	}
+	
+	option = { 
+		name = republic.2.a
+		REP = {
+			country_event = republic.3
+		}
+		remove_ideas = NAB_resistance
+		add_ideas = {
+			ruusan_nerf_army
+			ruusan_nerf_nav 
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FED
+				is_core_of = NAB
+			}
+			FED = {
+				transfer_state = PREV
+			}
+		}
+		white_peace = FED
+	}
+}
+news_event = { # Naboo crisis - Naboo victory
+	id = republic.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.3"}
+	title = republic.3.t
+	desc = republic.3.d
+	picture = GFX_naboocrisisescalates
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = republic.3.a
+		white_peace = FED
+	}
+}
+news_event = { # Naboo crisis - Federation victory
+	id = republic.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.4"}
+	title = republic.4.t
+	desc = republic.4.d
+	picture = GFX_puppetnaboo
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = republic.4.a
+		NAB = {
+			every_state = {
+				limit = {
+					is_owned_by = FED
+					is_core_of = NAB
+				}
+				FED = {
+					transfer_state = PREV
+				}
+			}
+		}
+		puppet = NAB
+		NAB = {
+			remove_ideas = NAB_resistance
+			add_ideas = {
+				ruusan_nerf_army
+				ruusan_nerf_nav 
+			}
+			create_country_leader = {
+				name = "Rute Gunnay"
+				picture = "gfx/leaders/NAB/RuteGunnay.dds"
+				expire = "5000.1.1"
+				ideology = fascism_ideology
+			}
+		}
 	}
 }
 
