@@ -50,16 +50,8 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Notluwiski Papanoida"
-	desc = "The Chairman of Pantora"
-	picture = "gfx/leaders/PAN/Notluwiski_Papanoida.dds"
-	expire = "2020.1.1"
-	ideology = conservatism
-}
-create_country_leader = {
-	name = "Chi Cho"
-	desc = "The Chairman of Pantora"
-	picture = "gfx/leaders/PAN/chicho.dds"
+	name = "Ion Tenrok"
+	picture = "gfx/leaders/PAN/Portrait_PAN_Ion_Tenrok.png"
 	expire = "2020.1.1"
 	ideology = conservatism
 }

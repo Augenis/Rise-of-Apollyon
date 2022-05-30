@@ -26,13 +26,14 @@ add_ideas = {
 
 0975.1.2 = {
 	set_politics = {
-		ruling_party = democratic
+		ruling_party = fascism
 		last_election = "1837.11.8"
 		election_frequency = 1200
 		elections_allowed = no
 	}
 	set_popularities = {
-		democratic = 100
+		democratic = 45
+		fascism = 55
 	}
 }
 
@@ -49,21 +50,17 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Ramsis Dendup"
-	desc = "King of Onderon"
-	picture = GFX_RAMSIS
+	name = "Mina Bonteri"
+	picture = "gfx/leaders/OND/Portrait_OND_Mina_Bonteri.png"
 	expire = "4000.1.1"
 	ideology = conservatism	
 }
 
 create_country_leader = {
-	name = "Sanjay Rash"
-	desc = "King of Onderon"
-	picture = GFX_RASH
+	name = "Mina Bonteri"
+	picture = "gfx/leaders/OND/Portrait_OND_Mina_Bonteri.png"
 	expire = "4000.1.1"
-	ideology = fascism_ideology 
-	traits = { unpopular_monarch }
-		
+	ideology = fascism_ideology 		
 }
 create_field_marshal = {
 	name = "Akenathen Tandin"

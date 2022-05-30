@@ -54,9 +54,8 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Bengila Urlan"
-	desc = "Arch-Provost Bengila Urlan"
-	picture = "gfx/leaders/REN/BengilaUrlan.dds"
+	name = "Grafias Benn Khalid"
+	picture = "gfx/leaders/REN/Portrait_REN_Grafias_Benn_Khalid.png"
 	expire = "2020.1.1"
 	ideology = conservatism
 }

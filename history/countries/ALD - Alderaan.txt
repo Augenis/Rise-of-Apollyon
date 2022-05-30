@@ -55,13 +55,12 @@ add_ideas = {
 		}
 	}
 
-	create_country_leader = {
+create_country_leader = {
 	name = "Breha Organa"
-	desc = "Queen of Alderaan"
-	picture = "gfx/leaders/ALD/Breha_Organa.dds"
+	picture = "gfx/leaders/ALD/Portrait_ALD_Breha_Organa.png"
 	expire = "2020.1.1"
 	ideology = conservatism
-	}
+}
 
 	create_navy_leader = {
 		name = "Raymus Antilles"

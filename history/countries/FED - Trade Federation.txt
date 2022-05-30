@@ -18,6 +18,13 @@ set_technology = {
 add_political_power = 80
 set_convoys = 2765
 
+unlock_national_focus = FED_eriadu_trade_summit
+unlock_national_focus = FED_under_new_leadership
+unlock_national_focus = FED_antipiracy_precautions
+unlock_national_focus = FED_contact_from_the_sith
+unlock_national_focus = FED_prop_31
+unlock_national_focus = FED_blockade_naboo
+
 declare_war_on = {
 	target = NAB
 	type = annex_everything
@@ -25,6 +32,8 @@ declare_war_on = {
 
 add_ideas = {
 	REP_member_prewar
+	ruusan_nerf_army_small
+	ruusan_nerf_nav_small
 	extensive_conscription
 	corporate_leadership
 	partial_economic_mobilisation

@@ -17,31 +17,32 @@ on_actions = {
             }
         }
     }
-    on_weekly = {
-        effect = {
-            if = {
-                limit = {
-                    OR = {
-                        has_idea = REP_member
-                        has_idea = REP_member_prewar
-                    }
-                }
-                ROOT = {
-                    join_galactic_senate_effect = yes
-                }
-            }
-            if = {
-                limit = {
-                    OR = {
-                        has_idea = CIS_member
-                    }
-                }
-                ROOT = {
-                    join_cis_senate_effect = yes
-                }
-            }
-        }
-    }
+	# Gonna be doing manual checks on this
+#    on_weekly = {
+#        effect = {
+#            if = {
+#                limit = {
+#                    OR = {
+#                        has_idea = REP_member
+#                        has_idea = REP_member_prewar
+#                    }
+#                }
+#                ROOT = {
+#                    join_galactic_senate_effect = yes
+#                }
+#            }
+#            if = {
+#                limit = {
+#                    OR = {
+#                        has_idea = CIS_member
+#                    }
+#                }
+#                ROOT = {
+#                    join_cis_senate_effect = yes
+#                }
+#            }
+#        }
+#    }
     on_daily = {
         effect = {
             if = {

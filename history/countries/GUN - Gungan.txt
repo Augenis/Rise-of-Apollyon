@@ -18,6 +18,9 @@ set_convoys = 20
 
 add_ideas = {
 	volunteer_only
+	ruusan_nerf_army
+	ruusan_nerf_nav 
+	REP_member_prewar
 }
 
 0975.1.2 = {

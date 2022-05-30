@@ -91,16 +91,14 @@ set_autonomy = {
 
 create_country_leader = {
 	name = "Wat Tambor"
-	desc = "Foreman of the Techno Union"
-	picture = GFX_tambor
+	picture = "gfx/leaders/TEC/Portrait_TEC_Wat_Tambor.png"
 	expire = "2020.1.1"
 	ideology = fascism_ideology
 }
 
 create_country_leader = {
 	name = "Wat Tambor"
-	desc = "Foreman of the Techno Union"
-	picture = GFX_tambor
+	picture = "gfx/leaders/TEC/Portrait_TEC_Wat_Tambor.png"
 	expire = "2020.1.1"
 	ideology = conservatism
 }

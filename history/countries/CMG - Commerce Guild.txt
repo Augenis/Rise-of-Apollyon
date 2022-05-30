@@ -72,16 +72,14 @@ add_ideas = {
 
 create_country_leader = {
 	name = "Shu Mai"
-	desc = "President of the Commerce Guild"
-	picture = GFX_SHUMAI
+	picture = "gfx/leaders/CMG/Portrait_CMG_Shu_Mai.png"
 	expire = "4000.1.1"
 	ideology = fascism_ideology
 }
 
 create_country_leader = {
 	name = "Shu Mai"
-	desc = "President of the Commerce Guild"
-	picture = GFX_SHUMAI
+	picture = "gfx/leaders/CMG/Portrait_CMG_Shu_Mai.png"
 	expire = "4000.1.1"
 	ideology = conservatism
 }

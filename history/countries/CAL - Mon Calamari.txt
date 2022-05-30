@@ -60,7 +60,6 @@ set_variable = { cal_state_6_support = 50 }
 set_variable = { cal_state_7_support = 25 }
 create_country_leader = {
 	name = "Prince Lee-Char"
-	desc = "Lee-Char was a male Mon Calamari who served as the leader of Mon Cala during the Clone Wars."
 	picture = GFX_LEECHAR
 	expire = "2020.1.1"
 	ideology = conservatism
@@ -68,8 +67,7 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "King Yos Kolina"
-	desc = ""
-	picture = "gfx/leaders/CAL/Yos Kolina.dds"
+	picture = "gfx/leaders/CAL/Portrait_CAL_Yos_Kolina.png"
 	expire = "2020.1.1"
 	ideology = conservatism
 }

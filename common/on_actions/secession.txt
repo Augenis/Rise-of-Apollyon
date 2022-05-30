@@ -77,176 +77,177 @@ on_actions = {
             }
         }
     }
-    on_daily = {
-        effect = {
-            every_country = {
-                #Join or leave REP
-                if = {
-                    limit = {
-                        has_government = communism
-                    }
-                    remove_ideas = {
-                        CIS_member
-                        CIS_member_prewar
-                        REP_member
-                        REP_member_prewar
-                    }
-                }
-                if = {
-                    limit = {
-                        has_government = democratic
-                        NOT = {
-                            has_war = yes
-                            is_in_faction_with = REP
-                            tag = CAL
-                        }
-                    }
-                    REP = {
-                        add_to_faction = PREV
-                    }
-                }
-                if = {
-                    limit = {
-                        has_government = democratic
-                        NOT = {
-                            has_idea = REP_member_prewar
-                            REP = {
-                                has_completed_focus = REP_battle_of_geonosis
-                            }
-                        }
-                    }
-                    add_ideas = {
-                        REP_member_prewar
-                    }
-                    remove_ideas = {
-                        CIS_member
-                        CIS_member_prewar
-                        REP_member
-                    }
-                }
-                if = {
-                    limit = {
-                        has_government = democratic
-                        REP = {
-                            has_completed_focus = REP_battle_of_geonosis
-                        }
-                        NOT = {
-                            has_idea = REP_member
-                        }
-                    }
-                    add_ideas = {
-                        REP_member
-                    }
-                    remove_ideas = {
-                        CIS_member
-                    }
-                }
-                if = {
-                    limit = {
-                        has_government = neutrality
-                    }
-                    remove_ideas = {
-                        CIS_member_prewar
-                        REP_member_prewar
-                        REP_member
-                        CIS_member
-                    }
-                }
-                if = {
-                    limit = {
-                        is_in_faction_with = REP
-                        NOT = {
-                            has_government = democratic
-                        }
-                    }
-                    REP = {
-                        remove_from_faction = PREV
-                    }
-                }
-                #Join or leave CIS
-                if = {
-                    limit = {
-                        has_government = fascism
-                        NOT = {
-                            has_war = yes
-                            is_in_faction_with = CIS
-                            tag = QUA
-                        }
-                    }
-                    CIS = {
-                        add_to_faction = PREV
-                    }
-                }
-                if = {
-                    limit = {
-                        has_government = fascism
-                        NOT = {
-                            has_war = yes
-                            has_idea = CIS_member_prewar
-                            REP = {
-                                has_completed_focus = REP_battle_of_geonosis
-                            }
-                        }
-                    }
-                    CIS = {
-                        add_to_faction = PREV
-                    }
-                    ROOT = {
-                        add_ideas = {
-                            CIS_member_prewar
-                        }
-                        remove_ideas = {
-                            REP_member_prewar
-                            REP_member
-                            CIS_member
-                        }
-                    }
-                }
-                if = {
-                    limit = {
-                        has_government = fascism
-                        REP = {
-                            has_completed_focus = REP_battle_of_geonosis
-                        }
-                        NOT = {
-                            has_war = yes
-                            has_idea = CIS_member
-                        }
-                    }
-                    CIS = {
-                        add_to_faction = PREV
-                    }
-                    ROOT = {
-                        add_ideas = {
-                            CIS_member
-                        }
-                        remove_ideas = {
-                            REP_member
-                            REP_member_prewar
-                            CIS_member_prewar
-                        }
-                    }
-                }
-                if = {
-                    limit = {
-                        is_in_faction_with = CIS
-                        NOT = {
-                            has_government = fascism
-                        }
-                    }
-                    leave_faction = yes
-                    ROOT = {
-                        remove_ideas = CIS_member
-                    }
-                }
-                clamp_variable = {
-                    var = secessionpoint
-                    min = -7
-                    max = 7
-                }
-            }
-        }
-    }
+# Commenting this out because I'll just be doing a manual check at the start of the Clone Wars, also HOLY SHIT this would cause so much lag. Daily check on every country in the game with several if triggers :solution:
+#    on_daily = {
+#        effect = {
+#            every_country = {
+#                #Join or leave REP
+#                if = {
+#                    limit = {
+#                        has_government = communism
+#                    }
+#                    remove_ideas = {
+#                        CIS_member
+#                        CIS_member_prewar
+#                        REP_member
+#                        REP_member_prewar
+#                    }
+#                }
+#                if = {
+#                    limit = {
+#                        has_government = democratic
+#                        NOT = {
+#                            has_war = yes
+#                            is_in_faction_with = REP
+#                            tag = CAL
+#                        }
+#                    }
+#                    REP = {
+#                        add_to_faction = PREV
+#                    }
+#                }
+#                if = {
+#                    limit = {
+#                        has_government = democratic
+#                        NOT = {
+#                            has_idea = REP_member_prewar
+#                            REP = {
+#                                has_completed_focus = REP_battle_of_geonosis
+#                            }
+#                        }
+#                    }
+#                    add_ideas = {
+#                        REP_member_prewar
+#                    }
+#                    remove_ideas = {
+#                        CIS_member
+#                        CIS_member_prewar
+#                        REP_member
+#                    }
+#                }
+#                if = {
+#                    limit = {
+#                        has_government = democratic
+#                        REP = {
+#                            has_completed_focus = REP_battle_of_geonosis
+#                        }
+#                        NOT = {
+#                            has_idea = REP_member
+#                        }
+#                    }
+#                    add_ideas = {
+#                        REP_member
+#                    }
+#                    remove_ideas = {
+#                        CIS_member
+#                    }
+#                }
+#                if = {
+#                    limit = {
+#                        has_government = neutrality
+#                    }
+#                    remove_ideas = {
+#                        CIS_member_prewar
+#                        REP_member_prewar
+#                        REP_member
+#                        CIS_member
+#                    }
+#                }
+#                if = {
+#                    limit = {
+#                        is_in_faction_with = REP
+#                        NOT = {
+#                            has_government = democratic
+#                        }
+#                    }
+#                    REP = {
+#                        remove_from_faction = PREV
+#                    }
+#                }
+#                #Join or leave CIS
+#                if = {
+#                    limit = {
+#                        has_government = fascism
+#                        NOT = {
+#                            has_war = yes
+#                            is_in_faction_with = CIS
+#                            tag = QUA
+#                        }
+#                    }
+#                    CIS = {
+#                        add_to_faction = PREV
+#                    }
+#                }
+#                if = {
+#                    limit = {
+#                        has_government = fascism
+#                        NOT = {
+#                            has_war = yes
+#                            has_idea = CIS_member_prewar
+#                            REP = {
+#                                has_completed_focus = REP_battle_of_geonosis
+#                            }
+#                        }
+#                    }
+#                    CIS = {
+#                        add_to_faction = PREV
+#                    }
+#                    ROOT = {
+#                        add_ideas = {
+#                            CIS_member_prewar
+#                        }
+#                        remove_ideas = {
+#                            REP_member_prewar
+#                            REP_member
+#                            CIS_member
+#                        }
+#                    }
+#                }
+#                if = {
+#                    limit = {
+#                        has_government = fascism
+#                        REP = {
+#                            has_completed_focus = REP_battle_of_geonosis
+#                        }
+#                        NOT = {
+#                            has_war = yes
+#                            has_idea = CIS_member
+#                        }
+#                    }
+#                    CIS = {
+#                        add_to_faction = PREV
+#                    }
+#                    ROOT = {
+#                        add_ideas = {
+#                            CIS_member
+#                        }
+#                        remove_ideas = {
+#                            REP_member
+#                            REP_member_prewar
+#                            CIS_member_prewar
+#                        }
+#                    }
+#                }
+#                if = {
+#                    limit = {
+#                        is_in_faction_with = CIS
+#                        NOT = {
+#                            has_government = fascism
+#                        }
+#                    }
+#                    leave_faction = yes
+#                    ROOT = {
+#                        remove_ideas = CIS_member
+#                    }
+#                }
+#                clamp_variable = {
+#                    var = secessionpoint
+#                    min = -7
+#                    max = 7
+#                }
+#            }
+#        }
+#    }
 }
 
 
