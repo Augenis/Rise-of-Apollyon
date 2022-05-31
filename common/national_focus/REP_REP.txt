@@ -51,33 +51,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = REP_trade_fed_boycott
-		icon = GFX_REP_1000_years_of_peace-39674
-		x = -2
-		y = 1
-		relative_position_id = REP_chancellor_dansion
-		cost = 3
-		prerequisite = { 
-			focus = REP_chancellor_dansion 
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		bypass = {
-			OR = { # fails if Naboo conflict has been lost
-				NAB = {
-					is_subject_of = FED
-				}
-				NOT = {
-					country_exists = NAB
-				}
-			}
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = REP_amidala_resistance
 		icon = GFX_REP_1000_years_of_peace-39674
 		x = -1

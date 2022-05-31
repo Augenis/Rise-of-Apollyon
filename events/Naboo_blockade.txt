@@ -1,6 +1,6 @@
 add_namespace = republic
 
-news_event = { # Dansion intro
+country_event = { # Dansion intro
 	id = republic.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.1"}
 	title = republic.1.t
@@ -15,7 +15,7 @@ news_event = { # Dansion intro
 		
 	}
 }
-news_event = { # Naboo crisis - Naboo victory
+country_event = { # Naboo crisis - Naboo victory
 	id = republic.2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.2"}
 	title = republic.2.t
@@ -52,7 +52,7 @@ news_event = { # Naboo crisis - Naboo victory
 		white_peace = FED
 	}
 }
-news_event = { # Naboo crisis - Naboo victory
+country_event = { # Naboo crisis - Naboo victory
 	id = republic.3
 	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.3"}
 	title = republic.3.t
@@ -67,7 +67,7 @@ news_event = { # Naboo crisis - Naboo victory
 		white_peace = FED
 	}
 }
-news_event = { # Naboo crisis - Federation victory
+country_event = { # Naboo crisis - Federation victory
 	id = republic.4
 	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.4"}
 	title = republic.4.t
@@ -79,15 +79,13 @@ news_event = { # Naboo crisis - Federation victory
 	
 	option = { 
 		name = republic.4.a
-		NAB = {
-			every_state = {
-				limit = {
-					is_owned_by = FED
-					is_core_of = NAB
-				}
-				FED = {
-					transfer_state = PREV
-				}
+		every_owned_state = {
+			limit = {
+				is_owned_by = FED
+				is_core_of = NAB
+			}
+			NAB = { 
+				transfer_state = PREV
 			}
 		}
 		puppet = NAB
@@ -99,7 +97,7 @@ news_event = { # Naboo crisis - Federation victory
 			}
 			create_country_leader = {
 				name = "Rute Gunnay"
-				picture = "gfx/leaders/NAB/RuteGunnay.dds"
+				picture = "gfx/leaders/fed/RuteGunnay.dds"
 				expire = "5000.1.1"
 				ideology = fascism_ideology
 			}

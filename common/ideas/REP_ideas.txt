@@ -30,7 +30,6 @@ ideas = {
 				stability_factor = 0.35  
 				war_support_weekly = -0.005 
 				mobilization_speed = -0.1
-				conscription_factor = -0.1
 			}
 		}
 		sith_plot = {
