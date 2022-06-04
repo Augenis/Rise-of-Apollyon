@@ -79,6 +79,12 @@ units = {
 	}
 	division= {	
 		name = "Resistance Division"
+		location = 9953 #naboo
+		division_template = "Her Majesty's Resistance"
+		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Resistance Division"
 		location = 10001 #naboo
 		division_template = "Her Majesty's Resistance"
 		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
@@ -88,6 +94,18 @@ units = {
 		location = 10001 #naboo
 		division_template = "Armed Speeder Division"
 		start_experience_factor = 0.2   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Gungan Militia"
+		location = 10001 #Dantooine
+		division_template = "Gungan"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
+	}
+	division= {	
+		name = "Gungan Militia"
+		location = 10001 #Dantooine
+		division_template = "Gungan"
+		start_experience_factor = 0.6   #optional, otherwise starts with 0 expereince
 	}
 	division= {	
 		name = "Gungan Militia"

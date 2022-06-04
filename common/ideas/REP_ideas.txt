@@ -43,6 +43,19 @@ ideas = {
 				custom_modifier_tooltip = sith_plot_tt
 			}
 		}
+		REP_boycott = {
+			allowed = {
+				always = no
+			}
+			
+			picture = weakened_executive
+			modifier = {
+				industrial_capacity_factory = -0.25
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_speed_factor = -0.5
+			}
+		}
 		military_enhancement_bill = {
 
 			allowed = {

@@ -30,7 +30,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = REP_chancellor_dansion
-		cost = 6
+		cost = 3
 		prerequisite = { 
 			focus = REP_chancellor_dansion 
 		}
@@ -46,7 +46,8 @@ focus_tree = {
 				}
 			}
 			FED = {
-				country_event = 
+				country_event = republic.6
+				add_ideas = REP_boycott
 			}
 		}
 	}
@@ -56,7 +57,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = REP_chancellor_dansion
-		cost = 6
+		cost = 2
 		prerequisite = { 
 			focus = REP_trade_fed_boycott 
 		}
@@ -74,7 +75,16 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			add_war_support = 0.1
+			NAB = {
+				effect_tooltip = {
+					add_war_support = 0.1
+				}
+				custom_effect_tooltip = REP_spawn_units_on_NAB
+				hidden_effect = {
+					country_event = republic.7
+				}
+			}
 		}
 	}
 	focus = {
@@ -101,7 +111,14 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_faction = NAB
+			}
+			add_to_war = {
+				targeted_alliance = NAB
+				enemy = FED
+			}
+			country_event = republic.8
 		}
 	}
 	focus = {

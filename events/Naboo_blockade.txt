@@ -40,6 +40,10 @@ country_event = { # Naboo crisis - Naboo victory
 			ruusan_nerf_army
 			ruusan_nerf_nav 
 		}
+		if = {
+			limit = { has_template = "Republican Volunteers" }
+			delete_unit_template_and_units = { division_template = "Republican Volunteers" }
+		}
 		every_state = {
 			limit = {
 				is_owned_by = FED
@@ -50,6 +54,7 @@ country_event = { # Naboo crisis - Naboo victory
 			}
 		}
 		white_peace = FED
+		leave_faction = yes
 	}
 }
 country_event = { # Naboo crisis - Naboo victory
@@ -65,6 +70,18 @@ country_event = { # Naboo crisis - Naboo victory
 	option = { 
 		name = republic.3.a
 		white_peace = FED
+		if = {
+			limit = { has_template = "Naboo Intervention Judicial" }
+			delete_unit_template_and_units = { division_template = "Naboo Intervention Judicial" }
+		}
+		if = {
+			limit = { has_template = "Naboo Intervention Kuat Security" }
+			delete_unit_template_and_units = { division_template = "Naboo Intervention Kuat Security" }
+		}
+		if = {
+			limit = { has_template = "Naboo Intervention Jedi" }
+			delete_unit_template_and_units = { division_template = "Naboo Intervention Jedi" }
+		}
 	}
 }
 country_event = { # Naboo crisis - Federation victory
@@ -100,6 +117,208 @@ country_event = { # Naboo crisis - Federation victory
 				picture = "gfx/leaders/fed/RuteGunnay.dds"
 				expire = "5000.1.1"
 				ideology = fascism_ideology
+			}
+		}
+		REP = {
+			country_event = republic.5
+		}
+	}
+}
+country_event = { # Naboo crisis - Federation victory
+	id = republic.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.5"}
+	title = republic.5.t
+	desc = republic.5.d
+	picture = GFX_puppetnaboo
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = republic.5.a
+		white_peace = FED
+		if = {
+			limit = { has_template = "Naboo Intervention Judicial" }
+			delete_unit_template_and_units = { division_template = "Naboo Intervention Judicial" }
+		}
+		if = {
+			limit = { has_template = "Naboo Intervention Kuat Security" }
+			delete_unit_template_and_units = { division_template = "Naboo Intervention Kuat Security" }
+		}
+		if = {
+			limit = { has_template = "Naboo Intervention Jedi" }
+			delete_unit_template_and_units = { division_template = "Naboo Intervention Jedi" }
+		}
+		add_stability = -0.25
+		add_political_power = -150
+	}
+}
+country_event = { # Boycott
+	id = republic.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.6"}
+	title = republic.6.t
+	desc = republic.6.d
+	picture = GFX_puppetnaboo
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = republic.6.a
+		add_stability = -0.2
+		effect_tooltip = {
+			add_ideas = REP_boycott
+		}
+	}
+}
+country_event = { # NAB receives units from REP
+	id = republic.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.7"}
+	title = republic.7.t
+	desc = republic.7.d
+	picture = GFX_puppetnaboo
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = republic.7.a
+		add_war_support = 0.1
+		custom_effect_tooltip = REP_spawn_units_on_NAB
+		hidden_effect = {
+			division_template = {
+				name = "Republican Volunteers"
+				regiments = {
+					NAB_unit_guard = { x = 0 y = 0 }
+					NAB_unit_guard = { x = 0 y = 1 }
+					NAB_unit_guard = { x = 0 y = 2 }
+					NAB_unit_guard = { x = 1 y = 0 }
+					NAB_unit_guard = { x = 1 y = 1 }
+					NAB_unit_guard = { x = 1 y = 2 }
+					NAB_unit_guard = { x = 2 y = 0 }
+					NAB_unit_guard = { x = 2 y = 1 }
+					NAB_unit_guard = { x = 2 y = 2 }
+				}
+			}
+			392 = {
+				create_unit = {
+					division = "name = "Republican Volunteers" division_template = "Republican Volunteers" start_experience_factor = 0.75"
+					owner = ROOT
+					count = 3
+				}
+			}
+		}
+	}
+}
+country_event = { # Operation: Star Dragon
+	id = republic.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event republic.8"}
+	title = republic.8.t
+	desc = republic.8.d
+	picture = GFX_diplomaticshipdestroyed
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = republic.8.a
+		custom_effect_tooltip = REP_spawn_star_dragon_operation
+		hidden_effect = {
+			division_template = {
+				name = "Naboo Intervention Judicial"
+				regiments = {
+					Judicial_forces = { x = 0 y = 0 }
+					Judicial_forces = { x = 0 y = 1 }
+					Judicial_forces = { x = 0 y = 2 }
+					Judicial_forces = { x = 1 y = 0 }
+					Judicial_forces = { x = 1 y = 1 }
+					Judicial_forces = { x = 1 y = 2 }
+					Judicial_forces = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+				}
+			}
+			division_template = {
+				name = "Naboo Intervention Kuat Security"
+				regiments = {
+					Standard = { x = 0 y = 0 }
+					Standard = { x = 0 y = 1 }
+					Standard = { x = 0 y = 2 }
+					Standard = { x = 1 y = 0 }
+					Standard = { x = 1 y = 1 }
+					Standard = { x = 1 y = 2 }
+					Standard = { x = 2 y = 0 }
+					artillery_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 2 y = 2 }
+				}
+			}
+			division_template = {
+				name = "Naboo Intervention Jedi"
+				regiments = {
+					jedi_guardian = { x = 0 y = 0 }
+					jedi_guardian = { x = 0 y = 1 }
+					jedi_guardian = { x = 0 y = 2 }
+					jedi_guardian = { x = 1 y = 0 }
+					jedi_guardian = { x = 1 y = 1 }
+					jedi_guardian = { x = 1 y = 2 }
+					Judicial_forces = { x = 2 y = 0 }
+					Judicial_forces = { x = 2 y = 1 }
+					Judicial_forces = { x = 2 y = 2 }
+				}
+			}
+			392 = {
+				create_unit = {
+					division = "name = "Naboo Intervention Judicial" division_template = "Naboo Intervention Judicial" start_experience_factor = 0.5"
+					owner = ROOT
+					count = 3
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 10000
+				}
+				create_unit = {
+					division = "name = "Naboo Intervention Kuat Security" division_template = "Naboo Intervention Kuat Security" start_experience_factor = 0.5"
+					owner = ROOT
+					count = 1
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 4208
+				}
+				create_unit = {
+					division = "name = "Naboo Intervention Kuat Security" division_template = "Naboo Intervention Kuat Security" start_experience_factor = 0.5"
+					owner = ROOT
+					count = 1
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 9983
+				}
+			}
+			392 = {
+				create_unit = {
+					division = "name = "Naboo Intervention Judicial" division_template = "Naboo Intervention Judicial" start_experience_factor = 0.5"
+					owner = ROOT
+					count = 3
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 9873
+				}
+				create_unit = {
+					division = "name = "Naboo Intervention Kuat Security" division_template = "Naboo Intervention Kuat Security" start_experience_factor = 0.5"
+					owner = ROOT
+					count = 1
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 9873
+				}
+				create_unit = {
+					division = "name = "Naboo Intervention Kuat Security" division_template = "Naboo Intervention Kuat Security" start_experience_factor = 0.5"
+					owner = ROOT
+					count = 1
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 1846
+				}
+				create_unit = {
+					division = "name = "Naboo Intervention Jedi" division_template = "Naboo Intervention Jedi" start_experience_factor = 1.0"
+					owner = ROOT
+					count = 2
+					allow_spawning_on_enemy_provs = yes
+					prioritize_location = 9873
+					force_equipment_variants = { jedi_equip = { owner = "JED" } }
+				}
 			}
 		}
 	}

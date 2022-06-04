@@ -223,7 +223,7 @@ move_toward_secession_tt:0 "You will be pushed §Rcloser to secession§!"
 stay_with_republic_tt:0 "You will be pushed §Gfurther from secession§!"
 core_secession_point_tt:0 "§YCore Worlds§! will be pushed §RCloser to secession.§!"
 core_minus_secession_point_tt:0 "§YCore Worlds§! will be pushed §GFurther from secession.§!"
-Naboo_minus_secession_point_tt:0 "§YGungan Nation§! and §YNaboo§! will be pushed §GFurther from secession.§!"
+Naboo_minus_secession_point_tt:0 "§YNaboo§! will be pushed §GFurther from secession.§!"
 umbara_minus_secession_point_tt:0 "§YUmbara§! will be pushed §GFurther from secession.§!"
 alderaan_minus_secession_point_tt:0 "§YAlderaan§! will be pushed §GFurther from secession.§!"
 midrim_secession_point_tt:0 "§YMid Rim Worlds§! will be pushed §RCloser to secession.§!"
@@ -385,6 +385,9 @@ REP_actaccepted:0 "Intresting"
 
 ### Rise of Apollyon content starts here ###
 
+REP_boycott:0 "Republic Boycott"
+REP_boycott_desc:0 ""
+
 sith_plot_tt:0 "§RAre these rumors true?§!"
 REP_chancellor_dansion:0 "The Commodore Chancellor"
 REP_chancellor_dansion_desc:0 ""
@@ -435,7 +438,37 @@ REP_proclaim_victory_desc:0 ""
 
 NAB_resistance:0 "Naboo's Resistance"
 NAB_resistance_desc:0 ""
+REP_spawn_units_on_NAB:0 "Raise three £nato_unit_infantry_icon_small  §YRepublican Volunteer§! divisions with 9 §YNaboo Infantry§! battalions. They will rise up in §Y[392.GetName]§!."
+REP_spawn_star_dragon_operation:0 "A landing ground will be established on §Y[392.GetName]§! and §Y[385.GetName]§!, outfitted with 12 £nato_unit_infantry_icon_small  §YJudicial§!, £nato_unit_infantry_icon_small  §YKuat Security Force§! and £nato_unit_light_armor_icon_small  §YJedi Guardian§! Divisions."
 
 republic.1.t:0 "The Commodore Chancellor"
 republic.1.d:0 "The sudden passing of Senator Sheev Palpatine forced a new election in the Galactic Senate, in which Vice-Chair Mas Amedda announced that no abstentions will be allowed, in order to break the ceaseless political deadlock and finally elect someone. The ongoing war over Naboo, between the occupation fofces of the Trade Federation and the Amidalist resistance loyal to the Queen, dominated discussion. Two main contenders surfaced - Andrian Dansion, a veteran of the Judiciary representing Commenor, and Finn Annock, a young federalist senator from Hosnian Prime. Dansion represented the proactive Centrist faction, who followed Palpatine's ideology of anti-corruption, centralization and reform, boldly declared his intention to expel the Federation from Naboo - and prevailed over Annock in a close election.\n\nBefore Dansion had begun his victory speech, Senator of the Trade Federation Lott Dod rushed out of the Rotunda and made a panicked holocall to Nute Gunray. From there, Dansion spent 40 minutes waxing lyrical about the ills of the Republic, and declared that his government would be one of unity through strength, with “all Stars once again burning as one”. Finn Annock didn’t dispute the results, but wasn’t exactly warm towards the new Chancellor-Elect. It was clear that this election had become deeply personal.\n\nIn a parallel election, John Joulet-Camedepu, a Ruusan Reformation conservative, narrowly the Vice-Chair election won against Karr-Plathus Vuum. Though he and Dansion shared little in common ideologically, they began developing a partnership."
 republic.1.a:0 "We have a rocky road ahead"
+
+republic.2.t:0 "Victory on Naboo"
+republic.2.d:0 "After a glorious campaign, the Amidalist rebels and the Gungan Grand Army have broken the forces of the Trade Federation occupation and captured Theed, where Nute Gunray and the rest of his clique were suddenly and brutally killed. Losing their leadership for the second time in eighteen months has finally cowed the Trade Federation and they withdrew from the planet immediately.\n\nThe campaign is a victory for the Dansion administration, though it has gained the Chancellor few allies among the Corporatists."
+republic.2.a:0 "Naboo is free!"
+
+republic.3.t:0 "Naboo Crisis - Amidalist Victory"
+republic.3.d:0 "After a glorious campaign, the Amidalist rebels and the Gungan Grand Army have broken the forces of the Trade Federation occupation and captured Theed, where Nute Gunray and the rest of his clique were suddenly and brutally killed. Losing their leadership for the second time in eighteen months has finally cowed the Trade Federation and they withdrew from the planet immediately.\n\nThe campaign is a victory for the Dansion administration, though it has gained the Chancellor few allies among the Corporatists."
+republic.3.a:0 "Good."
+
+republic.4.t:0 "Victory on Naboo"
+republic.4.d:0 "The droid army of the Trade Federation has finally subdued the Amidalist resistance and motivation to intervene in the Senate has faded. The last remnants of the Naboo government have signed a shambolic treaty which hands over all control over the planet to the Federation and their puppet overseers, bringing an end to Naboo independence.\n\nThe failure to act has reflected poorly upon the Dansion administration."
+republic.4.a:0 "Naboo is ours!"
+
+republic.5.t:0 "Naboo Crisis - Federation Victory"
+republic.5.d:0 "The droid army of the Trade Federation has finally subdued the Amidalist resistance and motivation to intervene in the Senate has faded. The last remnants of the Naboo government have signed a shambolic treaty which hands over all control over the planet to the Federation and their puppet overseers, bringing an end to Naboo independence.\n\nThe failure to act has reflected poorly upon the Dansion administration."
+republic.5.a:0 "Not good."
+
+republic.6.t:0 "Republic Boycott"
+republic.6.d:0 "The Dansion administration has established a complete boycott on the Trade Federation, including combat droids and supplies for our army, severely hampering our efforts in the Naboo campaign."
+republic.6.a:0 "Not good."
+
+republic.7.t:0 "Republican Volunteer Arrive"
+republic.7.d:0 "Volunteers from the Core Worlds have arrived to boost our ranks."
+republic.7.a:0 "Great."
+
+republic.8.t:0 "Operation: Star Dragon"
+republic.8.d:0 "As the Trade Federation boycott would hardly be enough to allow the Amidalist resistance to expel the Trade Federation, Chancellor Andrian Dansion has greenlit an armed expedition to Naboo to "be on the right side of history" and force Gunray to yield. The Chancellor, decked out in his Judicial uniform, drew up the battle plans for the Naboo operation alongside his Action Committee Chair, Tee’meh’rare, a Duinuogwuin senator. Aboard the Judicial Fleet, he was joined by Senator for Kuat, Sirona Kuat, who brought almost the entire Kuat Security Force to the operation. Jedi Master Mace Windu, newly appointed Jedi Knight Obi-Wan Kenobi and Knight Kit Fisto represented the Order in the Operation - as the Trade Federation was responsible for the death of Master Qui-Gon Jinn, they had a personal stake in seeing the operation succeed.\n\nThough Nute Gunray has refused to surrender, the firepower of the Galactic Republic outmatches him severely - so, few believe that he will stay afloat in the aftermath of the Operation."
+republic.8.a:0 "Let us free Naboo!"
