@@ -1,5 +1,40 @@
 leader_traits = {
 	
+	# good traits
+	
+	noble_integralist = {
+		random = no
+		sprite = 13
+		stability_factor = 0.1
+		defensive_war_stability_factor = 0.15
+	}
+	master_of_transformism = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.25
+	}
+	corruption_crusader = {
+		random = no
+		sprite = 13
+		production_factory_max_efficiency_factor = 0.1
+		political_power_factor = 0.05
+		stability_factor = 0.05
+	}
+	compor_commander = {
+		random = no
+		sprite = 13
+		conscription_factor = 0.1
+		war_support_factor = 0.05
+		production_speed_arms_factory_factor = 0.05
+	}
+	political_veteran = {
+		random = no
+		sprite = 13
+		stability_factor = 0.15
+	}
+	
+	#old traits
+	
 	mandalor = {
 		random = no
 		political_power_factor = 0.1

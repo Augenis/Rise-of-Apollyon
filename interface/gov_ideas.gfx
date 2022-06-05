@@ -73,8 +73,31 @@ spriteTypes = {
 		name = "GFX_idea_trench_navy" 
 		texturefile = "gfx/interface/ideas/trench.dds" 
 	}
-		SpriteType = {  
+	SpriteType = {  
 		name = "GFX_idea_Lott_Dod" 
 		texturefile = "gfx/interface/ideas/Lott_Dod.dds" 
+	}
+	
+	# Rise of Apollyon
+	
+	SpriteType = {  
+		name = "GFX_idea_auphi_acio_siadro" 
+		texturefile = "gfx/interface/advisors/REP/Auphi_Acio_Siadro.png" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_azeyca_sheyi" 
+		texturefile = "gfx/interface/advisors/REP/Azeyca_Sheyi.png" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_emil_pestage" 
+		texturefile = "gfx/interface/advisors/REP/Emil_Pestage.png" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_karr_plathus_vuum" 
+		texturefile = "gfx/interface/advisors/REP/Karr_Plathus_Vuum.png" 
+	}
+	SpriteType = {  
+		name = "GFX_idea_jjc" 
+		texturefile = "gfx/interface/advisors/REP/JJC.png" 
 	}
 }
