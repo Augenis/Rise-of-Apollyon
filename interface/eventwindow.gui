@@ -19,11 +19,6 @@ guiTypes = {
 			name = "Background"	
 			spriteType ="GFX_event_news_bg"
 		}
-		
-		background = {
-			name = "BackgroundLightsAnim"	
-			spriteType ="GFX_event_news_lights_anim"
-		}
 
 		containerWindowType = {
 			name = "top_Window"

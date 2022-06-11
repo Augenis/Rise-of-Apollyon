@@ -115,7 +115,7 @@ sub_units = {
 		max_strength = 50
 		max_organisation = 60
 		default_morale = 1
-		manpower = 10
+		manpower = 1000
 
 		#Misc Abilities
 		training_time = 90

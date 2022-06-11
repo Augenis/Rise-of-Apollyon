@@ -134,6 +134,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		available = {
+			NAB = {
+				owns_state = 388
+			}
+		}
 		bypass = {
 			OR = { # fails if Naboo conflict has been lost
 				NAB = {
@@ -160,6 +165,11 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
+		}
+		available = {
+			NAB = {
+				owns_state = 388
+			}
 		}
 		bypass = {
 			OR = { # fails if Naboo conflict has been lost
@@ -193,6 +203,11 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 10
+		}
+		available = {
+			NAB = {
+				owns_state = 388
+			}
 		}
 		bypass = {
 			OR = { # fails if Naboo conflict has been lost
@@ -428,7 +443,42 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = ruusan_nerf_nav
+				add_idea = ruusan_nerf_nav_small
+			}
+			swap_ideas = {
+				remove_idea = ruusan_nerf_army
+				add_idea = ruusan_nerf_army_small
+			}
+			hidden_effect = {
+				every_country = {
+					if = {
+						limit = {
+							is_corporation = yes
+						}
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+				every_country = {
+					if = {
+						limit = {
+							is_militarist = yes
+						}
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+				every_country = {
+					if = {
+						limit = {
+							is_pacifist = yes
+						}
+						add_to_variable = { secessionpoint = 1 }
+					}
+				}
+			}
+			custom_effect_tooltip = pacifist_secession_point_tt
+			custom_effect_tooltip = militarist_minus_secession_point_tt
 		}
 	}
 	focus = {
@@ -471,7 +521,13 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			army_experience = 25
+			add_tech_bonus = {
+				name = REP_infantry_kit
+                bonus = 1
+                uses = 1
+                category = land_doctrine
+            }
 		}
 	}
 	focus = {
@@ -491,7 +547,15 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			set_technology = {
+				early_ship_hull_heavy = 1
+			}
+			add_tech_bonus = {
+				name = REP_sirona_triangles
+                bonus = 1
+                uses = 1
+                category = naval_doctrine
+            }
 		}
 	}
 	focus = {
@@ -508,7 +572,12 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = REP_infantry_kit
+                bonus = 1
+                uses = 1
+                category = infantry_tech
+            }
 		}
 	}
 	focus = {
@@ -525,7 +594,22 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			set_technology = {
+				battle_droid_1 = 1
+				battle_droid_0 = 1
+			}
+			division_template = {
+			    name = "B1 Division"
+			    priority = 1
+			    regiments = {
+			        b1_droid_unit  = { x = 0 y = 0 }
+			        b1_droid_unit  = { x = 0 y = 1 }
+			        b1_droid_unit  = { x = 0 y = 2 }
+			        b1_droid_unit  = { x = 0 y = 3 }
+			    }
+			}
+			set_country_flag = canproduceoom
+			set_country_flag = canproduceb1
 		}
 	}
 	
