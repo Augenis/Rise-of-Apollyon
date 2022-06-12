@@ -117,7 +117,7 @@ country_event = { # Naboo crisis - Federation victory
 			}
 			create_country_leader = {
 				name = "Rute Gunnay"
-				picture = "gfx/leaders/fed/RuteGunnay.dds"
+				picture = "gfx/leaders/FED/RuteGunnay.dds"
 				expire = "5000.1.1"
 				ideology = fascism_ideology
 			}

@@ -1,0 +1,166 @@
+add_namespace = zyg
+
+country_event = { # Zygerria intro
+	id = zyg.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event zyg.1"}
+	title = zyg.1.t
+	desc = zyg.1.d
+	picture = GFX_bmc2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = zyg.1.a
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = { id = zyg.2 days = 365 } # Grouchosius' campaign
+		}
+	}
+}
+country_event = { # Marxius' Campaign
+	id = zyg.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event zyg.2"}
+	title = zyg.2.t
+	desc = zyg.2.d
+	picture = GFX_bmc2
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = zyg.2.a
+		add_manpower = -50000
+		create_dynamic_country = {	
+			original_tag = ZYG
+			copy_tag = ZYG
+
+			#State
+			transfer_state = 92
+
+			### Leader
+			create_country_leader = {
+				name = "Marxius Grouchosius"
+				picture = "gfx/leaders/REP/Portrait_REP_Marxius_Grouchosius.png"
+				expire = "5000.1.1"
+				ideology = liberalism
+			}
+
+			### Politics
+			set_popularities = {
+				democratic = 100
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = "Marxius' Expedition"
+				name = "Marxius' Expedition"
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			set_cosmetic_tag = MRX
+
+			#Units
+			set_technology = {
+				militia_standard = 1
+				battle_droid_1 = 1
+				c9979_tech = 1
+				vulture_tech = 1
+				lucrehulk_freighter_tech = 1
+				consular_tech = 1
+			}
+			division_template = {
+				name = "Abolitionist Division"
+				is_locked = no
+				regiments = {
+					Standard = { x = 0 y = 0 }
+					Standard = { x = 0 y = 1 }
+					Standard = { x = 0 y = 2 }
+					Standard = { x = 1 y = 0 }
+					Standard = { x = 1 y = 1 }
+					Standard = { x = 1 y = 2 }
+					Standard = { x = 2 y = 0 }
+					Standard = { x = 2 y = 1 }
+					Standard = { x = 2 y = 2 }
+				}
+			}
+			division_template = {
+				name = "Abolitionist Droid Unit"
+				is_locked = no
+				regiments = {
+					b1_droid_unit = { x = 0 y = 0 }
+					b1_droid_unit = { x = 0 y = 1 }
+					b1_droid_unit = { x = 0 y = 2 }
+					b1_droid_unit = { x = 0 y = 3 }
+					b1_droid_unit = { x = 1 y = 0 }
+					b1_droid_unit = { x = 1 y = 1 }
+					b1_droid_unit = { x = 1 y = 2 }
+				}
+			}
+			92 = {
+				create_unit = {
+					division = "name = \"Abolitionist Division\" division_template = \"Abolitionist Division\" start_experience_factor = 0.3"
+					allow_spawning_on_enemy_provs = yes
+					owner = PREV
+					prioritize_location = 2213
+				}
+				create_unit = {
+					division = "name = \"Abolitionist Division\" division_template = \"Abolitionist Division\" start_experience_factor = 0.3"
+					allow_spawning_on_enemy_provs = yes
+					owner = PREV
+					prioritize_location = 1749
+				}
+				create_unit = {
+					division = "name = \"Abolitionist Division\" division_template = \"Abolitionist Division\" start_experience_factor = 0.3"
+					allow_spawning_on_enemy_provs = yes
+					owner = PREV
+					prioritize_location = 5347
+				}
+				create_unit = {
+					division = "name = \"Abolitionist Division\" division_template = \"Abolitionist Division\" start_experience_factor = 0.3"
+					allow_spawning_on_enemy_provs = yes
+					owner = PREV
+					prioritize_location = 5363
+				}
+				create_unit = {
+					division = "name = \"Abolitionist Droid Unit\" division_template = \"Abolitionist Droid Unit\" start_experience_factor = 0.3"
+					allow_spawning_on_enemy_provs = yes
+					owner = PREV
+					prioritize_location = 5347
+				}
+				create_unit = {
+					division = "name = \"Abolitionist Droid Unit\" division_template = \"Abolitionist Droid Unit\" start_experience_factor = 0.3"
+					allow_spawning_on_enemy_provs = yes
+					owner = PREV
+					prioritize_location = 5363
+				}
+			}
+
+			#Event Target
+			save_global_event_target_as = marxius
+			
+			#Navy
+			create_equipment_variant = {
+				name = "Lucrehulk Freighter"
+				type = lucrehulk_freighter_equipment
+				parent_version = 0
+			}
+			create_equipment_variant = {
+				name = "Consular Class"
+				type = consular_equipment
+				parent_version = 0
+			}
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				load_oob = "MRX_3677_naval"
+			}
+		}
+		event_target:marxius = {
+			declare_war_on = {
+				target = ZYG
+				type = annex_everything
+			}
+		}
+	}
+}

@@ -76,6 +76,9 @@ set_popularities = {
 	communism = 3
 	neutrality = 6
 }
+
+
+
 create_country_leader = {
 	name = "Andrian Dansion"
 	desc = ""

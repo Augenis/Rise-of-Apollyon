@@ -321,7 +321,9 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				country_event = { id = zyg.1 days = 30 } # Assassination of Tila Serva
+			}
 		}
 	}
 	focus = {

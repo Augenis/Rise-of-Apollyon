@@ -1,0 +1,25 @@
+Units = {
+	fleet = {
+		name = "Liberation Fleet"			
+		naval_base = 4157 #Coruscant
+		task_force = {
+			name = "Liberation Squadron"
+			location = 4157 #Coruscant
+			ship = { name = "Death Donut" definition = carrier equipment = { lucrehulk_freighter_equipment = { amount = 1 owner = marxius version_name = "Lucrehulk Freighter" } }	
+				air_wings = { 
+					vulture_fighter_equip =  { owner = marxius amount = 150 }
+					C9979_equip = { owner = marxius amount = 10
+					}
+				}
+			}
+			ship = { name = "Watcher" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = marxius version_name = "Consular Class" } } }
+			ship = { name = "Sprinter" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = marxius version_name = "Consular Class" } } }
+			ship = { name = "Dagger" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = marxius version_name = "Consular Class" } } }
+			ship = { name = "Thunder" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = marxius version_name = "Consular Class" } } }
+			ship = { name = "Challenger" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = marxius version_name = "Consular Class" } } }
+			ship = { name = "Giver" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = marxius version_name = "Consular Class" } } }
+			ship = { name = "Resolve" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = marxius version_name = "Consular Class" } } }
+			ship = { name = "Mercury" definition = destroyer equipment = { consular_equipment = { amount = 1 owner = marxius version_name = "Consular Class" } } }
+		}
+	}
+}
