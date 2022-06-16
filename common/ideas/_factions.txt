@@ -7,9 +7,6 @@ ideas = {
 				has_government = democratic
 				NOT = { has_war_with = REP }
 			}
-		    allowed_civil_war = {
-		    	has_government = democratic
-		    }
 		    rule = {
 		    	can_create_factions = no
 		    }
@@ -29,9 +26,6 @@ ideas = {
 				has_government = democratic
 				NOT = { has_war_with = REP }
 			}
-		    allowed_civil_war = {
-		    	has_government = democratic
-		    }
 		    rule = {
 		    	can_create_factions = no
 		    }

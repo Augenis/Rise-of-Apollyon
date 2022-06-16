@@ -23,8 +23,6 @@ add_ideas = {
 	disarmed_nation
     MAN_idea_new_mandelorians
 	MAN_idea_poverty
-	ruusan_nerf_army
-	ruusan_nerf_nav
 	civilian_economy
 }
 	

@@ -162,5 +162,11 @@ country_event = { # Marxius' Campaign
 				type = annex_everything
 			}
 		}
+		custom_effect_tooltip = Zygerria_secession_point_tt
+		hidden_effect = {
+			ZYG = {
+				add_to_variable = { secessionpoint = 2 }
+			}
+		}
 	}
 }

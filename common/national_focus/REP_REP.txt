@@ -150,7 +150,25 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+			NAB = {
+				capital_scope = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -255,7 +273,23 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = REP_developmentalism_tt
+			add_to_variable = { dx = -150 }
+			custom_effect_tooltip = core_minus_secession_point_tt
+			hidden_effect = {
+				every_country = {
+					if = {
+						limit = {
+							is_core_world = yes
+						}
+						add_to_variable = { secessionpoint = -1 }
+					}
+				}
+			}
+			activate_targeted_decision = { target = KUA decision = REP_rim_development } 
+			activate_targeted_decision = { target = GUN decision = REP_rim_development } 
+			activate_targeted_decision = { target = CLA decision = REP_rim_development } 
+			activate_targeted_decision = { target = OND decision = REP_rim_development } 
 		}
 	}
 	focus = {
@@ -301,7 +335,11 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			
+			add_stability = 0.02
+			activate_targeted_decision = { target = ERI decision = REP_rim_development } 
+			activate_targeted_decision = { target = HON decision = REP_rim_development } 
+			activate_targeted_decision = { target = CAL decision = REP_rim_development } 
+			activate_targeted_decision = { target = UMB decision = REP_rim_development } 
 		}
 	}
 	focus = {
@@ -323,6 +361,18 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				country_event = { id = zyg.1 days = 30 } # Assassination of Tila Serva
+			}
+			custom_effect_tooltip = outer_rim_corporation_minus_secession_point_tt
+			hidden_effect = {
+				every_country = {
+					if = {
+						limit = {
+							is_outterrim_world = yes
+							is_corporation = yes
+						}
+						add_to_variable = { secessionpoint = 2 }
+					}
+				}
 			}
 		}
 	}

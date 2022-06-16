@@ -500,3 +500,8 @@ zyg.2.a:0 "Well, this is something..."
 MRX:0 "Abolition Expedition"
 MRX_ADJ:0 "Abolitionist"
 MRX_DEF:0 "the Abolition Expedition"
+
+REP_rim_development:0 "Develop [FROM.GetName]"
+Rim_Development_minus_secession_point_tt:0 "[FROM.GetName] will be pushed §GFurther from secession.§!"
+Zygerria_secession_point_tt:0 "§YOuter Rim Corporations§! will be pushed §RCloser to secession.§!"
+REP_developmentalism_tt:0 "§YCost:§! §R150M Credits§!"
